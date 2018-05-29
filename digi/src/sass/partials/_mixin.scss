@@ -1,0 +1,57 @@
+// 運算
+@mixin calc($ele:"width",$num:0,$opr:"+",$val:0){
+	#{$ele}: -moz-calc(#{$num} #{$opr} #{$val});
+	#{$ele}: -webkit-calc(#{$num} #{$opr} #{$val});
+	#{$ele}: -o-calc(#{$num} #{$opr} #{$val});
+	#{$ele}: calc(#{$num} #{$opr} #{$val});
+}
+
+//遮罩
+@mixin bag_mask($url,$position:center){
+	overflow: hidden;
+	-webkit-mask-position: $position;
+	-webkit-mask-size: 100% 100%;
+	-webkit-mask-image: url($url);
+	@content
+}
+
+//清除float
+@mixin clear_float{
+	&:after{
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
+}
+//圓形
+@mixin circle($width){
+	.circle{
+		margin: 0 auto;
+		width: $width + 15px;
+		border:5px solid #F3AAC7;
+		border-radius:50%;
+		display: inline-block;
+		position: relative;
+		// z-index:index($ele_zindex, "circle");
+		&>.after{
+			width:$width;
+			overflow: hidden;
+			border: 2px solid #F3AAC7;
+			margin: 5px auto;
+			border-radius: 50%;
+			&>img{width:100%;}
+		}
+		@content
+	}
+}
+
+//層級判斷
+@mixin zindex($select_name:false) {
+	$zindex_arr:("footer","header") !default;
+	@if $select_name != false {
+		z-index:index($zindex_arr, $select_name);
+	}
+}

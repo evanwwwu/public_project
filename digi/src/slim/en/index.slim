@@ -1,0 +1,182 @@
+include lang_en
+-$lang = "en";
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    #warp
+      include header
+      .warpper.index
+        .top
+          .banners
+            .item
+              img src="../assets/images/banner1.jpg" alt=""/
+            .item
+              img src="../assets/images/banner1.jpg" alt=""/
+            .item
+              img src="../assets/images/banner1.jpg" alt=""/
+          a.news-btn href="#news"
+            img src="../assets/images/news-btn.png"/
+        .partner
+          .mainsize
+            .dtxt
+              h5.title = $ip_title
+              .info = $ip_info
+            .items
+              .item
+                img src="../assets/images/picon1.png" alt=""/
+                .title = $ip_item1_title
+                .info = $ip_item1_info
+              .item
+                img src="../assets/images/picon2.png" alt=""/
+                .title = $ip_item2_title
+                .info = $ip_item2_info
+              .item
+                img src="../assets/images/picon3.png" alt=""/
+                .title = $ip_item3_title
+                .info = $ip_item3_info
+              .item
+                img src="../assets/images/picon4.png" alt=""/
+                .title = $ip_item4_title
+                .info = $ip_item4_info
+            a href="#"
+              .more-btn
+                span Read more 
+                i.material-icons &#xE315;
+        .services
+          .mainsize
+            h5.btitle = $is_title
+            .items
+              .item
+                .pic
+                  img src="../assets/images/index-ide.jpg" alt=""/
+                  p.pt = $is_item1_title
+                .info 
+                  p = $is_item1_info
+                a href="#"
+                  .more-btn
+                    span Read more 
+                    i.material-icons &#xE315;
+              .item
+                .pic
+                  img src="../assets/images/index-security.jpg" alt=""/
+                  p.pt = $is_item2_title
+                .info 
+                  p = $is_item2_info
+                a href="#"
+                  .more-btn
+                    span Read more 
+                    i.material-icons &#xE315;
+              .item
+                .pic
+                  img src="../assets/images/index-cloud.jpg" alt=""/
+                  p.pt = $is_item3_title
+                .info 
+                  p = $is_item3_info
+                a href="#"
+                  .more-btn
+                    span Read more 
+                    i.material-icons &#xE315;
+              .item
+                .pic
+                  img src="../assets/images/index-app.jpg" alt=""/
+                  p.pt = $is_item4_title
+                .info 
+                  p = $is_item4_info
+                a href="#"
+                  .more-btn
+                    span Read more 
+                    i.material-icons &#xE315;
+        #news.events
+          .banner
+            h5 = $ie_title
+          .mainsize
+            .event-div
+              .box
+                .left
+                  img src="../assets/images/og-fourdesire.jpg" alt=""/
+                .e-list
+                  .item
+                    .date
+                      .d 13
+                      .m JUN
+                    .content
+                      .info Light Taiwan - Snap willing , chosen as the best anti- hack Light Taiwan - Snap willing , chosen 
+                      a.btn2 href="#"
+                        span Read more 
+                        i.material-icons &#xE315;
+                  .item
+                    .date
+                      .d 15
+                      .m JUN
+                    .content
+                      .info Light Taiwan - Snap willing , chosen as the best anti- hack Light Taiwan - Snap willing , chosen 
+                      a.btn2 href="#"
+                        span Read more 
+                        i.material-icons &#xE315;
+                  .item
+                    .date
+                      .d 18
+                      .m JUN
+                    .content
+                      .info Light Taiwan - Snap willing , chosen as the best anti- hack Light Taiwan - Snap willing , chosen 
+                      a.btn2 href="#"
+                        span Read more 
+                        i.material-icons &#xE315;
+        .industry
+          .banner
+            h5  = $ii_title;
+          .items
+            .item
+              .pic
+                img src="../assets/images/ind1.jpg" alt=""/
+              .content
+                .info Light Taiwan - Snap willing , chosen as the best anti- hack
+                .date 13/JUN
+                a.btn2 href="#"
+                  span Read more 
+                  i.material-icons &#xE315;
+            .item
+              .pic
+                img src="../assets/images/ind2.jpg" alt=""/
+              .content
+                .info From Gamania Digital
+                .date 13/JUN
+                a.btn2 href="#"
+                  span Read more 
+                  i.material-icons &#xE315;
+            .item
+              .pic
+                img src="../assets/images/ind3.jpg" alt=""/
+              .content
+                .info Hua Hong- pass band of your data - flying clouds roam....
+                .date 13/JUN
+                a.btn2 href="#"
+                  span Read more 
+                  i.material-icons &#xE315;
+        .customers
+          h5.title = $ic_title
+          .content
+            .citem-next
+              img src="../assets/images/s-arr-n.png" alt=""/
+            .citem-prev
+              img src="../assets/images/s-arr-p.png" alt=""/
+            .c-items
+              .item
+                .title GAMANIA
+                .icon
+                  img src="../assets/images/logo1.jpg" alt=""/
+                .text Taiwan's largest online game company
+              .item
+                .title NCSOFT
+                .icon
+                  img src="../assets/images/logo2.jpg" alt=""/
+                .text Taiwan's largest online game company
+              .item
+                .title GARENA
+                .icon
+                  img src="../assets/images/logo3.jpg" alt=""/
+                .text Taiwan's largest online game company
+    include footer

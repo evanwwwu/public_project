@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import "normalize";
+@import "font";
+@import "variable";
+@import "color";
+@import "animation";
+@import "rwd";
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	position: relative;
+	font-family: "微軟正黑體", "Microsoft JhengHei",'HanHei TC','sans-serif';
+}
+
+
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}

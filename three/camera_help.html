@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.js"></script>
+	<script src="http://threejs.org/build/three.min.js"></script>
+	<script src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
+	<style>
+		body {
+			margin: 0;
+			font-family: sans-serif;
+			font-size: 12px;
+		}
+		#buttons {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+		.button {
+			background: #eee;
+			padding: 3px 5px;
+			margin: 5px;
+			cursor: pointer;
+			display: inline-block;
+			border: 1px solid #aaa;
+		}
+		.log {
+			padding: 3px 5px;
+			margin: 5px;
+			display: inline-block;
+		}
+		.disabled {
+			color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div id="three"></div>
+	<div id="buttons">
+		<div id="rotate-cube" class="button">rotate cube</div>
+		<div id="swap-camera" class="button">swap camera</div>
+	</div>
+	<script>
+		var camera;
+		var scene;
+		var renderer;
+		var camera2;
+		var cubeGeometry;
+		var cubeMesh;
+		var cameraContainer;
+		var cameraHelper;
+		var activeCamera;
+		var rotateToAngle = 0;
+		var controls;
+
+		init();
+
+		function init() {
+
+			scene = new THREE.Scene();
+
+			scene.add( new THREE.AxisHelper( 200 ) );
+
+    // 3rd person perspective cam
+    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 20000);
+    camera.position.set(200, 250, 200);
+    camera.lookAt(scene.position)
+    //scene.add(camera); // not required
+
+    // 1st person cam
+    camera2 = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 90, 300);
+    camera2.position.z = 200; // this doesn't work? sure it does
+    camera2.rotation.x = -0.2;
+    activeCamera = camera;
+    controls = new THREE.OrbitControls(camera);
+
+    // object to contain camera & helper
+    cameraContainer = new THREE.Object3D();
+    cameraContainer.rotation.order = "YXZ"; // maybe not necessary
+    cameraContainer.position.set(0, 40, 0); // position to rest on floor
+
+    // camera helper
+    cameraHelper = new THREE.CameraHelper(camera2);
+
+    // cube to help visualize camera's relative position to container
+    cubeGeometry = new THREE.CubeGeometry(80, 80, 80);
+    cubeMesh = new THREE.Mesh(cubeGeometry, new THREE.MeshBasicMaterial({
+    	color: 0x00ee00,
+    	wireframe: true,
+    	transparent: true
+    }));
+
+    // add to container
+    cameraContainer.add(camera2);
+    scene.add(cameraHelper); // <=========== CHANGED. Helper must be added to scene.
+    cameraContainer.add(cubeMesh);
+    scene.add(cameraContainer);
+
+
+
+    // add floor grid and objects to look at
+    var gridXZ = new THREE.GridHelper(100, 10);
+    gridXZ.setColors(new THREE.Color(0x006600), new THREE.Color(0x006600));
+    scene.add(gridXZ);
+
+    var geom = new THREE.IcosahedronGeometry(5);
+    var mesh = new THREE.Mesh(geom.clone(), new THREE.MeshBasicMaterial({
+    	color: 0xffee00,
+    	wireframe: true,
+    	transparent: true
+    }));
+    mesh.position.set(-100, 20, 0);
+    scene.add(mesh);
+
+    geom = new THREE.OctahedronGeometry(5);
+    mesh = new THREE.Mesh(geom.clone(), new THREE.MeshBasicMaterial({
+    	color: 0x00eeff,
+    	wireframe: true,
+    	transparent: true
+    }));
+    mesh.position.set(100, 20, 0);
+    scene.add(mesh);
+
+    geom = new THREE.RingGeometry(3, 8, 4, 4);
+    mesh = new THREE.Mesh(geom.clone(), new THREE.MeshBasicMaterial({
+    	color: 0x0000ff,
+    	wireframe: true,
+    	transparent: true
+    }));
+    mesh.position.set(0, 20, -100);
+    scene.add(mesh);
+
+    geom = new THREE.CylinderGeometry(3, 8, 4, 4);
+    mesh = new THREE.Mesh(geom.clone(), new THREE.MeshBasicMaterial({
+    	color: 0xff00ff,
+    	wireframe: true,
+    	transparent: true
+    }));
+    mesh.position.set(0, 20, 100);
+    scene.add(mesh);
+
+
+    renderer = new THREE.WebGLRenderer({
+    	antialias: false
+    });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    $('#three').append(renderer.domElement);
+
+
+	// controls
+
+
+	animate();
+}
+
+function animate() {
+	requestAnimationFrame(animate);
+	controls.update();
+	render();
+}
+
+function render() {
+    // tween cameraContainer rotation
+    if (Math.abs(cameraContainer.rotation.y - rotateToAngle) < 0.01) {
+    	cameraContainer.rotation.y = rotateToAngle;
+    } else {
+    	cameraContainer.rotation.y += (rotateToAngle - cameraContainer.rotation.y) / 3;
+    }
+
+    renderer.render(scene, activeCamera);
+}
+
+$('#rotate-cube').on('click', function () {
+	rotateToAngle += Math.PI / 2;
+});
+
+$('#swap-camera').on('click', function () {
+	if (activeCamera == camera) {
+		activeCamera = camera2;
+	} else {
+		activeCamera = camera;
+	}
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+#{"#"+$model+"-transfer"} {
+    .main_title {
+        @extend %maintitle;
+    }
+    .speed {
+        @include rwd($pad_size) {
+            background: #000;
+        }
+        .main_div {
+            @extend %main_size;
+            .dtxt {
+                margin-top: 100px;
+                text-align: center;
+                @include rwd($phone_size){
+                  margin-top: 40px;
+                }
+                .title {
+                    @extend %bigtitle;
+                }
+                .subtitle {
+                    @extend %subtitle;
+                }
+                .info {
+                    width: 93%;
+                    @extend %info;
+                    color: #d1d0ce;
+                    margin: 40px auto 80px;
+                }
+            }
+        }
+        .speedimg {
+            @include rwd($pad_size) {
+                text-align: center;
+            };
+            .right {
+                margin-left: 50px;
+                margin-right: -170px;
+                float: none;
+                @include rwd($pad_size) {
+                    margin-right: 0;
+                        margin-left: 0px;
+                    margin-top: 70px;
+                }
+            }
+        }
+        .details {
+            margin: 120px auto;
+            font-size: 0;
+            @include rwd($pad_size) {
+                margin-top: 80px;
+            }
+            .item {
+                width: 50%;
+                display: inline-block;
+                padding: 0 20px;
+                vertical-align: top;
+                text-align: center;
+                @include rwd($pad_size) {
+                    width: 100%;
+                }
+                > img {
+                    width: 100%;
+                }
+                .info {
+                    @extend %info;
+                    color: #d1d0ce;
+                    text-align: left;
+                }
+                .title {
+                    text-align: left;
+                    font-size: 40px;
+                    color: #fff;
+                    font-family: "jersey";
+                    margin-bottom: 20px;
+                    line-height: 1.2;
+                    height: 97px;
+                    @include rwd($pad_size) {
+                        font-size: 36px;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        height: auto;
+                    }
+                    > span {
+                        font-family: "Roboto";
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .turbo {
+            margin-top: 50px;
+            margin-bottom: 120px;
+            @include rwd($pad_size) {
+                margin-bottom: 80px;
+                text-align: center;
+            }
+            .ttitle {
+                width: 50%;
+                display: inline-block;
+                margin-right: 50px;
+                @include rwd($pad_size) {
+                    width: 100%;
+                    margin-right: 0;
+                };
+                .title {
+                    text-align: justify;
+                    font-size: 40px;
+                    color: #fff;
+                    font-family: "jersey";
+                    margin-bottom: 20px;
+                    line-height: 1.2;
+                }
+                .info {
+                    color: #fff;
+                    @extend %info;
+                    @include rwd($pad_size) {
+                        text-align: left;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+.audio_bg {
+    background-color: #1b1b1b;
+    overflow: hidden;
+    .audio {
+        @extend %main_size;
+        padding-bottom: 150px;
+        padding-top: 90px;
+        @include rwd($pad_size) {
+            padding-bottom: 0;
+            padding-top: 20px;
+            text-align: center;
+        };
+        .atitle {
+            display: inline-block;
+            @extend %info;
+            width: 48%;
+            @include rwd($pad_size) {
+                text-align: center;
+                margin-top: 70px;
+                padding: 0 0 20px;
+                width: 100%;
+            };
+            h3 {
+                font-size: 50px;
+                font-family: "jersey";
+                color: #fff;
+                display: inline-block;
+                opacity: 0.8;
+                line-height: 1;
+                @include rwd($pad_size) {
+                    display: inline;
+                    font-size: 36px;
+                }
+            }
+            .info {
+                font-weight: 300;
+                font-size: 18px;
+                margin-top: 60px;
+                color: #fff;
+                @include rwd($pad_size) {
+                    margin-top: 30px;
+                }
+            }
+        }
+        figure.ab {
+            position: relative;
+            height: image-height("transfer/flawlessmb.png");
+            margin-left: 43%;
+            margin-top: -365px;
+            @include rwd($pad_size) {
+                height: auto;
+                margin: -60px auto 60px;
+            }
+            .mg {
+                height: 100%;
+                position: relative;
+                > img {
+                    max-width: none;
+                    height: 100%;
+                }
+                @include rwd($pad_size) {
+                    display: none;
+                };
+            }
+            .m-mg {
+                display: none;
+                > img {
+                    width: 100%;
+                }
+                @include rwd($pad_size) {
+                    display: block;
+                };
+            }
+            .line {
+                position: absolute;
+                @include rwd($pad_size) {
+                     @include clear_abs;
+                    display: block;
+                    text-align: left;
+                    vertical-align: top;
+                    margin: 20px 0 !important;
+                    > img {
+                        display: none;
+                    }
+                };
+                .tx {
+                    float: left;
+                    padding: 0 5px;
+                    font-size: 17px;
+                    color: #63656a;
+                    position: absolute;
+                    @include rwd($pad_size) {
+                         @include clear_abs;
+                        display: inline-block;
+                        text-align: left;
+                        vertical-align: top;
+                        margin: 0 !important;
+                        float: none !important;
+                        font-size: 21px;
+                        padding: 0 5px 0 45px;
+                        width: 100% !important;
+                    }
+                    span {
+                        color: #a1a1a1;
+                        font-weight: 300;
+                        display: block;
+                        font-size: 18px;
+                        line-height: 1.5;
+                    }
+                    .ltitle {
+                        color: #dbb386;
+                        font-size: 20px;
+                        line-height: 1.5;
+                        font-family: "Roboto Condensed";
+                    }
+                    .typetitle {
+                        padding: 3px 7px;
+                        border: 1px solid #{$color1};
+                        color: #{$color1};
+                        display: inline-block;
+                        margin-bottom: 10px;
+                    }
+                    .cl {
+                        display: none;
+                        @include rwd($pad_size) {
+                            left: 0;
+                            top: -5px;
+                            display: block;
+                            position: absolute;
+                            width: 30px;
+                            height: 30px;
+                            @include border-radius(100%);
+                            background: #e3a763;
+                            color: #fff;
+                            text-align: center;
+                            font-size: 17px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            vertical-align: middle;
+                            font-family: Arial;
+                        }
+                    }
+                }
+                $atop: (350px, 402px, 557px, 448px);
+                $aleft: (-287px, -236px, -285px, -240px);
+                $tleft: (-150px, -200px, -151px, -201px);
+                $ttop: (39px, 88px, 2px, 220px);
+                @for $a from 1 through 4 {
+                    &.p#{$a} {
+                        top: nth($atop, $a);
+                        left: nth($aleft, $a);
+                        .tx {
+                            left: nth($tleft, $a);
+                            top: nth($ttop, $a);
+                            @if $a==1 {
+                                width: 445px;
+                            }
+                            @if $a==2 {
+                                width: 490px;
+                            }
+                            @if $a==3 {
+                                width: 475px;
+                            }
+                            @if $a==4 {
+                                width: 450px;
+                            }
+                            > img {
+                                width: 27%;
+                                @include rwd($pad_size) {
+                                    width: 80%;
+                                    margin: 40px auto 0;
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

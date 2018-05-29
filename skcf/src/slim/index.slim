@@ -1,0 +1,62 @@
+include head
+
+body
+  .index__wrapper
+    .index__logo
+    .section.section__ranch
+      .subject
+        p RANCH
+        a href="#" <span>Enter</span>
+      .image: img src="assets/images/sample_index_ranch.jpg" alt="RANCH"
+    .section.section__resort
+      .subject
+        p RESORT
+        a href="#" <span>Enter</span>
+      .image: img src="assets/images/sample_index_resort.jpg" alt="RESORT"
+    .intro
+      ul
+        li
+          span Tel
+          a href="tel:+88638772666" +886-3-887-2666
+        li
+          span Fax
+          a href="tel:+88638771556" +886-3-887-1556
+        li.address
+          a href="#" No.20, Yongfu St., Fenglin Township, Hualien County 975, Taiwan
+  javascript:
+    $(function(){
+      var wrapperWidth = $('.index__wrapper').outerWidth();
+      var winWidth = $(window).outerWidth();
+      var winHeight = $(window).outerHeight();
+      var introWidth = 220;
+      var padding = 10;
+      
+      if(winWidth > 1023){
+        $('.section').css({
+          "width": (wrapperWidth - introWidth) / 2
+        })
+        $('.index__wrapper').css({
+          "height": winHeight - (padding*2)
+        })
+      }
+      $(window).on('resize', function(){
+        var winWidth = $(window).outerWidth();
+        var winHeight = $(window).outerHeight();
+        var wrapperWidth = $('.index__wrapper').outerWidth();
+        if(wrapperWidth > 1023){
+          $('.index__wrapper').css({
+            "height": winHeight - (padding*2)
+          })
+          $('.section').css({
+            "width": (wrapperWidth - introWidth) / 2
+          })
+        } else {
+          $('.index__wrapper').css({
+            "height": "auto"
+          })
+          $('.section').css({
+            "width": "100%"
+          })
+        }
+      })
+    })

@@ -1,0 +1,114 @@
+.note{
+	.main_content{
+		padding: 20px 15px 45px;
+		@include rwd($desktop) { 
+			padding: 45px 15px;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+		@include rwd($desktop-hd) { 
+			max-width: 1300px;
+		}
+		.main_title{
+			@extend %class_title;
+		}
+
+		.info_div{
+			font-size: 0;
+			text-align: justify;
+			&:after{
+				content:"";
+				display: inline-block;
+				width: 100%;
+			}
+			.a_text{
+				margin-top: 25px;
+				display: inline-block;
+				width: 100%;
+				@include rwd($desktop){
+					&.i2{
+						vertical-align: top;
+						display: inline-block;
+						width: 48%;
+					}
+				}
+				.a_title{
+					text-align: center;
+					position: relative;
+					p{
+						display: inline-block;
+						padding: 0px 10px;
+						position: relative;
+						z-index: 1;
+						font-size: 16px;
+						font-weight: 700;
+						background-color: #fff;
+						@include rwd($desktop){
+							font-size: 20px;
+							padding: 0px 40px;
+						}
+					}
+					&:before{
+						display: block;
+						content:"";
+						position: absolute;
+						width: 100%;
+						top: 50%;
+						margin-top: -1px;
+						border-bottom: 2px solid #000;
+					}
+				}
+				.t_content{
+					text-align: left;			
+					padding: 40px 0;
+					font-size: 16px;
+					line-height: 1.8;
+					@include rwd($desktop-fullhd) {
+						font-size: 16px;
+					}
+					ul{							
+						padding-left: 15px;
+						list-style-type: decimal;
+					}
+					.it{
+						margin-bottom: 35px;
+						.st{
+							font-weight: bold;
+						}
+					}
+				}
+			}
+			.check_btn{
+				cursor: pointer;
+				color:#df6367;
+				position: relative;
+				padding-left: 40px;
+				font-size: 20px;
+				line-height: 30px;
+				display: block;
+				text-align: left;
+				input[type="checkbox"]{
+					position: absolute;
+					opacity: 0;
+				}
+				.box{
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 30px;
+					height: 30px;
+					border: 2px solid #df6367;
+				}
+				input[type="checkbox"]:checked ~ .box{
+					&:after{
+						color:#df6367;
+						content: "\2713";
+						line-height: 23px;
+						font-size: 28px;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}

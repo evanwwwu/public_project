@@ -1,0 +1,19 @@
+/* UI color */
+
+$ui-green-dark: #364327;
+$ui-green-font:#21251c;
+$ui-yellow-dark: #b7985b;
+$ui-yellow: #d19a35;
+$ui-yellow-light: #d1a044;
+$ui-yellow-lighter: #dbaa4d;
+$ui-black-dark: #22251c;
+
+/* globe color */
+
+$background: #e6e2d6;
+$img-border: $ui-yellow-light;
+$img-noteline: $ui-yellow-lighter;
+$bacakground-font:#fcfaf3;
+$border: $ui-yellow;
+$border-light: #e6e2d6;
+$link: $ui-green-dark;

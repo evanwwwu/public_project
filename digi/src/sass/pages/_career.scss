@@ -1,0 +1,240 @@
+ .warpper.career {
+ 	padding-bottom: 30px;
+ 	@include rwd($desktop) {
+ 		padding-bottom: 60px;
+ 	}
+ 	@include rwd($desktop-w) {
+ 		padding-bottom: 100px;
+ 	}
+ 	.none {
+ 		margin-top: 20px;
+ 		text-align: center;
+ 		@include rwd($desktop) {
+ 			margin-top: 80px;
+ 		}
+ 		>img {
+ 			width: (image-width("search-icon.png") / 2);
+ 		}
+ 		p {
+ 			margin-top: 20px;
+ 			font-size: 18px;
+ 			line-height: 26px;
+ 			color: $blue1;
+ 			font-weight: 600;
+ 			@include rwd($desktop) {
+ 				font-size: 30px;
+ 				line-height: 42px;
+ 			}
+ 		}
+ 	}
+ 	.content {
+ 		padding: 20px;
+ 		@include rwd($pad){
+ 			padding: 30px 80px 80px;
+ 		}
+ 		@include rwd($desktop) {
+ 			padding: 40px 120px 80px;
+ 		}
+ 		@include rwd($desktop-w) {
+ 			padding: 40px 0px 80px;
+ 			max-width: 1100px;
+ 			margin: 0 auto;
+ 		}
+ 		.job-list{
+ 			margin-top: 20px;
+ 			.item{
+ 				margin-bottom: 5px;
+ 				.jobtitle{
+ 					cursor: pointer;
+ 					position: relative;
+ 					padding: 10px 15px;
+ 					font-size: 18px;
+ 					line-height: 26px;
+ 					background-color: #f6f6f6;
+ 					color: $blue1;
+ 					@include rwd($desktop-w) {
+ 						font-size: 30px;
+ 						line-height: 42px;
+ 					}
+ 					>p{
+ 						padding-left: 60px;
+ 						font-weight: 600;
+ 					}
+ 					.icon{
+ 						float: left;
+ 						padding: 5px;
+ 						position: relative;
+ 						border: 2px solid $blue1;
+ 						width: 26px;
+ 						height: 26px;
+ 						@include border-radius(50%);
+ 						@include rwd($desktop) {
+ 							margin-top: 9px;
+ 						}
+ 						&:after,&:before{
+ 							content:"";
+ 							position: absolute;
+ 							background-color: $blue1;
+ 							top: 50%;left: 50%;
+ 							@include transform(translate(-50%,-50%));
+ 						}
+ 						&:after{
+ 							width: 60%;
+ 							height: 2px;
+ 						}
+ 						&:before{
+ 							@include transition(all .2s ease-in-out);
+ 							height: 60%;
+ 							width: 2px;
+ 						}
+ 					}
+ 				}
+ 				.detail{
+ 					padding: 15px 20px 30px;
+ 					display: none;
+ 					@include rwd($desktop) {
+ 						font-size: 0;
+ 						padding: 15px 0px 30px;
+ 					}
+ 					@include rwd($desktop) {
+ 						padding: 30px 10px 50px;
+ 					}
+ 					.title{
+ 						font-weight: 600;
+ 						margin-bottom: 10px;
+ 						@include rwd($pad) {
+ 							font-size: 20px;
+ 						}
+ 						@include rwd($desktop) {
+ 							font-size: 24px;
+ 							line-height: 30px;
+ 						}
+ 					}
+ 					.right{
+ 						margin-top: 30px;
+ 					}
+ 					.right,.left{
+ 						font-size: 15px;
+ 						line-height: 22px;
+ 						@include rwd($pad) {
+ 							font-size: 16px;
+ 							line-height: 24px;
+ 						}
+ 						@include rwd($desktop) {
+ 							width: 50%;
+ 							margin: 0;
+ 							display: inline-block;
+ 							vertical-align: top;
+ 							padding: 0px 10px;
+ 						}
+ 						@include rwd($desktop-w) {
+ 							font-size: 18px;
+ 							padding: 0 20px;
+ 						}
+ 					}
+ 					.share_btns{
+ 						width: 100%;
+ 						margin-top: 30px;
+ 						font-size: 15px;
+ 						@include rwd($pad) {
+ 							padding-left: 10px;
+ 						}
+ 						@include rwd($desktop-w) {
+ 							padding-left: 20px;
+ 							margin-top: 50px;
+ 							font-size: 20px;
+ 						}
+ 						.apply,.fb_share{
+ 							display: inline-block;
+ 							margin-right: 10px;
+ 							color: #fff;
+ 							line-height: 38px;
+ 							background-color: $blue1;
+ 							padding: 0px 20px;
+ 							@include rwd($desktop) {
+ 								padding: 0 25px;
+ 								line-height: 50px;
+ 							}
+ 						}
+ 						.fb_share:before{
+ 							position: relative;
+ 							display: inline-block;
+ 							content:"";
+ 							background: image-url("fb-icon.png") center / 100% auto no-repeat;
+ 							width: 7px;
+ 							height: 17px;
+ 							margin-bottom: 5px;
+ 							margin-right: 5px;
+ 							vertical-align: middle;
+ 							@include rwd($desktop-w) {
+
+ 							}
+ 						}
+ 					}
+ 				}
+ 				&.on .jobtitle .icon:before{
+ 					opacity: 0;
+ 				}
+ 			}
+ 		}
+ 	}
+ 	.dropdown {
+ 		position: relative;
+ 		display: inline-block;
+ 		width: 100%;
+ 		background-color: $blue1;
+ 		text-align: center;
+ 		.arr{
+ 			color: #fff;
+ 			display: block;
+ 			content: "keyboard_arrow_right";
+ 			font-size: 24px;
+ 			font-family: 'Material Icons';
+ 			position: absolute;
+ 			top: 50%;
+ 			margin-top: -12px;
+ 			right: 10px;
+ 			pointer-events: none;
+ 			@include transition(all .1s);
+ 			@include rwd($desktop-w){
+ 				font-size: 30px;
+ 				margin-top: -15px;
+ 			}
+ 		}
+ 		select {
+ 			width: 100%;
+ 			@include appearance(none);
+ 			font-size: 18px;
+ 			line-height: 20px;
+ 			text-indent: 0.01px;
+ 			text-overflow: '';
+ 			padding: 6px 10px 6px 10px;
+ 			border: 1px solid $blue1;
+ 			border-radius: 0;
+ 			position: relative;
+ 			background-color: $blue1;
+ 			color: #fff;
+ 			text-align: center;
+ 			text-align-last: center;
+ 			@include rwd($pad) {
+ 				padding: 10px;
+ 			}
+ 			@include rwd($desktop-w) {
+ 				padding: 0px 10px;
+ 				font-size: 20px;
+ 				line-height: 40px;
+ 			}
+ 			&:focus,&.active {
+ 				outline: none;
+ 				border-color: lighten($blue1, 10%);
+ 				option{
+ 					color: #000;
+ 					background-color: lighten($blue1, 90%);
+ 				}
+ 				&+.arr{
+ 					@include transform(rotate(90deg));
+ 				}
+ 			}
+ 		}
+ 	}
+ }

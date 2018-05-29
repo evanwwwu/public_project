@@ -1,0 +1,2 @@
+INFO  - 2015-05-03 18:51:19[IP sorurce: 127.0.0.1] from:/www/franke/admin/order/edit/5 --> 編輯 訂單編號:150417-3 [by evan 權限:1]
+INFO  - 2015-05-03 18:59:15[IP sorurce: 127.0.0.1] from:/www/franke/admin/member/edit/2 --> 編輯 g0928817707@gmail.com 會員 [by evan 權限:1]

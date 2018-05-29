@@ -1,0 +1,277 @@
+@font-face {
+	font-family: 'din_alternate_lightregular';
+	src: url('fonts/din_alternate_light-webfont.eot');
+	src: url('fonts/din_alternate_light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/din_alternate_light-webfont.woff2') format('woff2'), url('fonts/din_alternate_light-webfont.woff') format('woff'), url('fonts/din_alternate_light-webfont.ttf') format('truetype'), url('fonts/din_alternate_light-webfont.svg#din_alternate_lightregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'din_alternate_mediumregular';
+	src: url('fonts/din_alternate_medium_1-webfont.eot');
+	src: url('fonts/din_alternate_medium_1-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/din_alternate_medium_1-webfont.woff2') format('woff2'), url('fonts/din_alternate_medium_1-webfont.woff') format('woff'), url('fonts/din_alternate_medium_1-webfont.ttf') format('truetype'), url('fonts/din_alternate_medium_1-webfont.svg#din_alternate_mediumregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'din_alternateregular';
+	src: url('fonts/din_alternate-webfont.eot');
+	src: url('fonts/din_alternate-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/din_alternate-webfont.woff2') format('woff2'), url('fonts/din_alternate-webfont.woff') format('woff'), url('fonts/din_alternate-webfont.ttf') format('truetype'), url('fonts/din_alternate-webfont.svg#din_alternateregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'din_alternatebold';
+	src: url('fonts/din_alternate_bold-webfont.eot');
+	src: url('fonts/din_alternate_bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/din_alternate_bold-webfont.woff2') format('woff2'), url('fonts/din_alternate_bold-webfont.woff') format('woff'), url('fonts/din_alternate_bold-webfont.ttf') format('truetype'), url('fonts/din_alternate_bold-webfont.svg#din_alternatebold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.ui-tabs .ui-tabs-panel{
+	overflow-y: auto;
+}
+
+.my_template_accordion{
+	width: 1500px;
+}
+
+.sets h2,
+.sets h3,
+.sets h4,
+.sets h5,
+.sets h6 textarea,
+.sets h6,
+.sets .maga_no,
+.sets .contact_form .wrap .title,
+.sets .active_part,
+.sets .main_content .title,
+.sets .main_content span {
+	margin: 0;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;	
+	font-family: 'din_alternatebold', "Apple LiGothic Medium", "LiHei Pro Medium", "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+}
+
+.sets p,
+.sets p textarea{
+	margin: 0;
+	width:100%;
+	color:#fff;
+	font-family: 'din_alternateregular', 'Apple LiGothic Medium', 'LiHei Pro Medium', "微軟正黑體", 'Microsoft JhengHei', Arial, Helvetica, sans-serif;
+}
+.sets {
+	position: relative;
+	overflow: hidden !important;
+	font-size: 16px;
+	line-height: 22px;
+}
+.sets *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.sets .pic_mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../images/bg_dot.png') repeat;
+	z-index: 2;
+}
+.sets h6,.sets h6 textarea{    
+	font-size: 32px;
+	line-height: 38px;
+	color: #fff;
+}
+.sets textarea{
+	background: #000;
+}
+
+.sets .pic {
+	max-height: 920px;
+	overflow: hidden;
+}
+
+.sets .content {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	color: #fff;
+	margin: 0 auto;
+	padding: 0;
+	max-width: none;
+	margin-bottom: 0px;
+
+}
+
+.sets .content .bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 1;
+}
+
+.sets .content .wrap {
+	z-index: 3;
+	max-width: 1750px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+.sets .content h6,.sets .content h6 textarea{
+	margin-bottom: 20px;
+}
+.sets.set03 .content h6 textarea,.sets.set03 .content p textarea{
+	text-align: center;
+}
+.sets .content p,.sets .content p textarea {
+	opacity: 0.9;
+	width: 100%;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.sets img {
+	width: 100%;
+	display: block;
+}
+.sets .warp{
+	max-width: 1750px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+.sets .line {
+	width: 1px;
+	height: 144%;
+	background: #fff;
+	opacity: 0.3;
+	position: absolute;
+	top: -22%;
+	z-index: 3;
+	-webkit-transform: rotateZ(45deg);
+	-moz-transform: rotateZ(45deg);
+	-o-transform: rotateZ(45deg);
+	-ms-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+}
+
+.set01 .pic,
+.set02 .pic {
+	width: 93.5%;
+}
+
+.set01 .pic {
+	float: right;
+}
+
+.set01 .content,
+.set02 .content {
+	width: 53.5%;
+	height: 100%;
+}
+
+.set01 .content {
+	left: -23.5%;
+}
+.set01 .content h6,.set01 .content h6 textarea{
+	width: 120%;
+	margin-bottom: 15px;
+}
+.set02 .content p{
+	width: 120%;
+	margin-left: -20%;
+}
+
+.set02 .content {
+	right: -23.5%;
+	text-align: right;
+}
+
+.set01 .content .bg,
+.set02 .content .bg {
+	-webkit-transform: skewX(-45deg);
+	-moz-transform: skewX(-45deg);
+	-o-transform: skewX(-45deg);
+	-ms-transform: skewX(-45deg);
+	transform: skewX(-45deg);
+}
+
+.set01 .content .bg {
+	border-right: 1px solid #fff;
+}
+
+.set02 .content .bg {
+	border-left: 1px solid #fff;
+}
+
+.set01 .content > .wrap,
+.set02 .content > .wrap {
+	width: 56.2%;
+	position: absolute;
+}
+
+.set01 .content > .wrap {
+	top: 7.6%;   
+	left: 43.8%;
+}
+
+.set02 .content > .wrap {
+	bottom: 9.6%;
+	right: 51%;
+}
+
+.set01 .line {
+	left: 23.3%;
+}
+
+.set02 .line {
+	right: 23.3%;
+}
+
+.set01 .line.last {
+	left: auto;
+	right: -16.8%;
+	opacity: 1;
+}
+
+.set02 .line.last {
+	right: auto;
+	left: -16.8%;
+	opacity: 1;
+}
+
+.set03 .content {
+	width: 47%;
+	left: 4.2%;
+	top: 0;
+	text-align: center;
+}
+.set03 .content  h6{
+	width: 140%;
+	margin-left: -20%;
+}
+
+.set03 .content .bg {
+	top: -44%;
+	border: 1px solid #fff;
+	-webkit-transform: rotateZ(45deg);
+	-moz-transform: rotateZ(45deg);
+	-o-transform: rotateZ(45deg);
+	-ms-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+}
+
+.set03 .content > .wrap {
+	width: 68.5%;
+	padding-top: 5.5%;
+	position: relative;
+}
+
+.set03 .line {
+	left: 29%;
+}

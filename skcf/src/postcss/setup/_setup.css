@@ -1,0 +1,82 @@
+@import "normalize";
+@import "variable";
+@import "color";
+@import "font-face";
+@import "rwd";
+$menu_height:55px;
+$main-border-size:10px;
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    /*height: 100%;*/
+}
+
+body {
+    position: relative;
+    background-color: $ui-green-dark;
+    padding: $main-border-size;
+    font-family: 'Crimson Text', "微軟正黑體", "Microsoft JhengHei",serif;
+    &:before,
+    &:after {
+        content: " ";
+        z-index: 999;
+        width: 100%;
+        height: $main-border-size;
+        position: fixed;
+        left: 0;
+        background-color: $ui-green-dark;
+    }
+    &:before {
+        top: 0;
+    }
+    &:after {
+        bottom: 0;
+    }
+    @media (--desktop-w) {
+        padding: 10px 20px;
+    }
+}
+
+a {
+    outline: 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main-wrapper {
+    background-color: $background;
+    padding-top: $menu_height;
+    overflow: hidden;
+}
+
+.image {
+    position: relative;
+    z-index: 1;
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: scale(0.94);
+        border: 1px solid $img-border;
+        top: 0;
+        left: 0;
+    }
+    img {
+        display: block;
+        max-width: inherit;
+        width: 100%;
+    }
+}

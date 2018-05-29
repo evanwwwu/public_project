@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic);
+@import url(//fonts.googleapis.com/css?family=Oswald:300,400,700&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,latin-ext);
+//
+$model:"tuf";
+$color1:#63656a;
+$color2:#303031;
+$subcolor:#535353;
+$infocolor:#1b1b1b;
+$pad_size:768px;
+$phone_size:480px;
+@import "compass/css3";
+@import "ceaser-easing";
+@import "mixin";
+@import "font";
+@import "jquery-ui";
+@import "animation";
+// -----
+html #overview #special-sectionOverview,
+html #overview #sectionOverview {
+    width: 100% !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    float: none !important;
+}
+
+#special-sectionOverview #{"#"+$model+"-warp"} {
+    @import "reset";
+    @import "mainwarp";
+    @import "top";
+    @import "board";
+    @import "tough";
+    @import "ultimate";
+    @import "video";
+    @import "durability";
+    @import "transfer";
+    @import "cpu";
+    #b2top {
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+        border: 2px solid #cda981;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+#overview-aside-nav {
+    @include rwd($pad_size) {
+        display: none;
+    }
+    ul li {
+        &.on div,
+        &:hover div {
+            background: #cda981;
+        }
+        b {
+            color: #cda981;
+        }
+    }
+}

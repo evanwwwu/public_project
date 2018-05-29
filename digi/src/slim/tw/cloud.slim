@@ -1,0 +1,59 @@
+include lang_tw
+-$lang = "tw";
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    #warp
+      include header
+      .warpper.cloud
+        .banner
+          img src="../assets/images/cloud-bg.jpg" alt=""/
+          .title
+            h2 = $c_title
+            p = $c_subtitle
+        .text
+          p = $c_info
+        .feature
+          .mainsize
+            .key = $c_key          
+            .items
+              .item
+                img src="../assets/images/c01.png" alt=""/
+                .title = $c_item1_title
+                .info = $c_item1_info
+              .item
+                img src="../assets/images/c02.png" alt=""/
+                .title = $c_item2_title
+                .info = $c_item2_info
+              .item
+                img src="../assets/images/c03.png" alt=""/
+                .title = $c_item3_title
+                .info = $c_item3_info
+        .main-div
+          .items
+            .item
+              .pic
+                img src="../assets/images/c-item1.jpg" alt=""/
+              .content
+                h5.title = $c_title1
+                p.info = $c_info1
+                ul
+                  li = $c_info1_li1
+                  li = $c_info1_li2
+                  li = $c_info1_li3
+                  li = $c_info1_li4
+            .item
+              .pic
+                img src="../assets/images/c-item2.jpg" alt=""/
+              .content
+                h5.title = $c_title2
+                p.info = $c_info2
+                ul
+                  li = $c_info2_li1
+                  li = $c_info2_li2
+                  li = $c_info2_li3
+                  li = $c_info2_li4
+    include footer

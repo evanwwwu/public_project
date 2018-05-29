@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>隱巷設計</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta id="viewport" name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=1" />
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.ico"> -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <link href="assets/css/fotorama.css" rel="stylesheet">
+    <script src="assets/js/fotorama.js"></script>
+    <script src="assets/js/spin.min.js"></script>
+    <script src="assets/js/jquery.scrollAnimate.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/jquery.masonry.min.js"></script>
+    <script src="assets/js/modernizr-transitions.js"></script>
+    <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
+    <!--CDN links for the latest TweenLite, CSSPlugin, and EasePack-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/plugins/ScrollToPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/utils/Draggable.min.js"></script>-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css">  
+    <script src="assets/js/site.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="index_h">
+            <div class="logo c" onclick="location='index.html'">
+                <div class="x"><img src="assets/images/logo_x.png" /></div>
+                <div class="y"><img src="assets/images/logo_y.png" /></div>
+                <div class="i"><img src="assets/images/logo_i.png" /></div>
+            </div>
+            <nav class="c">
+                <ul>
+                    <li onclick="location='about.html'"><h4>關於XYI</h4></li>
+                    <li onclick="location='service.html'"><h4>服務項目</h4></li>
+                    <li onclick="location='work.html'"><h4>作品展示</h4></li>
+                    <li onclick="location='press.html'"><h4>媒體報導</h4></li>
+                    <li onclick="location='awards.html'"><h4>得獎紀錄</h4></li>
+                    <li onclick="location='members.html'"><h4>團隊成員</h4></li>
+                    <li onclick="location='contact.html'"><h4>連絡我們</h4></li>
+                    <!-- <li class="languages">
+                        <select name="languages">
+                            <option value="traditional" selected="selected">繁體中文</option>
+                            <option value="simple">简体中文</option>
+                            <option value="english">ENGLISH</option>
+                        </select>
+                    </li> -->
+                </ul>
+                
+            </nav>
+            <div class="bar m">
+                <div class="m_logo"><img src="assets/images/m_logo.png" /></div>
+                <div class="nav_btn"><img src="assets/images/m_menu.png" /></div>
+            </div>
+            <nav class="m">
+                <div id="closeMask"></div>
+                <div class="nav_show">
+                    <div class="menu_btn" onclick="location='about.html'">
+                        <h4><span>關於XYI</span></h4>                       
+                    </div>
+                    <div class="menu_btn" onclick="location='service.html'">
+                        <h4><span>服務項目</span></h4>
+                    </div>
+                    <div class="menu_btn" onclick="location='work.html'">
+                        <h4><span>作品展示</span></h4>
+                    </div>
+                    <div class="menu_btn" onclick="location='press.html'">
+                        <h4><span>媒體報導</span></h4>
+                    </div>
+                    <div class="menu_btn" onclick="location='awards.html'">
+                        <h4><span>得獎紀錄</span></h4>
+                    </div>
+                    <div class="menu_btn" onclick="location='members.html'">
+                        <h4><span>團隊成員</span></h4>
+                    </div>
+                    <div class="menu_btn" onclick="location='contact.html'">
+                        <h4><span>連絡我們</span></h4>
+                    </div>
+                    <div class="line"></div>
+                    <div class="menu_btn active">
+                        <h4><span>繁體中文</span></h4>
+                    </div>
+                    <div class="menu_btn">
+                        <h4><span>简体中文</span></h4>
+                    </div>
+                    <div class="menu_btn">
+                        <h4><span>ENGLISH</span></h4>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <article class="index">
+                <div id="container">
+                <ul class="clearfix">
+                    <li></li>
+                    <li class="item w2 i_w">
+                        <a href=""><img src="assets/images/index_2.jpg" /></a>
+                        <div class="hover">
+                            <h2>作品展示</h2>
+                            <h3>Chiu’s Residence of Taipei</h3>
+                        </div>
+                    </li>
+                    <li class="item w1 i_p">
+                        <a href=""><img src="assets/images/index_4.jpg" /></a>
+                        <div class="hover">
+                            <h2>媒體報導</h2>
+                            <h3>現代裝飾2013年8月刊第292期</h3>
+                        </div>
+                    </li>
+                    <li class="item w1 i_w">
+                        <a href=""><img src="assets/images/index_3.jpg" /></a>
+                        <div class="hover">
+                            <h2>作品展示</h2>
+                            <h3>Chiu’s Residence of Taipei</h3>
+                        </div>
+                    </li>
+                    <li class="item w1 i_p">
+                        <a href=""><img src="assets/images/index_11.jpg" /></a>
+                        <div class="hover">
+                            <h2>媒體報導</h2>
+                            <h3>現代裝飾2013年8月刊第292期</h3>
+                        </div>
+                    </li>
+                    <li class="item w2 i_a">
+                        <a href=""><img src="assets/images/index_5.jpg" /></a>
+                        <div class="hover">
+                            <h2>得獎紀錄</h2>
+                            <h3>Sale house of Xi Shan Yu Jing</h3>
+                        </div>
+                    </li>
+                    <li class="item w2 i_a">
+                        <a href=""><img src="assets/images/index_6.jpg" /></a>
+                        <div class="hover">
+                            <h2>得獎紀錄</h2>
+                            <h3>Sale house of Xi Shan Yu Jing</h3>
+                        </div>
+                    </li>
+                    <li class="item w1 c">
+                        <img src="assets/images/index_7.jpg" />
+                    </li>
+                    <li class="item w1 i_p">
+                        <a href=""><img src="assets/images/index_8.jpg" /></a>
+                        <div class="hover">
+                            <h2>媒體報導</h2>
+                            <h3>現代裝飾2013年8月刊第292期</h3>
+                        </div>
+                    </li>
+                    <li class="item w2 i_a">
+                        <a href=""><img src="assets/images/index_9.jpg" /></a>
+                        <div class="hover">
+                            <h2>得獎紀錄</h2>
+                            <h3>Sale house of Xi Shan Yu Jing</h3>
+                        </div>
+                    </li>
+                    <li class="item w1 i_w">
+                        <a href=""><img src="assets/images/index_10.jpg" /></a>
+                        <div class="hover">
+                            <h2>作品展示</h2>
+                            <h3>Chiu’s Residence of Taipei</h3>
+                        </div>
+                    </li>
+                    <li class="item w1 i_w">
+                        <a href=""><img src="assets/images/index_1.jpg" /></a>
+                        <div class="hover">
+                            <h2>作品展示</h2>
+                            <h3>Chiu’s Residence of Taipei</h3>
+                        </div>
+                    </li>
+                    <li class="item w1 c">
+                        <img src="assets/images/index_7.jpg" />
+                    </li>
+                    <li class="item w2">
+                        <div class="footer">
+                            <div>
+                                <div><img src="assets/images/footer_logo_i.png" /></div>
+                                <label>Languages:<br />
+                                    <select name="languages">
+                                        <option value="traditional" selected="selected">繁體中文</option>
+                                        <option value="simple">简体中文</option>
+                                        <option value="english">ENGLISH</option>
+                                    </select>
+                                </label>
+                                <a href="#">
+                                    <img src="assets/images/footer_f.png" />
+                                    <img src="assets/images/footer_f_h.png" />
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/footer_i.png" />
+                                    <img src="assets/images/footer_i_h.png" />
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/footer_y.png" />
+                                    <img src="assets/images/footer_y_h.png" />
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/footer_w.png" />
+                                    <img src="assets/images/footer_w_h.png" />
+                                </a>
+                            </div>
+                            <p>版權所有 隱巷設計顧問有限公司 © 2013 XYI Design All Rights Reserved.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </article>
+        </section>
+        <footer>
+            <div class="m hire"><img src="assets/images/m_hire.png" /></div>
+            <div class="m">
+                <div>
+                    <a href="#"><img src="assets/images/m_footer_f.png" /></a>
+                    <a href="#"><img src="assets/images/m_footer_i.png" /></a>
+                    <a href="#"><img src="assets/images/m_footer_y.png" /></a>
+                    <a href="#"><img src="assets/images/m_footer_w.png" /></a>
+                </div>
+                <div><img src="assets/images/m_footer_logo.png" /></div>
+                <p>版權所有 隱巷設計顧問有限公司<br />© 2013 XYI Design All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>

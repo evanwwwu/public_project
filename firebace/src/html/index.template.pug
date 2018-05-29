@@ -1,0 +1,31 @@
+- var devMode = self.htmlWebpackPlugin.options.data.DEV_MODE
+doctype
+html
+    head
+        meta(charset='UTF-8')
+        title inline-interview
+        link(rel="shortcut icon" type="image/ico" href="")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no")
+        meta(name="description" content="")
+        meta(name="application-name" content="")
+        meta(itemprop="name" content="")
+        meta(itemprop="description" content="")
+        meta(itemprop="image" content="")
+        meta(property="og:type" content="article")
+        meta(property = "og:description" content= "")
+    body
+        #app
+        //- script(src='//cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js')
+        //- IE11 
+        script(src='//cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.auto.min.js')
+        script(src='https://www.gstatic.com/firebasejs/4.6.0/firebase.js')
+        script.
+            var config = {
+                apiKey: "AIzaSyACi8DCvEqjRsM5LR39Cg2jePbsWdEkbh8",
+                authDomain: "inline-interview.firebaseapp.com",
+                databaseURL: "https://inline-interview.firebaseio.com",
+                projectId: "inline-interview",
+                storageBucket: "inline-interview.appspot.com",
+                messagingSenderId: "82753041444"
+            };
+            firebase.initializeApp(config);

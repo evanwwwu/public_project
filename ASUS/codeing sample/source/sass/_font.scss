@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@import url("//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+$font_arr:("ROGFont","xolonB","xolon");
+$font_src:("ROGFontsv1.5-Regular","Xolonium-Bold","Xolonium-Regular");
+$extension:(eot,woff,ttf,svg);
+
+@mixin font-face($name,$file,$extension,$weight:false,$style:false) {
+    @font-face {
+        font-family:quote(#{$name});
+        $files:null;
+        @for $x from 1 through length($extension) {
+            $var:nth($extension,$x);
+            $eot:quote("#{$file}.#{$var}");
+            @if $var == eot {
+                src: font-url($eot);
+                $files:#{$files} font-url(unquote("#{$eot}?#iefix")) unquote("format('embedded-opentype')");
+            }
+            @else{
+                @if $var == ttf{
+                    $files:#{$files} font-url(#{$eot}) format("truetype");
+                }
+                @else{
+                    $files:#{$files} font-url(#{$eot}) format("#{$var}");
+                }
+            }
+            @if $x != length($extension){
+                $files:#{$files}unquote(",");
+            }
+        }
+        src:$files;
+        @if $weight {
+            font-weight: $weight;
+        }
+        @if $style{
+            font-style: $style;
+        }
+    }
+}
+
+@for $i from 1 through length($font_arr) {
+    $name:nth($font_arr, $i);
+    $src:nth($font_src, $i);
+    @include font-face($name,$src,$extension);
+    %f_family_#{$i}{
+        font-family: quote(#{$name}),"微軟正黑體","Microsoft JhengHei" ;
+    }
+}

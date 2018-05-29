@@ -1,0 +1,18 @@
+@import "../setup/setup"
+.navbar
+  padding: $pd-top $pd-ledt
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  +zindex("header")
+  +rwd($pad)
+    padding: 30px 20px
+  .left-logo
+    width: 140px
+    display: inline-block
+    +rwd($pad)
+      width: 120px
+  .right-link
+    margin-top: 10px
+    float: right

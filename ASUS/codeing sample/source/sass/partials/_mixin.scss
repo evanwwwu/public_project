@@ -1,0 +1,112 @@
+
+// RWD
+@mixin rwd($width) {
+   @media screen and (max-width: $width){
+    @content;
+}
+}
+
+%main_size {
+    max-width: 1366px;
+    @include rwd("1024px") {
+        max-width: 1024px;
+    }
+}
+
+%maintitle {
+    color: #{$color1};
+    font-size: 80px;
+    font-family: "ROGFont";
+    line-height: 75px;
+    @include rwd($pad_size) {
+        font-size: 60px;
+        line-height: 50px;
+    }
+    @include rwd($phone_size) {
+        font-size: 39px;
+        line-height: 36px;
+    }
+    > span {
+        font-family: "Roboto";
+        font-weight: bold;
+    }
+}
+%bigtitle {
+    font-size: 30px;
+    font-family: "Roboto";
+    color: #{$subcolor};
+    line-height: 40px;
+    font-weight: 400;
+    @include rwd($phone_size) {        
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+%subtitle {
+    font-family: "Roboto";
+    color: #{$subcolor};
+    font-size: 22px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 30px;
+    font-style: italic;
+    @include rwd($phone_size) {     
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+%info {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #{$infocolor};
+}
+
+//before middle
+@mixin middle_before() {
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+@mixin clear_float {
+    &::after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+        width: 0;
+    }
+}
+@mixin justify_after {
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+}
+@mixin info($width:auto) {
+    width: 100%;
+    max-width: $width;
+    padding: 0px 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    @extend %info;
+    @include rwd($pad_size) {
+        padding: 0;
+    }
+}
+
+@mixin clear_abs {
+    position: relative !important;
+    left: initial !important;
+    right: initial !important;
+    top: initial !important;
+    bottom: initial !important;
+}

@@ -1,0 +1,72 @@
+footer{
+	display: none;
+	@include rwd($desktop){
+		display: block;
+		width: 100%;
+		background-color: #313131;
+		padding: 30px 0px;
+		text-align: center;
+		&>div{
+			display: inline-block;
+			vertical-align: top;
+			text-align: left;
+			.stitle{
+				font-family: "Oswald";
+				font-weight:300;	
+				font-size: 16px;
+				margin-bottom: 25px;
+				color:#ffa930;
+			}
+			.gp{
+				ul{
+					display: inline-block;
+					vertical-align: top;
+					font-size: 14px;
+					line-height: 1;
+					color:#fff;
+				}
+			}
+		}
+		.sitemap{
+			ul{
+				margin-right: 80px;
+			}
+			li:not(:first-child){
+				padding-top: 20px;
+			}
+		}
+		.contact{
+			margin-right: 60px;			
+			li:not(:first-child){
+				padding-top: 10px;
+			}
+		}
+		.follow{
+			
+			li:not(:first-child){
+				padding-top: 10px;			
+			}
+		}
+	}
+}
+#up_btn{
+	// display: none;
+	position: fixed;
+	padding: 10px;
+	right: 10px;
+	bottom: 10px;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border: 1px #000 solid;
+	cursor: pointer;
+	@include transition( all 0.5s ease-in-out);
+	@include rwd($pad) {
+		padding: 15px;
+		right: 30px;
+		bottom: 50px;
+		width: 65px;
+		height: 65px;
+	}
+	@include border-radius(50%);
+}

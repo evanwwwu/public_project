@@ -1,0 +1,26 @@
+INFO - 2016-10-21 14:42:14 --> Config Class Initialized
+INFO - 2016-10-21 14:42:14 --> Hooks Class Initialized
+DEBUG - 2016-10-21 14:42:14 --> UTF-8 Support Enabled
+INFO - 2016-10-21 14:42:14 --> Utf8 Class Initialized
+INFO - 2016-10-21 14:42:14 --> URI Class Initialized
+INFO - 2016-10-21 14:42:14 --> Router Class Initialized
+INFO - 2016-10-21 14:42:14 --> Output Class Initialized
+INFO - 2016-10-21 14:42:14 --> Security Class Initialized
+DEBUG - 2016-10-21 14:42:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-10-21 14:42:14 --> Input Class Initialized
+INFO - 2016-10-21 14:42:14 --> Language Class Initialized
+INFO - 2016-10-21 14:42:15 --> Loader Class Initialized
+INFO - 2016-10-21 14:42:15 --> Helper loaded: url_helper
+INFO - 2016-10-21 14:42:15 --> Helper loaded: language_helper
+INFO - 2016-10-21 14:42:15 --> Helper loaded: my_file_helper
+INFO - 2016-10-21 14:42:15 --> Helper loaded: form_helper
+INFO - 2016-10-21 14:42:15 --> Database Driver Class Initialized
+INFO - 2016-10-21 14:42:16 --> Image Lib Class Initialized
+INFO - 2016-10-21 14:42:16 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-10-21 14:42:16 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-10-21 14:42:16 --> Cart Class Initialized
+INFO - 2016-10-21 14:42:16 --> Model Class Initialized
+INFO - 2016-10-21 14:42:16 --> Model Class Initialized
+INFO - 2016-10-21 14:42:16 --> Model Class Initialized
+INFO - 2016-10-21 14:42:16 --> Database Driver Class Initialized
+ERROR - 2016-10-21 14:42:16 --> Severity: Error --> Call to undefined function mssql_connect() D:\www\nakedmarket\web_git\php\system\database\drivers\mssql\mssql_driver.php 113

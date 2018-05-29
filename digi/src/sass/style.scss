@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url('//fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:300,400,500,700');
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "compass/css3";
+@import "ceaser-easing";
+$zindex_arr:("owl","newsbtn","menu");
+$menu_height:50px;
+$menu_height2:80px;
+
+@import "setup/setup";
+@import "partials/mixin";
+
+@import "global";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/carousel";
+@import "pages/index";
+@import "pages/news";
+@import "pages/industry";
+@import "pages/customers";
+@import "pages/faq";
+@import "pages/appguard";
+@import "pages/about";
+@import "pages/idc";
+@import "pages/cloud";
+@import "pages/security";
+@import "pages/career";
+@import "pages/terms"; 
+@import "pages/contact";

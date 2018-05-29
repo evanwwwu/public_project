@@ -1,0 +1,58 @@
+$contact_width:900px;
+$map_height:250px;
+// body.contact{
+// 	@include middle_before();
+// }
+section.contact{
+	max-width:$contact_width;
+	margin:0 auto;
+	position: relative;
+	width: 50%;
+	height: 100%;
+	@include rwd($phone_size){
+		width: 80%;
+	};
+	article.info{
+		position:relative;
+		padding:50px 90px;
+		background-color: #FFBE2A;
+		font-size: 0px;
+		@include rwd($s_phone_size){
+			padding:25px 40px;
+		};
+		.en,.tw{
+			width: 50%;	
+			display: inline-block;
+			vertical-align: top;
+			@include rwd("1200px"){
+				width: 100%;
+				&.hide{
+					display: none;
+				}
+			}
+		}
+		.danzo{
+			@extend .f_family_8;
+			font-size: 16px;
+			color:#fff;
+			line-height: 2.5;
+		}
+		.bottom{}
+		.address{
+			min-height: 60px;
+			margin-bottom: 25px;
+			display: inline-block;
+		}
+		.address,.mail,.phone{
+			@extend .f_family_11;
+			font-size: 12px;
+			line-height: 1.5;
+		}
+	}
+
+	article#map{
+		width: 100%;
+		height: $map_height;
+		margin-top: 15px;
+	}
+}

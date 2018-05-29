@@ -1,0 +1,19 @@
+INFO  - 2015-04-12 00:06:28[IP sorurce: 127.0.0.1] from:/www/franke/member --> 登入畫面
+INFO  - 2015-04-12 00:26:00[IP sorurce: 127.0.0.1] from:/www/franke/member --> 登入畫面
+INFO  - 2015-04-12 00:31:22[IP sorurce: 127.0.0.1] from:/www/franke/member --> 登入畫面
+INFO  - 2015-04-12 00:31:45[IP sorurce: 127.0.0.1] from:/www/franke/member/login --> : 登入成功! [by g0928817707@gmail.com]
+INFO  - 2015-04-12 00:44:03[IP sorurce: 127.0.0.1] from:/www/franke/member --> 登入畫面 [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:12:46[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> 註冊表單送出 [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:12:46[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> mail:  修改會員資料 內容:Array [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:12:47[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> 註冊表單送出 [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:12:47[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> : 此電子信箱已是會員了 [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:13:12[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> 註冊表單送出 [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:13:40[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> 註冊表單送出 [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:13:41[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> mail:  註冊成功! 內容:Array [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:14:49[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> 註冊表單送出 [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:14:49[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> mail:  修改會員資料 內容:{"mail":"","pass1":"pete8092","pass2":"pete8092","username":"321321","phone":"23132312","identity":"\u6d88\u8cbb\u8005"} [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:20:30[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> 註冊表單送出 [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:20:30[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> mail:  修改會員資料 內容:{"mail":"","pass1":"pete8092","pass2":"pete8092","username":"321321xxxx","phone":"23132312","identity":"\u6d88\u8cbb\u8005"} [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:35:45[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> 註冊表單送出 [by g0928817707@gmail.com]
+INFO  - 2015-04-12 01:35:45[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member/2 --> mail: g0928817707@gmail.com 修改會員資料 內容:{"mail":"g0928817707@gmail.com","pass1":"1111","pass2":"1111","username":"321321","phone":"23132312xxx","identity":"\u6d88\u8cbb\u8005"} [by g0928817707@gmail.com]
+INFO  - 2015-04-12 05:30:17[IP sorurce: 127.0.0.1] from:/www/franke/member/logout --> mail:  會員登出!

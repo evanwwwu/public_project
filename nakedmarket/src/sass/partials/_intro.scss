@@ -1,0 +1,207 @@
+#intro{
+	display: none;
+}
+#loading_part{
+	@include zindex("loading");
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	left: 0;
+	top: 0;	
+	background-color: #fff;
+	@include rwd($desktop-w) {
+		padding: 20px;
+	}
+	@include rwd($desktop-hd) {
+		padding: 40px;
+	}
+	.main{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		background-color: #fff;
+		border: 5px #000 solid;
+		@include rwd($desktop) {
+			border: 10px #000 solid;
+		}
+		&:after{
+			content:"";
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		.container{
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			margin-bottom: 40px;
+		}
+		.prec{
+			bottom: 30px;
+			position: absolute;
+			font-size: 18px;
+			color: #fff;
+			left: 50%;
+			@include transform(translateX(-50%));
+		}
+
+		.circle{
+			position: relative;
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			border-radius: 100%;
+			background: url(../images/loading.png) center / 98% no-repeat;
+		}
+		.active-border{
+			position: absolute;
+			text-align: center;
+			width: 90%;
+			height: 90%;
+			left: 5%;
+			top: 5%;
+			border-radius: 100%;
+			background-color:#fff;
+			background-image:
+			linear-gradient(90deg, rgba(0,0,0,0) 50%,#000 50%),
+			linear-gradient(90deg, #000 50%,rgba(0,0,0,0) 50%);
+		}
+	}
+}
+@include rwd($desktop) {
+	.page_index{
+		overflow: hidden;
+		#intro{
+			display: block;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			padding: 10px;
+			left: 0;
+			top: 0;
+			background-color: #fff;
+			@include transition(transform .3s ease-in-out,top 1s cubic-bezier(0.220, 0.595, 0.365, 0.955) .3s);
+			@include zindex("intro");
+			@include rwd($desktop-w) {
+				padding: 20px;
+			}
+			@include rwd($desktop-hd) {
+				padding: 40px;
+			}
+			.main{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background: image-url("main_bg.jpg") center / cover no-repeat;
+				text-align: center;
+				border: 10px #000 solid;
+				.logo{
+					position: absolute;
+					bottom: 20px;
+					left: 50%;
+					@include transform(translateX(-50%));
+					width: 80%;
+				}
+				&:after{
+					content:"";
+					display: inline-block;
+					height: 100%;
+					vertical-align: middle;
+				}
+			}
+			.scroll_icon{
+				display: inline-block;
+				vertical-align: middle;
+				margin-bottom: 40px;
+				.icon{
+					position: relative;
+					display: inline-block;
+					width: 60px;
+					height: 60px;
+					background-color: #fff;
+					border: 3px #000 solid;
+					overflow: hidden;
+					@include border-radius(50%);
+					@include rwd($desktop-hd) {
+						width: 80px;
+						height: 80px;
+					}
+					.arr{
+						width: 100%;
+						position: absolute;
+						text-align: center;
+						margin-top: 8px;
+						@include animation(arr_ain 3s infinite 1s);
+						span{
+							@include border-radius(5px);
+							display: inline-block;
+							background-color: #000;
+							width: 3px;
+							height: 25px;
+							@include rwd($desktop-hd) {
+								height: 35px;
+							}
+						}
+						&:after,&:before{
+							content:"";
+							position: absolute;
+							background-color: #000;
+							height: 2px;
+							width: 15px;
+							bottom: 0;
+							@include border-radius(5px);
+							@include rwd($desktop-hd) {
+								width: 20px;								
+							}
+						}
+						&:before{
+							left: 50%;
+							margin-left: -1px;
+							@include transform-origin(0% 0%,false);
+							@include transform(rotate(-45deg));
+						}
+						&:after{
+							right: 50%;
+							margin-right: -1px;
+							@include transform-origin(100% 0%,false);
+							@include transform(rotate(45deg));
+						}
+					}
+				}
+				span{
+					display: block;
+					color:#000;
+					font-size: 14px;
+					font-weight: bold;
+					margin-top: 10px;
+				}
+			}
+		}
+		.warp{
+			position: fixed;
+			top: 100%;
+			.ec_div,.mobile_logo,#up_btn{
+				position: absolute;
+			}
+		}
+		header{
+			top: 100%;
+		}
+		&.remove_intro{
+			#intro{
+				@include transform(scale(.9));
+				top: -100%;
+			}
+			.warp{
+				@include transition(top 1s cubic-bezier(0.220, 0.595, 0.365, 0.955) .3s);
+				top: 0;
+			}
+			header{
+				@include transition(top 1s cubic-bezier(0.220, 0.595, 0.365, 0.955) .3s);
+				top: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8"
+
+@import "setup/setup"
+@import "setup/normalize"
+@import "setup/font"
+@import "setup/animation"
+@import "global"
+
+@import "partials/footer"
+
+#app
+  position: fixed
+  width: 100%
+  height: 100%
+  overflow-x: hidden
+.container
+  overflow: auto
+
+.index-page.pageOpen
+  position: fixed
+
+
+.fade-enter-active, .fade-leave-active 
+  transition: opacity .5s
+
+.fade-enter, .fade-leave-to
+  opacity: 0
+
+.topBtn
+  position: absolute
+  right: 20px
+  bottom: 20px

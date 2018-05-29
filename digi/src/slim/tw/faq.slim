@@ -1,0 +1,102 @@
+include lang_tw
+-$lang = "tw";
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    #warp
+      include header
+      .warpper.faq
+        .banner
+          img src="../assets/images/faq-bg.jpg" alt=""/
+          h2.title = $f_title
+        .faq-list
+          ul
+            li
+              .q 
+                i.icon
+                p = $f_item_q1
+              .a 
+                p = $f_item_a1
+            li
+              .q 
+                i.icon
+                p = $f_item_q2
+              .a 
+                p A. 資訊提供者(ICP)，如Web hosting、電子出版、線上資料庫等。<br>B. 電子交易之提供者，如電子商務(EC)、EDI等。
+            li
+              .q 
+                i.icon
+                p = $f_item_q3
+              .a 
+                p A. 提供標準電信環境，包括水電、空調、UPS、19吋密閉式標準機箱、安全門禁、24小時監視錄影、消防設備...等。<br>B. 依用戶實際需求提供Public IP，不另收費。<br>C. 提供用戶網路流量監測。<br>D. 簡易維護(電源重置reset)。<br>E. DNS代管。
+            li
+              .q 
+                i.icon
+                p = $f_item_q4
+              .a 
+                p = $f_item_a4
+            li
+              .q 
+                i.icon
+                p = $f_item_q5
+              .a 
+                p A. 提供標準電信環境，包括水電、空調、UPS、19吋密閉式標準機箱、安全門禁、24小時監視錄影、消防設備...等。<br>B. 簡易維護(電源重置reset)。
+            li
+              .q 
+                i.icon
+                p = $f_item_q6
+              .a 
+                p = $f_item_a6
+            li
+              .q 
+                i.icon
+                p = $f_item_q7
+              .a 
+                p = $f_item_a7
+            li
+              .q 
+                i.icon
+                p = $f_item_q8
+              .a 
+                p = $f_item_a8
+            li
+              .q 
+                i.icon
+                p = $f_item_q9
+              .a 
+                p = $f_item_a9
+            li
+              .q 
+                i.icon
+                p = $f_item_q10
+              .a 
+                p = $f_item_a10
+            li
+              .q 
+                i.icon
+                p = $f_item_q11
+              .a 
+                p = $f_item_a11
+            li
+              .q 
+                i.icon
+                p = $f_item_q12
+              .a 
+                p = $f_item_a12
+            li
+              .q 
+                i.icon
+                p = $f_item_q13
+              .a 
+                p = $f_item_a13
+            li
+              .q 
+                i.icon
+                p = $f_item_q14
+              .a 
+                p 經濟性<br>採用Co-Location可以節省固網專線電路費用、專屬機房建設費用、資訊網路維護費用。<br><br>效率性<br>首次裝機建設時間較短，可以迅速達到Time to Market之目的。平時透過ISP的Ethernet網路與Internet骨幹連接，減少路由器之Hop count，網路傳輸延遲較小，效能較高。<br><br>可靠性<br>平時透過ISP的Ethernet網路與Internet骨幹連接，Ethernet網路障礙發生機率較固網專線低，如果ISP提供的Ethernet網路具有備援(Redundancy)的話，那麼網路可靠度又更高。<br><br>擴充性<br>因為透過ISP的Ethernet網路與Internet骨幹連接，網路頻寬可以到達100Mbps以上，未來視ISP是否提供Gigabit Ethernet連線，頻寬更可達1,000Mbps。<br><br>管理性<br>透過ISP的專業網路管理機制，可以確保最佳之網路的可使用率(availability)。
+
+    include footer

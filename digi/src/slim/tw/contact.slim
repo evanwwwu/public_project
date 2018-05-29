@@ -1,0 +1,34 @@
+include lang_tw
+-$lang = "tw";
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    #warp
+      include header
+      .warpper.contact
+        .banner-map
+          <iframe src="https://www.google.com/maps/embed/v1/place?q=114%E5%8F%B0%E5%8C%97%E5%B8%82%E5%85%A7%E6%B9%96%E5%8D%80%E7%91%9E%E6%B9%96%E8%A1%97111%E8%99%9F&key=AIzaSyB_LmrRsQOpdyzdx1ryJAWtbAU479FiC8Y&language=zh-TW" frameborder="0" style="border:0" allowfullscreen></iframe>
+        .content
+          form
+            .info
+              span = $co_info1 
+              a href="mailto:services@digicentre.com" services@digicentre.com
+              span = $co_info2
+            label.firstname
+              input type="text" placeholder="#{$co_firstname}"/
+            label.lastname
+              input type="text" placeholder="#{$co_lastname}"/
+            label.company
+              input type="text" placeholder="#{$co_company}"/
+            label.email
+              input type="text" placeholder="#{$co_email}"/
+            textarea placeholder="#{$co_message}"
+            button type="submit" = $co_submit
+          .addr
+            p.com = $co_com
+            p.add = $co_addr
+            p.phone = $co_phone
+    include footer

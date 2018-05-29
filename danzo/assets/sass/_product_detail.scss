@@ -1,0 +1,133 @@
+$detail_width:1060px;
+$left_width:16%;
+$content_width:64%;
+$menu_font:14px;
+$content_margin:40px;
+$pr_font:14px;
+$detail_padding:10px;  
+$text_top_bottom:25px; 
+section.product_detail{
+	max-width:$detail_width;
+	margin:0 auto;
+	font-size:0;
+	article{
+		display: inline-block;
+		&.menu_left{
+			font-size: $menu_font;
+			line-height: 1.5;
+			vertical-align: top;
+			width: $left_width;
+			@include rwd($phone_size){
+				font-size: 20px;
+				display: block;
+				width:100%;
+			};
+			.type{
+				display: inline-block;
+				&:not(:first-child){
+					margin-top: 20px;
+				}
+			}
+			.type_name{
+				@extend .f_family_3;
+				color:#686868;
+				@include rwd($phone_size){
+					display: none;
+				};
+			}
+			.sub_menu{
+				@extend .f_family_2;
+				margin-left: 30px;
+				// font-weight: 700;
+				.active a{
+					color:#F7A521;
+				}
+				@include rwd($phone_size){
+					margin-left: 0px;
+					li:not(.active){
+						display: none;
+					}
+				};
+			}
+		}
+		&.content{
+			vertical-align: top;
+			width:$content_width;
+			>.gallerys{
+				margin:0px #{$content_margin} 35px;
+			}
+			.text{
+				margin:0px #{$content_margin+20px};
+				.title{
+					color:#F7A620;
+					@extend .f_family_3;
+					font-size: 19px;
+					line-height: 2;
+					font-weight: bold;
+				}
+				.detail{
+					@extend .f_family_11;
+					padding:0px #{$detail_padding};
+					font-size: $pr_font;
+					line-height: 1.5;
+				}
+			}
+			@include rwd($phone_size){
+				width:100%;
+				>.gallerys{
+					margin:20px 0px 20px ;
+				}
+				.text{
+					margin:0px;
+					border-bottom:1px solid #BDCCD4;
+					.title{
+						display: none;
+					}
+					.detail{
+						padding-bottom:#{$text_top_bottom};
+					}
+				}
+			};
+		}
+		&.des{
+			width:100% - $content_width - $left_width;
+			.format{
+				&:not(:first-child){
+					margin-top: 25px;
+				}
+				.title{
+					@extend .f_family_2;
+					font-size: $pr_font;
+					line-height: 2;
+					font-weight: bold;
+				}
+				.info{
+					@extend .f_family_2;
+					font-size: $pr_font;
+					line-height: 1.5;
+				}
+			}
+			@include rwd($phone_size){
+				width:100%;
+				padding:#{$text_top_bottom} #{$detail_padding} 0px;
+			};
+		}
+	}
+	.back_btn{
+		display:none;
+		margin-top: 40px;
+		@extend .f_family_2;
+		font-size: $pr_font;
+		img{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		span{
+			margin-left: 5px;
+			@include box-shadow(inset 0 0px 0 0 white, inset 0 -1px 0 0 #000);
+		}
+		@include rwd($phone_size){
+			display: inline-block;
+		};
+	}
+}

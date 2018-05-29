@@ -1,0 +1,56 @@
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    include header
+    .warp
+      include menu
+      .warpper.pay_step
+        .main_content
+          .main_title
+            h3 Shopping cart
+            p 歡迎來信詢問任何訂單、商品及帳戶問題
+            a href="mailto:nakedmarket.tw@gmail.com" nakedmarket.tw@gmail.com
+          .step_list
+            .step
+              .pic
+                img src="assets/images/step1_icon.png" alt=""/
+              p 1.購物清單
+            .step
+              .pic
+                img src="assets/images/step2_icon.png" alt=""/
+              p 2.填寫資料
+            .step.active
+              .pic
+                img src="assets/images/step3_icon.png" alt=""/
+              p 3.付款方式
+            .step
+              .pic
+                img src="assets/images/step4_icon.png" alt=""/
+              p 4.確認付款     
+          .content
+            .pays
+              label
+                input type="radio" name="pay_type"/
+                .item.credit
+                  .icon
+                    img src="assets/images/credit_icon.png" alt=""/
+                  span 信用卡
+              label
+                input type="radio" checked="checked" name="pay_type"/
+                .item.webatm
+                  .icon
+                    img src="assets/images/webatm_icon.png" alt=""/
+                  span WEB ATM
+              label
+                input type="radio" checked="checked" name="pay_type"/
+                .item.store
+                  .icon
+                    img src="assets/images/store_icon.png" alt=""/
+                  span 超商付款
+            .b
+              a.next_btn href="pay_step4.html"
+                span 下一步確認付款
+        include footer

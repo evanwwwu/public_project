@@ -1,0 +1,105 @@
+ .warpper.about{
+  font-size: 0;
+  padding-bottom: 30px;
+  @include rwd($desktop) {
+    padding-bottom: 60px;
+  }
+  @include rwd($desktop-w) {
+    padding-bottom: 100px;
+  }
+  .mainsize{
+    padding: 0 20px;
+    @include rwd($pad){
+      padding: 0 80px;
+    }
+    @include rwd($desktop) {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    @include rwd($desktop-w) {
+      max-width: 860;
+    }
+    p{
+      margin-top: 20px;
+      font-size: 15px;
+      line-height: 20px;
+      @include rwd($pad) {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 30px;
+      }
+      @include rwd($desktop) {
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 35px;
+      }
+    }
+    h5{
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 20px;
+      color: $blue1;
+      font-weight: 600;
+      @include rwd($pad) {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 30px;
+      }
+      @include rwd($desktop) {
+        font-size: 28px;
+        line-height: 33px;
+        margin-top: 35px;
+      }
+    }
+    .icons{
+      text-align: left;
+      margin-top: 10px;
+      @include rwd($pad){
+        margin-top: 20px;
+      }
+      .icon{
+        display: inline-block;
+        width: (100% / 3);
+        vertical-align: top;
+        @include rwd($pad) {
+          width:(100% / 4);
+        }
+      }
+    }
+  }
+  .video-div{
+    padding: 0 20px;
+    @include rwd($pad) {
+      padding: 0 40px;
+    }
+    @include rwd($desktop) {
+      padding: 0;
+      max-width: 830px;
+      margin: 0 auto;
+    }
+    @include rwd($desktop-w) {
+      max-width: 1160px;
+    }
+  }
+  .video{      
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include rwd($pad) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    iframe{ 
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

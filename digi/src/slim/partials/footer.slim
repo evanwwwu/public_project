@@ -1,0 +1,30 @@
+footer
+  .all-div
+    img src="../assets/images/footer-icon.png" alt=""/
+    .f-menus
+      ul
+        li: a href="index.html" = $m_home
+        li: a href="about.html" = $m_about
+        li: a href="idc.html" = $sm_idc
+        li: a href="security.html" = $sm_security
+      ul
+        li: a href="cloud.html" = $sm_cloud
+        li: a href="appguard.html" = $sm_appguard
+        li: a href="news.html" = $m_news
+        li: a href="industry.html" = $m_resurces
+      ul
+        li: a href="customers.html" = $m_customers
+        li: a href="careers.html" = $m_careers
+        li: a href="faq.html" = $m_faq
+        li: a href="contact.html" = $m_contact
+      ul
+        li: a href="terms.html" = $m_terms
+      -if $lang == "tw"
+        ul
+          li: a href="https://www.facebook.com/%E6%9E%9C%E6%A0%B8%E6%95%B8%E4%BD%8D-724591257628290/" target="_blank" 果核數位粉絲團
+  .coptyright
+    p © 2016 Digicentre Company Limited. All Rights Reserved.
+script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+script src="../assets/js/vendor.js"
+script src="../assets/js/plugin.js"
+script src="../assets/js/site.js"

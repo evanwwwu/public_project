@@ -1,0 +1,557 @@
+@charset "UTF-8";
+.pay_step{
+	.main_content{
+		padding: 20px 15px 45px;
+		@include rwd($desktop) { 
+			padding: 45px 15px;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+		@include rwd($desktop-hd) { 
+			max-width: 1300px;
+		}
+		.main_title{
+			@extend %class_title;
+		}
+		.step_list{
+			text-align: center;
+			margin-bottom: 45px;
+			@include rwd($desktop) {
+				margin-bottom: 65px;
+			}
+			.step{
+				display: none;
+				font-size: 18px;
+				line-height: 26px;
+				@include rwd($desktop) {
+					display: inline-block;
+					padding: 0px 45px;
+					border-right: 1px solid #d2d2d2;
+					&:last-child{
+						border-right: 0px;
+					}
+				}
+				&.active{
+					color:#de5a5f;
+					display: inline-block;
+					.pic{
+						display: inline-block;
+						position: relative;
+						font-size: 0;
+						>img{
+							opacity: 0;
+						}
+					}
+				}
+				@for $i from 1 through 4 {
+					&:nth-child(#{$i}).active{		
+						.pic:after{
+							content:"";
+							position: absolute;
+							left: 0;
+							top: 0;
+							width: 100%;
+							height: 100%;
+							background: image-url("step#{$i}_icon_a.png") center top / 100% no-repeat;
+						}
+					}
+				}
+			}
+		}
+		.content{
+			.item{
+				font-size: 0;
+				text-align: justify;
+				&:after{
+					content:"";
+					display: inline-block;
+					width: 100%;
+				}
+				&.i_title{
+					display: none;
+					@include rwd($desktop) {
+						display: block;
+						margin-bottom: 10px;
+					}
+				}				
+				.i_del{
+					position: relative;
+					// left: 0px;
+					// top: 50%;
+					display: inline-block;
+					width: 100%;
+					max-width: 35px;
+					border: 2px solid #efb1b4;
+					cursor: pointer;
+					@include border-radius(50%);
+					// @include transform(translateY(-50%));
+					.mt{
+						margin-top: 100%;
+					}
+					&:before,&:after{
+						content:"";
+						position: absolute;
+						width: 80%;
+						height: 2px;
+						left: 10%;
+						top: 50%;
+						margin-top: -1px;
+						background-color: #efb1b4;
+					}
+					&:before{
+						@include transform(rotate(45deg));
+					}
+					&:after{
+						@include transform(rotate(-45deg));
+					}
+				}
+				>div{
+					position: relative;
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 14px;
+					line-height: 26px;
+					@include rwd($desktop) {
+						font-size: 16px;
+						text-align: center;
+					}
+					p{
+						display: inline-block;
+					}
+					&:nth-child(1){
+						width: percentage(30/295);
+						padding-right: 5px;
+						@include rwd($desktop) {
+							width: percentage(90/880);
+						}
+					}
+					&:nth-child(2){
+						width: percentage(75/295);
+						@include rwd($desktop) {
+							width: percentage(160/880);
+							>img{
+								max-width: 80px;
+							}
+						}
+					}
+					&:nth-child(3){
+						font-size: 16px;
+						width: percentage(190/295);
+						padding-left: 10px;
+						@include rwd($desktop) {
+							padding-left: 0px;
+							width: percentage(280/880);
+						}
+					}
+					&:nth-child(4){
+						padding-left: percentage(30/295);
+						&:before{
+							content:"數量";
+							display: inline-block;
+							margin-right: 5px;
+						}
+						@include rwd($desktop) {
+							padding-left: 0px;
+							width: percentage(90/880);
+							&:before{
+								display: none;
+							}
+						}
+					}
+					&:nth-child(5){
+						&:before{
+							content:"單價";
+							display: inline-block;
+							margin-right: 5px;
+						}
+						@include rwd($desktop) {
+							width: percentage(140/880);
+							&:before{
+								display: none;
+							}
+						}
+					}
+					&:nth-child(6){
+						&:before{
+							content:"小計";
+							display: inline-block;	
+							margin-right: 5px;
+						}
+						@include rwd($desktop) {
+							width: percentage(80/880);
+							&:before{
+								display: none;
+							}
+						}
+					}
+				}
+				.item_name{
+					.t2{
+						font-size: 12px;
+						line-height: 18px;
+					}
+				}
+			}
+			.items{
+				border-top: 2px solid #000;
+				border-bottom: 2px solid #000;
+				li{
+					padding: 20px 0px 15px;
+					border-bottom: 1px solid #959595;
+					@include rwd($desktop) {
+						padding: 30px 0px 20px;
+					}
+				}
+			}
+			.ship_div{
+				font-size: 0;
+				border-bottom: 2px solid #000;
+				text-align: justify;
+				&:after{
+					content:"";
+					width: 100%;
+					display: inline-block;
+				}
+				>p{
+					font-size: 16px;
+					line-height: 50px;
+					display: inline-block;
+				}
+				&:nth-child(1){
+					
+				}
+				&:nth-child(2){
+					
+				}
+				&:nth-child(3){
+					
+				}
+			}
+			.totle_price{
+				text-align: right;
+				margin-top: 20px;
+				font-size: 18px;
+				.n{
+					margin-left: 30px;
+					font-size: 24px;
+					@include rwd($desktop) {
+						margin: 0px 15px 0px 70px;
+					}
+				}
+			}
+			.b{
+				text-align: center;
+				@include rwd($desktop) {
+					text-align: right;
+				}
+			}
+			.next_btn{
+				display: inline-block;
+				margin: 50px auto 0px;
+				color:#fff;
+				background-color: #000;
+				font-size: 16px;
+				line-height: 40px;
+				width: 200px;
+				text-align: center;
+				border: 0px;
+				@include rwd($desktop) {
+					margin: 90px auto;
+				}
+			}
+			.member_form{
+				.edit_form{
+					label{
+						display: inline-block;
+						font-size:14px;
+						text-align: left;
+						margin-bottom: 15px;
+						width: 100%;
+						@include rwd($desktop){
+							padding-left: 10%;
+							position: relative;
+							margin-bottom: 35px;
+						}
+						@include rwd($desktop-hd) {
+							font-size: 16px;
+						}
+						>span{
+							display: inline-block;
+							vertical-align: middle;
+							@include rwd($desktop){
+								position: absolute;
+								left: 0;
+								top: 50%;
+								@include transform(translateY(-50%));
+
+							}
+						}
+						input{
+							display: inline-block;
+							vertical-align: middle;	
+							width: 100%;
+							height: 40px;
+							margin-top: 5px;
+							padding: 5px 10px;
+							@include rwd($desktop) {
+								margin-top: 0;
+							}
+						}
+						textarea{
+							width: 100%;
+							margin-top: 5px;
+							height: 160px;
+						}
+						@include rwd($desktop) {
+							&.username,&.email,&.mobile,&.phone,&.pass,&.pass2{
+								width: 50%;
+								input{
+									width:92%;
+								}
+							}
+							&.email,&.pass2,&.mobile{
+								text-align: right;
+								span{
+									left: initial;
+									right:76%;
+								}
+							}
+							&.address{
+								text-align: right;
+								input{
+									width:100%;
+								}
+							}
+						}
+					}
+					.save_btn{
+						border: 0px;
+						width: 200px;
+						color:#fff;
+						font-size: 16px;
+						background-color: #000;
+						line-height: 38px;
+						margin-top: 20px;
+					}
+				}
+			}
+			.pays{
+				padding: 0px 0px 0px;
+				text-align: center;
+				width: 100%;
+				@include rwd($desktop) {
+					padding: 35px 0px;
+				}
+				&:after{
+					content:"";
+					display: inline-block;
+					width: 100%;
+				}
+				label{
+					display:inline-block;
+					cursor: pointer;
+					&.off{
+						display: none;
+					}
+					@include rwd($desktop) {
+						display: inline-block;
+					}
+					.item{
+						position: relative;
+						display: inline-block;
+						padding-bottom: 50px;
+						margin: 0px 8px;
+						@include rwd($pad) {
+							margin:0px 40px;
+						}
+						@include rwd($desktop) {
+							margin: 0px 60px;
+						}
+						&:before{
+							content:"";
+							position: absolute;
+							bottom: 10px;
+							left: 50%;
+							width: 30px;
+							height: 30px;
+							opacity: 0;
+							@include transform(translateX(-50%));
+							@include transition(opacity .3 ease-in-out);
+							background:image-url("selected_icon.png") center / 100% no-repeat;
+						}
+						.icon{
+							text-align: center;
+							width: 80px;
+							height: 80px;
+							padding: 15px;
+							font-size: 0;
+							@include border-radius(50%);
+							@include rwd($pad) {
+								width: 120px;
+								height: 120px;
+								padding: 25px;
+							}
+							>img{
+								vertical-align: middle;
+								max-height: 100%;
+							}
+							&:after{
+								content:"";
+								display: inline-block;
+								height: 100%;
+								vertical-align: middle;
+							}
+						}
+						span{
+							text-align: center;
+							display: block;
+							margin-top: 10px;
+							font-size: 16px;
+							line-height: 24px;
+						}
+						&.credit .icon{
+							background-color: #939ec8;
+						}
+						&.webatm .icon{
+							background-color: #64a1be;
+						}
+						&.store .icon{
+							background-color: #7ccbb6;
+						}
+					}
+					input[type=radio]{			
+						position: absolute;
+						visibility: hidden;
+						&:checked ~ .item:before{
+							opacity: 1;
+						}
+					}
+				}
+			}
+			.check_div{
+				margin-bottom: 45px;
+				.div_title{
+					font-size: 24px;
+					line-height: 26px;
+					margin-bottom: 20px;
+				}
+				.member_info{
+					width: 100%;
+					font-size: 0;
+					text-align: left;
+					border-top: 2px solid #000;
+					padding: 10px 0px;
+					p{
+						font-size: 16px;
+						line-height: 24px;
+						&.mobile,&.phone{
+							display: inline-block;
+						}
+						&.phone{
+							margin: 0px 25px;
+						}
+					}
+				}
+				.pays{
+					border-top: 2px solid #000;
+					padding: 30px 0px 0px;
+					label .item:before{
+						display: none;
+					}
+				}
+			}
+			.info_div{
+				font-size: 0;
+				text-align: justify;
+				&:after{
+					content:"";
+					display: inline-block;
+					width: 100%;
+				}
+				.a_text{
+					margin-top: 25px;
+					display: inline-block;
+					width: 100%;
+					@include rwd($desktop){
+						&.i2{
+							display: inline-block;
+							width: 48%;
+							vertical-align: top;
+						}
+					}
+					.a_title{
+						text-align: center;
+						position: relative;
+						p{
+							display: inline-block;
+							padding: 0px 10px;
+							position: relative;
+							z-index: 1;
+							font-size: 16px;
+							font-weight: 700;
+							background-color: #fff;
+							@include rwd($desktop){
+								font-size: 20px;
+								padding: 0px 40px;
+							}
+						}
+						&:before{
+							display: block;
+							content:"";
+							position: absolute;
+							width: 100%;
+							top: 50%;
+							margin-top: -1px;
+							border-bottom: 2px solid #000;
+						}
+					}
+					.t_content{		
+						text-align: left;			
+						padding: 40px 0;
+						font-size: 16px;
+						line-height: 1.8;
+						@include rwd($desktop-fullhd) {
+							font-size: 16px;
+						}
+						ul{							
+							padding-left: 15px;
+							list-style-type: decimal;
+						}
+					}
+				}
+				.check_btn{
+					cursor: pointer;
+					color:#df6367;
+					position: relative;
+					padding-left: 40px;
+					font-size: 20px;
+					line-height: 30px;
+					display: inline-block;
+					width: 100%;
+					text-align: left;
+					input[type="checkbox"]{
+						position: absolute;
+						opacity: 0;
+					}
+					.box{
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 30px;
+						height: 30px;
+						border: 2px solid #df6367;
+					}
+					input[type="checkbox"]:checked ~ .box{
+						&:after{
+							color:#df6367;
+							content: "\2713";
+							line-height: 23px;
+							font-size: 28px;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+	}
+}

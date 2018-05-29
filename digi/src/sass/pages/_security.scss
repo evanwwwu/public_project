@@ -1,0 +1,276 @@
+ .warpper.security {
+ 	padding-bottom: 30px;
+ 	@include rwd($desktop) {
+ 		padding-bottom: 60px;
+ 	}
+ 	@include rwd($desktop-w) {
+ 		padding-bottom: 100px;
+ 	}
+ 	.text {
+ 		text-align: center;
+ 		padding: 30px 20px;
+ 		font-size: 15px;
+ 		line-height: 20px;
+ 		background-color: #f6f6f6;
+ 		@include rwd($pad) {
+ 			padding: 50px 0px;
+ 			font-size: 16px;
+ 			line-height: 24px;
+ 			p {
+ 				margin: 0 auto;
+ 				max-width: 610px;
+ 			}
+ 		}
+ 		@include rwd($desktop) {
+ 			padding: 85px 0px;
+ 			font-size: 20px;
+ 			line-height: 30px;
+ 			p {
+ 				max-width: 700px;
+ 			}
+ 		}
+ 		@include rwd($desktop-w) {
+ 			font-size: 24px;
+ 			line-height: 32px;
+ 			padding: 100px;
+ 			p {
+ 				max-width: 850px;
+ 			}
+ 		}
+ 	}
+ 	.feature {
+ 		width: 100%;
+ 		.pic>img{
+ 			width: 100%;
+ 		}
+ 		.mainsize {
+ 			margin-left: auto;
+ 			margin-right: auto;
+ 			padding: 30px 20px;
+ 			text-align: center;
+ 			@include rwd($pad) {
+ 				max-width: 768px;
+ 				padding: 20px 80px;
+ 				margin-top: -110px;
+ 				position: relative;
+ 				z-index: 1;
+ 			}
+ 			@include rwd($desktop) {
+ 				max-width: 1180px;
+ 				margin-top: -130px;
+ 			}
+ 			@include rwd($desktop-w) {
+ 				padding: 0px;
+ 				margin-top: -150px;
+ 			}
+ 			.items {
+ 				text-align: center;
+ 				font-size: 0;
+ 				@include rwd($pad) {
+ 					background-color: #f6f6f6; 			
+ 				}
+ 				@include rwd($desktop) {
+ 					margin: 0 auto;
+ 					text-align: justify;
+ 					&:after{
+ 						content:"";
+ 						display: inline-block;
+ 						width: 100%;
+ 					}
+ 				}
+ 				@include rwd($desktop-w){
+ 					padding: 20px;
+ 				}
+ 				.item {
+ 					padding: 0 15px;
+ 					margin-bottom: 40px;
+ 					display: inline-block;
+ 					text-align: center;
+ 					vertical-align: top;
+ 					@include rwd($pad) {
+ 						text-align: left;
+ 						width: 50%;
+ 						padding: 20px;
+ 						margin-bottom: 0px;
+ 					}
+ 					@include rwd($desktop) {
+ 						padding: 40px;
+ 					}
+ 					.title {
+ 						color: $blue3;
+ 						font-size: 20px;
+ 						margin-top: 20px;
+ 						margin-bottom: 15px;
+ 						@include rwd($desktop-w) {
+ 							font-size: 30px;
+ 						}
+ 					}
+ 					.info {
+ 						font-size: 15px;
+ 						line-height: 20px;
+ 						@include rwd($desktop-w) {
+ 							font-size: 20px;
+ 							line-height: 26px;
+ 						}
+ 					}
+ 					@for $i from 1 through 4 {
+ 						&:nth-of-type(#{$i}) {
+ 							>img {
+ 								width:image-width(#{"sec0"+$i+".png"}) / 2;
+ 								@include rwd($pad) {
+ 									width:image-width(#{"sec0"+$i+".png"}) / 2.1;
+ 								}
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	.main-div{
+ 		margin-top: 30px;
+ 		@include rwd($pad) {
+ 			margin-top: 50px;
+ 		}
+ 		@include rwd($desktop) {
+ 			margin-top: 70px;
+ 		}
+ 		.items{
+ 			padding: 0 20px;
+ 			text-align: center;
+ 			@include rwd($pad) {
+ 				padding: 0;
+ 			}
+ 			@include rwd($desktop-w){
+ 				max-width: 1366px;
+ 				margin: 0 auto;
+ 			}
+ 			.key {
+ 				font-size: 20px;
+ 				line-height: 26px;
+ 				margin-bottom: 20px;
+ 				color: $blue1;
+ 				font-weight: 600;
+ 				@include rwd($pad) {
+ 					font-size: 23px;
+ 					line-height: 30px;
+ 					margin-bottom: 40px;
+ 				}
+ 				@include rwd($desktop) {
+ 					font-size: 36px;
+ 					line-height: 60px;
+ 					margin-bottom: 60px;
+ 				}
+ 				@include rwd($desktop-w) {
+ 					font-size: 45px;
+ 					margin-bottom: 80px;
+ 				}
+ 			}
+ 			.item{
+ 				font-size: 0;
+ 				margin-bottom: 50px;
+ 				@include rwd($pad) {
+ 					&:nth-of-type(even){
+ 						padding-left: 130px;
+ 						direction: rtl;
+ 						.pic{
+ 							padding-left: 20px;
+ 						}
+ 						.content{
+ 							direction: ltr;
+ 							&:before{
+ 								top: -15px;
+ 								left: -15px;
+ 							}
+ 						}
+ 					}
+ 					&:nth-of-type(odd){
+ 						padding-right: 130px;
+ 						.pic{
+ 							padding-right: 20px;
+ 						}
+ 						.content{
+ 							&:before{
+ 								bottom: -15px;
+ 								right: -15px;
+ 							}
+ 						}
+ 					}
+
+ 					.pic{
+ 						width:percentage(400/640);
+ 						display: inline-block;
+ 						vertical-align: middle;
+ 					}
+ 					.content{
+ 						width:percentage(230/640);
+ 						display: inline-block;
+ 						vertical-align: middle;						
+ 					}
+ 				}
+ 				@include rwd($desktop-w) {
+ 					margin-bottom: 150px;
+ 					&:nth-of-type(odd){
+ 					}
+ 					&:nth-of-type(even){				
+ 					}
+ 				}
+ 				.content{
+ 					padding:15px 0;
+ 					@include rwd($pad) {
+ 						position: relative;
+ 						padding: 0px 15px;
+ 						&:before{
+ 							content:"";
+ 							position: absolute;
+ 							width: 100%;
+ 							height: 100%;
+ 							background-color: #cee9ff;
+ 						}
+ 						&:after{
+ 							content:"";
+ 							display: inline-block;
+ 							margin-top: 95%;
+ 						}
+ 					}
+ 					.title{
+ 						position: relative;
+ 						font-size: 0;
+ 						h5{ 
+ 							font-size: 15px;
+ 							line-height: 20px;
+ 							color: $blue1;
+ 						}
+ 						@include rwd($pad) { 
+ 							border: 2px solid $blue1;
+ 							width: 100%;
+ 							height: 100%;
+ 							position: absolute;
+ 							left: 0;
+ 							top: 0;
+ 							&:after{
+ 								content:"";
+ 								display: inline-block;
+ 								height: 100%;
+ 								vertical-align: middle;
+ 							}
+ 							h5{							
+ 								display: inline-block;
+ 								vertical-align: middle;
+ 								padding: 20px;
+ 								@include rwd($desktop) {
+ 									font-size: 20px;
+ 									line-height: 27px;
+ 								}
+ 								@include rwd($desktop-w) {
+ 									font-size: 28px;
+ 									line-height: 40px;
+ 								}
+ 							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }

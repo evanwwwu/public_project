@@ -1,0 +1,92 @@
+#{"#"+$model+"-main"} {
+	@include rwd($pad_size) {
+		z-index: 999;
+		width: 100%;
+		@include transition(all .3s ease-in-out);
+	}
+	;
+	.mainnav {
+		font-size: 0px;
+		@include clear_float();
+		@include rwd($pad_size) {
+			display: none;
+		}
+		;
+		.znav {
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+			vertical-align: top;
+			float: left;
+			width: 33%;
+			&:hover {
+				.pic {
+					@include scale(1.2);
+				}
+				.nav_title {
+					background-color: #555;
+				}
+			}
+			@include rwd($pad_size) {
+				border-bottom: 1px solid #fff;
+				width: 100%;
+			}
+			;
+			.pic {
+				@include transition(all .3s ease-in-out);
+				font-size: 0;
+				@include rwd($pad_size) {
+					display: none;
+				}
+				;
+				>img {
+					width: 100%;
+					display: block;
+				}
+			}
+			.nav_title {
+				text-align: center;
+				background: rgba(0, 0, 0, .8);
+				line-height: 1.5;
+				color: #fff;
+				position: absolute;
+				bottom: 0px;
+				font-size: 40px;
+				width: 100%;
+				font-family: "jersey";
+				@include rwd("1024px") {
+					font-size: 30px;
+				}
+				@include rwd($pad_size) {
+					position: relative;
+					background: #777;
+					text-shadow: 0 1px 0 #333;
+					font-size: 36px;
+				}
+				;
+				span {
+					font-family: "Roboto";
+				}
+			}
+		}
+	}
+	.mobile_nav {
+		display: none;
+		width: 100%;
+		background: transition; // @include box-shadow(0 1px 5px rgba(0,0,0,0.5));
+		height: 50px;
+		z-index: 3;
+		@include rwd($pad_size) {
+			display: block;
+		}
+		;
+		.m_btn {
+			cursor: pointer;
+			width: 50px;
+			height: 50px;
+			background: #555 image-url("mininav-toggle.png") center / 100% no-repeat;
+			float: right;
+		}
+	}
+}

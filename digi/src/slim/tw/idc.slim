@@ -1,0 +1,62 @@
+include lang_tw
+-$lang = "tw";
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    #warp
+      include header
+      .warpper.idc
+        .banner
+          img src="../assets/images/idc-bg.jpg" alt=""/
+          .title
+            h2 = $idc_title
+            p = $idc_subtitle
+        .text
+          p = $idc_info
+        .feature
+          .mainsize
+            .key = $idc_key          
+            .items
+              .item
+                img src="../assets/images/idc01.png" alt=""/
+                .title = $idc_item1_title
+                .info = $idc_item1_info
+              .item
+                img src="../assets/images/idc02.png" alt=""/
+                .title = $idc_item2_title
+                .info = $idc_item2_info
+              .item
+                img src="../assets/images/idc03.png" alt=""/
+                .title = $idc_item3_title
+                .info = $idc_item3_info
+        .main-div
+          .items
+            .item
+              .pic
+                img src="../assets/images/idc-item1.jpg" alt=""/
+              .content
+                h5.title = $idc_title1
+                p.info = $idc_info1
+            .item
+              .pic
+                img src="../assets/images/idc-item2.jpg" alt=""/
+              .content
+                h5.title = $idc_title2
+                p.info = $idc_info2
+            .item
+              .pic
+                img src="../assets/images/idc-item3.jpg" alt=""/
+              .content
+                h5.title = $idc_title3
+                p.info = $idc_info3
+            .item
+              .pic
+                img src="../assets/images/idc-item4.jpg" alt=""/
+              .content
+                h5.title = $idc_title4
+                p.info = $idc_info4
+
+    include footer

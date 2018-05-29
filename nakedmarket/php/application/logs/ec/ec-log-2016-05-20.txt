@@ -1,0 +1,5 @@
+INFO - 2016-05-20 03:56:28[IP sorurce: 192.168.0.117] from:/www/nakedmarket/web_git/php/shop/send_order --> 建立訂單 訂單編號:20160520_0001 [by 3::evanwu80@gmail.com]
+INFO - 2016-05-20 04:03:34[IP sorurce: 192.168.0.117] from:/www/nakedmarket/web_git/php/shop/send_order --> 建立訂單 訂單編號:20160520_0002 [by 3::evanwu80@gmail.com]
+INFO - 2016-05-20 04:09:20[IP sorurce: 192.168.0.117] from:/www/nakedmarket/web_git/php/shop/send_order --> 建立訂單 訂單編號:20160520_0003 [by 3::evanwu80@gmail.com]
+INFO - 2016-05-20 04:12:48[IP sorurce: 192.168.0.117] from:/www/nakedmarket/web_git/php/shop/send_order --> 建立訂單 訂單編號:20160520_0004 [by 3::evanwu80@gmail.com]
+INFO - 2016-05-20 04:15:27[IP sorurce: 192.168.0.117] from:/www/nakedmarket/web_git/php/shop/send_order --> 建立訂單 訂單編號:20160520_0005 [by 3::evanwu80@gmail.com]

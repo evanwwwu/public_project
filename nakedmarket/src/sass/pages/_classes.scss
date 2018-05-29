@@ -1,0 +1,727 @@
+.classes{
+	.main_img{
+		background: image-url("classes_pic.jpg") center top / cover no-repeat;
+	}
+	.content{
+		padding:20px 10px;
+		position: relative;
+		@include rwd($desktop) { 
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		@include rwd($desktop-hd) { 
+			max-width: 1300px;
+		}
+	}
+	.items{	
+		padding: 30px 0px;
+		.item{
+			position: relative;
+			width: 100%;
+			border-bottom: 1px solid #c2c2c2;
+			padding:15px 0px 25px 70px;
+			overflow: hidden;			
+			text-align: left;
+			@include rwd($desktop) {
+				padding: 15px 0px;
+			}
+			.m_date{
+				position: absolute;
+				width: 60px;
+				height: 60px;
+				text-align: center;
+				left: 0;
+				top: 15px;
+				@include border-radius(50%);
+				@for $i from 1 through 6 {
+					&.m#{$i}{
+						background-color:nth($sub_color,$i);
+					}
+				}
+				@include rwd($desktop) {
+					position: relative;
+					top: 0;
+					vertical-align: middle;
+					display: inline-block;
+					margin-right: 15px;
+				}
+				&:after{
+					content:"";
+					vertical-align: middle;
+					display: inline-block;
+					height: 100%;
+				}
+				span{
+					vertical-align: middle;
+					font-size: 20px;
+					font-weight: bold;
+				}
+			}
+			.c_title{
+				font-size: 18px;
+				line-height: 1.5;
+				margin-top: 5px;
+				position: relative;
+				@include rwd($pad) {
+					font-size: 24px;
+				}
+				@include rwd($desktop) {
+					vertical-align: middle;
+					display: inline-block;
+					width: 400px;
+				}
+				@include rwd($desktop-w) {
+					width: 565px;
+				}
+				@include rwd($desktop-hd) {
+					width: 865px; 
+					padding-left: 10px;
+				}
+			}
+			.dates{
+				display: block;
+				padding: 15px 0px;
+				@include rwd($pad) {
+					width: 100%;
+					padding: 5px;
+					font-size: 0px;
+				}
+				.date{
+					font-size: 14px;
+					line-height: 1.5;
+					color:#626262;
+					@include rwd($pad) {
+						vertical-align: top;
+						display: inline-block;
+						border-right:1px solid #626262;
+						margin-bottom: 5px;
+						padding: 0px 0px 0px 15px;
+						font-size: 14px;
+						&:nth-child(4n+1){
+							padding: 0px;
+						}
+					}
+					@include rwd($desktop) {
+						&:nth-child(4n+1){
+							padding: 0px 0px 0px 15px;
+						}
+						&:nth-child(2n+1){
+							padding: 0px;
+						}
+					}
+					@include rwd($desktop-w) {
+						&:nth-child(2n+1){
+							padding: 0px 0px 0px 15px;
+						}
+						&:nth-child(3n+1){
+							padding: 0px;
+						}
+
+					}
+					@include rwd($desktop-hd) {
+						&:nth-child(3n+1){
+							padding: 0px 0px 0px 15px;
+						}
+						&:nth-child(5n+1){
+							padding: 0px;
+						}
+
+					}
+					>span{
+						margin-right: 15px;
+					}
+				}
+			}
+			.teacher{
+				font-size: 18px;
+				line-height: 1.5;
+				color:#656565;
+				@include rwd($desktop) {
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+			.btns{
+				color:#fff;
+				font-size: 0;
+				line-height: 1;
+				text-align: right;
+				margin-top: 15px;
+				display: inline-block;
+				@include rwd($desktop) {
+					vertical-align: middle;
+					margin-top: 0px;   
+					right: 0px;
+					top: 50%;
+					position: absolute;
+					@include transform(translateY(-50%));
+
+				}
+				.over{
+					text-align: center;
+					width: 110px;
+					padding: 10px;
+					display: inline-block;
+					vertical-align: middle;
+					background-color: #de5a5f;
+					font-size: 18px;
+					margin-right: 10px;
+				}
+				.d_btn{
+					text-align: center;
+					width: 110px;
+					padding: 10px;
+					display: inline-block;
+					vertical-align: middle;
+					background-color: #000;
+					font-size: 18px;
+					@include rwd($desktop) {
+						margin: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+.classes_detail{
+	position: relative;
+	.prev_btn{
+		@extend %prev_btn;
+	}
+	.main_img_pic{
+		position: relative;		
+		.over{
+			position: absolute;
+			text-align: center;
+			width: 110px;
+			padding: 10px;
+			display: inline-block;
+			vertical-align: middle;
+			background-color: #de5a5f;
+			font-size: 18px;
+			bottom: 15px;
+			left: 50%;
+			color:#fff;
+			@include transform(translateX(-50%));
+
+		}
+		>img{
+			width: 100%;
+		}
+	}
+	.main_content{	
+		padding:0px 15px 20px;
+		position: relative;
+		@include rwd($desktop) { 
+			max-width: 900px;
+			margin: 0 auto;
+		}
+		@include rwd($desktop-hd) { 
+			max-width: 1300px;
+		}
+		.detail_title{
+			padding: 25px 0px;
+			position: relative;
+			border-bottom: 1px solid #000;
+			@include rwd($desktop) {
+				padding: 30px 0px;
+			}
+			&:before,&:after{
+				display: block;
+				position: absolute;
+				content:"";
+				left: 0;
+				width: 100%;
+				border-bottom: 1px solid #000;
+			}
+			&:before{
+				bottom: 5px;
+			}
+			&:after{
+				bottom: 10px;
+			}
+			.t1{
+				font-size: 24px;
+				line-height: 1.5;
+				font-weight: bold;
+				@include rwd($desktop) {
+					font-size: 30px;
+				}
+			}
+			.t2{
+				font-size: 14px;
+				line-height: 1.2;
+				color:#5c5c5c;
+				@include rwd($desktop) {
+					font-size:18px;
+				}
+			}			
+		}
+		.content{
+			.info{
+				padding: 20px 0px;
+				text-align: center;
+				font-size: 0;
+				@include rwd($desktop) {
+					padding:30px 25px;
+				}
+				ul{
+					display: inline-block;
+					width: 100%;
+					padding: 0;
+					text-align: left;
+					@include rwd($desktop) { 
+						vertical-align: top;
+						width: (100% / 3);
+					}
+					li{
+						font-size: 14px;
+						line-height: 26px;
+					}
+				}
+			}
+			.a_text{
+				margin-top: 25px;
+				.a_title{
+					position: relative;
+					p{
+						display: inline-block;
+						padding: 0px 10px;
+						position: relative;
+						z-index: 1;
+						font-size: 14px;
+						font-weight: 700;
+						background-color: #fff;
+						@include rwd($desktop){
+							font-size: 20px;
+							padding: 0px 40px;
+						}
+					}
+					&:before{
+						display: block;
+						content:"";
+						position: absolute;
+						width: 100%;
+						top: 50%;
+						margin-top: -1px;
+						border-bottom: 2px solid #000;
+					}
+				}
+				.t_content{		
+					text-align: left;			
+					padding: 40px 0;
+					font-size: 14px;
+					line-height: 1.5;
+					@include rwd($desktop-fullhd) {
+						font-size: 16px;
+					}
+					&.cooker{
+						.pic,.text{
+							display: inline-block;
+							vertical-align: top;
+							width: 100%;
+						}
+						@include rwd($desktop) {
+							font-size: 0px;
+							.pic{
+								width: percentage(330/880);
+								>img{
+									width: 100%;
+								}
+							}
+							.text{
+								font-size: 14px;
+								width: percentage(550/880);
+								padding-left: 35px;
+							}
+						}
+						@include rwd($desktop-hd) {
+							.text{
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.up_form{
+		position: relative;
+		width: 100%;
+		line-height: 1.5;
+		font-size: 0;
+		label{
+			display: inline-block;
+			font-size:14px;
+			text-align: left;
+			margin-bottom: 15px;
+			width: 100%;
+			@include rwd($desktop){
+				padding-left: 8%;
+				position: relative;
+			}
+			@include rwd($desktop-hd) {
+				font-size: 16px;
+			}
+			>span{
+				display: inline-block;
+				vertical-align: middle;
+				@include rwd($desktop){
+					position: absolute;
+					left: 0;
+					top: 50%;
+					@include transform(translateY(-50%));
+					
+				}
+			}
+			input{
+				display: inline-block;
+				vertical-align: middle;	
+				width: 100%;
+				height: 40px;
+				margin-top: 5px;
+				padding: 5px 10px;
+				@include rwd($desktop) {
+					margin-top: 0;
+				}
+			}
+			textarea{
+				width: 100%;
+				margin-top: 5px;
+				height: 160px;
+			}
+			@include rwd($desktop) {
+				&.name,&.phone{
+					width: 50%;
+					input{
+						width:78%;
+					}
+				}
+				&.name{
+					text-align: left;
+				}
+				&.phone{
+					text-align: right;
+					span{
+						left: initial;
+						right:70%;
+					}
+				}
+				&.email{
+					text-align: right;
+					input{
+						width:100%;
+					}
+				}
+				&.msg{
+					text-align: right;
+					>span{
+						top: 0;
+						@include transform(translateY(0%));
+					}
+					textarea{
+						margin-top: 0;
+						width:100%;					
+					}
+				}
+			}
+		}
+		.submit{
+			button{
+				@extend %add_cart;
+				width: 100%;
+				border: 0px;
+			}
+			@include rwd($desktop){
+				text-align: right;
+				button{
+					width: 250px;
+				}
+			}
+		}
+		.date_s{
+			.select{
+				position: relative;
+				display: inline-block;
+				margin: 0 auto 0 15px;
+				width: 100%;
+				max-width: 175px;
+				color: #fff;
+				vertical-align: middle;
+				text-align: left;
+				user-select: none;
+				-webkit-touch-callout: none;
+				@include rwd($desktop) {
+					margin: 0;
+				}
+				.placeholder{
+					position: relative;
+					display: block;
+					background-color: #a0a0a0;
+					z-index: 1;
+					padding: 10px 15px;
+					cursor: pointer;
+					&:hover{
+						background-color: #a0a0a0;
+					}
+					&:after{
+						position: absolute;
+						background: image-url("select_arr.png") center / auto 100% no-repeat;
+						width: 14px;
+						height: 14px;
+						right: 15px;
+						top: 50%;
+						@include transform(translateY(-50%) rotate(0deg));
+						@include transition(all .3s ease-in-out);
+						content: '';
+						z-index: 10;
+					}
+				}
+
+				&.is-open{
+					.placeholder:after{
+						@include transform(translateY(-50%) rotate(180deg));
+					}
+					ul{
+						margin: 0;
+						display: block;
+						background-color: #a0a0a0;
+					}
+				}
+
+				&.select--white{
+					.placeholder{
+						background: #fff;
+						color: #999;
+						&:hover{
+							background: darken(#fff,2%);
+						}
+					}
+				}
+				ul{
+					display: none;
+					position: absolute;
+					overflow: hidden;
+					width: 100%;
+					background: #fff;
+					top: 100%;
+					left: 0;
+					list-style: none;
+					margin: 5px 0 0 0;
+					padding: 0;
+					z-index: 100;
+
+					li{
+						display: block;
+						text-align: left;
+						padding: 10px 15px;						
+						color: #fff;
+						cursor: pointer;
+						&:hover{
+							background: #4ebbf0;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	.note_div{
+		margin: 40px auto;
+		text-align: center;
+		.n_title{
+			font-size: 18px;
+			line-height: 24px;
+			color:#000;
+			@include rwd($desktop-hd) {
+				font-size: 20px;
+				line-height: 28px;
+			}
+		}
+		.s_title{
+			font-size: 14px;
+			line-height: 24px;
+			color:#8b8b8b;			
+			@include rwd($desktop-hd) {
+				font-size: 16px;
+				line-height: 28px;
+			}
+		}
+		.content{
+			text-align: left;
+			font-size: 14px;
+			line-height: 24px;
+			@include rwd($desktop-hd) {
+				font-size: 16px;
+				line-height: 28px;
+			}
+			.item{
+				font-size: 16px;
+				margin-bottom: 20px;
+				.t{
+					font-weight: bold;
+				}
+				.s{
+					color:#6b6b6b;
+				}
+				ul{
+					padding-left: 20px;
+					list-style-type: decimal;
+					li{
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+.classes_order{
+	position: relative;
+	.prev_btn{
+		@extend %prev_btn;
+	}
+	.check_btn{
+		display: inline-block;
+		width: 200px;
+		background-color: #000;
+		font-size: 16px;
+		color:#fff;
+		border: 0;
+		line-height: 40px;
+		@include rwd($desktop) {
+			float: right;
+		}
+	}
+	.main_content{
+		padding:0px 15px 100px;
+		position: relative;
+		@include rwd($desktop) { 
+			max-width: 900px;
+			margin: 0 auto;
+		}
+		@include rwd($desktop-hd) { 
+			max-width: 1300px;
+		}
+		.order_title{
+			@extend %class_title;
+		}
+		.s_title{
+			font-size: 24px;
+			line-height: 26px;
+			font-weight: 700;
+			margin-bottom: 15px;
+		}
+		.order_info{
+			.content{
+				padding: 15px 0px 35px;
+				border-top: 2px solid #000;
+				@include rwd($desktop) {
+					padding: 35px 0px 70px;
+				}
+				ul{
+					text-align: left;
+					padding: 0;
+					margin-bottom: 35px;
+					display: inline-block;
+					@include rwd($desktop) {
+						width: 550px;
+					}
+					li{
+						font-size: 16px;
+						line-height: 26px;
+						@include rwd($desktop) {
+							display: inline-block;
+							margin-bottom:15px;
+							&:nth-child(odd){
+								width: 320px;
+							}
+						}
+					}
+				}
+				.info{
+					color:#de5a5f;
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+		}
+		.order_pay{
+			.pays{
+				padding: 55px 0px 35px;
+				border-top: 2px solid #000;
+				text-align: center;
+				width: 100%;
+				@include rwd($desktop) {
+					padding: 35px 0px;
+				}
+				&:after{
+					content:"";
+					display: inline-block;
+					width: 100%;
+				}
+				label{
+					display: inline-block;
+					cursor: pointer;
+					.item{
+						position: relative;
+						display: inline-block;
+						padding-bottom: 50px;
+						margin: 10px;
+						@include rwd($desktop) {
+							margin: 0px 60px;
+						}
+						&:before{
+							content:"";
+							position: absolute;
+							bottom: 10px;
+							left: 50%;
+							width: 30px;
+							height: 30px;
+							opacity: 0;
+							@include transform(translateX(-50%));
+							@include transition(opacity .3 ease-in-out);
+							background:image-url("selected_icon.png") center / 100% no-repeat;
+						}
+						.icon{
+							text-align: center;
+							width: 120px;
+							height: 120px;
+							padding: 25px;
+							@include border-radius(50%);
+							>img{
+								vertical-align: middle;
+								max-height: 100%;
+							}
+							&:after{
+								content:"";
+								display: inline-block;
+								height: 100%;
+								vertical-align: middle;
+							}
+						}
+						span{
+							text-align: center;
+							display: block;
+							margin-top: 10px;
+							font-size: 16px;
+							line-height: 24px;
+						}
+						&.credit .icon{
+							background-color: #939ec8;
+						}
+						&.webatm .icon{
+							background-color: #64a1be;
+						}
+					}
+					input[type=radio]{			
+						position: absolute;
+						visibility: hidden;
+						&:checked ~ .item:before{
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}

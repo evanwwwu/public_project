@@ -1,0 +1,409 @@
+#{"#"+$model+"-tough"} {
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    padding-bottom: 0;
+    @include rwd($pad_size) {
+        text-align: center;
+    }
+    .main_title {
+        @extend %maintitle;
+    }
+    .kv {
+        background: image-url("tough/tough_bg.jpg") top center / cover no-repeat;
+        overflow: hidden;
+        .mainsize {
+            @extend %main_size;
+        }
+        .dtxt {
+            margin-top: 90px;
+            width: 70%;
+            position: absolute;
+            z-index: 1;
+            left: 20px;
+            @include rwd($pad_size) {
+                position: relative;
+                margin-top: 70px;
+                margin-bottom: 30px;
+                width: 100%;
+                left: 0;
+            }
+            .title {
+                color: #fff;
+                opacity: 0.9;
+                @extend %bigtitle;
+            }
+            .subtitle {
+                @extend %subtitle;
+                color: #fff;
+            }
+            .info {
+                @extend %info;
+                color: #fff;
+                margin-top: 40px;
+                width: 55%;
+                @include rwd($pad_size) {
+                    width: 100%;
+                }
+            }
+        }
+        .bg.anim {
+            position: relative;
+            display: inline-block;
+            margin-top: 160px;
+            margin-left: 45%;
+            margin-right: -20%;
+            padding-bottom: 65px;
+            @include rwd($pad_size) {
+                margin-top: 0;
+                padding-bottom: 50px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .arr2 {
+                position: relative;
+                opacity: 0;
+                @include translateX(10%);
+                @include transition(all .3s ease-in-out 0s);
+            }
+            .arr1 {
+                position: absolute;
+                bottom: 0;
+                max-width: none;
+                left: -112%;
+                width: percentage(image-width("tough/tough1.png") / image-width("tough/tough2.png"));
+                @include rwd($pad_size) {
+                    width: auto;
+                    height: 60%;
+                    left: 50%;
+                    @include transform(translateX(-50%));
+                    max-width: none !important;
+                }
+            }
+            &.on {
+                .arr2 {
+                    opacity: 1;
+                    @include translateX(0%);
+                }
+            }
+        }
+    }
+    .safeslot_bg {
+        background-color: #1b1b1b;
+        overflow: hidden;
+    }
+    .safeslot {
+        position: relative;
+        font-size: 0;
+        @extend %main_size;
+        margin: 80px auto;
+        @include rwd($pad_size) {
+            text-align: center;
+        }
+        img {
+            display: inline-block;
+            margin-right: -30%;
+            vertical-align: middle;
+            margin-left: -50px;
+            @include rwd($pad_size) {
+                margin-right: 0;
+                margin-left: 0;
+                width: 105%;
+                max-width: none !important;
+            }
+        }
+        .text {
+            display: inline-block;
+            width: 50%;
+            vertical-align: middle;
+            position: relative;
+            z-index: 2;
+            @include rwd($pad_size) {
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .title {
+                margin-bottom: 20px;
+                @extend %bigtitle;
+            }
+            .subtitle {
+                @extend %subtitle;
+            }
+            .info {
+                @extend %info;
+                color: #fff;
+            }
+        }
+    }
+    .brighten {
+        position: relative;
+        font-size: 0;
+        @extend %main_size;
+        margin: 0 auto 40px;
+        figure {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: -46%;
+            margin-right: 10px;
+            @include rwd($pad_size) {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+            }
+            .mask {
+                top: -1px;
+                left: -1px;
+                z-index: 2;
+                width: 101%;
+                height: 101%;
+                position: absolute;
+            }
+            .m {
+                z-index: 1;
+                position: relative;
+            }
+            #color1 {
+                position: absolute;
+                width: 20%;
+                right: 30%;
+                bottom: 10%;
+                border: 0;
+                height: 50%;
+                &.status_static {
+                    @include animation(static 3s linear infinite);
+                }
+                &.status_breathing {
+                    @include animation(breathing 3s linear infinite);
+                }
+                &.status_cycle {
+                    @include animation(cycle 3s linear infinite);
+                }
+                &.status_xxxx {
+                    @include animation(strobing 3s linear infinite);
+                }
+                &.status_music {
+                    @include animation(music 3s linear infinite);
+                }
+            }
+        }
+        .content {
+            display: inline-block;
+            width: 63%;
+            text-align: center;
+            vertical-align: middle;
+            margin-right: -10%;
+            margin-left: 5%;
+            @include rwd("1024px") {
+                margin-left: 0;
+            }
+            &.mobile {
+                display: none;
+                @include rwd($pad_size) {
+                    display: block;
+                }
+            }
+            @include rwd($pad_size) {
+                width: 100%;
+                max-width: 600px;
+                margin: 30px auto 0;
+                text-align: center;
+                &.pc {
+                    .info,
+                    .title {
+                        display: none;
+                    }
+                }
+            }
+            .title {
+                @extend %bigtitle;
+                text-align: left;
+                color: #fff;
+                margin-bottom: 20px;
+                @include rwd($pad_size) {
+                    text-align: center;
+                }
+            }
+            .info {
+                @extend %info;
+                text-align: left;
+                color: #fff;
+                @include rwd($pad_size) {
+                    text-align: center;
+                }
+            }
+            .btn_list {
+                text-align: justify;
+                @include rwd($pad_size) {
+                  text-align: center;
+                }
+                &:after {
+                    display: inline-block;
+                    content: "";
+                    font-size: 0;
+                    width: 100%;
+                }
+                .i_btn {
+                    opacity: 0.8;
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 110px;
+                    font-size: 17px;
+                    line-height: 1.5;
+                    color: #fff;
+                    text-align: center;
+                    cursor: pointer;
+                    @include transition(all .3s);
+                    .t {
+                        margin-top: 25px;
+                        color: #f3ce98;
+                    }
+                    &.on {
+                        opacity: 1;
+                    }
+                }
+            }
+            #colorpicker1 {
+                margin: 35px auto;
+                display: inline-block;
+                @include rwd($pad_size) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .list_div {
+        .text {
+            text-align: left;
+            .list_title {
+                font-size: 48px;
+                color: #fff;
+                line-height: 1;
+                margin-bottom: 30px;
+                font-family: "jersey";
+            }
+            .list_txt {
+                font-family: "Roboto";
+                font-size: 17px;
+                line-height: 1.5;
+                color: #fff;
+                font-weight: 300;
+            }
+        }
+        .list_right {
+            background-color: #181918;
+            @include rwd($pad_size) {
+                background-color: #181918;
+                text-align: center;
+            }
+            .main_bg {
+                @extend %main_size;
+                .text {
+                    width: 400px;
+                    position: absolute;
+                    top: 50%;
+                    right: 40px;
+                    @include translateY(-50%);
+                    z-index: 1;
+                    @include rwd($pad_size) {
+                        position: relative;
+                        top: 0;
+                        right: 0;
+                        @include translateY(0%);
+                        width: 100%;
+                        padding: 70px 0;
+                        text-align: center;
+                    }
+                }
+            }
+            figure {
+                position: relative;
+                margin-left: -52%;
+                display: inline-block;
+                // background: transparent image-url('tough/light_bg.png') left top no-repeat;
+                @include rwd($pad_size) {
+                    position: relative;
+                    display: inline-block;
+                    margin-left: -68%;
+                }
+                @include rwd($phone_size) {
+                    margin-left: -540px;
+                }
+                .main {
+                    max-width: none !important;
+                    position: relative;
+                    height: image-height("tough/light_main.jpg");
+                    @include rwd($pad_size) {
+                        // @include transform(translateX(-15%));
+                    }
+                }
+                .light_bg {
+                    position: absolute;
+                    top: 23.15%;
+                    left: 35.25%;
+                    opacity: 0.2;
+                    @include animation(light 1s ease-in-out infinite alternate);
+                }
+            }
+            &.on {
+                figure {
+                    .light_bg {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .oc {
+        @extend %main_size;
+        text-align: center;
+        margin-bottom: 100px;
+        @include rwd($pad_size) {
+            margin-bottom: 0;
+        }
+        .dtxt {
+            margin-top: 80px;
+            display: inline-block;
+            text-align: center;
+            width: 80%;
+            margin-bottom: 70px;
+            @include rwd($pad_size) {
+                width: 100%;
+            }
+            .title {
+                @extend %bigtitle;
+            }
+            .subtitle {
+                @extend %subtitle;
+                color: #a8a8aa;
+            }
+            .info {
+                @extend %info;
+                margin-top: 40px;
+                color: #fff;
+            }
+        }
+        .mobile {
+            display: none;
+            @include rwd($pad_size) {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .pc {
+            @include rwd($pad_size) {
+                display: none;
+            }
+        }
+        small.s2 {
+            display: block;
+            text-align: left;
+            width: 80%;
+            margin: 30px auto 0;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+    }
+}

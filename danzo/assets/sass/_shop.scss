@@ -1,0 +1,150 @@
+$shop_width:1200px;
+$shop_margin:auto;
+$area_font:24px;
+$title_color:#FFBE2A;
+$sub_font:16px;
+$sub_line:2;
+$item_font:13px;
+$shop_left:115px;
+@mixin sub_title() {
+	font-size:$sub_font;
+	color:$title_color;
+	line-height:$sub_line;
+	@extend .f_family_10;
+	@include rwd($s_phone_size){
+		line-height: 1;
+	};
+}
+
+section.shop {
+	max-width:$shop_width;
+	margin:0 $shop_margin;	
+	width: 80%;
+	@include rwd($phone_size)
+	{	
+		// width: 100%;
+	}
+	&>article{
+		font-size: 0px;
+		&:not(:first-child){
+			margin-top: 50px;
+		}
+	}
+	.area{
+		display:inline-block;
+		vertical-align: top;
+		@extend .f_family_10;
+		font-size: $area_font;
+		width:20%;
+		color:$title_color;
+		text-align: right;
+		span{
+			border-bottom: 1px solid #{$title_color};
+		}
+		@include rwd($s_phone_size){
+			font-size: 16px;
+			width:27%;
+			text-align: left;
+			display: block;
+			margin-bottom: 20px;
+		};
+	}
+	.taiwan .all,.countrys{
+		display: inline-block;
+		@include calc("width","73% - 20px");	
+		margin-left: 20px;
+		@include rwd($s_phone_size){
+			width:auto;  
+			margin: 0 0 0 15%;
+		};
+	}  
+	.taiwan,.unverse{
+		.online,.store{
+			// margin-left: $shop_left;
+			.title{
+				@include sub_title;
+			}
+			.shops{
+				font-size: 0px;
+			}
+		}
+		.online{
+			.item{
+				line-height: 2;
+				display:inline-block;
+				width:33%;
+				font-size: $item_font;
+				@include rwd("1200px"){
+					width:50%;
+				};
+				@include rwd($s_phone_size){
+					line-height: 2;
+					display:block;
+					width:100%;
+				};
+			}
+		}
+		.store{
+			margin-top: 30px;
+			.shops{
+				.item{
+					line-height: 2;
+					display:inline-block;
+					@include calc("width","50% - 20px");
+					margin-right:20px;
+					font-size: $item_font;
+					border-top:1px solid #D8D8D8;
+					padding:5px 0px;
+					&:nth-child(1),&:nth-child(2){
+						border:0px;
+					}
+					.name{
+						font-weight: bold;
+					}
+					.addr{
+						line-height: 1.5;
+					}
+					@include rwd($phone_size){
+						display: block;
+						margin-right: 0px;
+						width:100%;
+						padding: 15px 0px;
+						&:nth-child(1){
+							padding-top:0px;
+						}
+						&:nth-child(2){
+							border-top:1px solid #D8D8D8;
+						}
+					};
+
+				}
+			}
+		}
+		.name{
+			@extend .f_family_13;
+		}
+		a.link,.addr,.phone{
+			@extend .f_family_11;
+		}
+	}
+	.unverse{
+		.store{
+			margin-top: 0px;
+		}
+		.country{
+			&:not(:first-child){
+				margin-top: 30px;
+			}
+			.online{
+				.title{
+					color: #CECECE;
+				}
+			}
+		}
+	}
+	a.link{
+		@include box-shadow(inset 0 -4px 0 0 white, inset 0 -5px 0 0 #FFBE2A);
+		word-wrap: break-word;
+	}
+
+}

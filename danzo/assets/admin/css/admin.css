@@ -1,0 +1,405 @@
+.l_content {
+    position: relative;
+    width: 100%;
+    max-width: 1020px;
+    margin: 0px auto;
+    height: 100%;
+    padding: 0px;
+    font-size: 0px;
+    /*display: inline-block;*/
+}
+
+.l_content>.activity_01 {
+    position: relative;
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.l_content>.activity_01 img {
+    width: 100%;
+}
+
+.l_content>.activity_01>.pic_info {
+    display: inline-block;
+    width: 50%;
+    background-color: #ffffff;
+    vertical-align: top;
+    max-height: 255px;
+    position: relative;
+    cursor: pointer;
+}
+
+.c_none:before {
+    content: attr(num);
+    z-index: 1;
+    font-size: 100px;
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 25%;
+}
+
+.pic_info:nth-child(2):before,
+.pic_info:nth-child(3):before {
+    background: rgba(199, 199, 199, 0.24);
+}
+
+.pic_info:nth-child(1):before,
+.pic_info:nth-child(4):before {
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.activity_02:before {
+    background: rgba(159, 159, 159, 0.24);
+}
+
+.wbg {
+    margin-top: 100%;
+}
+
+.l_content>.activity_01>.pic_info.bg2 {
+    background-color: #f2f2f0;
+}
+
+.l_content>.activity_01>.pic01 {
+    position: relative;
+    width: 50%;
+    max-width: 255px;
+    height: auto;
+    max-height: 255px;
+    display: inline-block;
+}
+
+.l_content>.activity_02 .info,
+.l_content>.activity_01>.pic_info>.info {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.l_content>.activity_02 .info {
+    color: #ffffff;
+}
+
+.table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.table > .cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 65px;
+}
+
+.l_content>.activity_01>.pic_info>.info .line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    margin: 0px auto;
+    max-width: 15px;
+    background: url(../images/line_w2.png) no-repeat center center;
+}
+
+.l_content>.activity_01>.pic_info>.info .text {
+    position: relative;
+    font-family: 'Playfair Display SC', serif, "微軟正黑體", "Microsoft JhengHei";
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0px;
+    line-height: 20px;
+}
+
+.l_content>.activity_01>.pic_info>.info .more {
+    position: relative;
+    font-family: 'dinbold', "微軟正黑體", "Microsoft JhengHei";
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.l_content>.activity_01>.pic_info>.info .more a {
+    color: #f19782;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.l_content>.activity_01>.pic_info2 {
+    display: inline-block;
+    width: 100%;
+    max-width: 255px;
+    height: 255px;
+    float: left;
+    background-color: #f2f2f0;
+}
+
+.l_content>.activity_01>.pic_info2>.info {
+    width: 100%;
+    max-width: 155px;
+    height: 155px;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.l_content>.activity_01>.pic_info2>.info>.line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    top: 30px;
+    margin: 0px auto;
+    max-width: 15px;
+    background: url(../images/line_w2.png) no-repeat center center;
+}
+
+.l_content>.activity_01>.pic_info2>.info>.text {
+    position: relative;
+    font-family: 'Playfair Display SC', serif, "微軟正黑體", "Microsoft JhengHei";
+    font-size: 20px;
+    top: 30px;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 20px;
+    width: 100%;
+    max-width: 155px;
+}
+
+.l_content>.activity_01>.pic_info2>.info>.more {
+    position: relative;
+    font-family: 'dinbold', "微軟正黑體", "Microsoft JhengHei";
+    text-transform: uppercase;
+    text-align: center;
+    top: 25px;
+}
+
+.l_content>.activity_01>.pic_info2>.info>.more a {
+    color: #f19782;
+    text-decoration: underline;
+}
+
+.l_content>.activity_02 {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+}
+
+.l_content>.activity_02 img {
+    width: 100%;
+}
+
+.l_content>.activity_02>.pic {
+    width: 100%;
+    height: auto;
+    max-width: 510px;
+}
+
+.l_content>.activity_02>.pic>.mask {
+    width: 100%;
+    max-width: 510px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.3;
+    /* for IE */
+    
+    filter: alpha(opacity=30);
+    /* CSS3 standard */
+    
+    background: url(../images/mask.png) repeat;
+}
+
+.l_content>.activity_02>.info .line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    /*top: 30px;*/
+
+    margin: 0px auto;
+    max-width: 15px;
+    background: url(../images/line_w3.png) no-repeat center center;
+}
+
+.l_content>.activity_02>.info .text {
+    position: relative;
+    font-family: 'Playfair Display SC', serif, "微軟正黑體", "Microsoft JhengHei";
+    font-size: 34px;
+    /*top: 30px;*/
+
+    max-width: 300px;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 34px;
+}
+
+.l_content>.activity_02>.info .more {
+    position: relative;
+    font-family: 'dinbold', "微軟正黑體", "Microsoft JhengHei";
+    text-transform: uppercase;
+    text-align: center;
+    /*top: 25px;*/
+
+    font-size: 14px;
+}
+
+.l_content>.activity_02>.info .more a {
+    color: #f19782;
+    text-decoration: underline;
+}
+/*果汁商品列表*/
+
+.content_01 {
+    position: relative;
+    width: 100%;
+    max-width: 1020px;
+    margin: 0px auto;
+    height: 100%;
+    padding: 0px;
+}
+
+.content_01>.headline {
+    position: relative;
+    background-color: #ffffff;
+    height: 100%;
+    max-height: 240px;
+    text-align: center;
+    margin: 80px 40px 60px 40px;
+}
+
+.content_01>.headline>.title {
+    position: relative;
+    font-family: Arial, "微軟正黑體", "Microsoft JhengHei";
+    font-size: 40px;
+    width: 100%;
+    line-height: 40px;
+    max-width: 400px;
+    margin: 0px auto;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.content_01>.headline>.line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    margin: 20px auto;
+    max-width: 48px;
+    background: url(../images/line_w.png) no-repeat center center;
+}
+
+.content_01>.headline>.text {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    font-size: 14px;
+    margin: 0px auto;
+    font-family: 'dinbold', "微軟正黑體", "Microsoft JhengHei";
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 24px;
+}
+
+.content_01>.juices_boy {
+    position: relative;
+    padding: 0px 0px 0px 40px;
+    width: 100%;
+    max-width: 1020px;
+    margin: 0px auto;
+}
+
+.content_01>.juices_boy>.item {
+    position: relative;
+    margin: 20px 0px 80px 0px;
+    display: inline-block;
+    vertical-align: top;
+    width: -webkit-calc((100% - 10px) / 3);
+    width: -moz-calc((100% - 10px) / 3);
+    width: calc((100% - 10px) / 3);
+}
+
+.content_01>.juices_boy>.item>.pic {
+    position: relative;
+    max-width: 100px;
+}
+
+.content_01>.juices_boy>.item>.pic img {
+    width: 100%;
+}
+
+.content_01>.juices_boy>.item>.text_info {
+    position: absolute;
+    margin-left: 115px;
+    top: 0px;
+    width: 100%;
+    max-width: 150px;
+}
+
+.content_01>.juices_boy>.item>.text_info>.title {
+    position: relative;
+    font-size: 28px;
+    font-family: 'Playfair Display SC', serif, "微軟正黑體", "Microsoft JhengHei";
+    text-transform: uppercase;
+}
+
+.content_01>.juices_boy>.item>.text_info>.line {
+    position: relative;
+    height: 1px;
+    margin: 15px 0px;
+    width: 100%;
+    background: url(../images/line_w4.png) no-repeat left top;
+}
+
+.content_01>.juices_boy>.item>.text_info>.text_item {
+    position: relative;
+    width: 100%;
+}
+
+.content_01>.juices_boy>.item>.text_info>.text_item>.text {
+    position: relative;
+    width: 100%;
+    font-size: 13px;
+    font-family: Helvetica, "微軟正黑體", "Microsoft JhengHei";
+    margin: 5px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content_01>.juices_boy>.item>.text_info>.detail {
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    font-family: Helvetica, "微軟正黑體", "Microsoft JhengHei";
+    line-height: 16px;
+    top: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.button-success {
+    background-color: rgb(66, 184, 221);
+    color: #fff;
+    font-size: 13px;
+}
+
+.formats .formats_div{
+ display: inline-block;
+ margin:10px;
+ border:1px solid #e3e3e3;
+ padding:10px;
+}
+.formats .formats_div>input,.formats .formats_div>textarea,.award_div,.exh_div,.press_div{
+ margin: 5px
+}
+.educations .edu_div{
+    margin:10px;
+}
+.educations .edu_div input[type=text],.awards .award_div input[type=text],.exhibitions .exh_div input[type=text],.press .press_div input[type=text]{
+    display: inline-block;
+}

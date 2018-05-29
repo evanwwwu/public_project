@@ -1,0 +1,25 @@
+INFO  - 2015-04-17 00:30:57[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 00:39:26[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 01:19:47[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 01:26:54[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 01:30:52[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 01:32:03[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 01:32:57[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 01:35:01[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 01:35:25[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 01:35:43[IP sorurce: 127.0.0.1] from:/www/franke/checkout/step02 --> 購買步驟2 內容:{"step":"sp01","pro":["fdsafdsa"],"content":"fdsafdsafsa"}商品:{"0d6469c4925e1e6137eefca5290990aa":{"rowid":"0d6469c4925e1e6137eefca5290990aa","id":"4","qty":"1","price":"32131","name":"fdsafdsa","options":{"site_price":"32131","product_no":"fdsafdsaf","cover_img":"2015-03-29\/fe1355ce26ca2e1dd02e44219eadd6b6_330x200.jpg","parts":"[{\"p_name\":\"\u4f60\u597d\",\"p_price\":0}]","main_id":"1"},"subtotal":32131},"c0e27a2065a32461a5850c85b935bc8a":{"rowid":"c0e27a2065a32461a5850c85b935bc8a","id":"4","qty":"1","price":"32452","name":"fdsafdsa","options":{"site_price":"32131","product_no":"fdsafdsaf","cover_img":"2015-03-29\/fe1355ce26ca2e1dd02e44219eadd6b6_330x200.jpg","parts":"[{\"p_name\":\"\u4f60\u597d\",\"p_price\":0},{\"p_name\":\"\u4f60\u597d\",\"p_price\":321}]","main_id":"1"},"subtotal":32452}}
+INFO  - 2015-04-17 01:36:09[IP sorurce: 127.0.0.1] from:/www/franke/checkout/send --> 儲存訂單 訂單編號:150417-1
+INFO  - 2015-04-17 02:15:05[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 02:16:03[IP sorurce: 127.0.0.1] from:/www/franke/checkout/step02 --> 購買步驟2 內容:{"step":"sp01","pro":["fdsafdsa"],"content":"fafdsa"}商品:{"f9a0f153f7d863f28241d99736c0dc32":{"rowid":"f9a0f153f7d863f28241d99736c0dc32","id":"4","qty":"1","price":"32131","name":"fdsafdsa","options":{"site_price":"32131","product_no":"fdsafdsaf","cover_img":"2015-03-29\/fe1355ce26ca2e1dd02e44219eadd6b6_330x200.jpg","parts":"%5B%7B%22p_name%22%3A%22%E4%BD%A0%E5%A5%BD%22%2C%22p_price%22%3A0%7D%2C%7B%22p_name%22%3A%22lieowtiopqw%22%2C%22p_price%22%3A0%7D%5D","main_id":"1"},"subtotal":32131}}
+INFO  - 2015-04-17 02:16:20[IP sorurce: 127.0.0.1] from:/www/franke/checkout/send --> 儲存訂單 訂單編號:150417-2
+INFO  - 2015-04-17 02:17:13[IP sorurce: 127.0.0.1] from:/www/franke/checkout/step02 --> 購買步驟2 內容:{"step":"sp01","pro":["fdsafdsa"],"content":"fafdsa"}商品:[]
+INFO  - 2015-04-17 02:17:42[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 02:17:52[IP sorurce: 127.0.0.1] from:/www/franke/checkout/step02 --> 購買步驟2 內容:{"step":"sp01","content":"dfsfas"}商品:{"e3efbd9932cf6b99d60a66a553dbef2c":{"rowid":"e3efbd9932cf6b99d60a66a553dbef2c","id":"4","qty":"1","price":"32452","name":"fdsafdsa","options":{"site_price":"32131","product_no":"fdsafdsaf","cover_img":"2015-03-29\/fe1355ce26ca2e1dd02e44219eadd6b6_330x200.jpg","parts":"%5B%7B%22p_name%22%3A%22%E4%BD%A0%E5%A5%BD%22%2C%22p_price%22%3A0%7D%2C%7B%22p_name%22%3A%22%E4%BD%A0%E5%A5%BD%22%2C%22p_price%22%3A321%7D%5D","main_id":"1"},"subtotal":32452}}
+INFO  - 2015-04-17 02:18:55[IP sorurce: 127.0.0.1] from:/www/franke/checkout/step02 --> 購買步驟2 內容:{"step":"sp01","content":"dfsfas"}商品:{"e3efbd9932cf6b99d60a66a553dbef2c":{"rowid":"e3efbd9932cf6b99d60a66a553dbef2c","id":"4","qty":"1","price":"32452","name":"fdsafdsa","options":{"site_price":"32131","product_no":"fdsafdsaf","cover_img":"2015-03-29\/fe1355ce26ca2e1dd02e44219eadd6b6_330x200.jpg","parts":"%5B%7B%22p_name%22%3A%22%E4%BD%A0%E5%A5%BD%22%2C%22p_price%22%3A0%7D%2C%7B%22p_name%22%3A%22%E4%BD%A0%E5%A5%BD%22%2C%22p_price%22%3A321%7D%5D","main_id":"1"},"subtotal":32452}}
+INFO  - 2015-04-17 02:19:17[IP sorurce: 127.0.0.1] from:/www/franke/checkout/send --> 儲存訂單 訂單編號:150417-3
+INFO  - 2015-04-17 02:35:38[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 02:36:48[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 02:38:10[IP sorurce: 127.0.0.1] from:/www/franke/checkout/step02 --> 購買步驟2 內容:{"step":"sp01","content":""}商品:{"e3efbd9932cf6b99d60a66a553dbef2c":{"rowid":"e3efbd9932cf6b99d60a66a553dbef2c","id":"4","qty":"1","price":"32452","name":"fdsafdsa","options":{"site_price":"32131","product_no":"fdsafdsaf","cover_img":"2015-03-29\/fe1355ce26ca2e1dd02e44219eadd6b6_330x200.jpg","parts":"%5B%7B%22p_name%22%3A%22%E4%BD%A0%E5%A5%BD%22%2C%22p_price%22%3A0%7D%2C%7B%22p_name%22%3A%22%E4%BD%A0%E5%A5%BD%22%2C%22p_price%22%3A321%7D%5D","main_id":"1"},"subtotal":32452}}
+INFO  - 2015-04-17 02:38:24[IP sorurce: 127.0.0.1] from:/www/franke/checkout/send --> 儲存訂單 訂單編號:150417-2
+INFO  - 2015-04-17 02:47:47[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-04-17 02:52:05[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁

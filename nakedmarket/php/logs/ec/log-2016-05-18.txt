@@ -1,0 +1,66 @@
+INFO - 2016-05-18 23:01:48 --> Config Class Initialized
+INFO - 2016-05-18 23:01:48 --> Hooks Class Initialized
+DEBUG - 2016-05-18 23:01:48 --> UTF-8 Support Enabled
+INFO - 2016-05-18 23:01:48 --> Utf8 Class Initialized
+INFO - 2016-05-18 23:01:48 --> URI Class Initialized
+INFO - 2016-05-18 23:01:48 --> Router Class Initialized
+INFO - 2016-05-18 23:01:48 --> Output Class Initialized
+INFO - 2016-05-18 23:01:48 --> Security Class Initialized
+DEBUG - 2016-05-18 23:01:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-05-18 23:01:48 --> CSRF cookie sent
+INFO - 2016-05-18 23:01:48 --> Input Class Initialized
+INFO - 2016-05-18 23:01:48 --> Language Class Initialized
+INFO - 2016-05-18 23:01:48 --> Loader Class Initialized
+INFO - 2016-05-18 23:01:48 --> Helper loaded: url_helper
+INFO - 2016-05-18 23:01:48 --> Helper loaded: language_helper
+INFO - 2016-05-18 23:01:48 --> Helper loaded: my_file_helper
+INFO - 2016-05-18 23:01:48 --> Helper loaded: form_helper
+INFO - 2016-05-18 23:01:48 --> Database Driver Class Initialized
+INFO - 2016-05-18 23:01:49 --> Image Lib Class Initialized
+ERROR - 2016-05-18 23:01:49 --> Unable to load the requested class: Log
+INFO - 2016-05-18 23:03:07 --> Config Class Initialized
+INFO - 2016-05-18 23:03:07 --> Hooks Class Initialized
+DEBUG - 2016-05-18 23:03:07 --> UTF-8 Support Enabled
+INFO - 2016-05-18 23:03:07 --> Utf8 Class Initialized
+INFO - 2016-05-18 23:03:07 --> URI Class Initialized
+INFO - 2016-05-18 23:03:07 --> Router Class Initialized
+INFO - 2016-05-18 23:03:07 --> Output Class Initialized
+INFO - 2016-05-18 23:03:07 --> Security Class Initialized
+DEBUG - 2016-05-18 23:03:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-05-18 23:03:07 --> CSRF cookie sent
+INFO - 2016-05-18 23:03:07 --> Input Class Initialized
+INFO - 2016-05-18 23:03:07 --> Language Class Initialized
+INFO - 2016-05-18 23:03:07 --> Loader Class Initialized
+INFO - 2016-05-18 23:03:07 --> Helper loaded: url_helper
+INFO - 2016-05-18 23:03:07 --> Helper loaded: language_helper
+INFO - 2016-05-18 23:03:07 --> Helper loaded: my_file_helper
+INFO - 2016-05-18 23:03:07 --> Helper loaded: form_helper
+INFO - 2016-05-18 23:03:07 --> Database Driver Class Initialized
+INFO - 2016-05-18 23:03:08 --> Image Lib Class Initialized
+INFO - 2016-05-18 23:03:08 --> Model Class Initialized
+INFO - 2016-05-18 23:03:08 --> Model Class Initialized
+INFO - 2016-05-18 23:03:08 --> Model Class Initialized
+INFO - 2016-05-18 23:03:08 --> Controller Class Initialized
+INFO - 2016-05-18 23:07:07 --> Config Class Initialized
+INFO - 2016-05-18 23:07:07 --> Hooks Class Initialized
+DEBUG - 2016-05-18 23:07:07 --> UTF-8 Support Enabled
+INFO - 2016-05-18 23:07:07 --> Utf8 Class Initialized
+INFO - 2016-05-18 23:07:07 --> URI Class Initialized
+INFO - 2016-05-18 23:07:07 --> Router Class Initialized
+INFO - 2016-05-18 23:07:07 --> Output Class Initialized
+INFO - 2016-05-18 23:07:07 --> Security Class Initialized
+DEBUG - 2016-05-18 23:07:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-05-18 23:07:07 --> CSRF cookie sent
+INFO - 2016-05-18 23:07:07 --> Input Class Initialized
+INFO - 2016-05-18 23:07:07 --> Language Class Initialized
+INFO - 2016-05-18 23:07:07 --> Loader Class Initialized
+INFO - 2016-05-18 23:07:07 --> Helper loaded: url_helper
+INFO - 2016-05-18 23:07:07 --> Helper loaded: language_helper
+INFO - 2016-05-18 23:07:07 --> Helper loaded: my_file_helper
+INFO - 2016-05-18 23:07:07 --> Helper loaded: form_helper
+INFO - 2016-05-18 23:07:07 --> Database Driver Class Initialized
+INFO - 2016-05-18 23:07:08 --> Image Lib Class Initialized
+INFO - 2016-05-18 23:07:08 --> Model Class Initialized
+INFO - 2016-05-18 23:07:08 --> Model Class Initialized
+INFO - 2016-05-18 23:07:08 --> Model Class Initialized
+INFO - 2016-05-18 23:07:08 --> Controller Class Initialized

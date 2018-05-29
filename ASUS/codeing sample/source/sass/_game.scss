@@ -1,0 +1,103 @@
+#{"#"+$model+"-game"} {
+	background: image-url("dot-bg.jpg") center top / auto no-repeat;
+	padding-top: 70px;
+	text-align: center;
+	@include rwd($pad_size) {
+		padding-top: 40px;
+		text-align: left;
+	}
+	.main-title{
+		margin-bottom: 60px;
+		@include rwd($pad_size) {
+			margin-bottom: 40px;
+		}
+	}
+	.gpu,.booster,.xsplit{
+		text-align: justify;
+		font-size: 0;
+		&:after{
+			content:"";
+			display: inline-block;
+			width: 100%;
+		}
+		.dtxt{
+			max-width: 550px;
+			display: inline-block;
+			vertical-align: middle;
+			text-align: left;
+			direction: ltr;
+			@include rwd($desktop_size) {
+				width: 50%;
+			}
+			@include rwd($pad_size) {
+				width: 100%;
+                max-width: none;
+			}
+			.subtitle{
+				margin-bottom: 30px;
+			}
+		}
+		figure{
+			display: inline-block;
+			vertical-align: middle;
+			@include rwd($desktop_size) {
+				width: 50%;
+			}
+			@include rwd($pad_size) {
+				text-align: center;
+				width: 100%;
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	@include rwd($desktop_size) {
+		.gpu .dtxt,.xsplit .dtxt{
+			padding-left: 20px;
+			@include rwd($pad_size) {
+				padding-left: 0px;
+			}
+		}
+		.booster .dtxt{
+			direction: ltr;
+			padding-right: 20px;
+			li{white-space: inherit;}
+			@include rwd($pad_size) {
+				padding-right: 0px;
+			}
+		}
+	}
+	.booster,.xsplit{
+		margin-top: 120px;
+		@include rwd($pad_size) {
+			margin-top: 60px;
+		}
+	}
+	.booster{
+		direction: rtl;
+		@include rwd($pad_size) {
+			text-align: left;
+		}
+		li{
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 20px;
+			white-space:nowrap;
+			img{
+				float: left;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+#{"#"+$model+"-asus"} {
+	text-align: center;
+	margin-top: 120px;
+	@include rwd($pad_size) {
+		margin-top: 60px;
+	}
+	.main-title{
+		position: relative;
+		z-index: 2;
+	}
+}

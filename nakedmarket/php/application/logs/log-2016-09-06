@@ -1,0 +1,64 @@
+INFO - 2016-09-06 15:22:39 --> Config Class Initialized
+INFO - 2016-09-06 15:22:39 --> Hooks Class Initialized
+DEBUG - 2016-09-06 15:22:40 --> UTF-8 Support Enabled
+INFO - 2016-09-06 15:22:40 --> Utf8 Class Initialized
+INFO - 2016-09-06 15:22:40 --> URI Class Initialized
+INFO - 2016-09-06 15:22:40 --> Router Class Initialized
+INFO - 2016-09-06 15:22:40 --> Output Class Initialized
+INFO - 2016-09-06 15:22:40 --> Security Class Initialized
+DEBUG - 2016-09-06 15:22:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-09-06 15:22:40 --> CSRF cookie sent
+INFO - 2016-09-06 15:22:40 --> Config Class Initialized
+INFO - 2016-09-06 15:22:40 --> Hooks Class Initialized
+DEBUG - 2016-09-06 15:22:40 --> UTF-8 Support Enabled
+INFO - 2016-09-06 15:22:40 --> Utf8 Class Initialized
+INFO - 2016-09-06 15:22:40 --> URI Class Initialized
+INFO - 2016-09-06 15:22:40 --> Input Class Initialized
+INFO - 2016-09-06 15:22:40 --> Language Class Initialized
+DEBUG - 2016-09-06 15:22:40 --> No URI present. Default controller set.
+INFO - 2016-09-06 15:22:40 --> Router Class Initialized
+INFO - 2016-09-06 15:22:40 --> Loader Class Initialized
+INFO - 2016-09-06 15:22:40 --> Output Class Initialized
+INFO - 2016-09-06 15:22:40 --> Security Class Initialized
+DEBUG - 2016-09-06 15:22:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-09-06 15:22:40 --> Helper loaded: url_helper
+INFO - 2016-09-06 15:22:40 --> CSRF cookie sent
+INFO - 2016-09-06 15:22:40 --> Helper loaded: language_helper
+INFO - 2016-09-06 15:22:40 --> Input Class Initialized
+INFO - 2016-09-06 15:22:40 --> Language Class Initialized
+INFO - 2016-09-06 15:22:40 --> Loader Class Initialized
+INFO - 2016-09-06 15:22:40 --> Helper loaded: my_file_helper
+INFO - 2016-09-06 15:22:40 --> Helper loaded: url_helper
+INFO - 2016-09-06 15:22:40 --> Helper loaded: language_helper
+INFO - 2016-09-06 15:22:40 --> Helper loaded: form_helper
+INFO - 2016-09-06 15:22:40 --> Helper loaded: my_file_helper
+INFO - 2016-09-06 15:22:40 --> Helper loaded: form_helper
+INFO - 2016-09-06 15:22:40 --> Database Driver Class Initialized
+INFO - 2016-09-06 15:22:40 --> Database Driver Class Initialized
+INFO - 2016-09-06 15:22:42 --> Image Lib Class Initialized
+INFO - 2016-09-06 15:22:42 --> Image Lib Class Initialized
+INFO - 2016-09-06 15:22:42 --> Session: Class initialized using 'database' driver.
+INFO - 2016-09-06 15:22:42 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-09-06 15:22:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-09-06 15:22:42 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-09-06 15:22:42 --> Cart Class Initialized
+INFO - 2016-09-06 15:22:42 --> Cart Class Initialized
+INFO - 2016-09-06 15:22:42 --> Model Class Initialized
+INFO - 2016-09-06 15:22:42 --> Model Class Initialized
+INFO - 2016-09-06 15:22:42 --> Model Class Initialized
+INFO - 2016-09-06 15:22:42 --> Model Class Initialized
+INFO - 2016-09-06 15:22:42 --> Model Class Initialized
+INFO - 2016-09-06 15:22:42 --> Model Class Initialized
+INFO - 2016-09-06 15:22:42 --> Controller Class Initialized
+INFO - 2016-09-06 15:22:42 --> Controller Class Initialized
+INFO - 2016-09-06 15:22:42 --> Model Class Initialized
+INFO - 2016-09-06 15:22:42 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/login_view.php
+INFO - 2016-09-06 15:22:42 --> Model Class Initialized
+INFO - 2016-09-06 15:22:42 --> Final output sent to browser
+INFO - 2016-09-06 15:22:42 --> Model Class Initialized
+DEBUG - 2016-09-06 15:22:42 --> Total execution time: 3.0709
+INFO - 2016-09-06 15:22:42 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\cart_view.php
+INFO - 2016-09-06 15:22:43 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\index_view.php
+INFO - 2016-09-06 15:22:43 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\master_view.php
+INFO - 2016-09-06 15:22:43 --> Final output sent to browser
+DEBUG - 2016-09-06 15:22:43 --> Total execution time: 2.7411

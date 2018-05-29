@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://threejs.org/build/three.min.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/3587259/Code/Threejs/OrbitControls.js"></script>
+	<script src="http://threejs.org/examples/js/loaders/OBJLoader.js"></script>
+</head>
+<body>
+	<!-- <div id="swap-camera" class="button">swap camera</div> -->
+	<style>
+		body{
+			margin: 0;
+			overflow: hidden;
+		}
+		#swap-camera{
+			background: #eee;
+			padding: 3px 5px;
+			margin: 5px;
+			cursor: pointer;
+			display: inline-block;
+			border: 1px solid #aaa;
+		}
+	</style>
+	<script>
+		var container;
+
+		var camera, scene, renderer,controls;
+		var windowHalfX = window.innerWidth / 2;
+		var windowHalfY = window.innerHeight / 2;
+		var activeCamera;
+		var mode;
+
+		init();
+		animate();
+
+
+		function init() {
+
+			container = document.createElement( 'div' );
+			document.body.appendChild( container );
+			// scene
+			scene = new THREE.Scene();
+			camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 1, 50 );
+			camera.position.set(0, 0, 5);
+
+			camera2 = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 20000);
+			camera2.position.set(200, 250, 200);
+
+			//activeCamera
+			activeCamera = camera;
+
+			var ambient = new THREE.AmbientLight(new THREE.Color("rgb(252,234,190)"));
+			scene.add( ambient );
+
+			// var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+			// directionalLight.position.set( 0, 0, 1 );
+			// scene.add( directionalLight );
+
+			// texture
+			var manager = new THREE.LoadingManager();
+			manager.onProgress = function ( item, loaded, total ) {
+				console.log( item, loaded, total );
+			};
+
+			var texture = new THREE.Texture();
+
+			var onProgress = function ( xhr ) {
+				if ( xhr.lengthComputable ) {
+					var percentComplete = xhr.loaded / xhr.total * 100;
+					console.log( Math.round(percentComplete, 2) + '% downloaded' );
+				}
+			};
+
+			var onError = function ( xhr ) {
+			};
+
+
+			var loader = new THREE.ImageLoader( manager );
+			loader.load( 'mandarine/Mandarine.jpg', function ( image ) {
+
+				texture.image = image;
+				texture.needsUpdate = true;
+
+			} );
+
+			// model
+			var loader = new THREE.OBJLoader(manager);
+			loader.load( 'mandarine/Mandarine.obj', function ( object ) {
+
+				object.traverse( function ( child ) {
+
+					if ( child instanceof THREE.Mesh ) {
+						child.material.map = texture;
+					}
+
+				} );
+				object.position.z = 0;
+				scene.add( object );
+			}, onProgress, onError );
+			activeCamera.lookAt(scene.position)
+			controls = new THREE.OrbitControls(activeCamera);
+			//Helper
+			// var CameraHelper = new THREE.CameraHelper(camera);
+			// scene.add(CameraHelper);
+			// var AxisHelper = new THREE.AxisHelper(5);
+			// scene.add(AxisHelper);
+
+			renderer = new THREE.WebGLRenderer({ antialias: false });
+			// renderer.setPixelRatio( window.devicePixelRatio );
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			container.appendChild( renderer.domElement );
+			window.addEventListener( 'resize', onWindowResize, false );
+
+		}
+
+		function onWindowResize() {
+			windowHalfX = window.innerWidth / 2;
+			windowHalfY = window.innerHeight / 2;
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			activeCamera.aspect = window.innerWidth / window.innerHeight;
+			activeCamera.updateProjectionMatrix();
+		}
+
+
+		function animate() {
+			requestAnimationFrame( animate );
+			controls.update();
+			render();
+
+		}
+
+		function render() {
+			// controls.update();
+			// console.log(camera.position);
+			// console.log(camera);
+			renderer.render(scene, activeCamera);
+		}
+		document.getElementById("swap-camera").addEventListener("click",function () {
+			if (activeCamera == camera) {
+				activeCamera = camera2;
+			} else {
+				activeCamera = camera;
+			}
+		});
+	</script>
+</body>
+</html>

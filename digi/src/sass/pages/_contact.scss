@@ -1,0 +1,191 @@
+ .warpper.contact{
+ 	.banner-map{
+ 		position: relative;
+ 		padding-bottom: 56.25%;
+ 		height: 0;
+ 		overflow: hidden;
+ 		@include rwd($pad) {
+ 			padding-bottom: 36.25%;
+ 		}
+ 		@include rwd($desktop-w) {
+ 			padding-bottom: 31.25%;
+ 		}
+ 		iframe{ 
+ 			position: absolute;
+ 			top:0;
+ 			left: 0;
+ 			width: 100%;
+ 			height: 100%;
+ 		}
+ 	}
+ 	.content{
+ 		padding: 20px;
+ 		font-size: 0;
+ 		position: relative;
+ 		@include rwd($pad) {
+ 			padding: 30px 80px;
+ 		}
+ 		@include rwd($desktop) {
+ 			margin: 0 auto;
+ 			padding: 0 0 120px;
+ 			max-width: 780px;
+ 			direction: rtl;
+ 		}
+ 		@include rwd($desktop-w) {
+ 			max-width: 1020px;
+ 		}
+ 		.addr{
+ 			margin: 20px 0px;
+ 			@include rwd($pad) {
+ 				margin: 30px 0px;
+ 				>p{
+ 					display: inline-block;
+ 					vertical-align: top;
+ 					width: 33%;
+ 					padding-right: 20px;
+ 				}
+ 			}
+ 			@include rwd($desktop) {
+ 				>p{
+ 					width: 100%;
+ 				}
+ 				display: inline-block;
+ 				vertical-align: middle;
+ 				width:percentage(420/1024);
+ 				direction: ltr;
+ 			}
+ 			@include rwd($desktop-w){
+ 				padding-right: 90px;
+ 			}
+ 			.com{
+ 				font-size: 18px;
+ 				line-height: 30px;
+ 				color: $blue1;
+ 				margin-top: 0px;
+ 				font-weight: 600;
+ 				@include rwd($desktop-w) {
+ 					line-height: 30px;
+ 					font-size: 30px;
+ 				}
+ 			}
+ 			.add{
+ 				font-size: 15px;
+ 				line-height: 20px;
+ 				color: $blue1;
+ 				margin-bottom: 10px;
+ 				@include rwd($desktop) {
+ 					margin: 40px 0;
+ 					font-size: 16px;
+ 					line-height: 24px;
+ 				}
+ 				@include rwd($desktop-w) {
+ 					font-size: 22px;
+ 				}
+ 			}
+ 			.phone{
+ 				font-size: 15px;
+ 				line-height: 20px;
+ 				color: $blue1;
+ 				margin-bottom: 10px; 	
+ 				@include rwd($pad) {
+ 					text-align: right;
+ 				}
+ 				@include rwd($desktop) {
+ 					text-align: left;
+ 					font-size: 16px;
+ 					line-height: 24px;
+ 				}	
+ 				@include rwd($desktop-w) {
+ 					font-size: 20px;
+ 				}
+ 			}
+ 		}
+ 		form{
+ 			display: inline-block;
+ 			font-size:15px;
+ 			line-height: 20px;
+ 			background-color: #f6f6f6;
+ 			padding: 30px 15px 20px;
+ 			@include rwd($desktop) {
+ 				display: inline-block;
+ 				vertical-align: middle;
+ 				width:percentage(600/1024);
+ 				direction: ltr;
+ 				margin-top: -20px;
+ 				padding: 25px 35px 15px;
+ 			}
+ 			@include rwd($desktop-w){
+ 				padding: 45px 45px 20px;
+ 				margin-top: -50px;
+ 			}
+ 			.info{
+ 				margin-bottom: 10px;
+ 				@include rwd($desktop) {
+ 					font-size: 18px;
+ 					line-height: 24px;
+ 					margin-bottom: 20px;
+ 				}
+ 				@include rwd($desktop-w) {
+ 					font-size: 20px;
+ 				}
+ 				a{
+ 					color: $blue1;
+ 				}
+ 			}
+ 			label{
+ 				width: 100%;
+ 				display: inline-block;
+ 				@include rwd($pad) {
+ 					&.firstname{
+ 						vertical-align: top;
+ 						width: 50%;
+ 						padding-right: 15px
+ 					}
+ 					&.lastname{
+ 						vertical-align: top;
+ 						width: 50%;
+ 						padding-left: 15px;
+ 					}
+ 				}
+ 			}
+ 			input{
+ 				width: 100%;
+ 				border: 0;
+ 				border-bottom: 1px solid #d2d2d2;
+ 				font-size: 16px;
+ 				line-height: 24px;
+ 				padding: 0px;
+ 				margin-bottom: 10px;
+ 				background-color: #f6f6f6;
+ 				padding: 5px 0px;
+ 				@include rwd($desktop-w) {
+ 					font-size: 22px;
+ 					line-height: 30px;
+ 				}
+ 			}
+ 			textarea{
+ 				border: 0px;
+ 				width: 100%;
+ 				height: 125px;
+ 				font-size: 17px;
+ 				background-color: #f6f6f6;
+ 				@include rwd($desktop-w) {
+ 					font-size: 22px;
+ 					line-height: 30px;
+ 				}
+ 			}
+ 			button{
+ 				width: 100%;
+ 				line-height: 30px;
+ 				color: #fff;
+ 				background-color: $blue1;
+ 				border: 0px;
+ 				margin-top: 15px;
+ 				@include rwd($desktop){
+ 					line-height: 40px;
+ 					font-size: 20px;
+ 				}
+ 			}
+ 		}
+ 	}
+ }

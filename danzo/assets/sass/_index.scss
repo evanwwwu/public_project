@@ -1,0 +1,144 @@
+
+$header_width:161px;
+$info_width:141px;
+$sitemap_padding:0px;
+
+body.index {
+	background-color: #E1E1E1;
+	header {
+		// width:$header_width;
+		background-color: transparent;
+		.info{
+			width: $info_width;
+			display: block;
+			@extend .f_family_12;
+			font-size: 9px;
+			line-height: 12px;
+			margin-top: 20px;
+			margin-left: $main_padding;
+			word-break:break-word;
+			text-align: justify;
+			color:#666666;
+		}
+		.menu {
+			display: none;
+		}
+		@include rwd($phone_size){
+			height: auto;
+			.logo{
+				width: 90px;
+				.pc{
+					display: block;
+				}
+				.mobile{
+					display: none;
+				}
+			}
+			.info{
+				display: none;
+			}
+		};
+	}
+	@include rwd($phone_size){
+		height: 100%;
+	}
+}
+section.index {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	@include rwd($phone_size){
+		overflow: auto;
+		@include middle_before();
+		font-size: 0;
+		height: 83%;
+	}
+	// @include rwd($phone_size){
+	// 	@include background-image-retina("../images/index_main",jpg,95%,auto);
+	// 	background-size: 95%;
+	// 	background-position: center;
+	// 	background-repeat:no-repeat;
+	// };
+	.sitemap {
+		@include rwd($phone_size){
+			display: none;
+		};
+		// @include scale(0);
+		@include transition(all 1s cubic-bezier(0.050, 1.650, 0.390, 0.830));
+		opacity: 1;
+		position: relative;
+		vertical-align: middle;
+		margin: 0 auto;
+		padding: $sitemap_padding 0px;
+		width: $map_width;
+		@include translateY(-100%);
+		@include zindex("svg");
+		&>img {
+			width: 101%;
+		}
+		&>svg {
+			// position: absolute;
+			left: 0px;
+			// top: $sitemap_padding;
+			width: 100%;
+			z-index: 99;
+		}
+		&.show{
+			@include translateY(0%);
+			// @include scale(1);
+			// @include animation(sitemap 10s linear alternate infinite 3s);	
+		}
+	}
+	.mobile{
+		display: none;
+		// margin: 0px 5%;
+		position: relative;
+		vertical-align: middle;
+		width: 100%;
+		padding-bottom:$footer_height;
+		.patten1,.patten2{
+			position: absolute;
+			right:5%;
+		}
+		.patten1{
+			top:10%
+		}
+		.patten2{
+			bottom:5%;
+		}
+		// &:before {
+		// 	content: "";
+		// 	display: inline-block;
+		// 	height: 100%;
+		// 	vertical-align: middle;
+		// }
+		.site_img {
+			display: inline-block;
+			vertical-align: middle;
+			position:absolute;  
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		.menu{
+			display: block;
+			position: relative;
+			@include menu(true);
+		}
+		@include rwd($phone_size){
+			// display: block;
+			// padding-top: 87px;
+			display: inline-block;
+		}
+	}
+}
+@include keyframes(sitemap){
+	from{
+		@include translateY(0px);
+	}
+	to{
+		@include translateY(-5%);
+	}
+}

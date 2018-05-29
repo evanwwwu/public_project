@@ -1,0 +1,42 @@
+include lang_en
+-$lang = "en";
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    #warp
+      include header
+      .warpper.about
+        .banner
+          img src="../assets/images/about-bg.jpg" alt=""/
+          .title
+            h2 = $a_title
+            p = $a_subtitle
+        /! 麵包屑 start
+        .navigation
+          a href="index.html"
+            | Index
+          span
+            | >
+          span.active
+            | About
+        /! 麵包屑 end
+        .mainsize
+          p = $a_text1
+          p = $a_text2
+          p = $a_text3
+          h5 = $a_text4
+          .icons
+            - for i in 1..15
+                img.icon src="../assets/images/a-icon#{i}.jpg" alt=""/
+        .video-div
+          .video
+            <iframe src="https://www.youtube.com/embed/eVTXPUF4Oz4" frameborder="0" allowfullscreen></iframe>
+        .mainsize
+          h5 = $a_text5
+          .icons
+            - for i in 16..28
+                img.icon src="../assets/images/a-icon#{i}.jpg" alt=""/
+    include footer

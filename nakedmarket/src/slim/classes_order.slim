@@ -1,0 +1,61 @@
+-$page_list = 'classes';
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    include header
+    .warp
+      include menu
+      .warpper.classes_order
+        a.prev_btn href="classess_detail.html"
+          img src="assets/images/back_arr.png" alt=""/
+        .main_content
+          .order_title
+            h3 Class
+            p 歡迎來信詢問任何訂單、商品及帳戶問題
+            a href="mailto:nakedmarket.tw@gmail.com" nakedmarket.tw@gmail.com
+          .order_info
+            .s_title
+              span 報名資訊
+            .content
+              ul
+                li
+                  span 課程名稱：
+                  span AMY的英式午茶約會
+                li
+                  span 課程日期：
+                  span 3/11 (日)
+                li
+                  span 學員姓名：
+                  span 陳奕達
+                li
+                  span 聯絡電話：
+                  span 0933456789
+                li
+                  span 電子郵件：
+                  span kadjafl@gmail.com
+              .info
+                p 報名成功不代表確認開課，如未達到開課⼈數，我們將在開課前三日通知並全額退款
+                p 開課前不另作通知，若因故不克前往，開課7⽇前來電取消將會全額退款，3⽇前取消退款50%，3日以內取消恕不接受退款或學費轉移及保留。
+          .order_pay
+            .s_title
+              span 請選擇付款方式
+            .pays
+              label
+                input type="radio" name="pay_type"/
+                .item.credit
+                  .icon
+                    img src="assets/images/credit_icon.png" alt=""/
+                  span 信用卡
+              label
+                input type="radio" checked="checked" name="pay_type"/
+                .item.webatm
+                  .icon
+                    img src="assets/images/webatm_icon.png" alt=""/
+                  span WEB ATM
+          a.check_btn href="classes_list.html"
+            span 確認
+
+        include footer

@@ -1,0 +1,1 @@
+INFO - 2016-05-18 23:41:47[IP sorurce: 192.168.0.117] from:/www/nakedmarket/web_git/php/ajax/test --> test 

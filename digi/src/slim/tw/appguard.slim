@@ -1,0 +1,43 @@
+include lang_tw
+-$lang = "tw";
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    #warp
+      include header
+      .warpper.appguard
+        .banner
+          img src="../assets/images/app-bg.jpg" alt=""/
+          .title
+            h2 = $app_title
+            p = $app_subtitle
+        .text 
+          p = $app_text
+        .mainsize
+          .key = $app_key
+          .items
+            .item
+              img src="../assets/images/appicon1.png" alt=""/
+              .title = $app_item1_title
+              .info = $app_item1_info
+            .item
+              img src="../assets/images/appicon2.png" alt=""/
+              .title = $app_item2_title
+              .info = $app_item2_info
+            .item
+              img src="../assets/images/appicon3.png" alt=""/
+              .title = $app_item3_title
+              .info = $app_item3_info
+            .item
+              img src="../assets/images/appicon4.png" alt=""/
+              .title = $app_item4_title
+              .info = $app_item4_info
+          a href="#"
+            .more-btn
+              span Learn more 
+              i.material-icons &#xE315;
+
+    include footer

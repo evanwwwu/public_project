@@ -1,0 +1,318 @@
+#{"#"+$model+"-gear"} {
+	background: image-url("dot-bg.jpg") center top / auto no-repeat;
+	padding-top: 40px;
+	text-align: center;
+	@include rwd($pad_size) {
+		text-align: left;
+	}
+	.content{
+		margin-top: 75px;
+		position: relative;
+		@include rwd($pad_size) {
+			margin-top: 40px;
+		}
+		.dtxt{
+			max-width: 580px;
+			margin-right:percentage(670/1366);			
+			margin-left: auto;
+			text-align: left;
+			@include rwd($pad_size) {
+				margin-right: auto;
+				margin-left: 0;
+                max-width: none;
+			}
+			.subtitle{
+				margin-bottom: 30px;
+			}
+			.info{
+				margin-bottom: 20px;
+			}
+			.vr{
+				position: relative;
+				margin-top: 30px;
+				padding-left: 167px;
+				img{
+					position: absolute;
+					top: 50%;
+					left: 0;
+					margin-top: -44px;
+				}
+				.tt{
+					font-size: 18px;
+					line-height: 30px;
+					font-weight: 300;
+					a{
+						color: $color1;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		figure{
+			position: absolute;
+			left: 50%;
+			top: 0;
+			margin-right: -237px;
+			max-width: 890px;
+			@include rwd($pad_size) {
+				position: relative;
+				margin-top: 40px;
+				left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+	.cool-extr{
+		font-size: 0;
+		padding: 50px 0;
+		direction: rtl;
+		.l{	
+			direction: ltr;
+			display: inline-block;
+			right: 50%;
+			margin-left: -100px;
+			margin-right: 110px;
+			vertical-align: middle;
+			@include rwd($desktop_size) {
+				margin-left: -150px;
+				margin-right: 20px;
+				width: 60%;				
+			}
+			@include rwd($pad_size) {
+				width: 100%;
+				right: 0;
+				margin-left: 0;
+				margin-right: 0;
+				margin-top: 40px;
+			}
+		}
+		.r{
+			direction: ltr;
+			display: inline-block;
+			width: 50%;
+			max-width: 570px;
+			margin-right: -20px;
+			text-align: left;
+			vertical-align: middle;
+			@include rwd($pad_size) {
+                max-width: none;
+				width: 100%;
+				right: 0;
+				margin-left: 0;
+				margin-right: 0;
+				margin-top: 40px;
+			}
+			.subtitle{
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.flawless{
+		position: relative;
+		.dtxt{
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			@include transform(translateY(-50%));
+			max-width: 635px;
+			text-align: left;
+			.subtitle{
+				margin-bottom: 30px;
+			}
+			@include rwd($desktop_size) {
+				width: 54%;
+				right: 44%;
+			}
+			@include rwd($pad_size) {
+                max-width: none;
+				position: relative;
+				top: 0;
+				right: 0px;
+				width: 100%;
+				@include transform(translateY(0%));
+				padding: 40px 30px;
+			}
+			@include rwd($phone_size) {
+				padding: 40px 15px;
+			}
+		}
+		figure{
+			margin-right: 0;
+			margin-left: auto;
+			.m{
+				display: none;
+			}
+			@include rwd($desktop_size) {
+				height: 480px;   
+				margin-left: -320px;
+				img{
+					height: 100%;
+					max-width: none;
+				}
+			}
+			@include rwd($pad_size) {
+				width: 100%;
+				height: auto;
+				margin-left: 0;
+				img{
+					width: 100%;
+					height: auto;
+				}
+				.pc{display: none;}
+				.m{display: block;}
+			}
+		}
+	}
+	.boosted{
+		text-align: justify;
+		direction: rtl;
+		@include rwd($pad_size) {
+			margin-top: 20px;
+			text-align: left;
+		}
+		&:after{
+			content:"";
+			display: inline-block;
+			width: 100%;
+		}
+		figure{
+			direction: ltr;
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			// margin-right: 100px;
+			@include rwd($desktop_size) {
+				margin-left: -20%;
+			}
+			@include rwd($pad_size) {
+				margin-left: 0;
+				margin-top: 50px;
+			}
+			img{
+				position: relative;
+				z-index: 2;
+			}
+			.color{
+				position: absolute;
+				width: 51%;
+				height: 60%;
+				left: 38%;
+				top: 14%;
+				@include animation(cycle 3s linear infinite);
+			}
+		}
+		.dtxt{
+			direction: ltr;
+			display: inline-block;
+			max-width: 570px;
+			vertical-align: middle;
+			text-align: left;
+			@include rwd($desktop_size){
+				width: 50%;
+			}
+			@include rwd($pad_size) {
+                max-width: none;
+				width: 100%;
+				margin-left: 0;
+				margin-right: auto;
+			}
+			.pin{
+				width: 100%;
+				margin-top: 90px;
+				position: relative;
+				@include rwd($pad_size) {
+					margin-top: 60px;
+				}
+				@include rwd($phone_size) {
+					padding-top: 40px;
+				}
+				img{
+					position: absolute;
+					left: 0;
+					top: 50%;
+					margin-top: -57px;
+				}
+				p{
+					padding-left: 135px;
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 18px;
+					line-height: 30px;
+					font-weight: 300;
+				}
+			}
+			.subtitle{
+				margin-bottom: 40px;
+			}
+		}
+	}
+	.team{
+		text-align: justify;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: 0;
+		&:after{
+			content:"";
+			display: inline-block;
+			width: 100%;
+		}
+		.dtxt{
+			display: inline-block;
+			max-width: 570px;
+			vertical-align: middle;
+			text-align: left;
+			padding-top: 90px;
+			padding-bottom: 90px;
+			@include rwd($desktop_size){
+				width: 50%;
+			}
+			@include rwd($pad_size) {
+				width: 100%;
+				margin-top: 40px;
+				margin-bottom: 60px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+                max-width: none;
+			}
+			.pin{
+				width: 100%;
+				margin-top: 90px;
+				position: relative;
+				@include rwd($pad_size) {
+					margin-top: 60px;
+				}
+				@include rwd($phone_size) {
+					margin-top: 40px;
+				}
+				img{
+					position: absolute;
+					left: 0;
+					top: 50%;
+					margin-top: -57px;
+				}
+				p{
+					padding-left: 135px;
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 18px;
+					line-height: 30px;
+					font-weight: 300;
+				}
+			}
+			.subtitle{
+				margin-bottom: 30px;
+			}
+		}
+		figure{
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			@include rwd($desktop_size){
+				width: 50%;
+			}
+			@include rwd($pad_size) {
+				width: 100%;
+			}
+		}
+	}
+}

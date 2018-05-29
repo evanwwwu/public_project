@@ -1,0 +1,2 @@
+INFO  - 2015-04-16 23:52:57[IP sorurce: 127.0.0.1] from:/www/franke/admin/order/edit/2 --> 編輯  會員 [by evan 權限:1]
+INFO  - 2015-04-16 23:53:33[IP sorurce: 127.0.0.1] from:/www/franke/admin/order/edit/2 --> 編輯 訂單編號:150415-2 [by evan 權限:1]

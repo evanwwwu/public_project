@@ -1,0 +1,442 @@
+.products{
+	.main_img{
+		background: image-url("products_pic.jpg")  center top / cover no-repeat;
+	}
+	.content{
+		padding:20px 5px;
+		position: relative;
+		@include rwd($desktop) { 
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		@include rwd($desktop-hd) { 
+			max-width: 1300px;
+		}
+	}
+	.type_select{
+		border-bottom: 2px solid #000;
+		border-top: 2px solid #000;
+		position: relative;
+		margin-bottom: 20px;
+		@include rwd($desktop) {
+			padding: 0px 15px;
+			border-bottom: 0px;
+			border-top: 0px;
+			.select_btn{
+				display: none;
+			}
+		}
+		p{
+			font-size: 16px;
+			line-height: 40px;
+			@include rwd($desktop) {
+				line-height: 35px;
+			}
+			@include rwd($desktop-hd) { 
+				font-size: 18px;
+			}
+		}
+		.selected_p{
+			position: relative;
+			display: inline-block;
+			min-width: 110px;
+			&:before{
+				content:"";
+				position: absolute;
+				background: image-url("sub_btn.png") center / 100% no-repeat;
+				width: 14px;
+				height: 14px;
+				right: -16px;
+				top: 50%;
+				margin-top: -7px;
+				@include transition(all .3s ease-in-out);
+				@include transform-origin(50%,50%,false);
+			}
+		}
+		ul{
+			display: none;
+			@include rwd($desktop) {
+				display: block;
+				padding: 5px 20px;
+				text-align: center;				
+				border-bottom: 2px solid #000;
+				border-top: 2px solid #000;
+			}
+			li{
+				border-top: 1px solid #d7d7d7;
+				@include rwd($desktop) {
+					display: inline-block;
+					border-top: 0px;
+					width: (100% / 6);
+					padding: 0px 10px;
+					p{
+						position: relative;
+						&:before{					
+							content: '';
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							width: 1px;
+							height: 100%;
+							@include transition(transform .3s);
+							@include transition-timing-function(cubic-bezier(0.4, 0, 0.2, 1));
+							@include transform( scale3d(1, 0, 1));
+						}
+						&:after{							
+							content: '';
+							position: absolute;
+							top: 0;
+							right: 0;
+							width: 1px;
+							height: 100%;
+							@include transition(transform .3s);
+							@include transition-timing-function(cubic-bezier(0.4, 0, 0.2, 1));
+							@include transform( scale3d(1, 0, 1));
+						}
+					}
+				}
+				&:active{
+					// display: none;
+					@include rwd($desktop) {
+						display: inline-block;
+					}
+				}
+				@include menu_color();
+			}
+		}
+		&.open{
+			.selected_p:before{
+				@include transform(rotate(90deg));
+			}
+		}
+	}
+	.items{	
+		text-align: justify;
+		&:after{
+			font-size: 0;
+			content:".";
+			width: 100%;
+			display: inline-block;
+			display: block;
+		}
+		.item{
+			vertical-align: top;
+			display: inline-block;
+			width: 50%;
+			padding: 2px;
+			@include rwd($desktop) {
+				width: (100% / 4);
+				padding: 0px 15px;
+				margin-top: 10px;
+				&:hover .pic .hover_bg{
+					opacity: 1;
+					&:after{
+						@include transform(scale(.9));
+					}
+					span{
+						opacity: 1;
+					}
+				}
+			}
+			// @include rwd($desktop-fullhd) {
+			// 	width: (99% / 6);
+			// }
+			.pic{
+				position: relative;
+				.hover_bg{
+					font-size: 0;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					@include transition(all .3s ease-in-out);
+					@include rwd($desktop) {
+						opacity: 0;
+					}
+					&:after{
+						content:"";
+						position: absolute;
+						display: block;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						border: 1px #fff solid;
+						@include transition(all .3s ease-in-out);
+						@include transform(scale(1));
+					}
+					// &:before{
+					// 	content:"";
+					// 	display: inline-block;
+					// 	height: 100%;
+					// 	vertical-align: middle;
+					// }
+					// span{
+					// 	text-align: center;
+					// 	display: inline-block;
+					// 	width: 100%;
+					// 	padding: 0px 25px;
+					// 	color:#fff;
+					// 	font-size: 18px;
+					// 	line-height: 1.3;
+					// 	vertical-align: middle;
+					// 	@include transition(all .3s ease-in-out);
+					// 	@include rwd($desktop) {
+					// 		opacity: 0;
+					// 	}
+					// }
+				}
+			}
+			.p_title{
+				text-align: center;
+				padding:10px;
+				.pt,.price{
+					font-size: 14px;
+					line-height: 1.5;
+				}
+				.line{
+					width: 45px;
+					background-color: #000;
+					height: 1px;
+					margin: 3px auto;
+				}
+			}
+			&.active .pic .hover_bg{
+				opacity: 1;
+				&:after{
+					@include transform(scale(.9));
+				}
+				span{
+					opacity: 1;
+				}
+			}
+			.detail{
+				display: none;
+				width: 200%;
+				padding-bottom: 40px;
+				position: relative;
+				@include rwd($desktop) {
+					width: calc(400% + 90px);
+					font-size: 0;
+					.content_div{
+						display: inline-block;
+						vertical-align: top;
+						width: 56%;
+					}
+				}
+				.pic{
+					display: none;
+					@include rwd($desktop) {
+						padding-right: 30px;
+						display: inline-block;
+						vertical-align: top;
+						width: 44%;
+						>img{
+							width: 100%;
+						}
+					}
+				}
+				.top_div{
+					padding: 5px 0px;
+					border-bottom: 2px solid #000;
+					.title{
+						border-left: 6px solid #000;
+						line-height: 1.3;
+						padding: 0px 20px 0px 10px;
+						text-align: left;
+						@include rwd($desktop) {
+							margin-bottom: 10px;
+							border-left: 10px solid #000;
+							font-weight: bold;
+						}
+						.t1{
+							font-size: 18px;
+							@include rwd($desktop) {
+								font-size: 24px;
+							}
+						}
+						.t2{
+							font-size: 14px;
+							@include rwd($desktop) {
+								font-size: 18px;
+							}
+						}
+					}
+					.detail_close{
+						cursor: pointer;
+						position: absolute;
+						width: 20px;
+						height: 20px;
+						right: 0;
+						top: 0;
+						border: 2px solid #000;
+						@include rwd($desktop) {
+							width: 30px;
+							height: 30px;
+						}
+						&:before,&:after{
+							content:"";
+							position: absolute;
+							height: 1px;
+							width: 100%;
+							@include transform-origin(50% 50%,false);
+							left: 0;
+							top: 50%;
+							background-color: #000;
+						}
+						&:before{
+							@include transform(rotate(45deg));
+						}
+						&:after{
+							@include transform(rotate(-45deg));
+						}
+					}
+				}
+				.text{
+					font-size: 14px;
+					line-height: 24px;
+					padding: 10px 0px;
+				}
+				table.mid_list{
+					font-size: 16px;
+					line-height: 1.5;
+					width: 100%;
+					@include rwd($desktop) {
+						font-size: 14px;
+					}
+					td{
+						vertical-align: middle;
+						padding: 5px;
+					}
+					.price{
+						border-right: 1px solid #000;
+						border-top: 1px solid #000;
+						border-bottom: 1px solid #000;
+						@include rwd($desktop) {
+							font-weight: bold;
+						}
+					}
+					.n{
+						border-right: 1px solid #000;
+						border-top: 1px solid #000;
+						border-bottom: 1px solid #000;
+						min-width: 100px;
+						text-align: right;
+					}
+					.count{
+						border-right: 1px solid #000;
+						border-top: 1px solid #000;
+						border-bottom: 1px solid #000;
+						width: 150px;
+						input{
+							border: 0px;
+							width: 100%;
+							text-align: center;
+						}
+					}
+					.unit{
+						border-top: 1px solid #000;
+						border-bottom: 1px solid #000;						
+					}
+				}
+				.bottom_div{
+					margin-top: 10px;
+					font-size: 0;
+					@include rwd($desktop){
+						margin-top: 0;
+					}
+					.info_btn{
+						padding: 10px 0px;
+						@include rwd($desktop) {
+							padding:15px 0px;
+						}
+						.attest_btn{
+							cursor: pointer;
+							vertical-align: middle;
+							display: inline-block;
+							border: 2px solid #000;
+							@include border-radius(50%);
+							width: 35px;
+							height: 35px;
+							padding: 7px;
+							font-size: 16px;
+							@include rwd($desktop) {
+								width: 46px;
+								height: 46px;
+								padding: 10px;
+							}
+						}
+						.add_cart{
+							display: none;
+							@extend %add_cart;
+							@include rwd($desktop) {
+								display: inline-block;
+								width: 190px;
+								float: right;
+								// margin-top: 5px;
+							}
+							@include rwd($desktop-w) {
+								width: 250px;
+							}
+						}
+						.btn{
+							margin-left: 10px;
+							cursor: pointer;
+							vertical-align: middle;
+							display: inline-block;
+							width: calc(100% - 45px);
+							border: 2px solid #000;
+							font-size: 16px;
+							line-height: 2;
+							text-align: center;	
+							padding: 5px 0px;
+							@include rwd($desktop) {
+								width: 180px;
+								margin:0px 15px;
+								font-size: 16px;
+								padding: 0;
+							}	
+							span{
+								position: relative;
+								padding-right: 25px;
+								display: inline-block;
+								&:after{
+									content:"";
+									position: absolute;
+									width: 15px;
+									height: 15px;
+									right: 0px;
+									top: 50%;
+									margin-top: -7px;
+									@include transition(all .3s ease-in-out);
+									background: image-url("sub_btn.png") center / 100% no-repeat;
+								}
+							}		
+						}
+						.info{
+							display: none;
+							font-size: 14px;
+							line-height: 24px;
+							width: 100%;
+							@include rwd($desktop){
+								margin-top: 15px;
+							}
+						}
+						&.if_open{
+							.btn span:after{
+								@include transform(rotate(90deg));
+							}
+						}
+					}
+					>.add_cart{
+						@extend %add_cart;
+						@include rwd($desktop) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

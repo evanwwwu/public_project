@@ -1,0 +1,189 @@
+#{"#"+$model+"-personalized"} {
+	background: image-url("dot-bg.jpg") center top / auto no-repeat;
+	padding-top: 80px;	
+	text-align: center;
+	@include rwd($pad_size) {
+		padding-top: 40px;
+		text-align: left;
+	}
+	.dtxt{
+		margin-top: 50px;
+		max-width: 910px;
+		margin-left: auto;
+		margin-right: auto;
+		@include rwd($pad_size) {
+			margin-top: 20px;
+		}
+		.top{
+			position: relative;
+			display: inline-block;
+			margin-bottom: 40px;
+			@include rwd($pad_size) {
+				margin-top: 30px;
+			}
+			img{
+				position: absolute;
+				top: 50%;
+				right: -140px;
+				margin-top: -47.5px;
+				@include rwd($pad_size) {
+					right: -90px;
+					margin-top: -24px;
+					width: 70px;
+				}
+			}
+		}
+	}
+
+	.light-div{
+		text-align: center;
+		position: relative;
+		margin-top: 110px;
+		margin-bottom: 60px;
+		max-width: 1060px;
+		margin-left: auto;
+		margin-right: auto;
+		@include rwd($pad_size) {
+			margin-top: 50px;
+			margin-bottom: 0;
+		}
+		.color-bar{
+			position: absolute;
+			top: 0;left: 0;
+			width: 190px;
+			margin-bottom: 15px;
+			@include rwd($pad_size) {
+				display: none;
+			}
+			.t{
+				font-size: 18px;
+				line-height: 30px;
+				margin-bottom: 15px;
+			}
+		}
+		figure{
+			display: inline-block;
+			position: relative;
+			vertical-align: top;
+			margin-left: 215px;
+			@include rwd($pad_size) {
+				margin-left: 0px;
+			}
+			>input{
+				font-size: 0;
+				border: 0px;
+				$pw:760;
+				$ph:266;
+				&:nth-child(1){					
+					width:percentage(140/$pw);
+					height:percentage(100/$ph);
+					left: percentage(180/$pw);
+					top: percentage(40/$ph);
+				}
+				&:nth-child(2){					
+					width:percentage(276/$pw);
+					height:percentage(110/$ph);
+					left: percentage(90/$pw);
+					top: percentage(140/$ph);
+				}
+				&:nth-child(3){						
+					width:percentage(365/$pw);
+					height:percentage(80/$ph);
+					left: percentage(390/$pw);
+					top: percentage(52/$ph);
+				}
+			}
+			>img{
+				position: relative;
+				z-index: 2;
+			}
+			.color-light{
+				position: absolute;
+				&.status_static {
+					@include animation(static 3s linear infinite);
+				}
+				&.status_breathing {
+					@include animation(breathing 3s linear infinite);
+				}
+				&.status_cycle {
+					@include animation(cycle 3s linear infinite);
+				}
+				&.status_xxxx {
+					@include animation(strobing 3s linear infinite);
+				}
+				&.status_music {
+					@include animation(music 3s linear infinite);
+				}
+			}
+		}
+		.btn_list {
+			text-align: justify;
+			margin-top: 65px;
+			font-size: 0;
+			@include rwd($phone_size) {
+				margin-top: 20px;
+			}
+			&:after {
+				display: inline-block;
+				content: "";
+				font-size: 0;
+				width: 100%;
+			}
+			>p{
+				text-align: center;
+				font-size: 18px;
+				line-height: 30px;
+				margin-bottom: 20px;
+				font-weight: 300;
+			}
+			.i_btn {
+				display: inline-block;
+				vertical-align: top;
+				width: 150px;
+				font-size: 16px;
+				line-height: 1.5;
+				color: #fff;
+				text-align: center;
+				cursor: pointer;
+				@include transition(all .3s);
+				@include rwd($pad_size) {
+					width: 180px;
+					margin-bottom: 50px;
+				}
+				@include rwd($phone_size) {
+					width: 50%;
+					margin-left: 0;
+					margin-right: 0;
+				}
+				.icon{
+					position: relative;
+					display: inline-block;
+					.a{
+						position: absolute;
+						left: 0;
+						top: 0;
+						opacity: 0;
+					}
+				}
+				.t {
+					margin-top: 25px;
+					color: $color1;
+				}
+				&.on {
+					opacity: 1;
+					.icon{
+						.n{
+							opacity: 0;
+						}
+						.a{
+							opacity: 1;
+						}
+					}
+					.t{
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

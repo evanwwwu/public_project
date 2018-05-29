@@ -1,0 +1,119 @@
+include lang_tw
+-$lang = "tw";
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    #warp
+      include header
+      .warpper.career
+        .banner
+          img src="../assets/images/careers-bg.jpg" alt=""/
+          .title
+            h2 = $ca_title
+        .content
+          label.dropdown
+            select.custom-select.sources name="jobtitle"
+              option value="" = $ca_op1
+              option value="depar" = $ca_op2
+            i.arr &#xE315;
+          .job-list
+            .item data-type="depar" 
+              .jobtitle
+                i.icon
+                p = $ca_item_title1
+              .detail
+                .left
+                  p.title = $ca_item_ltitle1
+                  .txt
+                    p = $ca_item_ltxt1
+                .right
+                  p.title = $ca_item_rtitle1
+                  .txt
+                    p = $ca_item_rtxt1
+                    p = $ca_item_rtxt2
+                    p = $ca_item_rtxt3
+                    p = $ca_item_rtxt4
+                    p = $ca_item_rtxt5
+                .share_btns
+                  a href="#" target="_blank"
+                    .apply
+                      span = $ca_apply
+                  a href="#" target="_blank"
+                    .fb_share
+                      span = $ca_share
+            .item data-type="" 
+              .jobtitle
+                i.icon
+                p = $ca_item_title2
+              .detail
+                .left
+                  p.title = $ca_item_ltitle1
+                  .txt
+                    p = $ca_item_ltxt1
+                .right
+                  p.title = $ca_item_rtitle1
+                  .txt
+                    p = $ca_item_rtxt1
+                    p = $ca_item_rtxt2
+                    p = $ca_item_rtxt3
+                    p = $ca_item_rtxt4
+                    p = $ca_item_rtxt5
+                .share_btns
+                  a href="#" target="_blank"
+                    .apply
+                      span = $ca_apply
+                  a href="#" target="_blank"
+                    .fb_share
+                      span = $ca_share
+            .item data-type="depar" 
+              .jobtitle
+                i.icon
+                p = $ca_item_title3
+              .detail
+                .left
+                  p.title = $ca_item_ltitle1
+                  .txt
+                    p = $ca_item_ltxt1
+                .right
+                  p.title = $ca_item_rtitle1
+                  .txt
+                    p = $ca_item_rtxt1
+                    p = $ca_item_rtxt2
+                    p = $ca_item_rtxt3
+                    p = $ca_item_rtxt4
+                    p = $ca_item_rtxt5
+                .share_btns
+                  a href="#" target="_blank"
+                    .apply
+                      span = $ca_apply                  
+                  a href="#" target="_blank"
+                    .fb_share
+                      span = $ca_share
+            .item data-type="" 
+              .jobtitle
+                i.icon
+                p = $ca_item_title4
+              .detail
+                .left
+                  p.title = $ca_item_ltitle1
+                  .txt
+                    p = $ca_item_ltxt1
+                .right
+                  p.title = $ca_item_rtitle1
+                  .txt
+                    p = $ca_item_rtxt1
+                    p = $ca_item_rtxt2
+                    p = $ca_item_rtxt3
+                    p = $ca_item_rtxt4
+                    p = $ca_item_rtxt5
+                .share_btns
+                  a href="#" target="_blank"
+                    .apply
+                      span = $ca_apply                
+                  a href="#" target="_blank"
+                    .fb_share
+                      span = $ca_share
+    include footer

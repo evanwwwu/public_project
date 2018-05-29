@@ -1,0 +1,54 @@
+header
+  .mainsize
+    a.logo href="index.html"
+      img src="../assets/images/logo.png" alt=""/
+    nav.menu_list
+      ul
+        li
+          a href="about.html"
+            p = $m_about
+        li.sub
+          p = $m_services
+          ul
+            li
+              a href="idc.html" 
+                p = $sm_idc
+            li
+              a href="security.html" 
+                p = $sm_security
+            li
+              a href="cloud.html" 
+                p = $sm_cloud
+            li
+              a href="appguard.html" 
+                p = $sm_appguard
+        li
+          a href="news.html"
+            p = $m_news
+        li
+          a href="industry.html"
+            p = $m_resurces
+        li
+          a href="customers.html"
+            p = $m_customers
+        li
+          a href="careers.html"
+            p = $m_careers
+        li
+          a href="contact.html"
+            p = $m_contact
+        li.m
+          a href="faq.html"
+            p = $m_faq
+        li.m
+          a href="terms.html"
+            p = $m_terms
+        -if $lang == "tw"
+          li.m
+            a href="https://www.facebook.com/%E6%9E%9C%E6%A0%B8%E6%95%B8%E4%BD%8D-724591257628290/" target="_blank"
+              p 果核數位粉絲團
+      .lang-div
+        a href="../en" class=($lang=="en")?"active":"" EN
+        a href="../tw" class=($lang=="tw")?"active":"" 中文
+    .m_btn
+      span

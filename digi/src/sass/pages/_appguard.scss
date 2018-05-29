@@ -1,0 +1,143 @@
+.warpper.appguard{
+	.more-btn{
+		padding: 10px 10px 10px 25px;
+		background-color: $blue1;
+		color: #fff;
+		display: inline-block;
+		@include transition(all .3s ease-in-out);
+		@include rwd($desktop) {
+			&:hover{
+				opacity: .8;
+			}
+		}
+		@include rwd($desktop-w){
+			padding: 14px 10px 12px 25px;
+		}
+		span,i{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		span{
+			margin-bottom: 4px;
+			font-size: 16px;
+			line-height: 1;
+			@include rwd($desktop-w) {
+				font-size: 20px;
+			}
+		}
+
+	}
+	.text{
+		text-align: center;
+		padding: 30px 20px;
+		font-size: 15px;
+		line-height: 20px;
+		background-color: #f6f6f6;
+		@include rwd($pad) {
+			padding: 50px 0px;
+			font-size: 16px;
+			line-height: 24px;
+			p{
+				margin: 0 auto;
+				max-width: 610px;
+			}
+		}
+		@include rwd($desktop) {
+			padding: 85px 0px;
+			font-size: 20px;
+			line-height: 30px; 
+			p{
+				max-width: 660px;
+			}
+		}
+		@include rwd($desktop-w) {
+			font-size: 24px;
+			line-height: 32px;
+			p{
+				max-width: 810px;
+			}
+		}
+	}
+	.mainsize{
+		padding:30px 20px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		@include rwd($pad) {
+			max-width: 610px;
+			padding: 60px 20px;
+		}
+		@include rwd($desktop) {				
+			max-width: 1180px;
+		}
+		.key{
+			font-size: 20px;
+			line-height: 26px;
+			margin-bottom: 40px;
+			color: $blue1;
+			font-weight: 600;
+			@include rwd($pad) {
+				font-size: 23px;
+				line-height: 30px;
+			}
+			@include rwd($desktop) {
+				font-size: 36px;
+				line-height: 60px;
+			}
+			@include rwd($desktop-w) {
+				font-size: 45px;
+			}
+		}
+		.items{
+			text-align: center;
+			font-size: 0;
+			@include rwd($pad){
+				text-align: justify;
+				&:after{
+					content:"";
+					width: 100%;
+					display: inline-block;
+				}
+			}
+			.item{
+				padding: 0 15px;
+				margin-bottom: 40px;
+				display: inline-block;
+				width: 240px;
+				text-align: center;
+				vertical-align: top;
+				@include rwd($desktop) {
+					margin-bottom: 60px;
+				}
+				@include rwd($desktop-w) {
+					width: 270px;
+				}
+				.title{
+					color: $blue3;
+					font-size: 20px;
+					margin-top: 20px;
+					margin-bottom: 15px;
+					@include rwd($desktop-w){
+						font-size: 30px;
+					}
+				}
+				.info{
+					font-size: 15px;
+					line-height: 20px;
+					@include rwd($desktop-w){
+						font-size: 20px;
+						line-height: 26px;
+					}
+				}
+				@for $i from 1 through 4 {
+					&:nth-of-type(#{$i}){
+						>img{
+							width:image-width(#{"appicon"+$i+".png"}) / 2;
+						}
+					}
+				}
+			}
+		}
+	}
+}

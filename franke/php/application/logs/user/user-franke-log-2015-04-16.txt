@@ -1,0 +1,4 @@
+INFO  - 2015-04-16 02:47:53[IP sorurce: 127.0.0.1] from:/www/franke/contact/send --> 站內信送出! 內容:{"mail":"test@fsfsafsf.com","username":"test","phone":"321321312","identity":"\u6d88\u8cbb\u8005","content":"214321"}
+INFO  - 2015-04-16 02:48:01[IP sorurce: 127.0.0.1] from:/www/franke/contact/send --> 站內信送出! 內容:{"mail":"test@fsfsafsf.com","username":"test","phone":"321321312","identity":"\u6d88\u8cbb\u8005","content":"214321"}
+INFO  - 2015-04-16 02:59:02[IP sorurce: 127.0.0.1] from:/www/franke/contact/send --> 站內信送出! 內容:{"mail":"test@fsfsafsf.com","username":"test","phone":"321321312","identity":"\u6d88\u8cbb\u8005","content":"214321"}
+INFO  - 2015-04-16 03:01:47[IP sorurce: 127.0.0.1] from:/www/franke/contact/send --> 站內信送出! 內容:{"mail":"test@fsfsafsf.com","username":"test","phone":"321321312","identity":"\u6d88\u8cbb\u8005","content":"214321"}

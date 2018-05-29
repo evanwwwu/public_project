@@ -1,0 +1,27 @@
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    include header
+    .warp
+      include menu
+      .warpper.member_getpass
+        .main_content
+          .main_title
+            h3 Welcome
+            p 歡迎來信詢問任何訂單、商品及帳戶問題
+            a href="mailto:nakedmarket.tw@gmail.com" nakedmarket.tw@gmail.com
+          .member_div
+            .title
+              span Forgot password
+            form.info
+              .text
+                | 請輸入您當初註冊時所填寫的 E-mail 帳號。若是使用社群帳號登入的會員，請輸入您註冊社群帳號時所使用E-mail 帳號。我們將會寄送一封驗證電子郵件至您的信箱。
+              label.username
+                input type="text" name="username" placeholder="電子郵件"/
+              a.login_btn href="#"
+                span 確認
+
+        include footer

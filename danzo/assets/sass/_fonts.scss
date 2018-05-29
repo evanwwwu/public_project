@@ -1,0 +1,41 @@
+$font_arr:("din_alternatebold","dosisregular","dosisregular","exo_light","dinbold","din_lightregular","exo_2light","exo_2medium","exo_2regular","exo_2semi_bold","open_sanslight","open_sansregular","open_sanssemibold","open_sanssemibold_italic");//14
+$font_src:("DIN Alternate Bold","Dosis-Regular","Dosis-Regular","Exo2.0-ExtraLight","ufonts.com_din-bold","ufonts.com_din-light","Exo2.0-Light","Exo2.0-Medium","Exo2.0-Regular","Exo2.0-SemiBold","OpenSans-Light","OpenSans-Regular","OpenSans-Semibold","OpenSans-SemiboldItalic");
+$extension:(eot,woff2,woff,tff,svg);
+//font2:IOS pad 吃不到 dinregular > din-regular-1361534659
+@mixin font-face($name,$file,$extension,$weight:false,$style:false) {
+    @font-face {
+        font-family:quote(#{$name});
+        $files:null;
+        @for $x from 1 through length($extension) {
+            $var:nth($extension,$x);
+            $eot:quote("#{$file}.#{$var}");
+            @if $var == eot {
+                src: font-url($eot);
+                $files:#{$files} font-url(unquote("#{$eot}?#iefix")) unquote("format('embedded-opentype')");
+            }
+            @else{
+                $files:#{$files} font-url(#{$eot}) format("#{$var}");
+            }
+            @if $x != length($extension){
+                $files:#{$files}unquote(",");
+            }
+        }
+        src:$files;
+        @if $weight {
+            font-weight: $weight;
+        }
+        @if $style{
+            font-style: $style;
+        }
+    }
+}
+
+@for $i from 1 through length($font_arr) {
+    $name:nth($font_arr, $i);
+    $src:nth($font_src, $i);
+    @include font-face($name,$src,$extension);
+    .f_family_#{$i}{
+        font-family: quote(#{$name}),"微軟正黑體" ;
+    }
+}
+

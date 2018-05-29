@@ -1,0 +1,2 @@
+INFO  - 2015-04-14 01:53:58[IP sorurce: 127.0.0.1] from:/www/franke/member --> 登入畫面
+INFO  - 2015-04-14 01:54:14[IP sorurce: 127.0.0.1] from:/www/franke/member --> 登入畫面

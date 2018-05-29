@@ -1,0 +1,34 @@
+INFO - 2016-09-13 11:13:21 --> Config Class Initialized
+INFO - 2016-09-13 11:13:21 --> Hooks Class Initialized
+DEBUG - 2016-09-13 11:13:21 --> UTF-8 Support Enabled
+INFO - 2016-09-13 11:13:21 --> Utf8 Class Initialized
+INFO - 2016-09-13 11:13:21 --> URI Class Initialized
+INFO - 2016-09-13 11:13:21 --> Router Class Initialized
+INFO - 2016-09-13 11:13:21 --> Output Class Initialized
+INFO - 2016-09-13 11:13:22 --> Security Class Initialized
+DEBUG - 2016-09-13 11:13:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-09-13 11:13:22 --> CSRF cookie sent
+INFO - 2016-09-13 11:13:22 --> Input Class Initialized
+INFO - 2016-09-13 11:13:22 --> Language Class Initialized
+INFO - 2016-09-13 11:13:22 --> Loader Class Initialized
+INFO - 2016-09-13 11:13:22 --> Helper loaded: url_helper
+INFO - 2016-09-13 11:13:22 --> Helper loaded: language_helper
+INFO - 2016-09-13 11:13:22 --> Helper loaded: my_file_helper
+INFO - 2016-09-13 11:13:22 --> Helper loaded: form_helper
+INFO - 2016-09-13 11:13:22 --> Database Driver Class Initialized
+INFO - 2016-09-13 11:13:24 --> Image Lib Class Initialized
+INFO - 2016-09-13 11:13:24 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-09-13 11:13:24 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-09-13 11:13:24 --> Cart Class Initialized
+INFO - 2016-09-13 11:13:24 --> Model Class Initialized
+INFO - 2016-09-13 11:13:24 --> Model Class Initialized
+INFO - 2016-09-13 11:13:24 --> Model Class Initialized
+INFO - 2016-09-13 11:13:24 --> Controller Class Initialized
+INFO - 2016-09-13 11:13:24 --> Model Class Initialized
+INFO - 2016-09-13 11:13:24 --> Model Class Initialized
+INFO - 2016-09-13 11:13:24 --> Model Class Initialized
+INFO - 2016-09-13 11:13:24 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\cart_view.php
+INFO - 2016-09-13 11:13:24 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\articles_detail.php
+INFO - 2016-09-13 11:13:24 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\master_view.php
+INFO - 2016-09-13 11:13:24 --> Final output sent to browser
+DEBUG - 2016-09-13 11:13:24 --> Total execution time: 3.2220

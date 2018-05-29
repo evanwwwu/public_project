@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import "normalize";
+@import "color";
+@import "rwd";
+@import "font";
+@import "variable";
+@import "animation";
+* {
+	box-sizing: border-box;
+}
+.socicon{
+	font-family: "socicon";
+	font-size: 20px;
+}
+html{
+  height: 100%;
+}
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+	min-height: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+	background-color: #fff;
+	color: $font_color;
+}
+
+body {
+	-webkit-overflow-scrolling: touch;
+	position: relative;
+	font-family:'PT Sans','Roboto','Microsoft JhengHei', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}

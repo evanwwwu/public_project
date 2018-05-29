@@ -1,0 +1,1 @@
+INFO  - 2015-05-25 22:34:43[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁

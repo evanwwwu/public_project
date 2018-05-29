@@ -1,0 +1,15 @@
+//清除float
+@mixin clear_float
+	&:after
+		content: "."
+		display: block
+		clear: both
+		visibility: hidden
+		line-height: 0
+		height: 0
+		
+//層級判斷
+@mixin zindex($select_name:false) 
+	$zindex_arr: ("footer","header") !default
+	@if $select_name != false 
+		z-index: index($zindex_arr, $select_name)

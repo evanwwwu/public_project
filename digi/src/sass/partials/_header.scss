@@ -1,0 +1,208 @@
+header{
+	width: 100%;
+	height: $menu_height;
+	border-bottom:1px solid #c0e1ff;
+	position: fixed;
+	padding: 10px 0px;
+	top: 0;
+	background-color: #fff;
+	@include zindex("menu");
+	@include transform(translateZ(0));
+	@include rwd($desktop) {
+		height: $menu_height2;
+		padding: 20px 0px;
+	}
+	.mainsize{
+		position: relative;
+		padding: 0px 20px;
+		width: 100%;
+		@include rwd($desktop) {
+			padding: 0 30px;
+			max-width: 1250px;
+			margin-left:auto;
+			margin-right: auto;
+		}
+	}
+	.logo>img{
+		display: inline-block;
+		height: 30px;
+		@include rwd($desktop) {
+			height: 40px;
+		}
+	}
+	.m_btn{
+		float:right;
+		width: 30px;
+		height: 25px;
+		position: relative;
+		margin-top: 3px;
+		@include rwd($desktop) {
+			display: none;
+		}
+		span,&:after,&:before{
+			position: absolute;
+			background-color: $blue1;
+			width: 100%;
+			height: 5px;
+		}
+		span{
+			top:50%;    
+			margin-top: -2.5px;
+			@include transition(all .3s ease-in-out);
+		}
+		&:before{
+			content:"";
+			top: 0;
+			@include transition(transform .2s ease-in-out,top .1s ease-in-out .2s);
+		}
+		&:after{
+			content:"";
+			bottom: 0;
+			@include transition(transform .2s ease-in-out,bottom .1s ease-in-out .2s);
+		}
+	}
+	.menu_list{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		padding:0 20px ($menu_height + 40);
+		left: 100%;
+		top: 0;
+		margin-top: $menu_height;
+		overflow-y:scroll;
+		background-color: #fff;
+		@include transition(all .3s ease-in-out);
+		@include rwd($desktop) {
+			position: relative;
+			left: auto;
+			display: inline-block;
+			width:auto;
+			height: auto;
+			padding: 0;
+			overflow: hidden;
+			margin-top: 0;
+			float:right;
+		}
+		li{
+			width: 100%;
+			font-size: 18px;
+			line-height: 48px;
+			text-align: center;
+			color: $gray;
+			cursor: pointer;
+			@include rwd($desktop) {
+				display: inline-block;
+				margin: 0 10px;
+				width:auto;
+				line-height: 40px;
+				@include transition(all .3s ease-in-out);
+				&:hover{
+					color: $blue1;
+				}
+			}
+		}
+		>ul{
+			display: inline-block;
+			vertical-align: middle;
+			width: 100%;
+			@include rwd($desktop) { 
+				width: auto;
+			}
+			>li{
+				border-bottom: 1px solid #eeeeee;
+				@include rwd($desktop) {
+					border-bottom: 0px;
+					&.m{
+						display: none;
+					}
+				}
+				&:last-of-type{
+					border-bottom: 0px;
+				}
+			}
+		}
+		.sub{
+			@include transition(all .3s ease-in-out);
+			>p{
+				padding-right: 20px;
+				position: relative;
+				&:after{
+					content:"keyboard_arrow_right";
+					font-family: 'Material Icons';
+					line-height: 48px;
+					position: absolute;
+					margin-left: 5px;
+					@include transition(all .3s ease-in-out);
+					@include rwd($desktop) {
+						top: 0;
+						right: 0;
+						line-height: 40px;
+					}
+				}
+			}
+			ul{
+				display: none;
+				background-color: #f6f6f6;
+				@include rwd($desktop) {
+					position: fixed;
+					left: 0;
+					top:$menu_height2;
+					width: 100%;
+					li{
+						line-height: 60px;
+					}
+				}
+			}
+			&.open{
+				color:$blue1;
+				>p:after{
+					@include transform(rotate(90deg));
+				}
+			}
+		}
+	}
+	&.open{
+		.menu_list{
+			left: 0;
+		}
+		.m_btn{
+			&:before{				
+				top: 50%;
+				margin-top: -2.5px;
+				transform: rotate(-45deg);
+				@include transition(top .1s ease-in-out,transform .2s ease-in-out .1s);
+			}
+			&:after{				
+				bottom: 50%;
+				margin-bottom: -2.5px;
+				transform: rotate(45deg);
+				@include transition(bottom .1s ease-in-out,transform .2s ease-in-out .1s);
+			}
+			span{
+				opacity: 0;
+			}
+		}
+	}
+	.lang-div{
+		text-align: center;
+		margin-top: 30px;
+		@include rwd($desktop) {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0;
+		}
+		>a{
+			font-size: 18px;
+			line-height: 26px;
+			padding: 0px 5px;
+			border: 1px solid $blue1;
+			color: $blue1;
+			display: inline-block;
+			margin: 5px;
+			&.active{
+				background-color: $blue1;
+				color: #fff;
+			}
+		}
+	}
+}

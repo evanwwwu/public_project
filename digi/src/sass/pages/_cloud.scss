@@ -1,0 +1,280 @@
+.warpper.cloud {
+	padding-bottom: 30px;
+	@include rwd($desktop) {
+		padding-bottom: 60px;
+	}
+	@include rwd($desktop-w) {
+		padding-bottom: 100px;
+	}
+	.text {
+		text-align: center;
+		padding: 30px 20px;
+		font-size: 15px;
+		line-height: 20px;
+		@include rwd($pad) {
+			padding: 50px 0px;
+			font-size: 16px;
+			line-height: 24px;
+			p {
+				margin: 0 auto;
+				max-width: 610px;
+			}
+		}
+		@include rwd($desktop) {
+			padding: 85px 0px;
+			font-size: 20px;
+			line-height: 30px;
+			p {
+				max-width: 700px;
+			}
+		}
+		@include rwd($desktop-w) {
+			font-size: 24px;
+			line-height: 32px;
+			padding: 100px;
+			p {
+				max-width: 850px;
+			}
+		}
+	}
+	.feature {
+		padding: 30px 20px;
+		width: 100%;
+		background-color: #f6f6f6;
+		.mainsize {
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			@include rwd($pad) {
+				max-width: 768px;
+				padding: 60px 20px;
+			}
+			@include rwd($desktop) {
+				max-width: 1100px;
+				padding: 60px;
+			}
+			.key {
+				font-size: 20px;
+				line-height: 26px;
+				margin-bottom: 20px;
+				color: $blue1;
+				font-weight: 600;
+				@include rwd($pad) {
+					font-size: 23px;
+					line-height: 30px;
+					margin-bottom: 40px;
+				}
+				@include rwd($desktop) {
+					font-size: 36px;
+					line-height: 60px;
+				}
+				@include rwd($desktop-w) {
+					font-size: 45px;
+				}
+			}
+			.items {
+				text-align: center;
+				font-size: 0;
+				@include rwd($desktop) {
+					margin: 0 auto;
+					text-align: justify;
+					&:after {
+						content: "";
+						display: inline-block;
+						width: 100%;
+					}
+				}
+				.item {
+					padding: 0 15px;
+					margin-bottom: 40px;
+					display: inline-block;
+					width: 250px;
+					text-align: center;
+					vertical-align: top;
+					@include rwd($desktop) {
+						margin-bottom: 60px;
+					}
+					@include rwd($desktop-w) {
+						width: 270px;
+					}
+					.title {
+						color: $blue3;
+						font-size: 20px;
+						margin-top: 20px;
+						margin-bottom: 15px;
+						@include rwd($desktop-w) {
+							font-size: 30px;
+						}
+					}
+					.info {
+						font-size: 15px;
+						line-height: 20px;
+						@include rwd($desktop-w) {
+							font-size: 20px;
+							line-height: 26px;
+						}
+					}
+					@for $i from 1 through 3 {
+						&:nth-of-type(#{$i}) {
+							>img {
+								width:image-width(#{"c0"+$i+".png"}) / 2;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.main-div {
+		padding-top: 30px;
+		@include rwd($pad) {
+			margin-top: 50px;
+		}
+		@include rwd($desktop) {
+			margin-top: 130px;
+		}
+		.items {
+			padding: 0 20px;
+			@include rwd($pad) {
+				padding: 0 80px;
+			}
+			@include rwd($desktop) {
+				padding: 0;
+			}
+			@include rwd($desktop-w) {
+				max-width: 1366px;
+				margin: 0 auto;
+			}
+			.item {
+				font-size: 0;
+				margin-bottom: 50px;
+				@include rwd($desktop) {
+					margin-bottom: 110px;
+					&:nth-of-type(odd) {
+						padding-right: 80px;
+						.content {
+							padding-left: 50px;
+							padding-right: 0px;
+						}
+						.pic:before{
+							right: -20px;
+						}
+					}
+					&:nth-of-type(even) {
+						padding-left: 80px;
+						direction: rtl;
+						.content {
+							direction: ltr;
+							padding-right: 50px;
+							padding-left: 0px;
+						}
+						.pic:before{
+							left: -20px;
+						}
+					}
+					.pic {
+						position: relative;
+						width: percentage(510/945);
+						display: inline-block;
+						vertical-align: middle;
+						>img{
+							position: relative;
+						}
+						&:before{
+							content:"";
+							position: absolute;
+							width: 100%;
+							bottom: -25px;
+							height: percentage(260/310);
+							background-color: #cee9ff;
+						}
+					}
+					.content {
+						width: percentage(430/945);
+						display: inline-block;
+						vertical-align: middle;
+					}
+				}
+				@include rwd($desktop-w) {
+					margin-bottom: 150px;
+					&:nth-of-type(odd) {
+						.pic:before{
+							right: -30px;
+						}
+					}
+					&:nth-of-type(even) {
+						.pic:before{
+							left: -30px;
+						}
+					}
+					.pic:before{
+						bottom: -30px;
+					}
+				}
+				.content {
+					padding: 15px 0;
+					@include rwd($pad) {
+						padding: 15px;
+					}
+					.title {
+						font-size: 22px;
+						line-height: 30px;
+						color: $blue1;
+						font-weight: 600;
+						@include rwd($pad) {
+							font-size: 38px;
+							line-height: 1;
+							margin-bottom: 10px;
+						}
+						@include rwd($desktop-w) {
+							font-size: 72px;
+						}
+					}
+					.info {
+						font-size: 15px;
+						line-height: 20px;
+						@include rwd($pad) {
+							font-size: 18px;
+							line-height: 22px;
+						}
+						@include rwd($desktop-w) {
+							font-size: 24px;
+							line-height: 32px;
+						}
+					}
+					ul {
+						margin-top: 15px;
+						@include rwd($desktop) {
+							margin-top: 30px;
+						}
+						li {
+							margin-bottom: 10px;
+							position: relative;
+							padding-left: 15px;
+							font-size: 15px;
+							line-height: 20px;
+							@include rwd($desktop-w) {
+								font-size: 18px;
+								line-height: 31px;
+								padding-left: 20px;
+							}
+							&:before {
+								content: "";
+								position: absolute;
+								width: 10px;
+								height: 10px;
+								background-color: $blue1;
+								left: 0;
+								top: 5px;
+								@include border-radius(50%);
+								@include rwd($desktop-w) {
+									top: 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

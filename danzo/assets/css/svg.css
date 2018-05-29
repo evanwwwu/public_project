@@ -1,0 +1,16 @@
+@font-face { font-family: "dosisregular"; src: url("fonts/Dosis-Regular.eot?1425451115"); src: url("fonts/Dosis-Regular.eot?&1425451115#iefix") format("embedded-opentype"), url("fonts/Dosis-Regular.woff2?1425451115") format("woff2"), url("fonts/Dosis-Regular.woff?1425451115") format("woff"), url("fonts/Dosis-Regular.tff") format("tff"), url("fonts/Dosis-Regular.svg?1425451115") format("svg"); }
+text { fill: #4F4F4F; }
+
+.g_line { -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; overflow: hidden; }
+.g_line path { -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; stroke: #B1B1B1; stroke-dasharray: 150; stroke-dashoffset: 150; }
+.g_line text { -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; opacity: 0; }
+
+.hover_obj > * { -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; fill: transparent; cursor: pointer; }
+.hover_obj.mobile ~ .g_line path { stroke-dashoffset: 0; }
+.hover_obj.mobile ~ .g_line text { opacity: 1; }
+.hover_obj:hover > * { fill: rgba(255, 255, 255, 0.3); }
+.hover_obj:hover ~ .g_line path { stroke-dashoffset: 0; }
+.hover_obj:hover ~ .g_line text { -moz-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; -webkit-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; opacity: 1; }
+
+#lake { fill: transparent; pointer-events: all; overflow: hidden; }
+#lake ellipse { fill: none; stroke-width: 1.5px; }

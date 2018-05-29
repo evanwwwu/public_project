@@ -1,0 +1,29 @@
+INFO - 2016-09-10 00:58:55 --> Config Class Initialized
+INFO - 2016-09-10 00:58:55 --> Hooks Class Initialized
+DEBUG - 2016-09-10 00:58:55 --> UTF-8 Support Enabled
+INFO - 2016-09-10 00:58:55 --> Utf8 Class Initialized
+INFO - 2016-09-10 00:58:55 --> URI Class Initialized
+INFO - 2016-09-10 00:58:55 --> Router Class Initialized
+INFO - 2016-09-10 00:58:55 --> Output Class Initialized
+INFO - 2016-09-10 00:58:55 --> Security Class Initialized
+DEBUG - 2016-09-10 00:58:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-09-10 00:58:55 --> CSRF cookie sent
+INFO - 2016-09-10 00:58:55 --> Input Class Initialized
+INFO - 2016-09-10 00:58:55 --> Language Class Initialized
+INFO - 2016-09-10 00:58:55 --> Loader Class Initialized
+INFO - 2016-09-10 00:58:56 --> Helper loaded: url_helper
+INFO - 2016-09-10 00:58:56 --> Helper loaded: language_helper
+INFO - 2016-09-10 00:58:56 --> Helper loaded: my_file_helper
+INFO - 2016-09-10 00:58:56 --> Helper loaded: form_helper
+INFO - 2016-09-10 00:58:56 --> Database Driver Class Initialized
+INFO - 2016-09-10 00:58:57 --> Image Lib Class Initialized
+INFO - 2016-09-10 00:58:57 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-09-10 00:58:57 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-09-10 00:58:57 --> Cart Class Initialized
+INFO - 2016-09-10 00:58:57 --> Model Class Initialized
+INFO - 2016-09-10 00:58:57 --> Model Class Initialized
+INFO - 2016-09-10 00:58:57 --> Model Class Initialized
+INFO - 2016-09-10 00:58:57 --> Controller Class Initialized
+INFO - 2016-09-10 00:58:57 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/login_view.php
+INFO - 2016-09-10 00:58:57 --> Final output sent to browser
+DEBUG - 2016-09-10 00:58:57 --> Total execution time: 2.4089

@@ -1,0 +1,557 @@
+<html data-ember-extension="1"><head>
+<!-- http://monoame.com/essential-threejs-master/assets/textures/particles/particle2.png -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.js"></script><style>@media print {#ghostery-purple-box {display:none !important}}</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.js"></script><style type="text/css">.dg {
+  /** Clear list styles */
+  /* Auto-place container */
+  /* Auto-placed GUI's */
+  /* Line items that don't contain folders. */
+  /** Folder names */
+  /** Hides closed items */
+  /** Controller row */
+  /** Name-half (left) */
+  /** Controller-half (right) */
+  /** Controller placement */
+  /** Shorter number boxes when slider is present. */
+  /** Ensure the entire boolean and function row shows a hand */ }
+  .dg ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    clear: both; }
+  .dg.ac {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    z-index: 0; }
+  .dg:not(.ac) .main {
+    /** Exclude mains in ac so that we don't hide close button */
+    overflow: hidden; }
+  .dg.main {
+    -webkit-transition: opacity 0.1s linear;
+    -o-transition: opacity 0.1s linear;
+    -moz-transition: opacity 0.1s linear;
+    transition: opacity 0.1s linear; }
+    .dg.main.taller-than-window {
+      overflow-y: auto; }
+      .dg.main.taller-than-window .close-button {
+        opacity: 1;
+        /* TODO, these are style notes */
+        margin-top: -1px;
+        border-top: 1px solid #2c2c2c; }
+    .dg.main ul.closed .close-button {
+      opacity: 1 !important; }
+    .dg.main:hover .close-button,
+    .dg.main .close-button.drag {
+      opacity: 1; }
+    .dg.main .close-button {
+      /*opacity: 0;*/
+      -webkit-transition: opacity 0.1s linear;
+      -o-transition: opacity 0.1s linear;
+      -moz-transition: opacity 0.1s linear;
+      transition: opacity 0.1s linear;
+      border: 0;
+      position: absolute;
+      line-height: 19px;
+      height: 20px;
+      /* TODO, these are style notes */
+      cursor: pointer;
+      text-align: center;
+      background-color: #000; }
+      .dg.main .close-button:hover {
+        background-color: #111; }
+  .dg.a {
+    float: right;
+    margin-right: 15px;
+    overflow-x: hidden; }
+    .dg.a.has-save > ul {
+      margin-top: 27px; }
+      .dg.a.has-save > ul.closed {
+        margin-top: 0; }
+    .dg.a .save-row {
+      position: fixed;
+      top: 0;
+      z-index: 1002; }
+  .dg li {
+    -webkit-transition: height 0.1s ease-out;
+    -o-transition: height 0.1s ease-out;
+    -moz-transition: height 0.1s ease-out;
+    transition: height 0.1s ease-out; }
+  .dg li:not(.folder) {
+    cursor: auto;
+    height: 27px;
+    line-height: 27px;
+    overflow: hidden;
+    padding: 0 4px 0 5px; }
+  .dg li.folder {
+    padding: 0;
+    border-left: 4px solid transparent; }
+  .dg li.title {
+    cursor: pointer;
+    margin-left: -4px; }
+  .dg .closed li:not(.title),
+  .dg .closed ul li,
+  .dg .closed ul li > * {
+    height: 0;
+    overflow: hidden;
+    border: 0; }
+  .dg .cr {
+    clear: both;
+    padding-left: 3px;
+    height: 27px; }
+  .dg .property-name {
+    cursor: default;
+    float: left;
+    clear: left;
+    width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .dg .c {
+    float: left;
+    width: 60%; }
+  .dg .c input[type=text] {
+    border: 0;
+    margin-top: 4px;
+    padding: 3px;
+    width: 100%;
+    float: right; }
+  .dg .has-slider input[type=text] {
+    width: 30%;
+    /*display: none;*/
+    margin-left: 0; }
+  .dg .slider {
+    float: left;
+    width: 66%;
+    margin-left: -5px;
+    margin-right: 0;
+    height: 19px;
+    margin-top: 4px; }
+  .dg .slider-fg {
+    height: 100%; }
+  .dg .c input[type=checkbox] {
+    margin-top: 9px; }
+  .dg .c select {
+    margin-top: 5px; }
+  .dg .cr.function,
+  .dg .cr.function .property-name,
+  .dg .cr.function *,
+  .dg .cr.boolean,
+  .dg .cr.boolean * {
+    cursor: pointer; }
+  .dg .selector {
+    display: none;
+    position: absolute;
+    margin-left: -9px;
+    margin-top: 23px;
+    z-index: 10; }
+  .dg .c:hover .selector,
+  .dg .selector.drag {
+    display: block; }
+  .dg li.save-row {
+    padding: 0; }
+    .dg li.save-row .button {
+      display: inline-block;
+      padding: 0px 6px; }
+  .dg.dialogue {
+    background-color: #222;
+    width: 460px;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 15px; }
+
+/* TODO Separate style and structure */
+#dg-new-constructor {
+  padding: 10px;
+  color: #222;
+  font-family: Monaco, monospace;
+  font-size: 10px;
+  border: 0;
+  resize: none;
+  box-shadow: inset 1px 1px 1px #888;
+  word-wrap: break-word;
+  margin: 12px 0;
+  display: block;
+  width: 440px;
+  overflow-y: scroll;
+  height: 100px;
+  position: relative; }
+
+#dg-local-explain {
+  display: none;
+  font-size: 11px;
+  line-height: 17px;
+  border-radius: 3px;
+  background-color: #333;
+  padding: 8px;
+  margin-top: 10px; }
+  #dg-local-explain code {
+    font-size: 10px; }
+
+#dat-gui-save-locally {
+  display: none; }
+
+/** Main type */
+.dg {
+  color: #eee;
+  font: 11px 'Lucida Grande', sans-serif;
+  text-shadow: 0 -1px 0 #111;
+  /** Auto place */
+  /* Controller row, <li> */
+  /** Controllers */ }
+  .dg.main {
+    /** Scrollbar */ }
+    .dg.main::-webkit-scrollbar {
+      width: 5px;
+      background: #1a1a1a; }
+    .dg.main::-webkit-scrollbar-corner {
+      height: 0;
+      display: none; }
+    .dg.main::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: #676767; }
+  .dg li:not(.folder) {
+    background: #1a1a1a;
+    border-bottom: 1px solid #2c2c2c; }
+  .dg li.save-row {
+    line-height: 25px;
+    background: #dad5cb;
+    border: 0; }
+    .dg li.save-row select {
+      margin-left: 5px;
+      width: 108px; }
+    .dg li.save-row .button {
+      margin-left: 5px;
+      margin-top: 1px;
+      border-radius: 2px;
+      font-size: 9px;
+      line-height: 7px;
+      padding: 4px 4px 5px 4px;
+      background: #c5bdad;
+      color: #fff;
+      text-shadow: 0 1px 0 #b0a58f;
+      box-shadow: 0 -1px 0 #b0a58f;
+      cursor: pointer; }
+      .dg li.save-row .button.gears {
+        background: #c5bdad url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJJREFUeNpiYKAU/P//PwGIC/ApCABiBSAW+I8AClAcgKxQ4T9hoMAEUrxx2QSGN6+egDX+/vWT4e7N82AMYoPAx/evwWoYoSYbACX2s7KxCxzcsezDh3evFoDEBYTEEqycggWAzA9AuUSQQgeYPa9fPv6/YWm/Acx5IPb7ty/fw+QZblw67vDs8R0YHyQhgObx+yAJkBqmG5dPPDh1aPOGR/eugW0G4vlIoTIfyFcA+QekhhHJhPdQxbiAIguMBTQZrPD7108M6roWYDFQiIAAv6Aow/1bFwXgis+f2LUAynwoIaNcz8XNx3Dl7MEJUDGQpx9gtQ8YCueB+D26OECAAQDadt7e46D42QAAAABJRU5ErkJggg==) 2px 1px no-repeat;
+        height: 7px;
+        width: 8px; }
+      .dg li.save-row .button:hover {
+        background-color: #bab19e;
+        box-shadow: 0 -1px 0 #b0a58f; }
+  .dg li.folder {
+    border-bottom: 0; }
+  .dg li.title {
+    padding-left: 16px;
+    background: #000 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .dg .closed li.title {
+    background-image: url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlGIWqMCbWAEAOw==); }
+  .dg .cr.boolean {
+    border-left: 3px solid #806787; }
+  .dg .cr.color {
+    border-left: 3px solid; }
+  .dg .cr.function {
+    border-left: 3px solid #e61d5f; }
+  .dg .cr.number {
+    border-left: 3px solid #2FA1D6; }
+    .dg .cr.number input[type=text] {
+      color: #2FA1D6; }
+  .dg .cr.string {
+    border-left: 3px solid #1ed36f; }
+    .dg .cr.string input[type=text] {
+      color: #1ed36f; }
+  .dg .cr.function:hover, .dg .cr.boolean:hover {
+    background: #111; }
+  .dg .c input[type=text] {
+    background: #303030;
+    outline: none; }
+    .dg .c input[type=text]:hover {
+      background: #3c3c3c; }
+    .dg .c input[type=text]:focus {
+      background: #494949;
+      color: #fff; }
+  .dg .c .slider {
+    background: #303030;
+    cursor: ew-resize; }
+  .dg .c .slider-fg {
+    background: #2FA1D6;
+    max-width: 100%; }
+  .dg .c .slider:hover {
+    background: #3c3c3c; }
+    .dg .c .slider:hover .slider-fg {
+      background: #44abda; }
+</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.js"></script>
+	<style>
+	html,body{
+		margin: 0;
+		padding: 0;
+
+	}
+
+</style><script>
+	//globals
+	var scene;
+	var camera;
+	var renderer;
+	var control;
+	var stats;
+	var loader;
+
+	//initialize
+	function init(){
+		scene = new THREE.Scene();
+		camera = new THREE.PerspectiveCamera(40,window.innerWidth/window.innerHeight,0.1,1000);
+
+		//set renderer
+		renderer = new THREE.WebGLRenderer();
+		renderer.setClearColor(0x000000,1.0);
+		renderer.setSize(window.innerWidth,window.innerHeight);
+		renderer.shadowMap.enabled=true;
+
+		//set camera
+		camera.position.set(10,14,10);
+		// camera.position.x
+		camera.lookAt(scene.position);
+
+		//initial loader
+		loader=new THREE.TextureLoader();
+
+		//generate the ground plane
+		var planeGeometry=new THREE.PlaneGeometry(20,20);
+		var planeMaterial = new THREE.MeshPhongMaterial({color: 0xffffff,wireframe:true});
+		var plane = new THREE.Mesh(planeGeometry,planeMaterial);
+		plane.receiveShadow=true;
+
+		plane.rotation.x=-0.5*Math.PI;
+		plane.position.set(0,-2,0);
+
+		//add the plane to scene
+		scene.add(plane);
+
+		//add cube1 (whz & segments)
+		var cubeGeometry=new THREE.SphereGeometry(5,20,20);
+		var pm = new THREE.ParticleBasicMaterial();
+		pm.map=loader.load("particle2.png");
+		pm.blending = THREE.AdditiveBlending;
+		pm.transparent = true;
+		pm.size=1;
+		var ps = new THREE.ParticleSystem(cubeGeometry,pm);
+		ps.sortParticles=true;
+		ps.name='cube';
+		ps.position.x=1.75;
+		scene.add(ps);
+
+		//add cube2 (whz & segments)
+		var pm2=pm.clone();
+		pm2.map=loader.load("particle2.png");
+		var ps2= new THREE.ParticleSystem(cubeGeometry,pm2);
+		ps2.name='cube2';
+		ps2.position.x=-1.75;
+		scene.add(ps2);
+
+		//add spotlight
+		var spotLight = new THREE.SpotLight(0xffffff);
+		spotLight.position.set(10,20,20);
+		spotLight.shadowCamaraNear=20;
+		spotLight.shadowCamaraFar=50;
+		spotLight.castShadow=true;
+
+		//add spotLight
+		scene.add(spotLight);
+
+		document.body.appendChild(renderer.domElement);
+
+		//add cotrols
+		control=new function(){
+			this.rotationSpeed=0.005;
+			this.opacity=0.6;
+
+		}
+
+		setupSound();
+		//play sound
+		loadSound("missko.mp3")
+
+
+		addControlGUI(control);
+		addStatsObject();
+
+
+		//render the scene
+		render();
+
+	}
+
+	window.onload=init;
+	
+	function render(){
+		// update control
+		var rotSpeed=control.rotationSpeed;
+		camera.position.x = camera.position.x * Math.cos(rotSpeed) + camera.position.z * Math.sin(rotSpeed);
+        camera.position.z = camera.position.z * Math.cos(rotSpeed) - camera.position.x * Math.sin(rotSpeed);
+        camera.lookAt(scene.position);
+
+		camera.lookAt(scene.position);
+
+		//update stats
+		stats.update();
+
+		//render the scene
+		renderer.render(scene,camera);
+
+		//update cube size base on l/r volume
+		updateCubes();
+
+		//call next animation frame
+		requestAnimationFrame(render);
+	}
+
+	function updateCubes(){
+		// 1st channel
+		var array = new Uint8Array(analyzer.frequencyBinCount);
+		analyzer.getByteFrequencyData(array);
+		var average = getAvgVolume(array);
+		// 2nd channel
+		var array2 = new Uint8Array(analyzer2.frequencyBinCount);
+		analyzer2.getByteFrequencyData(array2);
+		var average2 = getAvgVolume(array2);
+
+		//clear current state
+		if (scene.getObjectByName('cube')){
+			var cube = scene.getObjectByName('cube');
+			var cube2 = scene.getObjectByName('cube2');
+		
+			cube.scale.set(average/50,average/50,average/50);
+			cube2.scale.set(average2/50,average2/50,average2/50);
+				
+			cube.rotation.y+=average/1000;
+			cube2.rotation.y+=average2/1000;
+			
+		}
+	}
+
+	function addControlGUI(controlObject){
+		var gui=new dat.GUI();
+		gui.add(controlObject,"rotationSpeed",-0.01,0.01);
+
+	}
+
+	function addStatsObject(){
+		stats=new Stats();
+		stats.setMode(0);
+
+		stats.domElement.style.position='absolute';
+		stats.domElement.style.left='0px';
+		stats.domElement.style.top='0px';
+		document.body.appendChild(stats.domElement);
+		
+	}
+
+	// init sound
+	function setupSound(){
+		window.AudioContext= window.AudioContext || window.webkitAudioContext;
+		context = new AudioContext();
+
+		//analyzer
+		analyzer= context.createAnalyser();
+		analyzer.smoothTimeConstant = 0.4;
+		analyzer.fftSize= 1024;
+
+		analyzer2= context.createAnalyser();
+		analyzer2.smoothTimeConstant = 0.4;
+		analyzer2.fftSize= 1024;
+
+		//create source
+		sourceNode= context.createBufferSource();
+		var splitter = context.createChannelSplitter();
+
+		sourceNode.connect(splitter);
+
+		//connect ana
+		splitter.connect(analyzer,0);
+		splitter.connect(analyzer2,1);
+		
+
+		//connect to destination
+		sourceNode.connect(context.destination);
+
+		context = new AudioContext();
+	}
+
+	function getAvgVolume(array){
+		var values=0;
+		var average;
+
+		var length = array.length;
+
+		for(var i=0;i<length;i++){
+			values+=array[i];
+
+		}
+
+		average = values / length;
+		return average;
+	}
+
+	function playSound(buffer){
+		sourceNode.buffer=buffer;
+		sourceNode.start(0);
+	}
+
+	//load the song;
+	function loadSound(url){
+		var request = new XMLHttpRequest();
+        request.open('GET', url, true);
+        request.responseType = 'arraybuffer';
+
+        // When loaded decode the data
+        request.onload = function() {
+            // decode the data
+            context.decodeAudioData(request.response, function(buffer) {
+                // when the audio is decoded play the sound
+                playSound(buffer);
+            }, onError);
+        }
+        request.send();
+	}
+
+	function onError(e){
+		console.log(e);
+	}
+
+	//resize
+	function handleResize(){
+		camera.aspect = window.innerWidth/window.innerHeight;
+		camera.updateProjectMatrix();
+		renderer.setSize(window.innerWidth,window.innerHeight);
+	}
+
+
+</script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+
+
+
+
+
+
+<body>
+<div id="window-resizer-tooltip"><a href="#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div><canvas width="1366" height="638" style="width: 1366px; height: 638px;"></canvas><div class="dg ac"><div class="dg main a" style="width: 245px;"><div style="width: 6px; margin-left: -3px; height: 28px; cursor: ew-resize; position: absolute;"></div><ul style="height: auto;"><li class="cr number has-slider"><div><span class="property-name">rotationSpeed</span><div class="c"><div><input type="text"></div><div class="slider"><div class="slider-fg" style="width: 12.8027%;"></div></div></div></div></li></ul><div class="close-button" style="width: 245px;">Close Controls</div></div></div><div style="cursor: pointer; opacity: 0.9; position: absolute; left: 0px; top: 0px;"><canvas width="80" height="48" style="width: 80px; height: 48px; display: block;"></canvas><canvas width="80" height="48" style="width: 80px; height: 48px; display: none;"></canvas><canvas width="80" height="48" style="width: 80px; height: 48px; display: none;"></canvas></div></body></html>

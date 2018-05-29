@@ -1,0 +1,58 @@
+ .warpper.terms{
+  font-size: 0;
+  padding-bottom: 30px;
+  @include rwd($desktop) {
+    padding-bottom: 60px;
+  }
+  @include rwd($desktop-w) {
+    padding-bottom: 100px;
+  }
+  
+  .all{
+    padding: 20px 0px 80px;
+    @include rwd($desktop) {
+      padding: 80px 0 100px;
+    }
+  }
+  .mainsize{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 15px;
+    @include rwd($pad) {
+      padding: 0 40px;
+    }
+    @include rwd($desktop) {
+      font-size: 18px;
+      line-height: 28px;
+      max-width: 1024px;
+      margin: 0px auto 30px;
+    }
+    .btitle{
+      color: $blue1;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      @include rwd($desktop) {
+        font-size: 30px;
+        line-height: 48px;
+      }
+    }
+    .b{
+      color: #2b2b2b;
+      font-weight: 600;
+    }
+    .stitle{
+      margin-bottom: 10px;
+    }
+    ul{
+      padding-left: 15px;
+      list-style-type: decimal;
+    }
+    .s{
+      margin-bottom: 20px;
+    }
+  }
+}

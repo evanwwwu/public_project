@@ -1,0 +1,31 @@
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    include header
+    .warp
+      include menu
+      .warpper.member_signup
+        .main_content
+          .main_title
+            h3 Welcome
+            p 歡迎來信詢問任何訂單、商品及帳戶問題
+            a href="mailto:nakedmarket.tw@gmail.com" nakedmarket.tw@gmail.com
+          .member_div
+            .title
+              span Sign up
+            form.info
+              label.username
+                input type="text" name="username" placeholder="電子郵件"/
+              label.password
+                input type="text" name="password" placeholder="密碼"/
+              label.password
+                input type="text" name="password2" placeholder="再次確認密碼"/
+              a.login_btn href="member_login.html"
+                span 建立帳號
+              button.fb_login
+                span facebook 帳號登入
+
+        include footer

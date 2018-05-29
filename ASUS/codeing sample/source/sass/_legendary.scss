@@ -1,0 +1,242 @@
+#{"#"+$model+"-legendary"}{
+	.kv-div{
+		figure.kv{
+			height: 860px;
+			position: relative;
+			right: 50%;
+			margin-left: 277px;
+			.m{
+				display: none;
+			}
+			img{
+				max-width: none;
+				height: 100%;
+			}
+			@include rwd($desktop_size) {
+				height: 600px;
+				margin-left: 187px;
+			}
+			@include rwd($pad_size) {
+				right: 0;
+				margin-left: 0;
+				@include transform(translateX(0%));
+				height: auto;
+				img{
+					height: auto;
+					width: 100%;
+				}
+				.pc{
+					display: none;
+				}
+				.m{
+					display: block;
+				}
+			}
+		}
+		.dtxt{
+			width: 55%;
+			max-width: 710px;
+			position: absolute;
+			top: 50%;
+			left: 45%;
+			@include transform(translateY(-75%));
+			@include rwd($desktop_size) {
+				@include transform(translateY(-55%));
+				left: 42%;				
+			}
+			@include rwd($pad_size) {
+				@include transform(translateY(0%));
+				position: relative;
+				left: 0;
+				top: 0;
+				width: 100%;
+				margin: 20px auto 40px;
+			}
+			.s{
+				font-family: "xolon";
+				font-size: 36px;
+				line-height: 40px;
+				color: #fff;
+				margin-top: 10px;
+				@include rwd($pad_size) {
+					font-size: 28px;
+					line-height: 30px;
+				}
+				@include rwd($phone_size) {
+					font-size: 22px;
+					line-height: 24px;
+				}
+			}
+			.info{
+				margin-top: 20px;
+				@include rwd($pad_size) {
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+		}
+	}
+	.video-div{
+		position: relative;
+		margin-right: -30px;
+		margin-left: -30px;
+		@include rwd($pad_size){
+			margin-right: -15px;
+			margin-left: -15px;
+		}
+		.videolink{
+			position: relative;
+			display: block;
+			.play
+			{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -72px;
+				margin-left: -72px;
+				@include border-radius(50%);
+				@include transition(all .3s ease-in-out);
+				@include rwd($pad_size) {
+					width: 80px;
+					height: 80px;
+					margin-top: -40px;
+					margin-left: -40px;
+				}
+			}
+			&:hover .play{
+				background-color: rgba(#fff,.5);
+			}
+		}
+		.videoplayer{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+		}
+	}
+	.chart-line{
+		text-align: center;
+		padding-top: 100px;
+		padding-bottom: 150px;
+		background: image-url("legendary/bubble-bg.jpg") center / cover no-repeat;
+	}
+	.nivdia-silde{
+		padding: 110px 10px;
+		background-color: #01141a;
+		@include rwd($pad_size) {
+			padding: 30px 10px;
+			.sildes {
+				padding-top: 100px;
+			}
+		}
+		@include rwd($phone_size) {
+			padding: 20px 10px 30px;
+			.sildes{
+				padding-top: 75px;
+			}
+		}
+		.silde-div{			
+			max-width: 1020px;
+			margin: 0 auto;
+			position: relative;
+			.item{
+				padding: 0 85px;
+				font-size: 0;
+				@include rwd($pad_size) {
+					padding: 0 10px;
+				}
+				img{
+					display: inline-block;
+					vertical-align: top;
+					width: percentage(340 /850);
+					@include rwd($pad_size) {
+						width: 100%;
+						margin-bottom: 50px;
+					}
+				}
+				.dx{
+					display: inline-block;
+					vertical-align: top;
+					width: percentage(510 /850);
+					padding-left: 15px;
+					@include rwd($pad_size) {
+						width: 100%;
+						padding-left: 0;
+					}
+					.t{
+						font-size: 30px;
+						line-height: 1.1;
+						@include rwd($phone_size) {
+							font-size: 24px;
+						}
+					}
+					.i{
+						font-size: 18px;
+						font-weight: 300;
+						line-height: 30px;
+					}
+				}
+			}
+			.owl-stage-outer{
+				overflow: inherit;
+			}
+			.owl-item{
+				opacity: .3;
+				&.active{
+					opacity: 1;
+				}
+			}
+			.btn-prev,.btn-next{
+				z-index: 9;
+				position: absolute;
+				cursor: pointer;
+				top: 50%;
+				margin-top: -46px;
+				@include transition(all .3s ease-in-out);
+				&:hover{
+					opacity: .5;
+				}
+				@include rwd($pad_size){
+					top: 0px;
+					margin-top: 0;
+					width: 40px;
+				}
+				@include rwd($phone_size) {
+					width: 30px;
+				}
+			}
+			.btn-prev{
+				left: 0;
+			}
+			.btn-next{
+				right: 0;
+			}
+		}
+		.owl-controls{
+			text-align: center;
+			position: absolute;
+			margin-top: 25px;
+			width: 100%;
+			@include rwd($pad_size) {
+				top: 0;
+				margin-top: 30px;
+			}
+			@include rwd($phone_size) {
+				margin-top: 20px;
+			}
+			.owl-dot{
+				cursor: pointer;
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				margin: 0 8px;
+				background-color: #626262;
+				@include border-radius(50%);
+				@include transition(all .3s ease);
+				&.active{
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+-$page_list = 'classes';
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    include header
+    .warp
+      include menu
+      .warpper.classes_detail
+        a.prev_btn href="classes_list.html"
+          img src="assets/images/back_arr.png" alt=""/
+        .main_img_pic
+          img src="assets/images/classes_detail_pic.jpg" alt=""/
+          .over
+            span 已額滿
+        .main_content
+          .detail_title
+            .t1 AMY的英式午茶約會
+            .t2 3/25（五）, 3/26（六）, 3/25（五）, 3/26（六）
+          .content 
+            .info
+              ul
+                li 課程日期 //
+                li 3/23  14:30 檸檬優格磅蛋糕
+                li 3/23  14:30 檸檬優格磅蛋糕
+                li 3/23  14:30 檸檬優格磅蛋糕
+              ul
+                li 費用 // 2000元
+                li 課程時間 // 約2.5-3小時
+              ul
+                li 課程方式：
+                li 1. 程為示範教學，並當場品嚐甜點。
+                li 2. 如當場吃不完，建議自備保鮮盒。  
+            .a_text
+              .a_title
+                p 主廚介紹
+              .t_content.cooker
+                .pic
+                  img style="display:inline-block;" src="assets/images/classes_pic1.jpg" alt=""/
+                .text
+                  p Ann小安，不折不扣的sweet tooth，從小就喜歡甜點的滋味。在法國學習甜點專業，過去五年，實習於巴黎的甜點專賣店，任職於台北和新加坡的名廚餐廳，具備Fine Dining的嚴謹手藝訓練，與遊走不同城市的行旅經驗。熱愛研究食材、味道、色彩組合與盤飾呈現。
+                  p 小安老師輕鬆自然的教學風格，深獲許多學員的喜愛，是堂相當熱門搶手的甜點課，有興趣的朋友請儘早報名。
+            .a_text
+              .a_title
+                p 課程內容
+              .t_content
+                p 中德混血的Chris，從小因為家庭背景的原因對料理充滿熱情。
+                p 從德國餐飲學校畢業後選擇進入了德國黑森林的六星級專業廚房工作，短短三年便成為了當地知名義大利餐廳的主廚。在黑森林工作的這段日子，除了學習到扎實的料理技巧之外，當地人對料理的熱情以及本地小農的手作產品更讓他深受感動以及啟發，也希望可以將這份熱情傳達給喜愛料理的人。<br><br>
+                p 維多利亞女王蛋糕 Victoria sponge
+                p 伯爵茶巧克力餅乾 Earl grey chocolate biscuits
+                p 經典苺果布丁鬆糕 British fruit trifle
+                p 約克夏檸檬起司塔 Yorkshire curd tart
+                p 復活節熱十字麵包 Hot crossed bun 
+          form.up_form action="classes_order.html"
+              label.date_s
+                span 課程日期
+                .select
+                  p.placeholder 請選擇日期
+                  ul
+                    li data-value="1" 3/25（五）
+                    li data-value="2" 3/26（五）
+                    li data-value="3" 3/27（五）
+                    li data-value="4" 3/28（五）
+                  input type="hidden" name="date"/
+              label.name
+                span 學員姓名
+                input type="text" name="username" /
+              label.phone
+                span 聯絡電話
+                input type="text" name="phone" /
+              label.email
+                span 電子郵件
+                input type="text" name="email" /
+              label.msg
+                span 備註
+                textarea name="msg"
+              label.submit
+                button
+                  span 我要報名
+                  .icon: img src="assets/images/add_bag.png" alt=""/
+          .note_div
+            .n_title 報名注意事項
+            .s_title 請詳細閱讀，以免影響權益
+            .content
+              p Mignardise指的是在餐廳用餐，餐後甜點之後所吃到的點心。一口品嘗的迷你尺寸，外型優雅且小巧，是主廚精心鋪陳的最後一道驚喜，也為味蕾畫下完美的尾聲。
+              p 在這次課程中，精選「檸檬瑪德蓮」，「巧克力脆片」，「堅果球」（下列圖為示意圖,實際成品以老師食譜為主），三種不同口感層次的經典點心。將教授每樣點心的製作技巧，掌握各自鬆潤、酥脆、厚實質地的要領。也會分享星級餐廳呈現mignardise時運用的裝飾技巧，點石成金的手法。
+              p 這堂課經過老師精心設計，希望可以讓大家在輕鬆有趣的氣氛中學習甜點。三款皆為常見且易上手的款式，因此難度並不會過於繁複。重點在於使用一些小技巧，讓甜點看起來更為華麗精緻，不論是剛開始想要開始學習甜點或是有一點基礎的人都很適合這堂課程。
+        include footer

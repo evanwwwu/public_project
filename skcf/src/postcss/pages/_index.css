@@ -1,0 +1,178 @@
+.index__wrapper {
+    width: 100%;
+    background-color: $background;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    .section {
+        position: relative;
+        .subject {
+            width: 100%;
+            color: white;
+            position: absolute;
+            z-index: 2;
+            text-align: center;
+            top: 40%;
+        }
+        .subject p {
+            font-size: 36px;
+            margin: 0;
+            font-weight: border;
+        }
+        .subject a {
+            font-size: 22px;
+            color: white;
+            text-decoration: none;
+            font-style: italic;
+            span {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            &:before,
+            &:after {
+                vertical-align: middle;
+                content: "";
+                width: 30px;
+                height: 1px;
+                background-color: white;
+                display: inline-block;
+            }
+        }
+        .image {
+            position: relative;
+            z-index: 1;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform: scale(0.94);
+                border: 1px solid $img-border;
+            }
+            img {
+                display: block;
+            }
+        }
+    }
+    .intro {
+        padding: 0 3%;
+        ul {
+            @mixin ulreset;
+        }
+        li {
+            line-height: 40px;
+            text-align: center;
+            font-size: 15px;
+            border-bottom: 1px solid $img-noteline;
+        }
+        a {
+            color: $link;
+            text-decoration: none;
+            padding-left: 5px;
+        }
+        li.address {
+            line-height: 22px;
+            padding: 10px 0;
+            border-bottom: 1px solid $img-noteline;
+        }
+        li.address a {
+            font-size: 17px;
+        }
+    }
+}
+
+.index__logo {
+    width: 100px;
+    height: 132px;
+    background-image: url(../images/icon_logo_index.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100px 132px;
+    margin: 0 auto 20px;
+}
+
+
+/* pad */
+
+@media (--pad) {
+    .index__wrapper {
+        .intro {
+            li {
+                line-height: 60px;
+            }
+            li.address {
+                padding: 20px 0;
+            }
+        }
+    }
+}
+
+
+/* desktop */
+
+@media (--desktop) {
+    .index__wrapper {
+        position: relative;
+        overflow: hidden;
+        .section {
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            top: 0;
+            background-size: cover;
+            background-position: center center;
+            z-index: 0;
+            .image {
+                height: 100%;
+            }
+            .image:before {
+                transform: scale(1);
+                width: 96%;
+                height: 96%;
+                left: 2%;
+                top: 2%;
+            }
+            .image img {
+                display: none;
+            }
+        }
+        .section__ranch {
+            background-image: url(../images/sample_index_ranch.jpg);
+            left: 0;
+        }
+        .section__resort {
+            background-image: url(../images/sample_index_resort.jpg);
+            right: 0;
+        }
+        .intro {
+            position: absolute;
+            width: 220px;
+            height: 100%;
+            left: 50%;
+            top: 0;
+            margin-left: -105px;
+            z-index: 2;
+            background-color: $background;
+            ul {
+                position: absolute;
+                bottom: 10px;
+                width: 90%;
+                left: 5%;
+            }
+        }
+    }
+    .index__logo {
+        width: 123px;
+        height: 162px;
+        background-size: 123px 162px;
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        margin-left: -61.5px;
+        top: 40%;
+    }
+}
+
+
+/* desktop-w */
+
+@media (--desktop-w) {}

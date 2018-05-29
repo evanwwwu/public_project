@@ -1,0 +1,357 @@
+#{"#"+$model+"-ultimate"} {
+    background: image-url("h2o/bg.jpg") center 20px / auto no-repeat;
+    text-align: center;
+    @include rwd($pad_size) {
+        text-align: left;
+        background: image-url("h2o/bg.jpg") center -100px / auto no-repeat;
+    }
+    .direct{
+        position: relative;
+        .main-title{
+            margin-bottom: 90px;
+            @include rwd($pad_size) {
+                margin-bottom: 0px;
+            }
+        }
+        .gpu{
+            position: relative;
+            display: inline-block;
+            right: 50%;
+            margin-right: -70%;
+            @include rwd($desktop_size) {
+                margin-right: -50%;
+            }
+            @include rwd($pad_size) {
+                width: 120%;
+                right: 0;
+                margin-right: 10%;
+                margin-left: -10%;
+            }
+            .anim{
+                position:absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                &.a1{
+                    opacity: 1;
+                }
+            }
+        }
+        .dtxt{
+            position: absolute;
+            text-align: left;
+            top: 50%;
+            left: 50%;
+            margin-left: 120px;
+            margin-top: -70px;
+            max-width: 550px;
+            padding-right: 20px;
+            @include rwd($pad_size) {
+                max-width: none;
+                position: relative;
+                top: 0;
+                left: 0;
+                margin: 0;
+                margin-top: 40px;
+                padding-right: 0;
+            }
+            .info{
+                margin-top: 30px;
+            }
+        }
+    }
+    .charts{
+        font-size: 0;
+        margin-top: 40px;
+        .item{
+            display: inline-block;
+            width: 50%;
+            text-align: left;
+            @include rwd($pad_size) {
+                width: 100%;
+            }
+        }
+        .chart{
+            width: 100%;
+            text-align: center;
+            padding: 30px 0px;
+            font-size: 0;
+            margin: 0 auto;
+            .r{
+                display: inline-block;
+                padding-right: 25px;
+                border-right:1px solid #ffffff;
+                width: percentage(185/570);
+                vertical-align: middle;
+                max-width: 185px;
+            }
+            .l{
+                display: inline-block;
+                text-align: left;
+                width: percentage(385/570);
+                max-width: 385px;
+                padding-left: 5px;
+                vertical-align: middle;
+                span{
+                    display: block;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin-bottom: 5px;
+                    @include rwd($phone_size) {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    >p.sys{
+        font-weight: 300;
+        font-size: 18px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        padding: 0 20px;
+        line-height: 1.5;
+        @include rwd($phone_size){
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    }
+    .pipes{
+        position: relative;
+        figure{
+            display: inline-block;
+            position: relative;
+            @include rwd($pad_size) {
+                width: 150%;
+                margin-left: -25%;
+            }
+            .anim{
+                position:absolute;
+                opacity: 0;
+                &.c1{
+                    width: percentage(291/1817);
+                    top: 16.6%;
+                    left: 35.4%;
+                }
+                &.c2{
+                    width: percentage(344/1817);    
+                    top: 13.6%;
+                    left: 33.6%;
+                }
+                &.c3{
+                    width: percentage(435/1817);
+                    left: 31.3%;
+                    top: 7.9%;
+                }
+                &.c4{
+                    width: percentage(223/1817);
+                    top: 21%;
+                    left: 64.4%;
+                }
+                &.c5{
+                    width: percentage(264/1817);
+                    top: 18%;
+                    left: 63.2%;
+                }
+                &.c6{
+                    width: percentage(330/1817);
+                    top: 21%;
+                    left: 64.4%;                    
+                    top: 13%;
+                    left: 61.4%;
+                }
+            }
+        }
+        .dtxt{
+            max-width: 695px;
+            position: absolute;
+            left: 45%;
+            bottom: 20%;
+            text-align: left;
+            padding-right: 20px;
+            @include rwd($pad_size) {
+                position: relative;
+                left: 0;
+                bottom: 0;
+                padding-right: 0px;
+                margin-top: -20%;
+                margin-left: 20px;
+            }
+        }
+    }
+    .big-gpu{
+        position: relative;
+        background: image-url("h2o/bg2.jpg") center top / auto no-repeat;
+        padding-bottom: 100px;
+        @include rwd($pad_size) {
+            margin-top: 80px;
+            background: image-url("h2o/bg2.jpg") center top / 150% auto no-repeat;
+            padding-bottom: 60px;
+        }
+        figure{
+            display: inline-block;
+            position: relative;
+            left: 50%;
+            margin-left: -2400px;
+            @include rwd($pad_size) {
+                margin-left: 40px;
+                margin-right: 40px;
+                left: 0;
+            }
+            @include rwd($phone_size) {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+        .dtxt{
+            text-align: left;
+            position: absolute;
+            max-width: 550px;
+            width: 100%;
+            top: 40%;
+            right: 30px;
+            @include rwd($pad_size) {
+                max-width: none;
+                position: relative;
+                top: 0;
+                right: 0;
+                margin-top: 30px;
+            }
+            .title {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .fans{
+        .fan{
+            width: 100%;
+            background-color: #041318;
+            display: table;
+            @include rwd($pad_size) {
+                display: block;
+            }
+            &:nth-child(even){
+                direction: rtl;
+                >*{
+                    direction: ltr;
+                }
+            }
+            .pic,.text{
+                width: 50%;
+                display: table-cell;
+                vertical-align: middle;
+                @include rwd($pad_size) {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .dtxt{
+                text-align: left;
+                margin: 0 auto;
+                max-width: 580px;
+                padding:0 20px;
+                @include rwd($pad_size) {
+                    padding: 20px 20px 60px;
+                    max-width: none;
+                }
+                .info{
+                    margin-top: 40px;
+                    @include rwd($desktop_size) {
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .pic video{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .connect{
+        background: image-url("h2o/bg3.jpg") center top / auto no-repeat;
+        text-align: center;
+        padding-top: 130px;
+        @include rwd($pad_size) {
+            padding-top: 60px;
+            text-align: left;
+        }
+        .mainsize{
+            figure{
+                display: inline-block;
+                position: relative;
+                margin-bottom: 50px;
+                .anim{
+                    position: absolute;
+                    left: 0;top: 0;
+                }
+            }
+            .dtxt{
+                max-width: 855px;
+                margin: 0 auto 70px;
+                @include rwd($pad_size) {
+                    margin-bottom: 40px;
+                }
+                .title{
+                    margin-bottom: 10px;
+                }
+                .subtitle{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .mainsize-full{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-size: 0;
+            background-color: #041318;
+            .l{
+                text-align: right;
+                display: inline-block;
+                vertical-align: middle;
+                width: 50%;
+                padding-right: 6.5%;
+                @include rwd($desktop_size){
+                    padding-right: 2.5%;
+                }
+                @include rwd($pad_size) {
+                    padding-right: 0;
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+            }
+            .r{
+                text-align: left;
+                display: inline-block;
+                vertical-align: middle;
+                width: 50%;
+                padding-left: 6.5%;
+                @include rwd($desktop_size){
+                    padding-left: 2.5%;
+                }
+                @include rwd($pad_size) {
+                    padding-left: 0;
+                    width: 100%;
+                    text-align: left;
+                }
+                .dtxt{
+                    display: inline-block;
+                    max-width: 680px;
+                    .title{
+                        margin-bottom: 30px;
+                    }
+                    .dot{
+                        font-size: 14px;
+                        vertical-align: middle;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+

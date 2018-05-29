@@ -1,0 +1,207 @@
+#{"#"+$model+"-premium"}{
+	background: image-url("dot-bg.jpg") center top / auto no-repeat;
+	padding-top: 50px;
+	text-align: center;
+	@include rwd($pad_size) {
+		text-align: left;
+	}
+	.extr{
+		font-size: 0;
+		margin-top: 90px;
+		margin-bottom: 60px;
+		padding: 0 20px;
+		text-align: justify;
+		@include rwd($pad_size) {
+			padding: 0;
+			margin-top: 40px;
+			margin-bottom: 30px;
+		}
+		&:after{
+			content:"";
+			display: inline-block;
+			width: 100%;
+		}
+		.l{
+			display: inline-block;
+			text-align: left;
+			width: 50%;
+			vertical-align: top;
+			@include rwd($pad_size) {
+				width: 100%;
+			}
+			.dtxt{
+				max-width: 600px;
+				margin: 0 0 0 auto;
+				@include rwd($pad_size) {
+					margin: 0;
+                max-width: none;
+				}
+				.subtitle{
+					margin-bottom: 35px;
+				}
+			}
+		}
+		.r{
+			display: inline-block;
+			text-align: center;
+			width: 50%;
+			vertical-align: top;
+			@include rwd($desktop_size) {
+				width: 40%;
+			}
+			@include rwd($pad_size) {
+				width: 100%;
+				margin-top: 30px;
+			}
+			.videolink2 figure{
+				position: relative;
+				display: inline-block;
+				background-color:#000;
+				&:hover{
+					.view{
+						opacity: 1;
+					}
+				}
+				.view{
+					opacity: .5;
+					@include transition(all .3s ease-in-out);
+				}
+				.play{
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					margin-left: -45px;
+					margin-top: -45px;
+					width: 90px;
+					height: 90px;
+				}
+			}
+		}
+	}
+	.list{
+		font-size: 0;
+		.item{
+			position: relative;
+			width: (100% / 3);
+			display: inline-block;
+			vertical-align: top;
+			overflow: hidden;
+			@include rwd($pad_size) {
+				width: 50%;
+			}
+			@include rwd($phone_size) {
+				width: 100%;
+			}
+			.pic{
+				@include filter(grayscale(100%) contrast(110%));				
+				@include transition(all .3s ease-in-out);
+			}
+			.pattern{
+				background: image-url("premium/pattern.png");
+				position: absolute;
+				left: 0;top: 0;
+				width: 100%;
+				height: 100%;
+				@include transition(all .3s ease-in-out);
+			}
+			.txt{
+				text-align: center;
+				position: absolute;
+				font-size: 20px;
+				line-height: 26px;
+				color: $color1;
+				bottom: 30px;
+				left: 0;
+				width: 100%;
+				@include transition(all .3s ease-in-out);
+			}
+			&:hover{
+				.pic{
+					@include filter(grayscale(0%) contrast(100%));
+					@include transform(scale(1.1));
+				}
+				.pattern{
+					opacity: 0;
+				}
+				.txt{
+					color: #fff;
+				}
+			}
+		}
+	}
+	.pcb{
+		background-color: #041318;
+		position: relative;
+		overflow: hidden;
+		height: 445px;
+		@include rwd($pad_size) {
+			height: auto;
+			padding-top: 80px;
+		}
+		.mainsize{
+			font-size: 0;
+			position: relative;
+			height: 100%;
+			text-align: left;
+			&:after{
+				content:"";
+				height: 100%;
+				display: inline-block;
+				vertical-align: middle;
+				@include rwd($pad_size) {
+					display: none;
+				}
+			}
+			.l{
+				max-width: 650px;
+				vertical-align: middle;
+				display: inline-block;
+				position: relative;
+				z-index: 2;
+				@include rwd($desktop_size) {
+					width: 50%;
+				}
+				@include rwd($pad_size){
+					width: 100%;
+				}
+				.subtitle{
+					margin-bottom: 30px;
+				}
+			}
+			.r{
+				position: absolute;
+				bottom: 0;
+				right: 50%;
+				margin-right: -60%;
+				@include rwd($desktop_size) {
+					margin-right: -80%;
+				}
+				@include rwd($pad_size) {
+					position: relative;
+					right: 0;
+					margin-right: 0;
+					margin-top: -30px;
+				}
+			}
+		}
+	}
+	.videoplayer{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 99999;
+		.videoclose{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			background: url(../images/videoclose.png?1439988374) center 100% no-repeat;
+			right: 50px;
+			opacity: .6;
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}

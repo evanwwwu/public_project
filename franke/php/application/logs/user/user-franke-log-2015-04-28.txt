@@ -1,0 +1,7 @@
+INFO  - 2015-04-28 02:07:52[IP sorurce: 127.0.0.1] from:/www/franke/member/logout --> mail:  會員登出!
+INFO  - 2015-04-28 02:08:03[IP sorurce: 127.0.0.1] from:/www/franke/member --> 登入畫面
+INFO  - 2015-04-28 02:08:09[IP sorurce: 127.0.0.1] from:/www/franke/member/register --> 會員註冊
+INFO  - 2015-04-28 02:08:36[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member --> 註冊表單送出
+INFO  - 2015-04-28 02:08:36[IP sorurce: 127.0.0.1] from:/www/franke/member/check_member --> mail: g22333@gmail.com 註冊成功! 內容:{"mail":"g22333@gmail.com","pass1":"pete8092","pass2":"pete8092","username":"wu","phone":"022233339","identity":"\u5efa\u8a2d\u516c\u53f8"}
+INFO  - 2015-04-28 02:08:39[IP sorurce: 127.0.0.1] from:/www/franke/member --> 登入畫面
+INFO  - 2015-04-28 02:09:44[IP sorurce: 127.0.0.1] from:/www/franke/member/register --> 會員註冊

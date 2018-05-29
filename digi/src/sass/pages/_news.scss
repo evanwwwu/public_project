@@ -1,0 +1,335 @@
+ .warpper.news{
+ 	padding: 0 0 30px;
+ 	@include rwd($desktop) {
+ 		padding-bottom: 60px;
+ 	}
+ 	@include rwd($desktop-w) {
+ 		padding-bottom: 100px;
+
+ 	}
+ 	&.detail{
+ 		padding-bottom: 0px;
+ 	}
+ 	.items{
+ 		padding: 20px;
+ 		@include rwd($pad){
+ 			padding: 20px 40px;
+ 		}
+ 		@include rwd($desktop) {
+ 			max-width: 1200px;
+ 			margin: 0 auto;
+ 			padding: 45px 30px;
+ 		}
+ 		@include rwd($desktop-w){
+ 			padding-top: 65px 30px;
+ 		}
+ 		.item{
+ 			position: relative;
+ 			font-size: 0;
+ 			margin-bottom: 35px;
+ 			&:last-child{
+ 				margin-bottom: 0px;
+ 			}
+ 			@include rwd($desktop) {
+ 				padding: 30px 40px;
+ 				background-color: #f6f6f6;
+ 				margin-top: 40px;
+ 				margin-bottom: 90px;
+ 				text-align: right;
+ 				&:nth-child(odd){
+ 					.pic{
+ 						float:left;
+ 					}
+ 				}
+ 				&:nth-child(even){
+ 					.pic{
+ 						float:right;
+ 					}
+ 					.content{
+ 						padding-left: 0;
+ 						padding-right: 20px;
+ 					}
+ 				}
+ 			}
+ 			.pic{
+ 				width: 100%;
+ 				@include rwd($pad) {
+ 					vertical-align: top;
+ 					display: inline-block;
+ 					width:percentage(320/685);
+ 				}
+ 				@include rwd($desktop) {
+ 					margin-top: -64px;
+ 				}
+ 			}
+ 			.content{
+ 				margin-top: 20px;
+ 				margin-bottom: 20px;
+ 				@include rwd($pad) {
+ 					vertical-align: top;
+ 					display: inline-block;
+ 					margin: 0;
+ 					padding-left: 20px;
+ 					width:percentage(365/685);
+ 				}
+ 				.title{
+ 					font-size: 20px;
+ 					line-height: 24px;
+ 					color: $blue1;
+ 					font-weight: 600;
+ 					@include rwd($desktop) {
+ 						text-align: left;
+ 					}
+ 					@include rwd($desktop-w) {
+ 						font-size: 24px;
+ 						line-height: 30px;
+ 					}
+ 				}
+ 				.date{
+ 					font-size: 16px;
+ 					line-height: 24px;
+ 					color: $blue4;
+ 					margin-bottom: 10px;
+ 					display: block;
+ 					@include rwd($desktop) {
+ 						text-align: left;
+ 					}
+ 					@include rwd($desktop-w) {
+ 						font-size: 18px;
+ 						line-height: 30px;
+ 					}
+ 				}
+ 				.info{
+ 					font-size: 16px;
+ 					line-height: 22px;
+ 					@include rwd($desktop) {
+ 						text-align: left;
+ 					}
+ 					@include rwd($desktop-w) {
+ 						font-size: 18px;
+ 						line-height: 30px;
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	.more-btn{
+ 		width: 100%;
+ 		text-align: center;
+ 		padding: 7px 10px 7px 25px;
+ 		background-color: $blue1;
+ 		color: #fff;
+ 		display: inline-block;
+ 		margin-top: 20px;
+ 		@include transition(all .3s ease-in-out);
+ 		@include rwd($pad) {
+ 			width: 190px;
+ 			position: absolute;
+ 			bottom: 0;
+ 			right: 0;
+ 		}
+ 		@include rwd($desktop) {
+ 			position: relative;
+ 			margin-top: 20px;
+ 			&:hover{
+ 				opacity: .8;
+ 			}
+ 		}
+ 		@include rwd($desktop-w){
+ 			padding: 14px 10px 12px 25px;
+ 		}
+ 		span,i{
+ 			display: inline-block;
+ 			vertical-align: middle;
+ 		}
+ 		span{
+ 			margin-bottom: 4px;
+ 			font-size: 16px;
+ 			line-height: 1;
+ 			@include rwd($desktop-w) {
+ 				font-size: 20px;
+ 			}
+ 		}
+ 	}
+ 	&>.content{
+ 		padding: 15px 15px 40px;
+ 		margin: 0 auto;
+ 		@include rwd($pad) {
+ 			padding: 20px 80px 50px;	
+ 		}
+ 		@include rwd($desktop) {
+ 			padding: 40px 120px 60px;
+ 			max-width:1060px;
+ 		}
+ 		@include rwd($desktop-w) {
+ 			padding: 80px 120px;
+ 		}
+ 		.title{
+ 			font-size: 18px;
+ 			line-height: 24px;
+ 			color: $blue1;
+ 			font-weight: 600;
+ 			@include rwd($pad) {
+ 				font-size: 22px;
+ 				line-height: 30px;
+ 			}
+ 			@include rwd($desktop) {
+ 				text-align: left;
+ 			}
+ 			@include rwd($desktop-w) {
+ 				font-size: 24px;
+ 				line-height: 30px;
+ 			}
+ 		}
+ 		.date{
+ 			font-size: 16px;
+ 			line-height: 24px;
+ 			color: $blue4;
+ 			margin-bottom: 10px;
+ 			display: block;
+ 			@include rwd($pad) {
+ 				font-size: 18px;
+ 				line-height: 34px;
+ 			}
+ 			@include rwd($desktop) {
+ 				text-align: left;
+ 			}
+ 			@include rwd($desktop-w) {
+ 				font-size: 18px;
+ 				line-height: 30px;
+ 			}
+ 		}
+ 		.text{
+ 			margin-top: 20px;
+ 			p{
+ 				margin-top: 20px;
+ 				font-size: 15px;
+ 				line-height: 20px;
+ 				@include rwd($pad) {
+ 					font-size: 16px;
+ 					line-height: 24px;
+ 				}
+ 				@include rwd($desktop) {
+ 					font-size: 18px;
+ 					line-height: 26px;
+ 				}
+ 			}
+ 		}
+ 	}
+ 	.other{
+ 		padding: 18px 0;
+ 		background-color: #f6f6f6;
+ 		@include rwd($pad) {
+ 			padding: 30px 0px 40px;
+ 		}
+ 		@include rwd($desktop) {
+ 			padding: 50px 0px 70px;
+ 		}
+ 		.otitle{
+ 			text-align: center;
+ 			color: #5c5b5b;
+ 			font-weight: 600;
+ 			font-size: 15px;
+ 			margin: 0 auto 15px;
+ 			@include rwd($pad) {
+ 				text-align: left;
+ 				padding: 0 80px;
+ 				max-width: 1250px;
+ 			}
+ 			@include rwd($desktop) {
+ 				font-size: 19px;
+ 			}
+ 			@include rwd($desktop-w) {
+ 				font-size: 24px;
+ 			}
+ 		}
+ 		.slider{
+ 			padding: 0px 45px;
+ 			position: relative;
+ 			@include rwd($pad) {
+ 				padding: 0 80px;
+ 			}
+ 			@include rwd($desktop) {
+ 				max-width: 1250px;
+ 				margin: 0 auto;
+ 			}
+ 			.oth-next,.oth-prev{
+ 				width: 25px;
+ 				position: absolute;
+ 				top: 50%;
+ 				cursor: pointer;
+ 				@include transform(translateY(-50%));
+ 				@include rwd($pad) {
+ 					width: 30px;
+ 				}
+ 				@include rwd($desktop-w) {
+ 					width: 50px;
+ 				}
+ 			}
+ 			.oth-next{
+ 				right: 15px;
+ 				@include rwd($pad) {
+ 					right: 30px;
+ 				}
+ 				@include rwd($desktop-w) {
+ 					right: 0;
+ 				}
+ 			}
+ 			.oth-prev{
+ 				left: 15px;
+ 				@include rwd($pad) {
+ 					left: 30px;
+ 				}
+ 				@include rwd($desktop-w) {
+ 					left: 0;
+ 				}
+ 			}
+ 		}
+ 		.o-items{
+ 			.item{
+ 				padding: 8px;
+ 				background-color: #fff;
+ 				width: 100%;
+ 				font-size: 0;
+ 				>img{
+ 					display: inline-block;
+ 					width:percentage(110/230);
+ 					vertical-align: middle;
+ 				}
+ 				.text{
+ 					display: inline-block;
+ 					width:percentage(120/230);
+ 					vertical-align: middle; 
+ 					padding-left: 5px;
+ 					@include rwd($desktop) {
+ 						padding-left: 10px;
+ 					}
+ 					.title{
+ 						font-size: 12px;
+ 						line-height: 15px;
+ 						@include rwd($desktop) {
+ 							font-size: 15px;
+ 							line-height: 20px;
+ 						}
+ 						@include rwd($desktop-w) {
+ 							font-size: 20px;
+ 							line-height: 25px;
+ 						}
+ 					}				
+ 					.date{
+ 						font-size: 12px;
+ 						line-height: 15px;
+ 						@include rwd($desktop) {
+ 							font-size: 14px;
+ 							line-height: 26px;
+ 						}
+ 						@include rwd($desktop-w) {
+ 							font-size: 16px;
+ 							line-height: 34px;
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }

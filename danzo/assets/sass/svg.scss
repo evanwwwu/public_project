@@ -1,0 +1,67 @@
+@import "compass/css3";
+@charset "UTF-8";
+
+@font-face {
+	font-family: "dosisregular";
+	src: url('fonts/Dosis-Regular.eot?1425451115');
+	src:  url('fonts/Dosis-Regular.eot?&1425451115#iefix') format('embedded-opentype'), url('fonts/Dosis-Regular.woff2?1425451115') format("woff2"), url('fonts/Dosis-Regular.woff?1425451115') format("woff"), url('fonts/Dosis-Regular.tff') format("tff"), url('fonts/Dosis-Regular.svg?1425451115') format("svg");
+}
+text{
+	fill:#4F4F4F;
+}
+.g_line{
+	@include transition(all .2s ease-in-out);
+	overflow: hidden;
+	path{
+		@include transition(all .2s ease-in-out);
+		stroke:#B1B1B1;
+		stroke-dasharray: 150;
+		stroke-dashoffset: 150;
+	}
+	text{
+		@include transition(all .2s ease-in-out);
+		opacity: 0;
+	}
+}
+.hover_obj {
+	&>*{
+		@include transition(all .2s ease-in-out);
+		fill:transparent;
+		cursor: pointer;
+	}
+	&.mobile~.g_line{
+		path{
+			stroke-dashoffset: 0;
+		}
+		text{
+			opacity: 1;
+		}
+	}
+	&:hover {
+		&>*{
+			fill: rgba(255, 255, 255, .3);
+		}
+		&~.g_line{
+			path{
+				stroke-dashoffset: 0;
+			}
+			text{
+				@include transition(all .1s ease-in-out);
+				opacity: 1;
+			}
+		}
+	}
+}
+#lake {
+	fill: transparent;
+	pointer-events: all;
+	overflow: hidden;
+	ellipse {
+		fill: none;
+		stroke-width: 1.5px;
+	}
+}
+// ellipse {
+// 	fill: none;
+// 	stroke-width: 1.5px;
+// }

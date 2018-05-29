@@ -1,0 +1,7 @@
+INFO  - 2015-05-04 23:21:05[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-05-04 23:21:38[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-05-04 23:22:57[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-05-04 23:23:09[IP sorurce: 127.0.0.1] from:/www/franke/checkout --> 購買列表頁
+INFO  - 2015-05-04 23:23:42[IP sorurce: 127.0.0.1] from:/www/franke/member --> 登入畫面
+INFO  - 2015-05-04 23:23:55[IP sorurce: 127.0.0.1] from:/www/franke/member/register --> 會員註冊
+INFO  - 2015-05-04 23:26:30[IP sorurce: 127.0.0.1] from:/www/franke/member/register --> 會員註冊

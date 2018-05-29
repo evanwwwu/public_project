@@ -1,0 +1,8 @@
+&{
+	background: #000;
+	color:#fff;
+	font-family: "Roboto", 'STHeiti Light', "STXihei", "STHeiti", 'Apple LiGothic Medium', "微軟正黑體",'Microsoft JhengHei', Helvetica, Arial, sans-serif;
+}
+*{
+	@include box-sizing(border-box);
+}

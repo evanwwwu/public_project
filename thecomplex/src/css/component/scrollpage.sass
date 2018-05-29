@@ -1,0 +1,67 @@
+@import "../setup/setup"
+
+.scroll-page
+  background: #000
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  overflow: hidden
+  #Video1
+    position: absolute
+    left: 50%
+    top: 50%
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    +transform(translate(-50%, -50%))
+    +rwd($pad)
+      height: 100%
+
+  .bg-blue
+    position: absolute
+    width: 100%
+    height: 100%
+    background: $bg-blue2
+    top: 0
+    left: 0
+  .mask-logo
+    position: absolute
+    z-index: 999
+    left: 50%
+    top: 50%
+    text-align: center
+    +transform(translate(-50%, -50%))
+    .production img
+      width: 184px
+    .main-logo
+      margin-top: 55px
+      position: relative
+      img
+        width: 390px
+        &.a1
+          position: absolute
+          left: 0
+          top: 0
+          opacity: .5
+          +animation(arr_move 1.5s infinite 1s)
+  i
+    position: absolute
+    bottom: 20px
+    font-size: 40px
+    left: 50%
+    margin-left: -20px
+    color: #fff
+    cursor: pointer
+    +animation(mouce_down 1.5s infinite 1s)
+    
+.fade-enter-active, .fade-leave-active 
+  transition: all .5s ease-in-out
+
+.fade-enter, .fade-leave-to 
+  color: blue
+  background: green
+  top: 0
+  

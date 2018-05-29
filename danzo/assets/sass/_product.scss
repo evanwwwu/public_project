@@ -1,0 +1,85 @@
+$product_width:930px;
+$list_font:14px;
+$item_left:40px;
+$item_top:40px;
+$item_width:80%;
+$type_top:45px;
+section.product{
+	max-width: $product_width;
+	margin:0 auto;
+	article.product_type{
+		position: relative;
+		margin-top: $type_top;
+		@include rwd($phone_size){
+			margin-top: 0px;
+		};
+		@include clear_float();
+		.type{
+			@extend .f_family_3;
+			font-size: $list_font;
+			color:#686868;
+			display: inline-block;
+			vertical-align: top;
+			@include rwd($phone_size){
+				display: block;
+				color: #F7A620;
+				margin: 20px 0px;
+				&:after{
+					content:"\00a0\00a0\00a0/";
+				}
+			};
+		}
+		@include rwd($phone_size){
+			&:first-child{
+				margin-top: 0px;
+			}
+		};
+		.items{
+			display: inline-block;
+			vertical-align: top;
+			float:right;
+			font-size: 0px;
+			width:80%;
+			position: relative;
+			@include rwd($phone_size){
+				float: left;
+				width: 100%;
+			};
+			.item{
+				@include calc("width","(100% - 40px) / 2");
+				display: inline-block;
+				vertical-align: top;
+				@include rwd($phone_size){
+					&:nth-child(2n+2){
+						float:right;
+					}
+				};
+				@include rwd($s_phone_size){
+					width: 100%;
+					display:block;
+					margin-top: 10px;
+				};
+				&:nth-child(n+3){
+					margin-top: $item_top;	
+					@include rwd($phone_size){
+						margin-top: 0px;
+					}
+
+				}
+				&:not(:nth-child(2n+1)){
+					margin-left: $item_left;
+					@include rwd($phone_size){
+						margin-left: 0px;
+					}
+				}
+				.name{
+					font-size:$list_font;
+					@extend .f_family_2;
+					text-align: left; 
+					line-height: 2;
+				}
+			}
+		}
+	}
+}
+

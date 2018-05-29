@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>隱巷設計</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta id="viewport" name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=1" />
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.ico"> -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <link href="assets/css/fotorama.css" rel="stylesheet">
+    <script src="assets/js/fotorama.js"></script>
+    <script src="assets/js/spin.min.js"></script>
+    <script src="assets/js/jquery.scrollAnimate.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/jquery.masonry.min.js"></script>
+    <script src="assets/js/modernizr-transitions.js"></script>
+    <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
+    <!--CDN links for the latest TweenLite, CSSPlugin, and EasePack-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/plugins/ScrollToPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/utils/Draggable.min.js"></script>-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css">  
+    <script src="assets/js/site.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo c" onclick="location='index.html'">
+                <img src="assets/images/logo.png" />
+            </div>
+            <nav class="c">
+                <ul>
+                    <li onclick="location='about.html'"><h4><span>關於XYI</span></h4></li>
+                    <li onclick="location='service.html'"><h4><span>服務項目</span></h4></li>
+                    <li onclick="location='work.html'"><h4><span>作品展示</span></h4></li>
+                    <li onclick="location='press.html'"><h4><span>媒體報導</span></h4></li>
+                    <li onclick="location='awards.html'"><h4><span>得獎紀錄<span></span></h4></li>
+                    <li onclick="location='members.html'"><h4><span>團隊成員</span></h4></li>
+                    <li class="active" onclick="location='contact.html'"><h4><span>連絡我們</span></h4></li>
+                </ul>
+                
+            </nav>
+            <div class="bar m">
+                <div class="m_logo" onclick="location='index.html'"><img src="assets/images/m_logo.png" /></div>
+                <div class="nav_btn"><img src="assets/images/m_menu.png" /></div>
+            </div>
+            <nav class="m">
+                <div id="closeMask"></div>
+                <div class="nav_show">
+                    <div class="menu_btn" onclick="location='about.html'">
+                        <h4><span>關於XYI</span></h4>                       
+                    </div>
+                    <div class="menu_btn" onclick="location='service.html'">
+                        <h4><span>服務項目</span></h4>
+                    </div>
+                    <div class="menu_btn" onclick="location='work.html'">
+                        <h4><span>作品展示</span></h4>
+                    </div>
+                    <div class="menu_btn" onclick="location='press.html'">
+                        <h4><span>媒體報導</span></h4>
+                    </div>
+                    <div class="menu_btn" onclick="location='awards.html'">
+                        <h4><span>得獎紀錄</span></h4>
+                    </div>
+                    <div class="menu_btn" onclick="location='members.html'">
+                        <h4><span>團隊成員</span></h4>
+                    </div>
+                    <div class="menu_btn active" onclick="location='contact.html'">
+                        <h4><span>連絡我們</span></h4>
+                    </div>
+                    <div class="line"></div>
+                    <div class="menu_btn active">
+                        <h4><span>繁體中文</span></h4>
+                    </div>
+                    <div class="menu_btn">
+                        <h4><span>简体中文</span></h4>
+                    </div>
+                    <div class="menu_btn">
+                        <h4><span>ENGLISH</span></h4>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <article class="contact">
+                <div class="part">
+                    <div class="detail">
+                        <h2>連絡XYI</h2>
+                        <h3>隱像設計顧問有限公司</h3>
+                        <p>
+                            台北市大安區四維路134巷7號1F<br />
+                            TEL 886-2-2325-7670<br />
+                            FAX 886-2-2325-6687<br />
+                            service@xyi-design.com
+                        </p>
+                        <div class="btn_map">MAP</div>
+                    </div>
+                </div>
+                <div class="part">
+                    <div class="pic"><img src="assets/images/contact_1.jpg" /></div>
+                    <div class="detail">
+                        <h3>上海辦事處</h3>
+                        <p>
+                            上海市閔行區虹梅路3001號<br />
+                            TEL 021-6401 9792
+                        </p>
+                        <div class="btn_map">MAP</div>
+                    </div>
+                    <div class="detail">
+                        <h3>青島辦事處</h3>
+                        <p>
+                            山東省市南區福州南路89號<br />
+                            福林大廈B座2樓<br />
+                            TEL 532-8090 0656<br />
+                            FAX 532-8090 0658<br />
+                            xyi_design@163.com
+                        </p>
+                        <div class="btn_map">MAP</div>
+                    </div>
+                    <div class="detail">
+                        <h3>深圳辦事處</h3>
+                        <p>
+                            深圳市福田區深南大道2001號<br />
+                            嘉麟豪庭B座2001室<br />
+                            TEL 755-3398 9116<br />
+                            FAX 755-3398 9115
+                        </p>
+                        <div class="btn_map">MAP</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div class="f_logo"><img src="assets/images/footer_logo.png" /></div>
+            <p>版權所有 隱巷設計顧問有限公司<br />© 2013 XYI Design All Rights Reserved.</p>
+            <a href="#">
+                <img src="assets/images/footer_f.png" />
+                <img src="assets/images/footer_f_h.png" />
+            </a>
+            <a href="#">
+                <img src="assets/images/footer_i.png" />
+                <img src="assets/images/footer_i_h.png" />
+            </a>
+            <a href="#">
+                <img src="assets/images/footer_y.png" />
+                <img src="assets/images/footer_y_h.png" />
+            </a>
+            <a href="#">
+                <img src="assets/images/footer_w.png" />
+                <img src="assets/images/footer_w_h.png" />
+            </a>           
+            <label>Languages:
+                <select name="languages">
+                    <option value="traditional" selected="selected">繁體中文</option>
+                    <option value="simple">简体中文</option>
+                    <option value="english">ENGLISH</option>
+                </select>
+            </label>
+            <div class="m">
+                <div>
+                    <a href="#"><img src="assets/images/m_footer_f.png" /></a>
+                    <a href="#"><img src="assets/images/m_footer_i.png" /></a>
+                    <a href="#"><img src="assets/images/m_footer_y.png" /></a>
+                    <a href="#"><img src="assets/images/m_footer_w.png" /></a>
+                </div>
+                <div><img src="assets/images/m_footer_logo.png" /></div>
+                <p>版權所有 隱巷設計顧問有限公司<br />© 2013 XYI Design All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>

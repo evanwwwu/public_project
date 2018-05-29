@@ -1,0 +1,29 @@
+
+$phone_size:768px;
+$s_phone_size: 430px;
+$iphone:320px;
+$header_top:30px;
+$header_height:122px;
+$mobile_header:75px;
+$map_width:50%;
+$main_padding:3%;
+$section_top:40px;
+$footer_height:60px;
+$logo_width:8%;
+$popup_padding:20px;
+$popup_font:13px;
+@import "reset";
+@import "compass/css3";
+@import "ceaser-easing";
+@import "fonts"; 	
+@import "mixin";
+@import "global";
+@import "index";
+@import "about";
+@import "news";
+@import "shop";
+@import "contact";
+@import "product";
+@import "product_detail";
+
+@charset "UTF-8";

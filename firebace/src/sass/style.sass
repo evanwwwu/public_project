@@ -1,0 +1,21 @@
+@charset "UTF-8"
+
+@import "setup/setup"
+@import "global"
+
+#app
+  .commits
+    position: relative
+    width: 100%
+    max-width: 500px
+    height: 100vh
+    background: #fcfcfc
+    margin: 0 auto
+    padding: 20px 0px
+    border-radius: 5px
+    +box-shadow( 1px 1px 10px -2px rgba(31,31,31,0.4))
+    .history_com
+      height: calc(100% - #{$post_height})
+      padding-bottom: 10px
+      overflow: auto
+      padding: 0 20px

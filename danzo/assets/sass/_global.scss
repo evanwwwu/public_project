@@ -1,0 +1,287 @@
+html {
+	// height: 100%;
+	position: relative;
+	overflow: auto;
+	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+	&.popup{
+		overflow: hidden;
+	}
+}
+
+body {
+	position: relative;
+	overflow: auto;
+	&:not(.index){
+		.hide_header{
+			@include rwd($phone_size) {
+				display: none;
+			}
+			width: 100%;
+			.f_logo{
+				width: $logo_width;
+				position: relative;
+				display: inline-block;
+				.height{
+					padding-top: 30px;
+					margin-top: 63%;
+				}
+			}
+		}
+	}
+	&>section:not(.index) {
+		margin-top: $section_top;
+		padding:0px 20px #{$footer_height + 10px};
+		@include rwd($phone_size){
+			margin-top: 20px;
+			width: 90%;
+		};
+		@include rwd($s_phone_size){
+			width: 80%;
+		};
+	}
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	// height: $header_height;
+	background-color: #FFF;
+	@include zindex("header");
+	@include rwd($phone_size) {
+		@include transition(background-color .5s ease-in);
+		background-color: #E3E3E3;
+		height: $mobile_header;
+		position: relative;
+	}
+	.logo {
+		vertical-align: middle;
+		display: inline-block;
+		margin-top: $header_top;
+		cursor: pointer;
+		margin-left: $main_padding;
+		width: $logo_width;
+		.mobile {
+			display: none;
+		}
+		@include rwd($phone_size) {
+			width:auto;
+			.pc {
+				display: none;
+			}
+			.mobile {
+				display: block;
+			}
+		}
+		;
+	}
+	.info {
+		display: none;
+	}
+	$menu_size:13px;
+	.menu {
+		vertical-align: middle;
+		display: inline-block;
+		position: absolute;
+		top: $header_top+16px;
+		right: $main_padding;
+		@include menu(false);
+		.icon {
+			display: none;
+		}
+		@include rwd($phone_size) {
+
+			@include transition(all .5s cubic-bezier(.21, 1.91, .31, .79));
+			top: 0px;
+			right: 0px;
+			.for_hover {
+				display: none;
+			}
+			.icon {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				display: inline-block;
+				cursor: pointer;
+				img {
+					top: 0px;
+					right: 0px;
+					position: absolute;
+					opacity: 1;
+					@include transition(all 1s cubic-bezier(.21, 1.91, .31, .79));
+				}
+				.for_open {
+					display: block;
+                    // position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    &:before,&:after{
+                    	content: "";
+                    	display: block;
+                    	height: 2px;
+                    	background-color: #fff;
+                    	width: 0px;
+                    	position: absolute;
+                    	top: 0px;
+                    	@include transition(all .5s ease-in-out .2s);
+                    }
+                    &:before{
+                    	right: 0px;
+                    	@include apply-origin(100% 100%,fasle);
+                    	@include rotate(-45deg);
+                    }
+                    &:after{
+                    	@include apply-origin(0% 100%,fasle);
+                    	@include rotate(45deg);
+                    }
+                }
+            }
+        }
+        ;
+    }
+    &.open {
+    	@include rwd($phone_size) {
+    		background-color: #231F20;
+    		.menu {
+    			background-color: #FFBE2A;
+    			width: 210px;
+    			text-align: center;
+    			.icon {
+    				img {
+    					opacity: 0;
+    					visibility: hidden;
+    				}
+    				.for_open {
+    					&:before ,&:after {
+    						width: 53px;
+    					}
+    				}
+    			}
+    			ul{
+    				padding:$mobile_header 0px 20px;
+    				visibility: visible;
+    				li{
+    					font-size: 27px;
+    				}
+    			}
+    		}
+    	}
+    }
+}
+@include rwd($phone_size){
+	body:not(.index) footer{
+		display:none;
+	}
+}
+footer {
+	$footer_bottom: 32px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	@include zindex("footer");
+	.lang {
+		display: inline-block;
+		margin-left: $main_padding;
+		margin-bottom: $footer_bottom;
+		li {
+			$lang_width: 25px;
+			$lang_arr: ("en", "cn");
+			$lang_path: "../images/";
+			@include li_icon(lang, $lang_arr, $lang_path);
+			display: inline-block;
+			@include border-radius($lang_width, $lang_width);
+			$lang_arr: ("en_active", "cn_active");
+			$lang_path: "../images/";
+			@include li_icon(lang, $lang_arr, $lang_path);
+		}
+	}
+	$social_arr:("fb", "twi", "ig", "pi");
+	$social_path:"../images/icons/";
+	.social {
+		position: absolute;
+		right: $main_padding;
+		display: inline-block;
+		bottom: $footer_bottom;
+		li {
+			@include li_icon(social, $social_arr, $social_path);
+			margin-left: 18px;
+			display: inline-block;
+		}
+	}
+}
+
+#popup{
+	visibility: hidden;
+	position: fixed;
+	background-color: rgba(255,255,255, .5);
+	top:0px;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	@include middle_before();
+	@include transition(all .3s ease-in-out);
+	@include zindex("popup");
+	&.open{
+		visibility: visible;	
+		opacity: 1;
+		overflow: auto;
+		.bg{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			left: 0px;
+			top:0px;
+			z-index:-1;
+		}
+		.content{
+			@include zindex("pop_content");
+			display: inline-block;
+			vertical-align: middle;
+			position:relative;
+			background-color:#fff;
+			@include calc("width","90% - 40px");
+			margin:$mobile_header auto;
+			padding:$popup_padding;
+			@include box-shadow(0px 0px 10px rgba(20%,20%,40%,0.5));
+			@include rwd($phone_size){
+				margin: 30px auto;
+				padding:10px;
+			};
+			.close_btn{
+				width: 28px;
+				height: 28px; 
+				position: absolute;
+				background: #fff;
+				right: -15px;
+				top:-15px;
+				border:1px solid rgba(0,0,0,.7);
+				cursor: pointer;
+				@include border-radius(50% 50%);
+				@include zindex("cls_btn");
+				&:before,&:after{
+					content:"";
+					display: block;
+					height: 1px;
+					background-color: rgba(0,0,0,.7);
+					position: absolute;
+					top: 6px;
+					width: 21px;
+				}
+				&:before{
+					@include apply-origin(100% 100%,false);
+					@include rotate(-45deg);  
+					right: 6px;
+				}
+				&:after{
+					@include apply-origin(0% 100%,false);
+					@include rotate(45deg);
+					left: 6px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+include lang_en
+-$lang = "en";
+doctype 5
+html lang="zh-TW"
+
+  include head
+  
+  body
+    #warp
+      include header
+      .warpper.career
+        .banner
+          img src="../assets/images/careers-bg.jpg" alt=""/
+          .title
+            h2 = $ca_title
+        .content
+          .none
+            img src="../assets/images/search-icon.png" alt=""/
+            p = $ca_none
+    include footer

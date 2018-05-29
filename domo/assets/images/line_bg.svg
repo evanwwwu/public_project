@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="1440px" height="2530px" viewBox="0 0 1440 2530" enable-background="new 0 0 1440 2530"
+	 xml:space="preserve">
+<g id="圖層_1" display="none">
+	
+		<image display="inline" overflow="visible" width="1440" height="2543" xlink:href="C:\Users\dosomething\Desktop\line_bg.jpg"  transform="matrix(1 0 0 1 0 -0.25)">
+	</image>
+</g>
+<g id="圖層_2">
+	<g>
+		<defs>
+			<rect id="SVGID_1_" y="-0.25" width="1440" height="2543"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#E7E7E7" stroke-miterlimit="10" x1="-236.925" y1="2592.03" x2="1700.723" y2="2072.839"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#E7E7E7" stroke-miterlimit="10" x1="-236.925" y1="1551.072" x2="1700.723" y2="1031.882"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#E7E7E7" stroke-miterlimit="10" x1="1700.723" y1="1867.107" x2="-236.925" y2="1347.916"/>
+		
+			<line clip-path="url(#SVGID_2_)" fill="none" stroke="#E7E7E7" stroke-miterlimit="10" x1="1700.723" y1="826.149" x2="-236.925" y2="306.958"/>
+	</g>
+</g>
+</svg>

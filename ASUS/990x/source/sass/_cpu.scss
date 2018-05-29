@@ -1,0 +1,76 @@
+#{"#"+$model+"-cpu"}{
+	text-align: center;
+	padding: 50px 0;
+	.main_title{
+		margin: 0 auto;
+		max-width: 1000px;
+		width: 90%;
+		font-size: 44px;
+		font-family: "jersey";
+		color: #fff;
+		line-height: 1;
+		display: inline-block;
+		margin: 40px 0px 50px;
+		@include rwd($pad_size){
+			margin: 0px 0px 40px;
+		};
+	}
+	.cpuitem{
+    position: relative;
+		margin: 0 auto 50px;
+		max-width: 755px;
+		width: 90%;
+		>img{
+			float:left;
+      &.i2{
+        position: absolute;
+        left: 0;
+        top: 95px;
+      }
+			@include rwd($pad_size) {
+				margin: 0 auto;
+			}
+			@include rwd($phone_size) {
+        float: none;
+        &.i2{
+          position: relative;
+          left: 0;
+          top: 0;
+        }
+      }
+		}
+		.con{
+			text-align: left;
+			padding-left: 130px;
+			@include rwd($pad_size) {
+				text-align: center;
+				padding: 40px 0px;
+        text-align: left;
+        padding: 0px 0 0 130px;
+			}
+			@include rwd($phone_size) {
+				text-align: center;
+				padding: 20px 0px 40px;
+        text-align: center;
+			}
+			.contitle{
+				color: #fff;
+				line-height: 1.3;
+				font-size: 17px;
+				font-weight: bold;
+				@include rwd($pad_size){
+					font-size: 21px;
+				};
+			}
+			.cinfo{
+				font-size: 17px;
+				font-weight: 300;
+				color: #d1d0ce;
+				line-height: 1.411;
+				@include rwd($pad_size){
+					font-size: 21px;
+				};
+			}
+		}
+	}
+}

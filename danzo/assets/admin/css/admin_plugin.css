@@ -1,0 +1,48 @@
+#img_crop {
+    top: 0;
+    left: 0;
+    display: none;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    min-height: 800px;
+    background-color: rgba(16, 15, 20, .5);
+}
+#img_crop img {
+    width: 100%;
+}
+#img_crop .clearfix {
+    margin: 50px auto;
+    background: #D7D7D7;
+    width: 80%;
+    padding: 10px 112px 10px 10px;
+    position: relative;
+}
+#c_close {
+    margin: 0;
+    position: absolute;
+    right: 9px;
+    top: 0px;
+    cursor: pointer;
+}
+#img_site {
+    float: left;
+    max-width: 90%;
+    max-height: 100%;
+    border-width: 2px;
+}
+#save_img {
+    position: absolute;
+    top: 65px;
+    right: 40px;
+}
+.my_template_toolbar>img {
+    max-width: 200px;
+}
+.myset {
+    margin-top: 20px;
+}
+.myset >div {
+    display: inline-block;
+    margin: 5px;
+}

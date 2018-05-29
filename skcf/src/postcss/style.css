@@ -1,0 +1,14 @@
+@import "setup/setup";
+@import "partials/mixin";
+@import "partials/header";
+@import "partials/footer";
+/*@import "partials/frameborder";*/
+
+@import "pages/index";
+@import "pages/home";
+@import "pages/roomlist";
+@import "pages/roomin";
+@import "pages/spa";
+@import "pages/news_list";
+@import "pages/newsin";
+

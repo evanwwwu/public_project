@@ -1,0 +1,57 @@
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: $blue2;
+	.all-div{		
+		padding: 60px 20px;
+		display: none;
+		width: 100%;
+		max-width: 1160px;
+		margin: 0 auto;
+		>img{
+			margin-bottom: 25px;
+		}
+		.f-menus{
+			padding-left: 90px;
+			ul{
+				color: #fff;
+				vertical-align: top;
+				display: inline-block;
+				padding-right: 80px;
+				font-size: 18px;
+				line-height: 24px;
+				@include rwd($desktop-w) {
+					padding-right: 140px;
+				}
+				&:last-of-type{
+					padding-right: 0px;
+				}
+				li{
+					margin-bottom: 15px;
+					@include transition(all .3s ease-in-out);
+					@include rwd($desktop) {
+						&:hover{
+							opacity: .4;
+						}
+					}
+				}
+			}
+		}
+		@include rwd($desktop) {
+			display: block;
+		}
+	}
+	.coptyright{
+		text-align: center;
+		border-top: 3px solid #79bde8;
+		line-height: 50px;
+		font-size: 12px;
+		color: #fff;
+		background-color: #333333;
+		@include rwd($desktop) {
+			font-size: 14px;
+			line-height:70px;
+		}
+	}
+}

@@ -1,0 +1,141 @@
+
+
+
+
+.menu ul li a .line,
+.link .line {
+	width: 0%;
+	height: 5px;
+	background: #dc281e;
+	position: absolute;
+	left: 0;
+	bottom: -9px;
+	-o-transition: width 0.3s ease-in-out;
+	-ms-transition: width 0.3s ease-in-out;
+	-moz-transition: width 0.3s ease-in-out;
+	-webkit-transition: width 0.3s ease-in-out;
+	transition: width 0.3s ease-in-out;
+}
+header .submenu .part .block:hover .line,
+.list li:hover .line,
+.index_p:hover .line,
+.part.event > div:hover .line,
+.appliance:hover .line,
+.menu ul li a.active .line,
+.menu ul li a:hover .line,
+.link:hover .line,
+.tab a:hover .line,
+.tab a.active .line,
+.store:hover .line {
+	width: 100%;
+}
+
+
+
+
+.water_part .b6_intro .banner_btn .line,
+.option .part .title .line,
+.water_part .b6_intro .click_intro  {
+	-o-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+}
+.option .part.active .title .line:first-child {
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+.option .part.active .title .line:last-child {
+	-o-transform:rotate(270deg);
+	-ms-transform:rotate(270deg);
+	-moz-transform:rotate(270deg);
+	-webkit-transform:rotate(270deg);
+	transform:rotate(270deg);
+}
+.water_part .b6_intro .banner_btn .line:last-child {
+	-o-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	transform:rotate(90deg);
+	margin-top: -3px;
+}
+.water_part .b6_intro div.active .banner_btn .line:first-child {
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+.water_part .b6_intro div.active .banner_btn .line:last-child {
+	-o-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	transform:rotate(360deg);
+}
+
+.list .pic img ,
+.list .product .circle {
+	-o-transition: all 0.7s linear;
+	-ms-transition: all 0.7s linear;
+	-moz-transition: all 0.7s linear;
+	-webkit-transition: all 0.7s linear;
+	transition: all 0.7s linear;
+}
+.btn_part button,
+.product .content > button {
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+.btn_part button:hover,
+.product .content > button:hover,
+.mylist .btn_part button:hover {
+	background: #333;
+}
+
+header .submenu.sub03 .part .block .hover,
+header .submenu.sub03 .part .block {
+	-o-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+header .submenu.sub03 .part .block:hover {
+	background: #f4f9fc;
+}
+header .submenu.sub03 .part .block:hover .hover {
+	border: 3px solid #b3b3b3;
+}
+
+
+/*---------------- POPUP SET ----------------*/
+.popup.show,.popup2.show {
+	display: block;
+	-o-animation: popup_show 0.9s linear 1 alternate;
+	-moz-animation: popup_show 0.9s linear 1 alternate;
+	-webkit-animation: popup_show 0.9s linear 1 alternate;
+	animation: popup_show 0.9s linear 1 alternate;
+	opacity: 100;
+}
+@-o-keyframes popup_show {
+	0%   {opacity: 0;}
+	100% {opacity: 100;}
+}
+@-moz-keyframes popup_show {
+	0%   {opacity: 0;}
+	100% {opacity: 100;}
+}
+@-webkit-keyframes popup_show {
+	0%   {opacity: 0;}
+	100% {opacity: 100;}
+}
+@k

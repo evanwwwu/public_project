@@ -1,0 +1,6 @@
+INFO  - 2015-05-04 21:28:27[IP sorurce: 127.0.0.1] from:/www/franke/admin/member/edit/2 --> 編輯 g0928817707@gmail.com 會員 [by evan 權限:1]
+INFO  - 2015-05-04 23:09:50[IP sorurce: 127.0.0.1] from:/www/franke/admin/member/edit/2 --> 編輯 g0928817707@gmail.com 會員 [by evan 權限:1]
+INFO  - 2015-05-04 23:20:29[IP sorurce: 127.0.0.1] from:/www/franke/admin/member/edit/2 --> 編輯 g0928817707@gmail.com 會員 [by evan 權限:1]
+INFO  - 2015-05-04 23:38:25[IP sorurce: 127.0.0.1] from:/www/franke/admin/member/edit/2 --> 編輯 g0928817707@gmail.com 會員 [by evan 權限:1]
+INFO  - 2015-05-04 23:38:32[IP sorurce: 127.0.0.1] from:/www/franke/admin/member/save/2 --> 修改 g0928817707@gmail.com 會員 內容:{"act":"edit","id":"2","active":"1","email":"g0928817707@gmail.com","password":"1111","password2":"1111","name":"9999","phone":"23132312xxx","identity":"\u6d88\u8cbb\u8005"} [by evan 權限:1]
+INFO  - 2015-05-04 23:38:34[IP sorurce: 127.0.0.1] from:/www/franke/admin/member/edit/2 --> 編輯 g0928817707@gmail.com 會員 [by evan 權限:1]

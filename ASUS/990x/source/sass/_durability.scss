@@ -1,0 +1,505 @@
+#{"#"+$model+"-durability"} {
+    .main_title {
+        @extend %maintitle;
+        span {
+            font-family: "Roboto";
+        }
+    }
+    .videolink {
+        display: block;
+        position: relative;
+        border-bottom: 5px solid #a8a8aa;
+        @include rwd($pad_size) {
+            height: 303px;
+        }
+        > .mainimg {
+            @include rwd($pad_size) {
+                max-width: none !important;
+                height: 300px;
+                @include translateX(-50%);
+                position: absolute;
+                left: 50%;
+            }
+            max-width: 100%;
+        }
+        .playicon {
+            position: absolute;
+            top: 50%;
+            @include translateY(-50%);
+            height: 15%;
+            width: 100%;
+            text-align: center;
+            img {
+                max-width: none;
+                height: 100%;
+            }
+        }
+    }
+    .defenders {
+        overflow: hidden;
+        .content {
+            @extend %main_size;
+            margin-top: 70px;
+            @include rwd($pad_size) {
+                margin-top: 30px;
+            }
+            .txt_info {
+                font-size: 17px;
+                font-weight: 300;
+                width: 70%;
+                margin: 0 auto;
+                line-height: 1.5;
+                text-align: center;
+                @include rwd($pad_size) {
+                    width: 100%;
+                    margin-bottom: 60px;
+                }
+            }
+            .year {
+                margin-bottom: 140px;
+                margin-top: 80px;
+                @include rwd($pad_size) {
+                    margin-top: 0;
+                    margin-bottom: 80px;
+                    text-align: center;
+                };
+                > img {
+                    vertical-align: middle;
+                    margin-left: 60px;
+                    @include rwd($pad_size) {
+                        margin-left: 0;
+                    };
+                }
+                .ytitle {
+                    margin-left: 30px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 65%;
+                    float: right;
+                    margin-top: 35px;
+                    @include rwd($pad_size) {
+                        margin-top: 0;
+                        margin-left: 0;
+                        width: 100%;
+                        float: none;
+                    }
+                    .title {
+                        color: #fff;
+                        font-size: 40px;
+                        line-height: 1;
+                        font-family: "jersey";
+                        @include rwd($pad_size) {
+                            font-size: 36px;
+                        };
+                    }
+                    .subtitle {
+                        margin-top: 15px;
+                        color: #aeaeae;
+                        font-size: 17px;
+                        font-weight: 500;
+                        line-height: 1.3;
+                        font-family: 'Roboto Condensed';
+                        @include rwd($pad_size) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .ddr {
+                .dtxt {
+                    text-align: center;
+                    width: 100%;
+                    margin: 0 auto 80px;
+                    @include rwd($pad_size) {
+                        width: 100%;
+                        margin: 0 auto 80px;
+                    }
+                    .title {
+                        @extend %bigtitle;
+                    }
+                    .subtitle {
+                        @extend %subtitle;
+                    }
+                    .info {
+                        @extend %info;
+                        color: #fff;
+                        margin: 40px auto 0;
+                        width: 63%;
+                        @include rwd($pad_size) {
+                            width: 100%;
+                        }
+                    }
+                }
+                figure {
+                    display: inline-block;
+                    position: relative;
+                    @include rwd($pad_size) {
+                        width: 200%;
+                        margin-left: -20%;
+                        margin-top: -10%;
+                    }
+                    .img_item {
+                        top: 15%;
+                        left: 19%;
+                        position: absolute;
+                        width: percentage(image-width("durability/item1.png") / image-width("durability/main_mb.png"));
+                        @include rwd($pad_size) {
+                          left: 15.5%;
+                        }
+                        @include rwd($phone_size) {
+                          left: 19%;
+                        }
+                        .item1 {
+                            @include transition(all .5s ceaser($easeOutBack) 0s);
+                            @include transform(scale(0));
+                        }
+                        .line {
+                            @include transition(all .5s ease-in-out .3s);
+                            position: absolute;
+                            width: 200%;
+                            opacity: 0;
+                            &.line1 {
+                                top: 26%;
+                                left: 48%;
+                                text-align: left;
+                                direction: rtl;
+                                @include rwd($pad_size) {
+                                    top: 18%;
+                                }
+                                @include rwd($phone_size) {
+                                    top: -16%;
+                                }
+                            }
+                            &.line2 {
+                                top: 55%;
+                                left: 49%;
+                            }
+                            span {
+                                direction: ltr;
+                                font-weight: 400;
+                                color: #fff;
+                                font-family: "Roboto Condensed";
+                                font-size: 19px;
+                                vertical-align: bottom;
+                                @include rwd($pad_size) {
+                                    display: block;
+                                    padding-left: 20%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.on {
+                    figure {
+                        .img_item {
+                            .item1 {
+                                @include transform(scale(1));
+                            }
+                            .line {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .component {
+        background-color: #1b1b1b;
+        padding-bottom: 120px;
+        @include rwd($pad_size) {
+            padding-bottom: 0;
+            text-align: center;
+        }
+        .main_div {
+            padding-top: 70px;
+            @extend %main_size;
+            @include rwd($pad_size) {
+                max-width: 600px;
+                text-align: left;
+            }
+            .left_div {
+                display: inline-block;
+                width: 40%;
+                position: relative;
+                z-index: 2;
+                @include rwd($pad_size) {
+                    width: 100%;
+                }
+                .com_title {
+                    margin-bottom: 55px;
+                    .title {
+                        font-size: 50px;
+                        font-family: "jersey";
+                        color: #fff;
+                        line-height: 1;
+                        opacity: 0.9;
+                        @include rwd($pad_size) {
+                            font-size: 36px;
+                        }
+                    }
+                    .subtitle {
+                        font-size: 30px;
+                        margin-top: 25px;
+                        color: #fff;
+                        font-weight: 400;
+                        font-family: "Roboto Condensed";
+                        @include rwd($pad_size) {
+                            font-size: 24px;
+                        }
+                    }
+                }
+                .form {
+                    margin-top: 10px;
+                    margin-bottom: 35px;
+                    .ftitle {
+                        font-family: "Roboto";
+                        font-weight: 400;
+                        font-size: 22px;
+                        margin-bottom: 20px;
+                        color: #fff;
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                small {
+                    font-size: 15px;
+                    line-height: 1.3;
+                    width: 80%;
+                    display: block;
+                    font-weight: 300;
+                    color: #fff;
+                    @include rwd($pad_size) {
+                        margin: 0 auto;
+                    }
+                }
+            }
+            figure {
+                display: inline-block;
+                position: absolute;
+                float: right;
+                left: 27%;
+                bottom: -20%;
+                @include rwd($pad_size) {
+                    position: relative;
+                    float: none;
+                    left: 0;
+                    bottom: 0;
+                    margin-top: 30px;
+                    width: 105%;
+                    max-width: none;
+                    margin-left: -3%;
+                }
+                .main {
+                    max-width: none;
+                    @include rwd($pad_size) {
+                        max-width: 100%;
+                    }
+                }
+                @for $i from 1 through 3 {
+                    .cr#{$i} {
+                        @include transition(all .3s ceaser($easeOutBack) 0s);
+                        position: absolute;
+                        width: percentage(image-width("durability/cr#{$i}.png") / image-width("durability/right_mb.png"));
+                        @include scale(0);
+                    }
+                }
+                .cr1 {
+                    top: 20%;
+                    left: 22%;
+                }
+                .cr2 {
+                    top: 31.5%;
+                    left: 46.9%;
+                }
+                .cr3 {
+                    top: 50%;
+                    left: 28%;
+                }
+            }
+            &.on {
+                figure {
+                    .cr1,
+                    .cr2,
+                    .cr3 {
+                        @include scale(1);
+                    }
+                }
+            }
+        }
+    }
+    .esd {
+        overflow: hidden;
+        position: relative;
+        @include rwd($pad_size) {
+          padding-bottom: 40px;
+        }
+        .dtxt {
+            text-align: center;
+            width: 100%;
+            margin: 80px auto;
+            max-width: 805px;
+            padding-bottom: 956px;
+            @extend %main_size;
+            @include rwd($pad_size) {
+                width: 100%;
+                padding-bottom: 0;
+            }
+            .title {
+                @extend %bigtitle;
+            }
+            .subtitle {
+                @extend %subtitle;
+                color: #fff;
+            }
+            .info {
+                @extend %info;
+                color: #fff;
+                margin-top: 40px;
+                font-family: "Roboto";
+                font-weight: 300;
+                @include rwd($pad_size) {
+                  margin-bottom: 0px;
+                }
+            }
+        }
+        figure {
+            position: absolute;
+            padding: 0 0 200px;
+            width: image-width("durability/esd.png")+20;
+            margin-left: 0;
+            text-align: left;
+            top: 30%;
+            right: 59%;
+            @include translateX(49%);
+            @include rwd($pad_size) {
+                width: 100%;
+                margin: 0;
+                padding: 20px 0 50px;
+                position: relative;
+                padding: 0;
+                top: 0;
+                right: 0;
+                @include translateX(0%);
+                .pc {
+                    display: none;
+                }
+            }
+            .mobile {
+                display: none;
+                @include rwd($pad_size) {
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+            }
+            .line {
+                position: absolute;
+                display: inline-block;
+                $e_top: (20.8%, 24.8%, 18%);
+                $e_left: (28.8%, 39.5%, 56.2%);
+                $e_ml: (71px, 190px, 221px);
+                @for $i from 1 through 3 {
+                    &.p#{$i} {
+                        top: nth($e_top, $i);
+                        left: nth($e_left, $i);
+                        width: percentage(image-width("durability/eline#{$i}.png") / image-width("durability/esd.png"));
+                        .detail {
+                            margin-left: nth($e_ml, $i);
+                            margin-top: 5px;
+                        }
+                        @include rwd($pad_size) {
+                            width: 100%;
+                            padding: 0 20px;
+                            @if $i ==1 {
+                              margin-top: -12% !important;
+                            }
+                        }
+                    }
+                }
+                @include rwd($pad_size) {
+                     @include clear_abs;
+                    display: inline-block;
+                    text-align: left;
+                    vertical-align: top;
+                    margin: 10px 5px !important;
+                    width: 100%;
+                }
+                > img {
+                    vertical-align: top;
+                    @include rwd($pad_size) {
+                        display: none;
+                    }
+                }
+                .detail {
+                    vertical-align: top;
+                    height: 325px;
+                    background: rgba(219,179,134,.8);
+                    text-align: center;
+                    padding: 20px 10px;
+                    width: 210px;
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    @include rwd($pad_size) {
+                         @include clear_abs;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0 !important;
+                        float: none !important;
+                        font-size: 20px;
+                        width: 100% !important;
+                        padding: 25px 20px 25px 45px;
+                        height: auto;
+                        text-align: left;
+                    }
+                    .subtitle {
+                        font-size: 30px;
+                        font-weight: bold;
+                        color: #2e2e2e;
+                        height: 70px;
+                        width: 100%;
+                        display: table;
+                        @include rwd($pad_size) {
+                            margin-bottom: 20px;
+                            display: block;
+                            height: auto;
+                        }
+                        > span {
+                            display: table-cell;
+                            vertical-align: middle;
+                            font-family: "Roboto Condensed";
+                            line-height: 30px;
+                            @include rwd($pad_size) {
+                                display: block;
+                                vertical-align: top;
+                            }
+                        }
+                    }
+                    .cl {
+                        display: none;
+                        @include rwd($pad_size) {
+                            left: 5px;
+                            top: 20px;
+                            display: block;
+                            position: absolute;
+                            width: 30px;
+                            height: 30px;
+                            @include border-radius(100%);
+                            background: #dca05b;
+                            color: #fff;
+                            text-align: center;
+                            font-size: 21px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            vertical-align: middle;
+                            font-family: Arial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

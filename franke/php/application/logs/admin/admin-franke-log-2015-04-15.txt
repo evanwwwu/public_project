@@ -1,0 +1,1 @@
+INFO  - 2015-04-15 00:43:44[IP sorurce: 127.0.0.1] from:/www/franke/admin/member/edit/2 --> 編輯 g0928817707@gmail.com 會員 [by evan 權限:1]

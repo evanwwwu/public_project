@@ -1,0 +1,214 @@
+// 運算
+@mixin calc($ele:"width",$num:0,$opr:"+",$val:0){
+	#{$ele}: -moz-calc(#{$num} #{$opr} #{$val});
+	#{$ele}: -webkit-calc(#{$num} #{$opr} #{$val});
+	#{$ele}: -o-calc(#{$num} #{$opr} #{$val});
+	#{$ele}: calc(#{$num} #{$opr} #{$val});
+}
+
+//遮罩
+@mixin bag_mask($url,$position:center){
+	overflow: hidden;
+	-webkit-mask-position: $position;
+	-webkit-mask-size: 100% 100%;
+	-webkit-mask-image: url($url);
+	@content
+}
+
+//清除float
+@mixin clear_float{
+	&:after{
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
+}
+//圓形
+@mixin circle($width){
+	.circle{
+		margin: 0 auto;
+		width: $width + 15px;
+		border:5px solid #F3AAC7;
+		border-radius:50%;
+		display: inline-block;
+		position: relative;
+		// z-index:index($ele_zindex, "circle");
+		&>.after{
+			width:$width;
+			overflow: hidden;
+			border: 2px solid #F3AAC7;
+			margin: 5px auto;
+			border-radius: 50%;
+			&>img{width:100%;}
+		}
+		@content
+	}
+}
+
+@mixin menu_color(){	
+	@for $i from 1 through 6 {
+		&:nth-child(6n+#{$i}){
+			&:hover,&.active{
+				p{
+					color:nth($sub_color,$i);
+					&:after,&:before{
+						@include transform( scale3d(1, 1, 1));
+						background-color: nth($sub_color,$i);
+					}
+				}
+			}
+		}
+	}
+}
+
+//層級判斷
+@mixin zindex($select_name:false) {
+	$zindex_arr:("header","footer","index") !default;
+	@if $select_name != false {
+		z-index:index($zindex_arr, $select_name);
+	}
+}
+//retina 目前只有兩倍
+@mixin background-image-retina($file, $type, $width, $height) {
+	background-image: url($file + '.' + $type);
+	@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (-moz-min-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx){
+		& {
+			background-image: url($file + '@2x.' + $type);
+			-webkit-background-size: $width $height;
+			-moz-background-size: $width $height;
+			-o-background-size: $width $height;
+			background-size: $width $height;
+		}
+	}
+}
+//background-icon
+//搭配background-image-retina 
+@mixin li_icon($class_name,$icon_arr,$path:null) {
+	@for $i from 1 through length($icon_arr) {
+		$c_name:nth($icon_arr,$i);
+		$url:unquote("#{$path}#{$c_name}.png");
+		$img_w:image-width($url);
+		$img_h:image-height($url);
+		&.#{$class_name}_#{$c_name}{
+			position: relative;
+			@include background-image-retina(unquote("#{$path}#{$c_name}"),png,$img_w,$img_h);	
+			width:$img_w;
+			height:$img_h;
+			overflow: hidden;
+		}
+		&>a{
+			width:$img_w;
+			height:$img_h;
+			display:block;
+			text-indent: 100%;
+		}
+	}
+}
+
+%add_cart{	
+	cursor: pointer;
+	background-color: #000;
+	color:#fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 2.3;
+	padding: 5px 0px;
+	@include rwd($desktop) {
+		vertical-align: middle;
+		font-size: 16px;
+		line-height:2;
+	padding: 5px 0px;
+	}	
+	&.over{
+		background-color: #de5a5f;
+		cursor: default;
+	}
+	span{
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+	.icon{
+		display: inline-block;
+		vertical-align: middle;
+		>img{
+			margin: 5px;
+			vertical-align: middle;
+		}
+	}
+}
+%prev_btn{
+	// border: 1px #000 solid;
+	display: none;
+	position: fixed;
+	padding: 15px;
+	left: 10px;
+	top: 60px;
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	@include zindex("back_btn");
+	@include border-radius(50%);
+	@include rwd($pad) {
+		display: block;
+	}
+	@include rwd($desktop) {
+		left:200px;
+		top: 20px;
+	}
+	@include rwd($desktop-hd) {
+		left: 270px;
+	}
+}
+%member_icon{
+	display: inline-block;
+	vertical-align: top;
+	width: 30px;
+	@include rwd($desktop) {
+		width: 55px;
+		height: 55px;
+		background-color: #fff;
+		margin: 5px;
+		padding: 0px 15px;
+		@include border-radius(50%);
+		&:before{
+			content:"";
+			height: 100%;
+			vertical-align: middle;
+			display: inline-block;
+		}
+		>img{						
+			vertical-align: middle;
+			display: inline-block;
+		}
+	}
+}
+%class_title{	
+	font-size: 14px;
+	line-height: 26px;
+	margin-bottom: 35px;
+	@include rwd($desktop) { 
+		margin-bottom: 85px;
+		p{
+			font-size: 16px;
+		}
+	}
+	h3{
+		font-size: 60px;
+		line-height: 80px;
+		font-weight: 300;
+		font-family: "Oswald";
+		@include rwd($desktop) {
+			font-size: 78px;
+			line-height: 93px;
+		}
+	}
+}

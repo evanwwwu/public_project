@@ -1,0 +1,49 @@
+@charset "UTF-8";
+//
+$model:"poseidon";
+$color1:#1bfcfd;
+$color2:#303031;
+$subcolor:#fff;
+$infocolor:#fff;
+
+$desktop_size:1024px;
+$pad_size:768px;
+$phone_size:480px;
+
+
+@import "compass/css3";
+@import "ceaser-easing";
+@import "partials/mixin";
+@import "partials/font";
+@import "partials/jquery-ui";
+@import "partials/owl";
+@import "partials/animation";
+// -----
+html #overview #special-sectionOverview,
+html #overview #sectionOverview {
+    width: 100% !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    float: none !important;
+}
+
+@media screen and (max-width: 768px) and (min-width: 721px) {
+    body #asus-api-footer, body #asus-api-footer.aai-maxi-w .aai-inner{
+        min-width: auto !important;
+    }
+}
+
+#special-sectionOverview #{"#"+$model+"-warp"} {
+    @import "partials/reset";
+    @import "mainwarp";
+    @import "legendary";
+    @import "level";
+    @import "ultimate";
+    @import "premium";
+    @import "personalized";
+    @import "gear";
+    @import "game";
+}

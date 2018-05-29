@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i);
+// @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+$font_arr:("socicon");
+$font_src:("socicon");
+$extension:(eot,woff,ttf,svg);
+
+@mixin font-face($name,$file,$extension,$weight:false,$style:false) {
+    @font-face {
+        font-family:quote(#{$name});
+        $files:null;
+        @for $x from 1 through length($extension) {
+            $var:nth($extension,$x);
+            $eot:quote("#{$file}.#{$var}");
+            @if $var == eot {
+                src: font-url($eot);
+                $files:#{$files} font-url(unquote("#{$eot}?#iefix")) unquote("format('embedded-opentype')");
+            }
+            @else{
+                $files:#{$files} font-url(#{$eot}) format("#{$var}");
+            }
+            @if $x != length($extension){
+                $files:#{$files}unquote(",");
+            }
+        }
+        src:$files;
+        @if $weight {
+            font-weight: $weight;
+        }
+        @if $style{
+            font-style: $style;
+        }
+    }
+}
+@if length($font_arr) > 0 {
+    @for $i from 1 through length($font_arr) {
+        $name:nth($font_arr, $i);
+        $src:nth($font_src, $i);
+        @include font-face($name,$src,$extension);
+        .f_family_#{$i}{
+            font-family: quote(#{$name}),'Microsoft JhengHei', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
+    }
+}

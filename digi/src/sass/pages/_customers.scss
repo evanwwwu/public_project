@@ -1,0 +1,71 @@
+.warpper.customers{
+	padding: 20 0 80px;
+	@include rwd($desktop) {
+		padding-bottom: 60px;
+	}
+	@include rwd($desktop-w) {
+		padding-bottom: 100px;
+	}
+	.items{
+		text-align: center;
+		padding: 25px 0px;
+		@include rwd($desktop) {
+			padding-top: 45px
+		}
+		@include rwd($desktop-w) {
+			max-width: 1120px;
+			margin: 0 auto;
+			padding-top: 80px;
+		}
+		.item{
+			vertical-align: top;
+			margin-bottom: 65px;
+			display: inline-block;
+			max-width: 225px;
+			padding:15px 20px;
+			text-align: center;
+			border: 2px solid $blue1;
+			@include rwd($pad) {
+				margin-left: 40px;
+				margin-right: 40px;
+			}
+			@include rwd($desktop){
+				margin-left: 25px;
+				margin-right: 25px;
+			}
+			@include rwd($desktop-w){
+				max-width: 300px;
+				margin-bottom: 100px;
+			}
+			.pic{
+				padding:0 30px;
+				margin-bottom: 8px;
+			}
+			.info{
+				font-size: 15px;
+				line-height: 20px;
+				@include rwd($desktop-w) {
+					font-size: 18px;
+					line-height: 26px;
+				}
+			}
+			.title{
+				display: inline-block;
+				position: relative;
+				z-index: 1;
+				font-size: 20px;
+				line-height: 30px;
+				padding: 10px 15px;
+				color: #fff;
+				background-color: $blue1;
+				margin-bottom: -15px;
+				@include transform(translateY(50%));
+				@include rwd($desktop-w) {
+					padding: 10px 20px;
+					font-size: 28px;
+					line-height: 40px;
+				}
+			}
+		}
+	}
+}

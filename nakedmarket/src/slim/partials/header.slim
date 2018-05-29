@@ -1,0 +1,155 @@
+#intro
+  .main
+    section.logo
+      object type="image/svg+xml" data="assets/images/logo.svg"
+        img src="assets/images/logo.png" alt="naked market"/
+    div.scroll_icon
+      .icon
+        .arr
+          span
+      span SCROLL DOWN 
+header
+  nav.main_menu
+    .icons
+      div
+        a.member_icon href="member_login.html"
+          img src="assets/images/member_icon.png" alt=""/
+        .close
+        a.main_logo href="index.html"
+          img src="assets/images/logo2.png" alt="裸市集"/
+    ul
+      li class=($page_list=="index" ? 'active' : '')
+        a href="index.html"
+          div
+            img src="assets/images/menu_icon1.png" alt="裸市集"/
+            p 裸市集
+      li class=($page_list=="about" ? 'active' : '')
+        a href="about.html"
+          div
+            img src="assets/images/menu_icon2.png" alt="關於裸"/
+            p 關於裸
+      li.sub_option class=($page_list=="product" ? 'active' : '')
+        a href="product_sub.html"
+          div
+            img src="assets/images/menu_icon3.png" alt="買食材"/
+            p 買食材
+      li.sub_option class=($page_list=="recipe" ? 'active' : '')
+        a href="recipe_sub.html"
+          div
+            img src="assets/images/menu_icon4.png" alt="逛食譜"/
+            p 逛食譜
+      li.sub_option class=($page_list=="article" ? 'active' : '')
+        a href="articles_sub.html"
+          div
+            img src="assets/images/menu_icon5.png" alt="生活用品"/
+            p 生活用品
+      li class=($page_list=="classes" ? 'classes' : '')
+        a href="classes_list.html"
+          div
+            img src="assets/images/menu_icon6.png" alt="料理教室"/
+            p 料理教室
+    .bottom_div
+      .openhours
+        p OPEN HOURS
+        p Mon-Sun 11:00am~9:00pm
+      .socially
+        a href="https://www.facebook.com/nkdmarket/?__mref=message_bubble" target="_blank"
+          img src="assets/images/fb_icon.png" alt=""/
+        a href="https://www.instagram.com/nakedmarket/" target="_balnk" 
+          img src="assets/images/ig_icon.png" alt=""/
+  .sub_item
+    -if ($page_list=="product")
+      .top_div
+        p.sub_title 買食材
+        .sub_close
+          span
+      ul.sub_product
+        li
+          a href="product_list.html" 
+            div: p 主食
+        li
+          a href="product_list.html" 
+            div: p 五穀堅果類
+        li.active
+          a href="product_list.html" 
+            div: p 油酒醋
+        li
+          a href="product_list.html" 
+            div: p 辛香調味料
+        li
+          a href="product_list.html" 
+            div: p 乳製品
+        li 
+          a href="product_list.html" 
+            div: p 醃漬/醬料
+        li
+          a href="product_list.html" 
+            div: p NM高湯
+        li
+          a href="product_list.html" 
+            div: p 特選食材
+        li
+          a href="product_list.html" 
+            div: p 特選食材
+        li
+          a href="product_list.html" 
+            div: p 特選食材
+        li
+          a href="product_list.html" 
+            div: p 特選食材
+        li
+          a href="product_list.html" 
+            div: p 特選食材
+    -else
+    -if ($page_list =="recipe")
+      .top_div
+        p.sub_title 逛食譜
+        .sub_close
+          span
+      ul.sub_product
+        li
+          a href="recipe_list.html" 
+            div: p 主食
+        li
+          a href="recipe_list.html" 
+            div: p 前菜
+        li.active
+          a href="recipe_list.html" 
+            div: p 肉類
+        li
+          a href="recipe_list.html" 
+            div: p 主食
+        li
+          a href="recipe_list.html" 
+            div: p 甜點
+        li 
+          a href="recipe_list.html" 
+            div: p 其他
+    -else
+    -if ($page_list=="article")
+      .top_div
+        p.sub_title 生活用品
+        .sub_close
+          span
+      ul.sub_product
+        li
+          a href="articles_list.html" 
+            div: p Ball料理廚務罐
+        li
+          a href="articles_list.html" 
+            div: p Bambu
+        li.active
+          a href="articles_list.html" 
+            div: p Chabatree
+        li
+          a href="articles_list.html" 
+            div: p Fido Italy
+        li
+          a href="articles_list.html" 
+            div: p Ocean
+        li 
+          a href="articles_list.html" 
+            div: p 其他
+    -else
+  .menu_btn
+    img src="assets/images/menu_icon.png" alt=""/

@@ -1,0 +1,212 @@
+.news_in{
+    .other {
+        margin: 0 15px;
+        .other_title {
+            font-size: 22px;
+            margin: 25px 0px 15px;
+        }
+        .news_list {
+            padding-bottom: 25px;
+        }
+        .item {
+            padding: 10px 0;
+            .attr {
+                color: $ui-yellow;
+                line-height: 1;
+                margin-top: 5px;
+                &>* {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .date {
+                    font-size: 16px;
+                    padding-right: 7px;
+                    border-right: 1px $ui-yellow solid;
+                }
+                .type {
+                    font-size: 15px;
+                    padding-left: 7px;
+                }
+            }
+            .title {
+                margin-top: 10px;
+                color: $ui-green-font;
+                font-size: 18px;
+            }
+            .more {
+                @mixin more-btn;
+                margin-top: 20px;
+            }
+        }
+        .bx-viewport {
+            padding-bottom: 25px;
+            border-bottom: 1px $ui-yellow solid;
+        }
+        .bx-wrapper .bx-controls {
+            padding: 0 0 15px;
+        }
+        .bx-pager {
+            display: block;
+            text-align: center;
+            .bx-pager-item {
+                display: inline-block;
+                a {
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    position: relative;
+                    font-size: 0;
+                    margin: 0px 7px;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        left: 0;
+                        top: 0;
+                        background-image: url("../images/dot.png");
+                        background-position: center;
+                        background-size: auto 100%;
+                        background-repeat: no-repeat;
+                    }
+                }
+                a.active {
+                    &:after {
+                        background-image: url("../images/dot_a.png");
+                    }
+                }
+            }
+        }
+    }
+}
+
+.in01 {
+    .right_info {
+        margin: 0px 15px;
+        border-bottom: 1px $ui-yellow solid;
+        padding-bottom: 35px;
+        .content {
+            .title {
+                font-size: 22px;
+                line-height: 1.5;
+                margin-bottom: 0;
+            }
+            .attr {
+                color: $ui-yellow;
+                line-height: 1;
+                margin-top: 5px;
+                &>* {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .date {
+                    font-size: 16px;
+                    padding-right: 7px;
+                    border-right: 1px $ui-yellow solid;
+                }
+                .type {
+                    font-size: 15px;
+                    padding-left: 7px;
+                }
+            }
+            .info {
+                margin-top: 15px;
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+@media (--desktop) {
+    .news_in {
+        .other {
+            max-width: 1620px;
+            margin: 0 auto;
+            padding-top: 40px;
+            .other_title {
+                padding: 0 20px;
+                color: $ui-green-font;
+                font-size: 34px;
+            }
+            .news_list {
+                font-size: 0;
+                margin: 0 auto;
+            }
+            .item {
+                width: 25%;
+                padding: 0 20px;
+                display: inline-block;
+            }
+        }
+    }
+    .in01 {
+        .left_img {
+            vertical-align: top;
+            position: relative;
+            display: inline-block;
+            width: calc( 890/1860 *100%);
+            margin-left: 6%;
+            img {
+                position: relative;
+            }
+            &:before {
+                content: "";
+                background-color: $ui-green-dark;
+                width: 100%;
+                height: 100%;
+                transform: scale(1.1);
+                position: absolute;
+                margin-left: -13.6%;
+            }
+        }
+        .right_info {
+            border-top: 1px $ui-yellow solid;
+            vertical-align: top;
+            display: inline-block;
+            width: calc(670/1860 *100%);
+            margin: 0px 0px 0px 60px;
+            .content {
+                position: relative;
+                .title {
+                    position: relative;
+                    font-size: 34px;
+                    span {
+                        padding-left: 20px;
+                        margin-left: -20px;
+                        width: 90%;
+                        display: block;
+                        position: relative;
+                        z-index: 3;
+                        background-color: $background;
+                    }
+                    .line {
+                        position: absolute;
+                        width: 90%;
+                        background-color: #d19a35;
+                        height: 1px;
+                        top: 50%;
+                        z-index: 2;
+                        left: -90px;
+                        &:before {
+                            position: absolute;
+                            width: 15px;
+                            height: 15px;
+                            content: "";
+                            background-image: url(../images/dot_a.png);
+                            background-repeat: no-repeat;
+                            background-position: 101% center;
+                            background-size: auto 100%;
+                            top: -6px;
+                            left: -7px;
+                        }
+                    }
+                }
+                .info {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

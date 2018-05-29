@@ -1,0 +1,824 @@
+INFO - 2016-08-16 11:26:12 --> Config Class Initialized
+INFO - 2016-08-16 11:26:12 --> Hooks Class Initialized
+DEBUG - 2016-08-16 11:26:12 --> UTF-8 Support Enabled
+INFO - 2016-08-16 11:26:12 --> Utf8 Class Initialized
+INFO - 2016-08-16 11:26:12 --> URI Class Initialized
+INFO - 2016-08-16 11:26:12 --> Router Class Initialized
+INFO - 2016-08-16 11:26:12 --> Output Class Initialized
+INFO - 2016-08-16 11:26:12 --> Security Class Initialized
+DEBUG - 2016-08-16 11:26:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 11:26:12 --> CSRF cookie sent
+INFO - 2016-08-16 11:26:12 --> Input Class Initialized
+INFO - 2016-08-16 11:26:12 --> Language Class Initialized
+INFO - 2016-08-16 11:26:12 --> Loader Class Initialized
+INFO - 2016-08-16 11:26:12 --> Helper loaded: url_helper
+INFO - 2016-08-16 11:26:12 --> Helper loaded: language_helper
+INFO - 2016-08-16 11:26:12 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 11:26:12 --> Helper loaded: form_helper
+INFO - 2016-08-16 11:26:13 --> Database Driver Class Initialized
+INFO - 2016-08-16 11:26:14 --> Image Lib Class Initialized
+INFO - 2016-08-16 11:26:14 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 11:26:14 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 11:26:14 --> Cart Class Initialized
+INFO - 2016-08-16 11:26:14 --> Model Class Initialized
+INFO - 2016-08-16 11:26:14 --> Model Class Initialized
+INFO - 2016-08-16 11:26:14 --> Model Class Initialized
+INFO - 2016-08-16 11:26:14 --> Controller Class Initialized
+ERROR - 2016-08-16 11:26:14 --> Severity: Notice --> Undefined index: nakedmarket_active D:\www\nakedmarket\web_git\php\application\models\Global_model.php 34
+INFO - 2016-08-16 11:26:21 --> Config Class Initialized
+INFO - 2016-08-16 11:26:21 --> Hooks Class Initialized
+DEBUG - 2016-08-16 11:26:21 --> UTF-8 Support Enabled
+INFO - 2016-08-16 11:26:21 --> Utf8 Class Initialized
+INFO - 2016-08-16 11:26:21 --> URI Class Initialized
+INFO - 2016-08-16 11:26:21 --> Router Class Initialized
+INFO - 2016-08-16 11:26:21 --> Output Class Initialized
+INFO - 2016-08-16 11:26:21 --> Security Class Initialized
+DEBUG - 2016-08-16 11:26:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 11:26:21 --> CSRF cookie sent
+INFO - 2016-08-16 11:26:21 --> Input Class Initialized
+INFO - 2016-08-16 11:26:21 --> Language Class Initialized
+INFO - 2016-08-16 11:26:21 --> Loader Class Initialized
+INFO - 2016-08-16 11:26:21 --> Helper loaded: url_helper
+INFO - 2016-08-16 11:26:21 --> Helper loaded: language_helper
+INFO - 2016-08-16 11:26:21 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 11:26:21 --> Helper loaded: form_helper
+INFO - 2016-08-16 11:26:21 --> Database Driver Class Initialized
+INFO - 2016-08-16 11:26:23 --> Image Lib Class Initialized
+INFO - 2016-08-16 11:26:23 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 11:26:23 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 11:26:23 --> Cart Class Initialized
+INFO - 2016-08-16 11:26:23 --> Model Class Initialized
+INFO - 2016-08-16 11:26:23 --> Model Class Initialized
+INFO - 2016-08-16 11:26:23 --> Model Class Initialized
+INFO - 2016-08-16 11:26:23 --> Controller Class Initialized
+INFO - 2016-08-16 11:26:23 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/login_view.php
+INFO - 2016-08-16 11:26:23 --> Final output sent to browser
+DEBUG - 2016-08-16 11:26:23 --> Total execution time: 1.4480
+INFO - 2016-08-16 11:59:36 --> Config Class Initialized
+INFO - 2016-08-16 11:59:36 --> Hooks Class Initialized
+DEBUG - 2016-08-16 11:59:36 --> UTF-8 Support Enabled
+INFO - 2016-08-16 11:59:36 --> Utf8 Class Initialized
+INFO - 2016-08-16 11:59:36 --> URI Class Initialized
+INFO - 2016-08-16 11:59:36 --> Router Class Initialized
+INFO - 2016-08-16 11:59:36 --> Output Class Initialized
+INFO - 2016-08-16 11:59:36 --> Security Class Initialized
+DEBUG - 2016-08-16 11:59:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 11:59:37 --> Config Class Initialized
+INFO - 2016-08-16 11:59:37 --> Hooks Class Initialized
+DEBUG - 2016-08-16 11:59:37 --> UTF-8 Support Enabled
+INFO - 2016-08-16 11:59:37 --> Utf8 Class Initialized
+INFO - 2016-08-16 11:59:37 --> URI Class Initialized
+INFO - 2016-08-16 11:59:37 --> Router Class Initialized
+INFO - 2016-08-16 11:59:37 --> Output Class Initialized
+INFO - 2016-08-16 11:59:37 --> Security Class Initialized
+DEBUG - 2016-08-16 11:59:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 11:59:58 --> Config Class Initialized
+INFO - 2016-08-16 11:59:58 --> Hooks Class Initialized
+DEBUG - 2016-08-16 11:59:58 --> UTF-8 Support Enabled
+INFO - 2016-08-16 11:59:58 --> Utf8 Class Initialized
+INFO - 2016-08-16 11:59:58 --> URI Class Initialized
+INFO - 2016-08-16 11:59:58 --> Router Class Initialized
+INFO - 2016-08-16 11:59:58 --> Output Class Initialized
+INFO - 2016-08-16 11:59:58 --> Security Class Initialized
+DEBUG - 2016-08-16 11:59:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 11:59:58 --> CSRF cookie sent
+INFO - 2016-08-16 11:59:58 --> Input Class Initialized
+INFO - 2016-08-16 11:59:58 --> Language Class Initialized
+INFO - 2016-08-16 11:59:58 --> Loader Class Initialized
+INFO - 2016-08-16 11:59:58 --> Helper loaded: url_helper
+INFO - 2016-08-16 11:59:58 --> Helper loaded: language_helper
+INFO - 2016-08-16 11:59:58 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 11:59:58 --> Helper loaded: form_helper
+INFO - 2016-08-16 11:59:58 --> Database Driver Class Initialized
+INFO - 2016-08-16 11:59:59 --> Image Lib Class Initialized
+INFO - 2016-08-16 11:59:59 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 11:59:59 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 11:59:59 --> Cart Class Initialized
+INFO - 2016-08-16 11:59:59 --> Model Class Initialized
+INFO - 2016-08-16 11:59:59 --> Model Class Initialized
+INFO - 2016-08-16 11:59:59 --> Model Class Initialized
+INFO - 2016-08-16 11:59:59 --> Controller Class Initialized
+INFO - 2016-08-16 11:59:59 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/login_view.php
+INFO - 2016-08-16 11:59:59 --> Final output sent to browser
+DEBUG - 2016-08-16 11:59:59 --> Total execution time: 1.3020
+INFO - 2016-08-16 12:00:46 --> Config Class Initialized
+INFO - 2016-08-16 12:00:46 --> Hooks Class Initialized
+DEBUG - 2016-08-16 12:00:46 --> UTF-8 Support Enabled
+INFO - 2016-08-16 12:00:46 --> Utf8 Class Initialized
+INFO - 2016-08-16 12:00:46 --> URI Class Initialized
+INFO - 2016-08-16 12:00:46 --> Router Class Initialized
+INFO - 2016-08-16 12:00:46 --> Output Class Initialized
+INFO - 2016-08-16 12:00:46 --> Security Class Initialized
+DEBUG - 2016-08-16 12:00:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 12:00:46 --> CSRF cookie sent
+INFO - 2016-08-16 12:00:46 --> Input Class Initialized
+INFO - 2016-08-16 12:00:46 --> Language Class Initialized
+INFO - 2016-08-16 12:00:46 --> Loader Class Initialized
+INFO - 2016-08-16 12:00:46 --> Helper loaded: url_helper
+INFO - 2016-08-16 12:00:46 --> Helper loaded: language_helper
+INFO - 2016-08-16 12:00:46 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 12:00:46 --> Helper loaded: form_helper
+INFO - 2016-08-16 12:00:46 --> Database Driver Class Initialized
+INFO - 2016-08-16 12:00:47 --> Image Lib Class Initialized
+INFO - 2016-08-16 12:00:47 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 12:00:47 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 12:00:47 --> Cart Class Initialized
+INFO - 2016-08-16 12:00:47 --> Model Class Initialized
+INFO - 2016-08-16 12:00:47 --> Model Class Initialized
+INFO - 2016-08-16 12:00:47 --> Model Class Initialized
+INFO - 2016-08-16 12:00:47 --> Controller Class Initialized
+INFO - 2016-08-16 12:00:47 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/login_view.php
+INFO - 2016-08-16 12:00:47 --> Final output sent to browser
+DEBUG - 2016-08-16 12:00:47 --> Total execution time: 1.2829
+INFO - 2016-08-16 12:01:08 --> Config Class Initialized
+INFO - 2016-08-16 12:01:08 --> Hooks Class Initialized
+DEBUG - 2016-08-16 12:01:08 --> UTF-8 Support Enabled
+INFO - 2016-08-16 12:01:08 --> Utf8 Class Initialized
+INFO - 2016-08-16 12:01:08 --> URI Class Initialized
+INFO - 2016-08-16 12:01:08 --> Router Class Initialized
+INFO - 2016-08-16 12:01:08 --> Output Class Initialized
+INFO - 2016-08-16 12:01:08 --> Security Class Initialized
+DEBUG - 2016-08-16 12:01:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 12:01:08 --> CSRF cookie sent
+INFO - 2016-08-16 12:01:08 --> CSRF token verified
+INFO - 2016-08-16 12:01:08 --> Input Class Initialized
+INFO - 2016-08-16 12:01:08 --> Language Class Initialized
+INFO - 2016-08-16 12:01:08 --> Loader Class Initialized
+INFO - 2016-08-16 12:01:08 --> Helper loaded: url_helper
+INFO - 2016-08-16 12:01:08 --> Helper loaded: language_helper
+INFO - 2016-08-16 12:01:08 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 12:01:08 --> Helper loaded: form_helper
+INFO - 2016-08-16 12:01:08 --> Database Driver Class Initialized
+INFO - 2016-08-16 12:01:09 --> Image Lib Class Initialized
+INFO - 2016-08-16 12:01:09 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 12:01:09 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 12:01:09 --> Cart Class Initialized
+INFO - 2016-08-16 12:01:09 --> Model Class Initialized
+INFO - 2016-08-16 12:01:09 --> Model Class Initialized
+INFO - 2016-08-16 12:01:09 --> Model Class Initialized
+INFO - 2016-08-16 12:01:09 --> Controller Class Initialized
+INFO - 2016-08-16 12:01:09 --> Model Class Initialized
+INFO - 2016-08-16 12:01:09 --> Config Class Initialized
+INFO - 2016-08-16 12:01:09 --> Hooks Class Initialized
+DEBUG - 2016-08-16 12:01:09 --> UTF-8 Support Enabled
+INFO - 2016-08-16 12:01:09 --> Utf8 Class Initialized
+INFO - 2016-08-16 12:01:09 --> URI Class Initialized
+INFO - 2016-08-16 12:01:09 --> Router Class Initialized
+INFO - 2016-08-16 12:01:09 --> Output Class Initialized
+INFO - 2016-08-16 12:01:09 --> Security Class Initialized
+DEBUG - 2016-08-16 12:01:09 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 12:01:09 --> CSRF cookie sent
+INFO - 2016-08-16 12:01:09 --> Input Class Initialized
+INFO - 2016-08-16 12:01:09 --> Language Class Initialized
+INFO - 2016-08-16 12:01:09 --> Loader Class Initialized
+INFO - 2016-08-16 12:01:09 --> Helper loaded: url_helper
+INFO - 2016-08-16 12:01:09 --> Helper loaded: language_helper
+INFO - 2016-08-16 12:01:09 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 12:01:09 --> Helper loaded: form_helper
+INFO - 2016-08-16 12:01:09 --> Database Driver Class Initialized
+INFO - 2016-08-16 12:01:10 --> Image Lib Class Initialized
+INFO - 2016-08-16 12:01:10 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 12:01:10 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 12:01:10 --> Cart Class Initialized
+INFO - 2016-08-16 12:01:10 --> Model Class Initialized
+INFO - 2016-08-16 12:01:10 --> Model Class Initialized
+INFO - 2016-08-16 12:01:10 --> Model Class Initialized
+INFO - 2016-08-16 12:01:11 --> Controller Class Initialized
+INFO - 2016-08-16 12:01:11 --> Model Class Initialized
+INFO - 2016-08-16 12:01:11 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/accounts/list_view.php
+INFO - 2016-08-16 12:01:11 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/master_view.php
+INFO - 2016-08-16 12:01:11 --> Final output sent to browser
+DEBUG - 2016-08-16 12:01:11 --> Total execution time: 1.4612
+INFO - 2016-08-16 17:09:44 --> Config Class Initialized
+INFO - 2016-08-16 17:09:44 --> Hooks Class Initialized
+DEBUG - 2016-08-16 17:09:44 --> UTF-8 Support Enabled
+INFO - 2016-08-16 17:09:44 --> Utf8 Class Initialized
+INFO - 2016-08-16 17:09:44 --> URI Class Initialized
+INFO - 2016-08-16 17:09:44 --> Router Class Initialized
+INFO - 2016-08-16 17:09:44 --> Output Class Initialized
+INFO - 2016-08-16 17:09:44 --> Security Class Initialized
+DEBUG - 2016-08-16 17:09:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 17:09:45 --> CSRF cookie sent
+INFO - 2016-08-16 17:09:45 --> Input Class Initialized
+INFO - 2016-08-16 17:09:45 --> Language Class Initialized
+INFO - 2016-08-16 17:09:45 --> Loader Class Initialized
+INFO - 2016-08-16 17:09:45 --> Helper loaded: url_helper
+INFO - 2016-08-16 17:09:45 --> Helper loaded: language_helper
+INFO - 2016-08-16 17:09:45 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 17:09:45 --> Helper loaded: form_helper
+INFO - 2016-08-16 17:09:45 --> Database Driver Class Initialized
+INFO - 2016-08-16 17:09:46 --> Image Lib Class Initialized
+INFO - 2016-08-16 17:09:46 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 17:09:46 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 17:09:46 --> Cart Class Initialized
+INFO - 2016-08-16 17:09:46 --> Model Class Initialized
+INFO - 2016-08-16 17:09:46 --> Model Class Initialized
+INFO - 2016-08-16 17:09:46 --> Model Class Initialized
+INFO - 2016-08-16 17:09:46 --> Controller Class Initialized
+INFO - 2016-08-16 17:09:46 --> Config Class Initialized
+INFO - 2016-08-16 17:09:46 --> Hooks Class Initialized
+DEBUG - 2016-08-16 17:09:46 --> UTF-8 Support Enabled
+INFO - 2016-08-16 17:09:46 --> Utf8 Class Initialized
+INFO - 2016-08-16 17:09:46 --> URI Class Initialized
+INFO - 2016-08-16 17:09:46 --> Router Class Initialized
+INFO - 2016-08-16 17:09:46 --> Output Class Initialized
+INFO - 2016-08-16 17:09:46 --> Security Class Initialized
+DEBUG - 2016-08-16 17:09:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 17:09:46 --> CSRF cookie sent
+INFO - 2016-08-16 17:09:46 --> Input Class Initialized
+INFO - 2016-08-16 17:09:46 --> Language Class Initialized
+INFO - 2016-08-16 17:09:46 --> Loader Class Initialized
+INFO - 2016-08-16 17:09:46 --> Helper loaded: url_helper
+INFO - 2016-08-16 17:09:46 --> Helper loaded: language_helper
+INFO - 2016-08-16 17:09:46 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 17:09:47 --> Helper loaded: form_helper
+INFO - 2016-08-16 17:09:47 --> Database Driver Class Initialized
+INFO - 2016-08-16 17:09:48 --> Image Lib Class Initialized
+INFO - 2016-08-16 17:09:48 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 17:09:48 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 17:09:48 --> Cart Class Initialized
+INFO - 2016-08-16 17:09:48 --> Model Class Initialized
+INFO - 2016-08-16 17:09:48 --> Model Class Initialized
+INFO - 2016-08-16 17:09:48 --> Model Class Initialized
+INFO - 2016-08-16 17:09:48 --> Controller Class Initialized
+INFO - 2016-08-16 17:09:48 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/login_view.php
+INFO - 2016-08-16 17:09:48 --> Final output sent to browser
+DEBUG - 2016-08-16 17:09:48 --> Total execution time: 1.1906
+INFO - 2016-08-16 17:18:39 --> Config Class Initialized
+INFO - 2016-08-16 17:18:39 --> Hooks Class Initialized
+DEBUG - 2016-08-16 17:18:39 --> UTF-8 Support Enabled
+INFO - 2016-08-16 17:18:39 --> Utf8 Class Initialized
+INFO - 2016-08-16 17:18:39 --> URI Class Initialized
+INFO - 2016-08-16 17:18:39 --> Router Class Initialized
+INFO - 2016-08-16 17:18:39 --> Output Class Initialized
+INFO - 2016-08-16 17:18:39 --> Security Class Initialized
+DEBUG - 2016-08-16 17:18:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 17:18:39 --> CSRF cookie sent
+INFO - 2016-08-16 17:18:39 --> CSRF token verified
+INFO - 2016-08-16 17:18:39 --> Input Class Initialized
+INFO - 2016-08-16 17:18:39 --> Language Class Initialized
+INFO - 2016-08-16 17:18:39 --> Loader Class Initialized
+INFO - 2016-08-16 17:18:39 --> Helper loaded: url_helper
+INFO - 2016-08-16 17:18:39 --> Helper loaded: language_helper
+INFO - 2016-08-16 17:18:39 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 17:18:39 --> Helper loaded: form_helper
+INFO - 2016-08-16 17:18:39 --> Database Driver Class Initialized
+INFO - 2016-08-16 17:18:40 --> Image Lib Class Initialized
+INFO - 2016-08-16 17:18:40 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 17:18:40 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 17:18:40 --> Cart Class Initialized
+INFO - 2016-08-16 17:18:40 --> Model Class Initialized
+INFO - 2016-08-16 17:18:40 --> Model Class Initialized
+INFO - 2016-08-16 17:18:40 --> Model Class Initialized
+INFO - 2016-08-16 17:18:40 --> Controller Class Initialized
+INFO - 2016-08-16 17:18:40 --> Model Class Initialized
+INFO - 2016-08-16 17:18:41 --> Config Class Initialized
+INFO - 2016-08-16 17:18:41 --> Hooks Class Initialized
+DEBUG - 2016-08-16 17:18:41 --> UTF-8 Support Enabled
+INFO - 2016-08-16 17:18:41 --> Utf8 Class Initialized
+INFO - 2016-08-16 17:18:41 --> URI Class Initialized
+INFO - 2016-08-16 17:18:41 --> Router Class Initialized
+INFO - 2016-08-16 17:18:41 --> Output Class Initialized
+INFO - 2016-08-16 17:18:41 --> Security Class Initialized
+DEBUG - 2016-08-16 17:18:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 17:18:41 --> CSRF cookie sent
+INFO - 2016-08-16 17:18:41 --> Input Class Initialized
+INFO - 2016-08-16 17:18:41 --> Language Class Initialized
+INFO - 2016-08-16 17:18:41 --> Loader Class Initialized
+INFO - 2016-08-16 17:18:41 --> Helper loaded: url_helper
+INFO - 2016-08-16 17:18:41 --> Helper loaded: language_helper
+INFO - 2016-08-16 17:18:41 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 17:18:41 --> Helper loaded: form_helper
+INFO - 2016-08-16 17:18:41 --> Database Driver Class Initialized
+INFO - 2016-08-16 17:18:42 --> Image Lib Class Initialized
+INFO - 2016-08-16 17:18:42 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 17:18:42 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 17:18:42 --> Cart Class Initialized
+INFO - 2016-08-16 17:18:42 --> Model Class Initialized
+INFO - 2016-08-16 17:18:42 --> Model Class Initialized
+INFO - 2016-08-16 17:18:42 --> Model Class Initialized
+INFO - 2016-08-16 17:18:42 --> Controller Class Initialized
+INFO - 2016-08-16 17:18:42 --> Model Class Initialized
+INFO - 2016-08-16 17:18:42 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/accounts/list_view.php
+INFO - 2016-08-16 17:18:42 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/master_view.php
+INFO - 2016-08-16 17:18:42 --> Final output sent to browser
+DEBUG - 2016-08-16 17:18:42 --> Total execution time: 1.2860
+INFO - 2016-08-16 22:05:08 --> Config Class Initialized
+INFO - 2016-08-16 22:05:08 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:05:08 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:05:08 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:05:08 --> URI Class Initialized
+INFO - 2016-08-16 22:05:08 --> Router Class Initialized
+INFO - 2016-08-16 22:05:08 --> Output Class Initialized
+INFO - 2016-08-16 22:05:08 --> Security Class Initialized
+DEBUG - 2016-08-16 22:05:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:05:08 --> CSRF cookie sent
+INFO - 2016-08-16 22:05:08 --> Input Class Initialized
+INFO - 2016-08-16 22:05:08 --> Language Class Initialized
+ERROR - 2016-08-16 22:05:09 --> Severity: Parsing Error --> syntax error, unexpected '}' D:\www\nakedmarket\web_git\php\application\controllers\admin\Ingredients.php 27
+INFO - 2016-08-16 22:06:19 --> Config Class Initialized
+INFO - 2016-08-16 22:06:19 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:06:19 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:06:19 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:06:19 --> URI Class Initialized
+INFO - 2016-08-16 22:06:19 --> Router Class Initialized
+INFO - 2016-08-16 22:06:19 --> Output Class Initialized
+INFO - 2016-08-16 22:06:19 --> Security Class Initialized
+DEBUG - 2016-08-16 22:06:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:06:19 --> CSRF cookie sent
+INFO - 2016-08-16 22:06:19 --> Input Class Initialized
+INFO - 2016-08-16 22:06:19 --> Language Class Initialized
+INFO - 2016-08-16 22:06:19 --> Loader Class Initialized
+INFO - 2016-08-16 22:06:19 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:06:19 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:06:19 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:06:19 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:06:19 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:06:20 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:06:20 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:06:20 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:06:20 --> Cart Class Initialized
+INFO - 2016-08-16 22:06:20 --> Model Class Initialized
+INFO - 2016-08-16 22:06:20 --> Model Class Initialized
+INFO - 2016-08-16 22:06:20 --> Model Class Initialized
+INFO - 2016-08-16 22:06:20 --> Controller Class Initialized
+ERROR - 2016-08-16 22:06:20 --> Severity: Notice --> Undefined index: nakedmarket_active D:\www\nakedmarket\web_git\php\application\models\Global_model.php 34
+INFO - 2016-08-16 22:06:20 --> Config Class Initialized
+INFO - 2016-08-16 22:06:20 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:06:20 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:06:20 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:06:20 --> URI Class Initialized
+INFO - 2016-08-16 22:06:20 --> Router Class Initialized
+INFO - 2016-08-16 22:06:20 --> Output Class Initialized
+INFO - 2016-08-16 22:06:20 --> Security Class Initialized
+DEBUG - 2016-08-16 22:06:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:06:20 --> CSRF cookie sent
+INFO - 2016-08-16 22:06:20 --> Input Class Initialized
+INFO - 2016-08-16 22:06:20 --> Language Class Initialized
+INFO - 2016-08-16 22:06:20 --> Loader Class Initialized
+INFO - 2016-08-16 22:06:20 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:06:20 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:06:20 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:06:20 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:06:20 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:06:21 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:06:21 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:06:21 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:06:21 --> Cart Class Initialized
+INFO - 2016-08-16 22:06:21 --> Model Class Initialized
+INFO - 2016-08-16 22:06:21 --> Model Class Initialized
+INFO - 2016-08-16 22:06:21 --> Model Class Initialized
+INFO - 2016-08-16 22:06:21 --> Controller Class Initialized
+INFO - 2016-08-16 22:06:21 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/login_view.php
+INFO - 2016-08-16 22:06:21 --> Final output sent to browser
+DEBUG - 2016-08-16 22:06:21 --> Total execution time: 1.2577
+INFO - 2016-08-16 22:06:45 --> Config Class Initialized
+INFO - 2016-08-16 22:06:45 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:06:45 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:06:45 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:06:45 --> URI Class Initialized
+INFO - 2016-08-16 22:06:45 --> Router Class Initialized
+INFO - 2016-08-16 22:06:45 --> Output Class Initialized
+INFO - 2016-08-16 22:06:45 --> Security Class Initialized
+DEBUG - 2016-08-16 22:06:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:06:45 --> CSRF cookie sent
+INFO - 2016-08-16 22:06:45 --> CSRF token verified
+INFO - 2016-08-16 22:06:45 --> Input Class Initialized
+INFO - 2016-08-16 22:06:45 --> Language Class Initialized
+INFO - 2016-08-16 22:06:45 --> Loader Class Initialized
+INFO - 2016-08-16 22:06:45 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:06:45 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:06:45 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:06:45 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:06:45 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:06:46 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:06:46 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:06:46 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:06:46 --> Cart Class Initialized
+INFO - 2016-08-16 22:06:46 --> Model Class Initialized
+INFO - 2016-08-16 22:06:46 --> Model Class Initialized
+INFO - 2016-08-16 22:06:46 --> Model Class Initialized
+INFO - 2016-08-16 22:06:46 --> Controller Class Initialized
+INFO - 2016-08-16 22:06:46 --> Model Class Initialized
+INFO - 2016-08-16 22:06:46 --> Config Class Initialized
+INFO - 2016-08-16 22:06:46 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:06:46 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:06:46 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:06:46 --> URI Class Initialized
+INFO - 2016-08-16 22:06:46 --> Router Class Initialized
+INFO - 2016-08-16 22:06:46 --> Output Class Initialized
+INFO - 2016-08-16 22:06:46 --> Security Class Initialized
+DEBUG - 2016-08-16 22:06:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:06:46 --> CSRF cookie sent
+INFO - 2016-08-16 22:06:46 --> Input Class Initialized
+INFO - 2016-08-16 22:06:46 --> Language Class Initialized
+INFO - 2016-08-16 22:06:46 --> Loader Class Initialized
+INFO - 2016-08-16 22:06:46 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:06:46 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:06:46 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:06:46 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:06:46 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:06:47 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:06:47 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:06:48 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:06:48 --> Cart Class Initialized
+INFO - 2016-08-16 22:06:48 --> Model Class Initialized
+INFO - 2016-08-16 22:06:48 --> Model Class Initialized
+INFO - 2016-08-16 22:06:48 --> Model Class Initialized
+INFO - 2016-08-16 22:06:48 --> Controller Class Initialized
+INFO - 2016-08-16 22:06:48 --> Model Class Initialized
+INFO - 2016-08-16 22:06:48 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/accounts/list_view.php
+INFO - 2016-08-16 22:06:48 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/master_view.php
+INFO - 2016-08-16 22:06:48 --> Final output sent to browser
+DEBUG - 2016-08-16 22:06:48 --> Total execution time: 1.3242
+INFO - 2016-08-16 22:06:54 --> Config Class Initialized
+INFO - 2016-08-16 22:06:54 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:06:54 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:06:54 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:06:54 --> URI Class Initialized
+INFO - 2016-08-16 22:06:54 --> Router Class Initialized
+INFO - 2016-08-16 22:06:54 --> Output Class Initialized
+INFO - 2016-08-16 22:06:54 --> Security Class Initialized
+DEBUG - 2016-08-16 22:06:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:06:54 --> CSRF cookie sent
+INFO - 2016-08-16 22:06:54 --> Input Class Initialized
+INFO - 2016-08-16 22:06:54 --> Language Class Initialized
+INFO - 2016-08-16 22:06:54 --> Loader Class Initialized
+INFO - 2016-08-16 22:06:54 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:06:54 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:06:54 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:06:54 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:06:54 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:06:55 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:06:55 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:06:55 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:06:55 --> Cart Class Initialized
+INFO - 2016-08-16 22:06:55 --> Model Class Initialized
+INFO - 2016-08-16 22:06:55 --> Model Class Initialized
+INFO - 2016-08-16 22:06:55 --> Model Class Initialized
+INFO - 2016-08-16 22:06:55 --> Controller Class Initialized
+INFO - 2016-08-16 22:06:55 --> Model Class Initialized
+INFO - 2016-08-16 22:06:55 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/ingredients/list_view.php
+INFO - 2016-08-16 22:06:55 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/master_view.php
+INFO - 2016-08-16 22:06:55 --> Final output sent to browser
+DEBUG - 2016-08-16 22:06:55 --> Total execution time: 1.3959
+INFO - 2016-08-16 22:06:58 --> Config Class Initialized
+INFO - 2016-08-16 22:06:58 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:06:58 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:06:58 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:06:58 --> URI Class Initialized
+INFO - 2016-08-16 22:06:58 --> Router Class Initialized
+INFO - 2016-08-16 22:06:58 --> Output Class Initialized
+INFO - 2016-08-16 22:06:58 --> Security Class Initialized
+DEBUG - 2016-08-16 22:06:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:06:58 --> CSRF cookie sent
+INFO - 2016-08-16 22:06:58 --> Input Class Initialized
+INFO - 2016-08-16 22:06:58 --> Language Class Initialized
+INFO - 2016-08-16 22:06:58 --> Loader Class Initialized
+INFO - 2016-08-16 22:06:58 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:06:58 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:06:58 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:06:58 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:06:58 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:06:59 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:06:59 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:06:59 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:06:59 --> Cart Class Initialized
+INFO - 2016-08-16 22:06:59 --> Model Class Initialized
+INFO - 2016-08-16 22:06:59 --> Model Class Initialized
+INFO - 2016-08-16 22:06:59 --> Model Class Initialized
+INFO - 2016-08-16 22:06:59 --> Controller Class Initialized
+INFO - 2016-08-16 22:06:59 --> Model Class Initialized
+INFO - 2016-08-16 22:06:59 --> Helper loaded: file_helper
+INFO - 2016-08-16 22:07:00 --> Final output sent to browser
+DEBUG - 2016-08-16 22:07:00 --> Total execution time: 1.4534
+INFO - 2016-08-16 22:13:58 --> Config Class Initialized
+INFO - 2016-08-16 22:13:58 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:13:58 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:13:58 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:13:58 --> URI Class Initialized
+INFO - 2016-08-16 22:13:58 --> Router Class Initialized
+INFO - 2016-08-16 22:13:58 --> Output Class Initialized
+INFO - 2016-08-16 22:13:58 --> Security Class Initialized
+DEBUG - 2016-08-16 22:13:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:13:58 --> CSRF cookie sent
+INFO - 2016-08-16 22:13:58 --> Input Class Initialized
+INFO - 2016-08-16 22:13:58 --> Language Class Initialized
+INFO - 2016-08-16 22:13:58 --> Loader Class Initialized
+INFO - 2016-08-16 22:13:58 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:13:58 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:13:58 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:13:58 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:13:58 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:13:59 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:13:59 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:13:59 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:13:59 --> Cart Class Initialized
+INFO - 2016-08-16 22:13:59 --> Model Class Initialized
+INFO - 2016-08-16 22:13:59 --> Model Class Initialized
+INFO - 2016-08-16 22:13:59 --> Model Class Initialized
+INFO - 2016-08-16 22:13:59 --> Controller Class Initialized
+INFO - 2016-08-16 22:13:59 --> Model Class Initialized
+INFO - 2016-08-16 22:13:59 --> Helper loaded: file_helper
+INFO - 2016-08-16 22:13:59 --> Final output sent to browser
+DEBUG - 2016-08-16 22:13:59 --> Total execution time: 1.2828
+INFO - 2016-08-16 22:36:11 --> Config Class Initialized
+INFO - 2016-08-16 22:36:11 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:36:12 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:36:12 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:36:12 --> URI Class Initialized
+INFO - 2016-08-16 22:36:12 --> Router Class Initialized
+INFO - 2016-08-16 22:36:12 --> Output Class Initialized
+INFO - 2016-08-16 22:36:12 --> Security Class Initialized
+DEBUG - 2016-08-16 22:36:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:36:12 --> CSRF cookie sent
+INFO - 2016-08-16 22:36:12 --> Input Class Initialized
+INFO - 2016-08-16 22:36:12 --> Language Class Initialized
+INFO - 2016-08-16 22:36:12 --> Loader Class Initialized
+INFO - 2016-08-16 22:36:12 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:36:12 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:36:12 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:36:12 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:36:12 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:36:13 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:36:13 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:36:13 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:36:13 --> Cart Class Initialized
+INFO - 2016-08-16 22:36:13 --> Model Class Initialized
+INFO - 2016-08-16 22:36:13 --> Model Class Initialized
+INFO - 2016-08-16 22:36:13 --> Model Class Initialized
+INFO - 2016-08-16 22:36:13 --> Controller Class Initialized
+INFO - 2016-08-16 22:36:13 --> Model Class Initialized
+INFO - 2016-08-16 22:36:13 --> Helper loaded: file_helper
+INFO - 2016-08-16 22:36:13 --> Final output sent to browser
+DEBUG - 2016-08-16 22:36:13 --> Total execution time: 1.2957
+INFO - 2016-08-16 22:36:35 --> Config Class Initialized
+INFO - 2016-08-16 22:36:35 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:36:35 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:36:35 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:36:35 --> URI Class Initialized
+INFO - 2016-08-16 22:36:35 --> Router Class Initialized
+INFO - 2016-08-16 22:36:35 --> Output Class Initialized
+INFO - 2016-08-16 22:36:35 --> Security Class Initialized
+DEBUG - 2016-08-16 22:36:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:36:35 --> CSRF cookie sent
+INFO - 2016-08-16 22:36:35 --> Input Class Initialized
+INFO - 2016-08-16 22:36:35 --> Language Class Initialized
+INFO - 2016-08-16 22:36:35 --> Loader Class Initialized
+INFO - 2016-08-16 22:36:35 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:36:35 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:36:35 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:36:35 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:36:36 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:36:37 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:36:37 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:36:37 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:36:37 --> Cart Class Initialized
+INFO - 2016-08-16 22:36:37 --> Model Class Initialized
+INFO - 2016-08-16 22:36:37 --> Model Class Initialized
+INFO - 2016-08-16 22:36:37 --> Model Class Initialized
+INFO - 2016-08-16 22:36:37 --> Controller Class Initialized
+INFO - 2016-08-16 22:36:37 --> Model Class Initialized
+INFO - 2016-08-16 22:36:37 --> Helper loaded: file_helper
+INFO - 2016-08-16 22:36:37 --> Final output sent to browser
+DEBUG - 2016-08-16 22:36:37 --> Total execution time: 1.2157
+INFO - 2016-08-16 22:36:53 --> Config Class Initialized
+INFO - 2016-08-16 22:36:53 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:36:53 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:36:53 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:36:53 --> URI Class Initialized
+INFO - 2016-08-16 22:36:53 --> Router Class Initialized
+INFO - 2016-08-16 22:36:53 --> Output Class Initialized
+INFO - 2016-08-16 22:36:53 --> Security Class Initialized
+DEBUG - 2016-08-16 22:36:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:36:53 --> CSRF cookie sent
+INFO - 2016-08-16 22:36:53 --> Input Class Initialized
+INFO - 2016-08-16 22:36:53 --> Language Class Initialized
+INFO - 2016-08-16 22:36:53 --> Loader Class Initialized
+INFO - 2016-08-16 22:36:53 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:36:53 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:36:53 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:36:53 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:36:53 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:36:54 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:36:54 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:36:54 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:36:54 --> Cart Class Initialized
+INFO - 2016-08-16 22:36:54 --> Model Class Initialized
+INFO - 2016-08-16 22:36:54 --> Model Class Initialized
+INFO - 2016-08-16 22:36:54 --> Model Class Initialized
+INFO - 2016-08-16 22:36:54 --> Controller Class Initialized
+INFO - 2016-08-16 22:36:54 --> Model Class Initialized
+INFO - 2016-08-16 22:36:54 --> Helper loaded: file_helper
+INFO - 2016-08-16 22:36:54 --> Final output sent to browser
+DEBUG - 2016-08-16 22:36:54 --> Total execution time: 1.2930
+INFO - 2016-08-16 22:36:58 --> Config Class Initialized
+INFO - 2016-08-16 22:36:58 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:36:58 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:36:58 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:36:58 --> URI Class Initialized
+INFO - 2016-08-16 22:36:58 --> Router Class Initialized
+INFO - 2016-08-16 22:36:58 --> Output Class Initialized
+INFO - 2016-08-16 22:36:58 --> Security Class Initialized
+DEBUG - 2016-08-16 22:36:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:36:58 --> CSRF cookie sent
+INFO - 2016-08-16 22:36:58 --> Input Class Initialized
+INFO - 2016-08-16 22:36:58 --> Language Class Initialized
+INFO - 2016-08-16 22:36:58 --> Loader Class Initialized
+INFO - 2016-08-16 22:36:58 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:36:58 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:36:58 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:36:58 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:36:58 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:37:00 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:37:00 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:37:00 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:37:00 --> Cart Class Initialized
+INFO - 2016-08-16 22:37:00 --> Model Class Initialized
+INFO - 2016-08-16 22:37:00 --> Model Class Initialized
+INFO - 2016-08-16 22:37:00 --> Model Class Initialized
+INFO - 2016-08-16 22:37:00 --> Controller Class Initialized
+INFO - 2016-08-16 22:37:00 --> Model Class Initialized
+INFO - 2016-08-16 22:37:00 --> Helper loaded: file_helper
+INFO - 2016-08-16 22:37:00 --> Final output sent to browser
+DEBUG - 2016-08-16 22:37:00 --> Total execution time: 1.2589
+INFO - 2016-08-16 22:38:10 --> Config Class Initialized
+INFO - 2016-08-16 22:38:10 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:38:11 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:38:11 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:38:11 --> URI Class Initialized
+INFO - 2016-08-16 22:38:11 --> Router Class Initialized
+INFO - 2016-08-16 22:38:11 --> Output Class Initialized
+INFO - 2016-08-16 22:38:11 --> Security Class Initialized
+DEBUG - 2016-08-16 22:38:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:38:11 --> CSRF cookie sent
+INFO - 2016-08-16 22:38:11 --> Input Class Initialized
+INFO - 2016-08-16 22:38:11 --> Language Class Initialized
+INFO - 2016-08-16 22:38:11 --> Loader Class Initialized
+INFO - 2016-08-16 22:38:11 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:38:11 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:38:11 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:38:11 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:38:11 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:38:12 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:38:12 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:38:12 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:38:12 --> Cart Class Initialized
+INFO - 2016-08-16 22:38:12 --> Model Class Initialized
+INFO - 2016-08-16 22:38:12 --> Model Class Initialized
+INFO - 2016-08-16 22:38:12 --> Model Class Initialized
+INFO - 2016-08-16 22:38:12 --> Controller Class Initialized
+INFO - 2016-08-16 22:38:12 --> Model Class Initialized
+INFO - 2016-08-16 22:38:12 --> Helper loaded: file_helper
+INFO - 2016-08-16 22:38:12 --> Final output sent to browser
+DEBUG - 2016-08-16 22:38:12 --> Total execution time: 1.2432
+INFO - 2016-08-16 22:54:00 --> Config Class Initialized
+INFO - 2016-08-16 22:54:00 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:54:00 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:54:00 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:54:00 --> URI Class Initialized
+INFO - 2016-08-16 22:54:00 --> Router Class Initialized
+INFO - 2016-08-16 22:54:00 --> Output Class Initialized
+INFO - 2016-08-16 22:54:00 --> Security Class Initialized
+DEBUG - 2016-08-16 22:54:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:54:00 --> CSRF cookie sent
+INFO - 2016-08-16 22:54:00 --> Input Class Initialized
+INFO - 2016-08-16 22:54:00 --> Language Class Initialized
+INFO - 2016-08-16 22:54:00 --> Loader Class Initialized
+INFO - 2016-08-16 22:54:00 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:54:00 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:54:00 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:54:00 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:54:00 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:54:01 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:54:01 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:54:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:54:01 --> Cart Class Initialized
+INFO - 2016-08-16 22:54:01 --> Model Class Initialized
+INFO - 2016-08-16 22:54:01 --> Model Class Initialized
+INFO - 2016-08-16 22:54:01 --> Model Class Initialized
+INFO - 2016-08-16 22:54:01 --> Controller Class Initialized
+INFO - 2016-08-16 22:54:01 --> Model Class Initialized
+INFO - 2016-08-16 22:54:01 --> Helper loaded: file_helper
+ERROR - 2016-08-16 22:54:01 --> Severity: Warning --> fileperms(): stat failed for ./../warehouse D:\www\nakedmarket\web_git\php\application\controllers\admin\Ingredients.php 18
+INFO - 2016-08-16 22:54:01 --> Final output sent to browser
+DEBUG - 2016-08-16 22:54:01 --> Total execution time: 1.3140
+INFO - 2016-08-16 22:55:27 --> Config Class Initialized
+INFO - 2016-08-16 22:55:27 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:55:27 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:55:27 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:55:27 --> URI Class Initialized
+INFO - 2016-08-16 22:55:27 --> Router Class Initialized
+INFO - 2016-08-16 22:55:27 --> Output Class Initialized
+INFO - 2016-08-16 22:55:27 --> Security Class Initialized
+DEBUG - 2016-08-16 22:55:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:55:27 --> CSRF cookie sent
+INFO - 2016-08-16 22:55:27 --> Input Class Initialized
+INFO - 2016-08-16 22:55:27 --> Language Class Initialized
+INFO - 2016-08-16 22:55:27 --> Loader Class Initialized
+INFO - 2016-08-16 22:55:27 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:55:27 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:55:27 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:55:27 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:55:27 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:55:28 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:55:28 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:55:28 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:55:28 --> Cart Class Initialized
+INFO - 2016-08-16 22:55:28 --> Model Class Initialized
+INFO - 2016-08-16 22:55:28 --> Model Class Initialized
+INFO - 2016-08-16 22:55:28 --> Model Class Initialized
+INFO - 2016-08-16 22:55:28 --> Controller Class Initialized
+INFO - 2016-08-16 22:55:28 --> Model Class Initialized
+INFO - 2016-08-16 22:55:28 --> Helper loaded: file_helper
+INFO - 2016-08-16 22:55:28 --> Final output sent to browser
+DEBUG - 2016-08-16 22:55:28 --> Total execution time: 1.2957
+INFO - 2016-08-16 22:55:36 --> Config Class Initialized
+INFO - 2016-08-16 22:55:36 --> Hooks Class Initialized
+DEBUG - 2016-08-16 22:55:36 --> UTF-8 Support Enabled
+INFO - 2016-08-16 22:55:36 --> Utf8 Class Initialized
+INFO - 2016-08-16 22:55:36 --> URI Class Initialized
+INFO - 2016-08-16 22:55:36 --> Router Class Initialized
+INFO - 2016-08-16 22:55:36 --> Output Class Initialized
+INFO - 2016-08-16 22:55:36 --> Security Class Initialized
+DEBUG - 2016-08-16 22:55:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 22:55:36 --> CSRF cookie sent
+INFO - 2016-08-16 22:55:36 --> Input Class Initialized
+INFO - 2016-08-16 22:55:36 --> Language Class Initialized
+INFO - 2016-08-16 22:55:36 --> Loader Class Initialized
+INFO - 2016-08-16 22:55:36 --> Helper loaded: url_helper
+INFO - 2016-08-16 22:55:36 --> Helper loaded: language_helper
+INFO - 2016-08-16 22:55:36 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 22:55:36 --> Helper loaded: form_helper
+INFO - 2016-08-16 22:55:36 --> Database Driver Class Initialized
+INFO - 2016-08-16 22:55:37 --> Image Lib Class Initialized
+INFO - 2016-08-16 22:55:37 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 22:55:37 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 22:55:37 --> Cart Class Initialized
+INFO - 2016-08-16 22:55:37 --> Model Class Initialized
+INFO - 2016-08-16 22:55:37 --> Model Class Initialized
+INFO - 2016-08-16 22:55:37 --> Model Class Initialized
+INFO - 2016-08-16 22:55:37 --> Controller Class Initialized
+INFO - 2016-08-16 22:55:37 --> Model Class Initialized
+INFO - 2016-08-16 22:55:37 --> Helper loaded: file_helper
+INFO - 2016-08-16 22:55:37 --> Final output sent to browser
+DEBUG - 2016-08-16 22:55:37 --> Total execution time: 1.2401
+INFO - 2016-08-16 23:03:18 --> Config Class Initialized
+INFO - 2016-08-16 23:03:18 --> Hooks Class Initialized
+DEBUG - 2016-08-16 23:03:18 --> UTF-8 Support Enabled
+INFO - 2016-08-16 23:03:18 --> Utf8 Class Initialized
+INFO - 2016-08-16 23:03:18 --> URI Class Initialized
+INFO - 2016-08-16 23:03:18 --> Router Class Initialized
+INFO - 2016-08-16 23:03:18 --> Output Class Initialized
+INFO - 2016-08-16 23:03:18 --> Security Class Initialized
+DEBUG - 2016-08-16 23:03:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 23:03:18 --> CSRF cookie sent
+INFO - 2016-08-16 23:03:18 --> Input Class Initialized
+INFO - 2016-08-16 23:03:18 --> Language Class Initialized
+INFO - 2016-08-16 23:03:18 --> Loader Class Initialized
+INFO - 2016-08-16 23:03:18 --> Helper loaded: url_helper
+INFO - 2016-08-16 23:03:18 --> Helper loaded: language_helper
+INFO - 2016-08-16 23:03:18 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 23:03:18 --> Helper loaded: form_helper
+INFO - 2016-08-16 23:03:18 --> Database Driver Class Initialized
+INFO - 2016-08-16 23:03:19 --> Image Lib Class Initialized
+INFO - 2016-08-16 23:03:19 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 23:03:19 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 23:03:19 --> Cart Class Initialized
+INFO - 2016-08-16 23:03:19 --> Model Class Initialized
+INFO - 2016-08-16 23:03:19 --> Model Class Initialized
+INFO - 2016-08-16 23:03:19 --> Model Class Initialized
+INFO - 2016-08-16 23:03:19 --> Controller Class Initialized
+INFO - 2016-08-16 23:03:19 --> Model Class Initialized
+INFO - 2016-08-16 23:03:19 --> Helper loaded: file_helper
+INFO - 2016-08-16 23:03:37 --> Config Class Initialized
+INFO - 2016-08-16 23:03:37 --> Hooks Class Initialized
+DEBUG - 2016-08-16 23:03:37 --> UTF-8 Support Enabled
+INFO - 2016-08-16 23:03:37 --> Utf8 Class Initialized
+INFO - 2016-08-16 23:03:37 --> URI Class Initialized
+INFO - 2016-08-16 23:03:37 --> Router Class Initialized
+INFO - 2016-08-16 23:03:37 --> Output Class Initialized
+INFO - 2016-08-16 23:03:37 --> Security Class Initialized
+DEBUG - 2016-08-16 23:03:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-08-16 23:03:37 --> CSRF cookie sent
+INFO - 2016-08-16 23:03:37 --> Input Class Initialized
+INFO - 2016-08-16 23:03:37 --> Language Class Initialized
+INFO - 2016-08-16 23:03:37 --> Loader Class Initialized
+INFO - 2016-08-16 23:03:37 --> Helper loaded: url_helper
+INFO - 2016-08-16 23:03:37 --> Helper loaded: language_helper
+INFO - 2016-08-16 23:03:37 --> Helper loaded: my_file_helper
+INFO - 2016-08-16 23:03:37 --> Helper loaded: form_helper
+INFO - 2016-08-16 23:03:37 --> Database Driver Class Initialized
+INFO - 2016-08-16 23:03:38 --> Image Lib Class Initialized
+INFO - 2016-08-16 23:03:38 --> Session: Class initialized using 'database' driver.
+DEBUG - 2016-08-16 23:03:38 --> Session class already loaded. Second attempt ignored.
+INFO - 2016-08-16 23:03:38 --> Cart Class Initialized
+INFO - 2016-08-16 23:03:38 --> Model Class Initialized
+INFO - 2016-08-16 23:03:38 --> Model Class Initialized
+INFO - 2016-08-16 23:03:38 --> Model Class Initialized
+INFO - 2016-08-16 23:03:38 --> Controller Class Initialized
+INFO - 2016-08-16 23:03:38 --> Model Class Initialized
+INFO - 2016-08-16 23:03:38 --> Helper loaded: file_helper
+INFO - 2016-08-16 23:03:39 --> File loaded: D:\www\nakedmarket\web_git\php\application\views\admin/excel_table.php
+INFO - 2016-08-16 23:03:39 --> Final output sent to browser
+DEBUG - 2016-08-16 23:03:39 --> Total execution time: 1.4880

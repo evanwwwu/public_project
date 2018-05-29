@@ -1,0 +1,478 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>隱木設計</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta id="viewport" name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=1" />
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.ico"> -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <script src="assets/js/html5shiv.js"></script>
+    <![endif]--> 
+    <link href="assets/css/fotorama.css" rel="stylesheet">
+    <script src="assets/js/fotorama.js"></script>
+    <script src="assets/js/spin.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/jquery.masonry.min.js"></script>
+    <!--CDN links for the latest TweenLite, CSSPlugin, and EasePack-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/plugins/ScrollToPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/utils/Draggable.min.js"></script>-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css">  
+    <script src="assets/js/site.js"></script>
+    <script type="text/javascript">
+    function head () {
+        if (window.SVGForeignObjectElement) {
+            document.write('\
+                <svg width="146px" height="146px">\
+                <defs>\
+                <mask id="mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">\
+                <image width="146px" height="146px" xlink:href="assets/images/awards_mask.png"/>\
+                </mask>\
+                </defs>\
+                <foreignObject width="100%" height="100%" style="mask: url(#mask);">\
+            ');
+        }
+    }
+    function foot () {
+        if (window.SVGForeignObjectElement) {
+            document.write('\
+                </foreignObject>\
+                </svg>\
+            ');
+        }
+    } 
+    $(function(){
+        $('#container').imagesLoaded(function(){
+            $('#container').masonry({
+                itemSelector: '.item',
+                columnWidth: 200,
+                animated: true,
+                gutterWidth: 40,
+                isFitWidth: true,
+            // isAnimated: Modernizr.csstransitions,
+            // singleMode: true,
+        });
+        });
+    });
+    </script>
+</head>
+<body>
+    <div id="load_page"></div>
+    <div class="wrapper">
+        <header class="in">
+            <div class="logo" onclick="location='index.html'"><img src="assets/images/logo.png" /></div>
+            <div class="logo m" onclick="location='index.html'"><img src="assets/images/m_logo.png" /></div>
+            <div class="nav_btn"><img src="assets/images/m_btn.png" /></div>
+            <!-- <div class="nav_btn2"><img src="assets/images/m_btn2.png" /></div> -->
+            <nav class="c">
+                <ul>
+                    <li onclick="location='about.html'"><h3>關於XWD</h3><div class="line"></div></li>
+                    <li onclick="location='service.html'"><h3>服務項目</h3><div class="line"></div></li>
+                    <li onclick="location='work.html'"><h3>作品展示</h3><div class="line"></div></li>
+                    <li onclick="location='press.html'"><h3>媒體報導</h3><div class="line"></div></li>
+                    <li onclick="location='awards.html'"><h3>得獎紀錄</h3><div class="line"></div></li>
+                    <li onclick="location='members.html'"><h3>團隊成員</h3><div class="line"></div></li>
+                    <li onclick="location='contact.html'"><h3>連絡XWD</h3><div class="line"></div></li>
+                </ul>
+            </nav>
+            <nav class="m">
+                <div id="closeMask"></div>
+                <div class="nav_show">
+                    <div class="menu_btn" onclick="location='about.html'">
+                        <h3>關於XWD</h3>                       
+                    </div>
+                    <div class="menu_btn" onclick="location='service.html'">
+                        <h3>服務項目</h3>
+                    </div>
+                    <div class="menu_btn" onclick="location='work.html'">
+                        <h3>作品展示</h3>
+                    </div>
+                    <div class="menu_btn" onclick="location='press.html'">
+                        <h3>媒體報導</h3>
+                    </div>
+                    <div class="menu_btn" onclick="location='awards.html'">
+                        <h3>得獎紀錄</h3>
+                    </div>
+                    <div class="menu_btn active" onclick="location='members.html'">
+                        <h3>團隊成員</h3>
+                    </div>
+                    <div class="menu_btn" onclick="location='contact.html'">
+                        <h3>連絡XWD</h3>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <article class="members">
+                <div id="container">
+                    <div class="item">
+                        <div class="circle">
+                            <script>head();</script>
+                            <!-- HTML begins -->
+                            <div class="element">
+                                <img src="assets/images/members_pic.jpg" width="147px"/>
+                            </div>
+                            <!-- HTML ends -->
+                            <script>foot();</script>
+                        </div>
+                        <div class="detail">
+                            <p>趙亞楠</p>
+                            <p><span>商務運營長</span></p>
+                            <div>
+                                <p>
+                                    <span>獎項／經歷</span>
+                                    2010 TAID單層居住空間獎<br/>
+                                    2009 金外灘最佳辦公空間獎(團體)<br/>
+                                    2009 金外灘最佳居住空間獎(團體)<br/>
+                                    2007 TAID住宅空間獎(團體)
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="circle">
+                            <script>head();</script>
+                            <!-- HTML begins -->
+                            <div class="element">
+                                <img src="assets/images/members_3.jpg" width="147px"/>
+                            </div>
+                            <!-- HTML ends -->
+                            <script>foot();</script>
+                        </div>
+                        <div class="detail">
+                            <p>黃士華</p>
+                            <p><span>總執行設計</span></p>
+                            <div>
+                                <p>
+                                    <span>獎項／經歷</span>
+                                    2010 TAID單層居住空間獎<br/>
+                                    2009 金外灘最佳辦公空間獎(團體)<br/>
+                                    2009 金外灘最佳居住空間獎(團體)<br/>
+                                    2007 TAID住宅空間獎(團體)
+                                </p>
+                                <p>
+                                    <span>個案</span>
+                                    青島HILTON酒店深化設計團隊<br/>
+                                    溪山御景室內總規劃設計<br/>
+                                    金逸影視泰安影城設計<br/>
+                                    北市南港佳敏企業設計<br/>
+                                    東方金石接待中心設計
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="circle">
+                            <script>head();</script>
+                            <!-- HTML begins -->
+                            <div class="element">
+                                <img src="assets/images/members_2.jpg" width="147px"/>
+                            </div>
+                            <!-- HTML ends -->
+                            <script>foot();</script>
+                        </div>
+                        <div class="detail">
+                            <p>袁筱媛</p>
+                            <p><span>創意總監</span></p>
+                            <div>
+                                <p>
+                                    <span>獎項／經歷</span>
+                                    紐約帕森斯Fashion Design<br/>
+                                    Parsons The New school for Design
+                                </p>
+                                <p>
+                                    <span>個案</span>
+                                    A/X Armani Exchange國際精品專櫃實施設計<br/>
+                                    Calvin Klein國際精品專櫃實施設計<br/>
+                                    DKNY Donna Karan New York 國際精品專櫃實施設計<br/>
+                                    Mulberry 國際精品專櫃實施設計<br/>
+                                    CNC Costume National國際精品專櫃實施設計
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="circle">
+                            <script>head();</script>
+                            <!-- HTML begins -->
+                            <div class="element">
+                                <img src="assets/images/members_1.jpg" width="147px"/>
+                            </div>
+                            <!-- HTML ends -->
+                            <script>foot();</script>
+                        </div>
+                        <div class="detail">
+                            <p>孟羿彣</p>
+                            <p><span>主持設計師</span></p>
+                            <div>
+                                <p>
+                                    <span>獎項／經歷</span>
+                                    2010 TAID單層居住空間獎
+                                </p>
+                                <p>
+                                    <span>個案</span>
+                                    桃園洪邸設計案－獲2010 TAID單層居住空間獎<br/>
+                                    德商力維他股份有限公司台中辦公室設計<br/>
+                                    上海費司總公司辦公室設計<br/>
+                                    北市忠孝東路A5髮廊設計<br/>
+                                    台中群英麗群整形診所設計
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="circle">
+                            <script>head();</script>
+                            <!-- HTML begins -->
+                            <div class="element">
+                                <img src="assets/images/members_pic.jpg" width="147px"/>
+                            </div>
+                            <!-- HTML ends -->
+                            <script>foot();</script>
+                        </div>
+                        <div class="detail">
+                            <p>丁義軍</p>
+                            <p><span>主持設計師</span></p>
+                            <div>
+                                <p>
+                                    <span>獎項／經歷</span>
+                                    2010 TAID單層居住空間獎<br/>
+                                    2009 金外灘最佳辦公空間獎(團體)<br/>
+                                    2009 金外灘最佳居住空間獎(團體)<br/>
+                                    2007 TAID住宅空間獎(團體)
+                                </p>
+                                <p>
+                                    <span>個案</span>
+                                    青島HILTON酒店深化設計團隊<br/>
+                                    溪山御景室內總規劃設計
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="circle">
+                            <script>head();</script>
+                            <!-- HTML begins -->
+                            <div class="element">
+                                <img src="assets/images/members_pic.jpg" width="147px"/>
+                            </div>
+                            <!-- HTML ends -->
+                            <script>foot();</script>
+                        </div>
+                        <div class="detail">
+                            <p>蘇振玉</p>
+                            <p><span>主持設計師</span></p>
+                            <div>
+                                <p>
+                                    <span>獎項／經歷</span>
+                                    2010 TAID單層居住空間獎<br/>
+                                    2009 金外灘最佳辦公空間獎(團體)<br/>
+                                    2009 金外灘最佳居住空間獎(團體)<br/>
+                                    2007 TAID住宅空間獎(團體)
+                                </p>
+                                <p>
+                                    <span>個案</span>
+                                    青島HILTON酒店深化設計團隊<br/>
+                                    溪山御景室內總規劃設計<br/>
+                                    金逸影視泰安影城設計<br/>
+                                    北市南港佳敏企業設計<br/>
+                                    東方金石接待中心設計
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="circle">
+                            <script>head();</script>
+                            <!-- HTML begins -->
+                            <div class="element">
+                                <img src="assets/images/members_pic.jpg" width="147px"/>
+                            </div>
+                            <!-- HTML ends -->
+                            <script>foot();</script>
+                        </div>
+                        <div class="detail">
+                            <p>蘇緹葳</p>
+                            <p><span>主持設計師</span></p>
+                            <div>
+                                <p>
+                                    <span>獎項／經歷</span>
+                                    2010 TAID單層居住空間獎<br/>
+                                    2009 金外灘最佳辦公空間獎(團體)<br/>
+                                    2009 金外灘最佳居住空間獎(團體)
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="circle">
+                            <script>head();</script>
+                            <!-- HTML begins -->
+                            <div class="element">
+                                <img src="assets/images/members_pic.jpg" width="147px"/>
+                            </div>
+                            <!-- HTML ends -->
+                            <script>foot();</script>
+                        </div>
+                        <div class="detail">
+                            <p>KNIGHT</p>
+                            <p><span>主持設計師</span></p>
+                            <div>
+                                <p>
+                                    <span>獎項／經歷</span>
+                                    2010 TAID單層居住空間獎<br/>
+                                    2009 金外灘最佳辦公空間獎(團體)<br/>
+                                    2009 金外灘最佳居住空間獎(團體)
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="circle">
+                            <script>head();</script>
+                            <!-- HTML begins -->
+                            <div class="element">
+                                <img src="assets/images/members_pic.jpg" width="147px"/>
+                            </div>
+                            <!-- HTML ends -->
+                            <script>foot();</script>
+                        </div>
+                        <div class="detail">
+                            <p>丁義軍</p>
+                            <p><span>主持設計師</span></p>
+                            <div>
+                                <p>
+                                    <span>獎項／經歷</span>
+                                    2010 TAID單層居住空間獎<br/>
+                                    2009 金外灘最佳辦公空間獎(團體)<br/>
+                                    2009 金外灘最佳居住空間獎(團體)<br/>
+                                    2007 TAID住宅空間獎(團體)
+                                </p>
+                                <p>
+                                    <span>個案</span>
+                                    青島HILTON酒店深化設計團隊<br/>
+                                    溪山御景室內總規劃設計
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="circle">
+                            <script>head();</script>
+                            <!-- HTML begins -->
+                            <div class="element">
+                                <img src="assets/images/members_pic.jpg" width="147px"/>
+                            </div>
+                            <!-- HTML ends -->
+                            <script>foot();</script>
+                        </div>
+                        <div class="detail">
+                            <p>丁義軍</p>
+                            <p><span>主持設計師</span></p>
+                            <div>
+                                <p>
+                                    <span>獎項／經歷</span>
+                                    2010 TAID單層居住空間獎<br/>
+                                    2009 金外灘最佳辦公空間獎(團體)<br/>
+                                    2009 金外灘最佳居住空間獎(團體)<br/>
+                                    2007 TAID住宅空間獎(團體)
+                                </p>
+                                <p>
+                                    <span>個案</span>
+                                    青島HILTON酒店深化設計團隊<br/>
+                                    溪山御景室內總規劃設計
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div class="c">
+                <ul>
+                    <li>
+                        <div class="c"><img src="assets/images/footer_logo.png" /></div>
+                        <p>XWD DESIGN is an interior design & consulting<br />company based in Shanghai, China.</p>
+                        <p>版权所有　隐木空间设计顾问(上海)有限公司<br />© 2014 XWD Shanghai Inc. All rights reserved.</p>
+                        <!-- <div class="m"><img src="assets/images/m_footer_logo.png" /></div> -->
+                    </li>
+                    <li>
+                        <div><h2>WE ARE HIRING</h2><!-- <img src="assets/images/footer_hire.png" /> --></div>
+                        <p>我們熱愛我們正在做的這件事，那是樂趣所在，我們有面對挑戰跟困難的準備，但絕對不輕言放弃。<br />
+                            誠摯邀請和我們一樣有夢想，熱血有激情的你，共創未來。<br />
+                            想要加入我們的團隊，請來信附上您的簡歷，寄至：<br />service@xwd-design.com
+                        </p>
+                    </li>
+                    <li>
+                        <div><h2>LANGUAGE</h2><!-- <img src="assets/images/footer_lan.png" /> --></div>
+                        <p>
+                            <span>English</span>
+                            <span class="line"></span>
+                            <span>繁體中文</span>
+                            <span class="line"></span>
+                            <span>简体中文</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/images/footer_f.png" /></a>
+                        <a href="#"><img src="assets/images/footer_i.png" /></a>
+                        <a href="#"><img src="assets/images/footer_y.png" /></a>
+                        <a href="#"><img src="assets/images/footer_w.png" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="m">
+                <div class="social">
+                    <div class="nav_btn2"><img src="assets/images/m_btn2_f.png" /></div>
+                    <a href="#"><img src="assets/images/m_footer_f.png" /></a>
+                    <a href="#"><img src="assets/images/m_footer_i.png" /></a>
+                    <a href="#"><img src="assets/images/m_footer_y.png" /></a>
+                    <a href="#"><img src="assets/images/m_footer_w.png" /></a>
+                </div>
+                <ul>
+                    <li>
+                        <div class="m"><img src="assets/images/m_footer_logo.png" /></div>
+                    </li>
+                    <li>
+                        <div><h2>WE ARE HIRING</h2><!-- <img src="assets/images/footer_hire.png" /> --></div>
+                        <p>我們熱愛我們正在做的這件事，那是樂趣所在，我們有面對挑戰跟困難的準備，但絕對不輕言放弃。<br />
+                            誠摯邀請和我們一樣有夢想，熱血有激情的你，共創未來。<br />
+                            想要加入我們的團隊，請來信附上您的簡歷，寄至：<br />service@xwd-design.com
+                        </p>
+                    </li>
+                    <li>
+                        <div><h2>LANGUAGE</h2><!-- <img src="assets/images/footer_lan.png" /> --></div>
+                        <p>
+                            <span>English</span>
+                            <span class="line"></span>
+                            <span>繁體中文</span>
+                            <span class="line"></span>
+                            <span>简体中文</span>
+                        </p>
+                    </li>
+                    <li>
+                        <div><img src="assets/images/m_footer_x.png" /></div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

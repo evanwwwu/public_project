@@ -1,0 +1,147 @@
+#{"#"+$model+"-board"} {
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 80px;
+    @include rwd($pad_size) {
+        margin-bottom: 0;
+    }
+    .board {
+        @extend %main_size;
+        text-align: center;
+        padding-bottom: 60px;
+        .mbbg {
+            // $text_width:400;
+            // width: #{image-width("mb/mb.png") + $text_width};
+            width: 1000px;
+            margin: 60px auto 0;
+            position: relative;
+            @include rwd($pad_size) {
+                width: 100%;
+                text-align: center;
+                .lines {
+                    max-width: 550px;
+                    margin: 0 auto;
+                    text-align: justify;
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        width: 100%;
+                    }
+                }
+            };
+            .hb {
+                display: inline-block;
+                @include rwd($pad_size) {
+                    display: none;
+                };
+            }
+            .mb_mobile {
+                display: none;
+                @include rwd($pad_size) {
+                    display: block;
+                    margin-bottom: 80px;
+                };
+            }
+        }
+        .line {
+            position: absolute;
+            z-index: 2;
+            @include rwd($pad_size) {
+                 @include clear_abs;
+                display: inline-block;
+                text-align: left;
+                vertical-align: top;
+                margin: 10px 5px !important;
+                width: 36%;
+            };
+            @include rwd($phone_size) {
+                width: 100%;
+            };
+            > img {
+                vertical-align: middle;
+                @include rwd($pad_size) {
+                    display: none;
+                };
+            }
+            div.tx {
+                font-size: 19px;
+                vertical-align: middle;
+                color: #fff;
+                text-align: left;
+                font-weight: 300;
+                font-family: "Roboto Condensed";
+                @include rwd($pad_size) {
+                     @include clear_abs;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 0 !important;
+                    float: none !important;
+                    font-size: 20px;
+                    padding: 0 5px 0 45px !important;
+                    text-align: left !important;
+                };
+                &.r {
+                    float: right;
+                }
+                &.l {
+                    float: left;
+                }
+                .cl {
+                    display: none;
+                    @include rwd($pad_size) {
+                        left: 0;
+                        top: -5px;
+                        display: block;
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        @include border-radius(100%);
+                        background: #e3a763;
+                        color: #fff;
+                        text-align: center;
+                        font-size: 21px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        vertical-align: middle;
+                        font-family: Arial;
+                    }
+                }
+                p {
+                    margin: 5px 0;
+                }
+                @include rwd($pad_size) {
+                    ul {
+                        @include clear_abs;
+                        display: inline-block;
+                        vertical-align: top;
+                        float: none !important;
+                        width: 100%;
+                    }
+                    .stitle {
+                        margin: 0;
+                    }
+                };
+            }
+            $p_top: (161px,228px,265px,474px,533px,870px,87px,195px,285px,395px,480px,588px,745px);
+            $p_left: (-3px,11px,0px,13px,26px,51px,469px,650px,554px,545px,615px,710px,640px);
+            @for $i from 1 through 13 {
+                &.p#{$i} {
+                    top: nth($p_top,$i);
+                    left: nth($p_left,$i);
+                    .tx {
+                        @if $i>6 {
+                            padding: 6px 0 0 5px;
+                        }
+                        @else {
+                            padding: 6px 5px 0 0;
+                        }
+                        @if $i==3 or $i ==5 {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
